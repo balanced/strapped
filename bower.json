@@ -2,7 +2,7 @@
 	"name": "strapped",
 	"version": "0.0.1",
 	"main": [
-		"./build/css/strapped.min.css"
+		"./static/less/strapped.min.css"
 	],
 	"ignore": [
 		"**/.*",

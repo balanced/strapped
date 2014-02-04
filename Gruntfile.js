@@ -25,14 +25,6 @@ module.exports = function (grunt) {
 		},
 
 		copy: {
-			less: {
-				files: [{
-					cwd: 'static/less/',
-					expand: true,
-					src: ['**'],
-					dest: 'dist/less/'
-				}]
-			},
 			images: {
 				files: [{
 					cwd: 'static/images/',
@@ -138,7 +130,7 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('default', ['_devBuild','connect', 'bower-install', 'open', 'watch']);
 	grunt.registerTask('_devBuild', ['_buildCSS', '_buildImages', '_buildFonts', '_buildHTML']);
-	grunt.registerTask('_buildCSS', ['less', 'copy:less']);
+	grunt.registerTask('_buildCSS', ['less']);
 	grunt.registerTask('_buildImages', ['copy:images']);
 	grunt.registerTask('_buildFonts', ['copy:fonts']);
 	grunt.registerTask('_buildHTML', ['compile-handlebars']);
