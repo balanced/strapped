@@ -1,0 +1,11 @@
+{
+  "name": "Strapped",
+  "version": "0.0.1",
+  "dependencies": {
+    "handlebars": "1.0.0",
+    "jquery": "~2.1.0"
+  },
+  "resolutions": {
+    "jquery": "~2.1.0"
+  }
+}
