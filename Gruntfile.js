@@ -3,13 +3,14 @@ module.exports = function (grunt) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+
 		less: {
 			development: {
 				options: {
 					paths: ['assets/css']
 				},
 				files: {
-					'build/css/strapped.css': 'static/less/strapped.less'
+					'dist/css/strapped.css': 'static/less/strapped.less'
 				}
 			},
 			production: {
@@ -18,10 +19,43 @@ module.exports = function (grunt) {
 					cleancss: true
 				},
 				files: {
-					'build/css/strapped.min.css': 'static/less/strapped.less'
+					'dist/css/strapped.min.css': 'static/less/strapped.less'
 				}
 			}
 		},
+
+		copy: {
+			css: {
+				files: [{
+					cwd: 'static/css/',
+					expand: true,
+					src: ['**'],
+					dest: 'dist/css/'
+				}]
+			},
+			images: {
+				files: [{
+					cwd: 'static/images/',
+					expand: true,
+					src: ['**'],
+					dest: 'dist/images/'
+				}]
+			},
+			fonts: {
+				files: [{
+					cwd: 'static/fonts/',
+					expand: true,
+					src: [
+						'*.eot',
+						'*.svg',
+						'*.ttf',
+						'*.woff'
+					],
+					dest: 'dist/fonts/'
+				}]
+			}
+		},
+
 		watch: {
 			css: {
 				files: [
@@ -60,57 +94,13 @@ module.exports = function (grunt) {
 				}
 			}
 		},
-		copy: {
-			css: {
-				files: [{
-					cwd: 'build/css/',
-					expand: true,
-					src: ['**'],
-					dest: 'dist/css/'
-				}]
-			},
-			images: {
-				files: [{
-					cwd: 'static/images/',
-					expand: true,
-					src: ['**'],
-					dest: 'build/images/'
-				}, {
-					cwd: 'static/images/',
-					expand: true,
-					src: ['**'],
-					dest: 'build/test/images/'
-				}]
-			},
-			fonts: {
-				files: [{
-					cwd: 'static/fonts/',
-					expand: true,
-					src: [
-						'*.eot',
-						'*.svg',
-						'*.ttf',
-						'*.woff'
-					],
-					dest: 'build/fonts/'
-				}, {
-					cwd: 'static/fonts/',
-					expand: true,
-					src: [
-						'*.eot',
-						'*.svg',
-						'*.ttf',
-						'*.woff'
-					],
-					dest: 'build/test/fonts/'
-				}]
-			}
-		},
+
 		open: {
 			dev: {
-				path: 'http://localhost:9876/build/dev.html'
+				path: 'http://localhost:9876/index.html'
 			},
 		},
+
 		connect: {
 			server: {
 				options: {
@@ -119,28 +109,21 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+
 		'compile-handlebars': {
 			dev: {
 				template: 'index.html.hbs',
 				templateData: {
-					cssFile: "css/strapped.css",
+					cssFile: "dist/css/strapped.css",
 					includeLiveReload: true,
 					ext: grunt.file.exists('./ext.json') ? grunt.file.read('./ext.json') : ''
 				},
-				output: 'build/dev.html'
-			},
-			prod: {
-				template: 'index.html.hbs',
-				templateData: {
-					cssFile: "css/strapped.css",
-					includeLiveReload: false
-				},
-				output: 'build/prod.html'
+				output: 'index.html'
 			}
 		},
 		'bower-install': {
 			target: {
-		    	src: ['build/dev.html', 'build/prod.html']
+		    	src: ['index.html']
 		  	}
 		}
 	});
@@ -154,7 +137,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-bower-install');
 
 	grunt.registerTask('default', ['_devBuild','connect', 'bower-install', 'open', 'watch']);
-
 	grunt.registerTask('_devBuild', ['_buildCSS', '_buildImages', '_buildFonts', '_buildHTML']);
 	grunt.registerTask('_buildCSS', ['less']);
 	grunt.registerTask('_buildImages', ['copy:images']);
