@@ -18,7 +18,7 @@ module.exports = function (grunt) {
 					cleancss: true
 				},
 				files: {
-					'build/css/strapped.css': 'static/less/strapped.less'
+					'build/css/strapped.min.css': 'static/less/strapped.less'
 				}
 			}
 		},

@@ -1,24 +1,24 @@
 {
-  "name": "strapped",
-  "version": "0.0.1",
-  "description": "strapped",
-  "main": "Gruntfile.js",
-  "scripts": {
-    "test": "grunt test --verbose"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/balanced/strapped.git"
-  },
-  "author": "Balanced <dev@balancedpayments.com>",
-  "license": "Apache",
-  "bugs": {
-    "url": "https://github.com/balanced/strapped/issues"
-  },
-  "homepage": "https://github.com/balanced/strapped",
-  "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-less": "~0.9.0",
-    "grunt-open": "~0.2.3"
-  }
+	"name": "strapped",
+	"version": "0.0.1",
+	"description": "**Strapped** is Bootstrapped less / js for Balanced.",
+	"main": "Gruntfile.js",
+	"scripts": {
+		"test": "grunt test --verbose"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/balanced/strapped.git"
+  	},
+	"author": "Balanced <dev@balancedpayments.com>",
+	"license": "Apache",
+	"bugs": {
+		"url": "https://github.com/balanced/strapped/issues"
+	},
+	"homepage": "https://github.com/balanced/strapped",
+	"devDependencies": {
+		"grunt": "~0.4.2",
+		"grunt-contrib-less": "~0.9.0",
+		"grunt-open": "~0.2.3"
+	}
 }
