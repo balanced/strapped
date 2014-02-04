@@ -12,7 +12,8 @@
 		"Gruntfile.js",
 		"README.md",
 		"*.json",
-		"*.hbs"
+		"*.hbs",
+		"*.html"
 	],
 	"dependencies": {
 		"handlebars": "1.0.0",
