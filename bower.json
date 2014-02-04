@@ -17,13 +17,10 @@
 	],
 	"dependencies": {
 		"handlebars": "1.0.0",
-		"jquery": "~2.1.0"
+		"jquery": ">=2.0.3"
 	},
 	"devDependencies": {
 		"handlebars": "1.0.0",
-		"jquery": "~2.1.0"
-	},
-	"resolutions": {
-		"jquery": "~2.1.0"
+		"jquery": ">=2.1.0"
 	}
 }
