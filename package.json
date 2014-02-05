@@ -22,6 +22,7 @@
     "grunt-open": "~0.2.3",
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-jsbeautifier": "~0.2.6",
-    "grunt-lesslint": "~0.17.0"
+    "grunt-lesslint": "~0.17.0",
+    "grunt-contrib-handlebars": "~0.6.1"
   }
 }

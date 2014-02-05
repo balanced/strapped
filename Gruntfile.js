@@ -33,6 +33,14 @@ module.exports = function(grunt) {
 					dest: 'dist/images/'
 				}]
 			},
+			js: {
+				files: [{
+					cwd: 'static/js/',
+					expand: true,
+					src: ['**'],
+					dest: 'dist/js/'
+				}]
+			},
 			fonts: {
 				files: [{
 					cwd: 'static/fonts/',
@@ -48,10 +56,33 @@ module.exports = function(grunt) {
 			}
 		},
 
+		'compile-handlebars': {
+			dev: {
+				template: 'examples/index.hbs',
+				templateData: {
+					cssFile: "dist/css/strapped.min.css",
+					jsLibFile: "dist/js/compiled_templates.js",
+					includeLiveReload: true,
+					ext: grunt.file.exists('./ext.json') ? grunt.file.read('./ext.json') : ''
+				},
+				partials: 'examples/partials/*.hbs',
+				output: 'index.html'
+			}
+		},
+
 		watch: {
+			hbs: {
+				files: [
+					'examples/partials/*.hbs'
+				],
+				tasks: ['_buildHTML'],
+				options: {
+					livereload: true
+				}				
+			},
 			css: {
 				files: [
-					'static/less/*'
+					'static/less/*.less'
 				],
 				tasks: ['_buildCSS'],
 				options: {
@@ -75,15 +106,6 @@ module.exports = function(grunt) {
 				options: {
 					livereload: true,
 				}
-			},
-			html: {
-				files: [
-					'index.html'
-				],
-				tasks: ['_buildHTML'],
-				options: {
-					livereload: true,
-				}
 			}
 		},
 
@@ -102,21 +124,9 @@ module.exports = function(grunt) {
 			}
 		},
 
-		'compile-handlebars': {
-			dev: {
-				template: 'index.html.hbs',
-				templateData: {
-					cssFile: "dist/css/strapped.min.css",
-					includeLiveReload: true,
-					ext: grunt.file.exists('./ext.json') ? grunt.file.read('./ext.json') : ''
-				},
-				output: 'index.html'
-			}
-		},
-
 		'bower-install': {
 			target: {
-				src: ['index.html']
+				src: ['examples/index.hbs']
 			}
 		},
 
@@ -170,8 +180,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-jsbeautifier');
 	grunt.loadNpmTasks('grunt-lesslint');
 
-	grunt.registerTask('default', ['_devBuild', 'connect', 'bower-install', 'open', 'watch']);
-	grunt.registerTask('_devBuild', ['_buildCSS', '_buildImages', '_buildFonts', '_buildHTML']);
+	grunt.registerTask('default', ['_devBuild', 'connect', 'open', 'watch']);
+	grunt.registerTask('_devBuild', ['bower-install', '_buildCSS', '_buildImages', '_buildFonts', '_buildHTML']);
 	grunt.registerTask('_buildCSS', ['less']);
 	grunt.registerTask('_buildImages', ['copy:images']);
 	grunt.registerTask('_buildFonts', ['copy:fonts']);
