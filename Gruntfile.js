@@ -1,4 +1,4 @@
-module.exports = function (grunt) {
+module.exports = function(grunt) {
 	'use strict';
 
 	grunt.initConfig({
@@ -113,25 +113,69 @@ module.exports = function (grunt) {
 				output: 'index.html'
 			}
 		},
+
 		'bower-install': {
 			target: {
-		    	src: ['index.html']
-		  	}
+				src: ['index.html']
+			}
+		},
+
+		jsbeautifier: {
+			options: {
+				config: '.jsbeautifyrc'
+			},
+			verify: {
+				options: {
+					mode: 'VERIFY_ONLY'
+				},
+				src: [
+					'Gruntfile.js',
+					'static/js/*.js'
+				],
+			},
+			update: {
+				options: {
+					mode: 'VERIFY_AND_WRITE'
+				},
+				src: [
+					'Gruntfile.js',
+					'static/js/*.js'
+				],
+			}
+		},
+
+		jshint: {
+			all: [
+				'Gruntfile.js',
+				'static/js/*.js'
+			],
+			options: {
+				jshintrc: '.jshintrc'
+			}
+		},
+
+		lesslint: {
+			src: ['static/less/strapped.less']
 		}
 	});
 
+	grunt.loadNpmTasks('grunt-bower-install');
+	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-open');
-	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-compile-handlebars');
-	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.loadNpmTasks('grunt-bower-install');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-jsbeautifier');
+	grunt.loadNpmTasks('grunt-lesslint');
 
-	grunt.registerTask('default', ['_devBuild','connect', 'bower-install', 'open', 'watch']);
+	grunt.registerTask('default', ['_devBuild', 'connect', 'bower-install', 'open', 'watch']);
 	grunt.registerTask('_devBuild', ['_buildCSS', '_buildImages', '_buildFonts', '_buildHTML']);
 	grunt.registerTask('_buildCSS', ['less']);
 	grunt.registerTask('_buildImages', ['copy:images']);
 	grunt.registerTask('_buildFonts', ['copy:fonts']);
 	grunt.registerTask('_buildHTML', ['compile-handlebars']);
+	grunt.registerTask('format', ['jsbeautifier:update']);
+	grunt.registerTask('verify', ['lesslint', 'jshint', 'jsbeautifier:verify']);
 };
