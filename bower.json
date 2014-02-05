@@ -8,9 +8,7 @@
 		"**/.*",
 		"./bower_components",
 		"./node_modules",
-		"./static",
 		"Gruntfile.js",
-		"README.md",
 		"*.json",
 		"*.hbs",
 		"*.html"

@@ -10,7 +10,7 @@ Add `"strapped": "balanced/strapped"` as a dependency to `bower.json`
 
 ```js
 {
-	"...": "..."
+	"...": "...",
 	dependencies: {
 		"...": "...",
 		"strapped": "balanced/strapped"
