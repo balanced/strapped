@@ -106,7 +106,7 @@ module.exports = function(grunt) {
 			dev: {
 				template: 'index.html.hbs',
 				templateData: {
-					cssFile: "dist/css/strapped.css",
+					cssFile: "dist/css/strapped.min.css",
 					includeLiveReload: true,
 					ext: grunt.file.exists('./ext.json') ? grunt.file.read('./ext.json') : ''
 				},
