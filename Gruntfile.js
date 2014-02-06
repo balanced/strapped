@@ -4,91 +4,60 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
+		bootstrap: {
+			dest: 'examples',
+			css: [
+				'reset.less',
+				'grid.less'
+			]
+		},
+
 		less: {
 			development: {
 				options: {
 					paths: ['assets/css']
 				},
 				files: {
-					'dist/css/strapped.css': 'static/less/strapped.less'
-				}
-			},
-			production: {
-				options: {
-					paths: ['assets/css'],
-					cleancss: true
-				},
-				files: {
-					'dist/css/strapped.min.css': 'static/less/strapped.less'
+					'examples/css/strapped.css': 'static/less/strapped.less',
+					'examples/css/style.min.css': 'examples/css/style.less'
 				}
 			}
 		},
 
-		copy: {
-			images: {
-				files: [{
-					cwd: 'static/images/',
-					expand: true,
-					src: ['**'],
-					dest: 'dist/images/'
-				}]
-			},
-			fonts: {
-				files: [{
-					cwd: 'static/fonts/',
-					expand: true,
-					src: [
-						'*.eot',
-						'*.svg',
-						'*.ttf',
-						'*.woff'
-					],
-					dest: 'dist/fonts/'
-				}]
+		'compile-handlebars': {
+			index: {
+				template: 'examples/index.hbs',
+				templateData: 'examples/data.json',
+				partials: 'examples/partials/*.hbs',
+				output: 'index.html'
 			}
 		},
 
 		watch: {
+			hbs: {
+				files: [
+					'examples/partials/*.hbs',
+					'examples/*.hbs',
+				],
+				tasks: ['_buildHTML'],
+				options: {
+					livereload: true
+				}				
+			},
 			css: {
 				files: [
-					'static/less/*'
+					'static/less/*.less',
+					'examples/css/style.less'
 				],
 				tasks: ['_buildCSS'],
 				options: {
 					livereload: true
 				}
-			},
-			images: {
-				files: [
-					'static/images/**/*'
-				],
-				tasks: ['_buildImages'],
-				options: {
-					livereload: true,
-				}
-			},
-			fonts: {
-				files: [
-					'static/fonts/**/*'
-				],
-				tasks: ['_buildFonts'],
-				options: {
-					livereload: true,
-				}
-			},
-			html: {
-				files: [
-					'index.html'
-				],
-				tasks: ['_buildHTML'],
-				options: {
-					livereload: true,
-				}
 			}
 		},
 
 		open: {
-			dev: {
+			index: {
 				path: 'http://localhost:9876/index.html'
 			},
 		},
@@ -102,21 +71,9 @@ module.exports = function(grunt) {
 			}
 		},
 
-		'compile-handlebars': {
-			dev: {
-				template: 'index.html.hbs',
-				templateData: {
-					cssFile: "dist/css/strapped.min.css",
-					includeLiveReload: true,
-					ext: grunt.file.exists('./ext.json') ? grunt.file.read('./ext.json') : ''
-				},
-				output: 'index.html'
-			}
-		},
-
 		'bower-install': {
 			target: {
-				src: ['index.html']
+				src: ['examples/index.hbs']
 			}
 		},
 
@@ -159,6 +116,7 @@ module.exports = function(grunt) {
 		}
 	});
 
+	grunt.loadNpmTasks('grunt-bootstrap');
 	grunt.loadNpmTasks('grunt-bower-install');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-open');
@@ -170,11 +128,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-jsbeautifier');
 	grunt.loadNpmTasks('grunt-lesslint');
 
-	grunt.registerTask('default', ['_devBuild', 'connect', 'bower-install', 'open', 'watch']);
-	grunt.registerTask('_devBuild', ['_buildCSS', '_buildImages', '_buildFonts', '_buildHTML']);
+	grunt.registerTask('default', ['_devBuild', 'connect', 'open', 'watch']);
+	grunt.registerTask('_devBuild', ['bower-install', '_buildCSS', '_buildHTML']);
 	grunt.registerTask('_buildCSS', ['less']);
-	grunt.registerTask('_buildImages', ['copy:images']);
-	grunt.registerTask('_buildFonts', ['copy:fonts']);
 	grunt.registerTask('_buildHTML', ['compile-handlebars']);
 	grunt.registerTask('format', ['jsbeautifier:update']);
 	grunt.registerTask('verify', ['lesslint', 'jshint', 'jsbeautifier:verify']);

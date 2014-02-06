@@ -1226,17 +1226,10 @@
 .btn-danger:hover.active {
   background-color: #dd2f10 \9;
 }
-h1 {
-  font-family: "NimbusSanConD-Bol", arial, sans-serif;
-  font-weight: normal;
-  font-size: 34px;
-  color: #814a98;
-  margin-bottom: 28px;
+body {
+  margin: 0;
 }
-h2 {
-  font-family: "NimbusSanConD-Bol", arial, sans-serif;
-  font-weight: normal;
-  font-size: 28px;
-  color: #000000;
-  margin-bottom: 24px;
+body,
+p {
+  font-family: "NimbusSanNov-Med", arial, sans-serif;
 }
