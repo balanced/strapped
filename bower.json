@@ -8,10 +8,10 @@
 		"**/.*",
 		"./bower_components",
 		"./node_modules",
+		"./static",
 		"Gruntfile.js",
 		"*.json",
-		"*.hbs",
-		"*.html"
+		"index.html"
 	],
 	"dependencies": {
 		"handlebars": "1.0.0",

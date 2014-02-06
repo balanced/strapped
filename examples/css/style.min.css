@@ -1226,17 +1226,226 @@
 .btn-danger:hover.active {
   background-color: #dd2f10 \9;
 }
-h1 {
-  font-family: "NimbusSanConD-Bol", arial, sans-serif;
-  font-weight: normal;
-  font-size: 34px;
-  color: #814a98;
-  margin-bottom: 28px;
+body {
+  margin: 0;
 }
-h2 {
+body,
+p {
+  font-family: "NimbusSanNov-Med", arial, sans-serif;
+}
+.nav {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 30px;
   font-family: "NimbusSanConD-Bol", arial, sans-serif;
-  font-weight: normal;
-  font-size: 28px;
-  color: #000000;
-  margin-bottom: 24px;
+  font-size: 32px;
+}
+.content {
+  padding: 0 30px;
+  width: 1320px;
+}
+.palette {
+  color: #ffffff;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  font-size: 12px;
+  display: inline-block;
+  margin-right: -3px;
+  margin-bottom: 1px;
+}
+.mulburryPurple100 {
+  background-color: #ba3f90;
+}
+.mulburryPurple80 {
+  background-color: #c461a2;
+}
+.mulburryPurple60 {
+  background-color: #cf82b6;
+}
+.mulburryPurple40 {
+  background-color: #dca7cd;
+}
+.mulburryPurple20 {
+  background-color: #eacfe4;
+}
+.byzantiumPurple100 {
+  background-color: #814a98;
+}
+.byzantiumPurple80 {
+  background-color: #9364a8;
+}
+.byzantiumPurple60 {
+  background-color: #a781ba;
+}
+.byzantiumPurple40 {
+  background-color: #bfa5cf;
+}
+.byzantiumPurple20 {
+  background-color: #dbcde5;
+}
+.lavenderPurple100 {
+  background-color: #6d61a9;
+}
+.lavenderPurple80 {
+  background-color: #8276b6;
+}
+.lavenderPurple60 {
+  background-color: #9a91c6;
+}
+.lavenderPurple40 {
+  background-color: #b6b0d8;
+}
+.lavenderPurple20 {
+  background-color: #d6d2ea;
+}
+.powderBlue100 {
+  background-color: #3f6fb8;
+}
+.powderBlue80 {
+  background-color: #5e83c3;
+}
+.powderBlue60 {
+  background-color: #7e9ad0;
+}
+.powderBlue40 {
+  background-color: #a3b5de;
+}
+.powderBlue20 {
+  background-color: #ccd5ed;
+}
+.persianBlue100 {
+  background-color: #0063b4;
+}
+.persianBlue80 {
+  background-color: #1675bf;
+}
+.persianBlue60 {
+  background-color: #528dcc;
+}
+.persianBlue40 {
+  background-color: #83aadb;
+}
+.persianBlue20 {
+  background-color: #bbceeb;
+}
+.egyptianBlue100 {
+  background-color: #4789b0;
+}
+.egyptianBlue80 {
+  background-color: #639abd;
+}
+.egyptianBlue60 {
+  background-color: #82aecb;
+}
+.egyptianBlue40 {
+  background-color: #a5c4da;
+}
+.egyptianBlue20 {
+  background-color: #cbdcea;
+}
+.turquoise100 {
+  background-color: #2e8289;
+}
+.turquoise80 {
+  background-color: #4f949b;
+}
+.turquoise60 {
+  background-color: #72a9af;
+}
+.turquoise40 {
+  background-color: #99c1c5;
+}
+.turquoise20 {
+  background-color: #c4dbdd;
+}
+.forestGreen100 {
+  background-color: #00927b;
+}
+.forestGreen80 {
+  background-color: #00a08e;
+}
+.forestGreen60 {
+  background-color: #4bb2a4;
+}
+.forestGreen40 {
+  background-color: #82c7bd;
+}
+.forestGreen20 {
+  background-color: #bbe0d9;
+}
+.pineGreen100 {
+  background-color: #00944d;
+}
+.pineGreen80 {
+  background-color: #00a268;
+}
+.pineGreen60 {
+  background-color: #53b384;
+}
+.pineGreen40 {
+  background-color: #87c7a6;
+}
+.pineGreen20 {
+  background-color: #bee0cd;
+}
+.curryYellow100 {
+  background-color: #b89b08;
+}
+.curryYellow80 {
+  background-color: #c6ab34;
+}
+.curryYellow60 {
+  background-color: #d4bc5e;
+}
+.curryYellow40 {
+  background-color: #e2cf89;
+}
+.curryYellow20 {
+  background-color: #efe3bb;
+}
+.turmericYellow100 {
+  background-color: #ac7b0d;
+}
+.turmericYellow80 {
+  background-color: #bc8f30;
+}
+.turmericYellow60 {
+  background-color: #cda657;
+}
+.turmericYellow40 {
+  background-color: #dcbe82;
+}
+.turmericYellow20 {
+  background-color: #ecd9b7;
+}
+.imperialRed100 {
+  background-color: #e71d1c;
+}
+.imperialRed80 {
+  background-color: #ec4e33;
+}
+.imperialRed60 {
+  background-color: #f17555;
+}
+.imperialRed40 {
+  background-color: #f69d7f;
+}
+.imperialRed20 {
+  background-color: #fbcbb5;
+}
+.black {
+  background-color: #000000;
+}
+.gray7 {
+  background-color: #1e222a;
+}
+.gray6 {
+  background-color: #353b47;
+}
+.gray5 {
+  background-color: #51545d;
+}
+.gray4 {
+  background-color: #80838a;
 }

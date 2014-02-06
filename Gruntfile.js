@@ -4,67 +4,30 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
+		bootstrap: {
+			dest: 'examples',
+			css: [
+				'reset.less',
+				'grid.less'
+			]
+		},
+
 		less: {
 			development: {
 				options: {
 					paths: ['assets/css']
 				},
 				files: {
-					'dist/css/strapped.css': 'static/less/strapped.less'
+					'examples/css/strapped.css': 'static/less/strapped.less',
+					'examples/css/style.min.css': 'examples/css/style.less'
 				}
-			},
-			production: {
-				options: {
-					paths: ['assets/css'],
-					cleancss: true
-				},
-				files: {
-					'dist/css/strapped.min.css': 'static/less/strapped.less'
-				}
-			}
-		},
-
-		copy: {
-			images: {
-				files: [{
-					cwd: 'static/images/',
-					expand: true,
-					src: ['**'],
-					dest: 'dist/images/'
-				}]
-			},
-			js: {
-				files: [{
-					cwd: 'static/js/',
-					expand: true,
-					src: ['**'],
-					dest: 'dist/js/'
-				}]
-			},
-			fonts: {
-				files: [{
-					cwd: 'static/fonts/',
-					expand: true,
-					src: [
-						'*.eot',
-						'*.svg',
-						'*.ttf',
-						'*.woff'
-					],
-					dest: 'dist/fonts/'
-				}]
 			}
 		},
 
 		'compile-handlebars': {
-			dev: {
+			index: {
 				template: 'examples/index.hbs',
-				templateData: {
-					cssFile: "dist/css/strapped.min.css",
-					jsLibFile: "dist/js/compiled_templates.js",
-					includeLiveReload: true,
-					ext: grunt.file.exists('./ext.json') ? grunt.file.read('./ext.json') : ''
-				},
+				templateData: 'examples/data.json',
 				partials: 'examples/partials/*.hbs',
 				output: 'index.html'
 			}
@@ -73,7 +36,8 @@ module.exports = function(grunt) {
 		watch: {
 			hbs: {
 				files: [
-					'examples/partials/*.hbs'
+					'examples/partials/*.hbs',
+					'examples/*.hbs',
 				],
 				tasks: ['_buildHTML'],
 				options: {
@@ -82,35 +46,18 @@ module.exports = function(grunt) {
 			},
 			css: {
 				files: [
-					'static/less/*.less'
+					'static/less/*.less',
+					'examples/css/style.less'
 				],
 				tasks: ['_buildCSS'],
 				options: {
 					livereload: true
 				}
-			},
-			images: {
-				files: [
-					'static/images/**/*'
-				],
-				tasks: ['_buildImages'],
-				options: {
-					livereload: true,
-				}
-			},
-			fonts: {
-				files: [
-					'static/fonts/**/*'
-				],
-				tasks: ['_buildFonts'],
-				options: {
-					livereload: true,
-				}
 			}
 		},
 
 		open: {
-			dev: {
+			index: {
 				path: 'http://localhost:9876/index.html'
 			},
 		},
@@ -169,6 +116,7 @@ module.exports = function(grunt) {
 		}
 	});
 
+	grunt.loadNpmTasks('grunt-bootstrap');
 	grunt.loadNpmTasks('grunt-bower-install');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-open');
@@ -181,10 +129,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-lesslint');
 
 	grunt.registerTask('default', ['_devBuild', 'connect', 'open', 'watch']);
-	grunt.registerTask('_devBuild', ['bower-install', '_buildCSS', '_buildImages', '_buildFonts', '_buildHTML']);
+	grunt.registerTask('_devBuild', ['bower-install', '_buildCSS', '_buildHTML']);
 	grunt.registerTask('_buildCSS', ['less']);
-	grunt.registerTask('_buildImages', ['copy:images']);
-	grunt.registerTask('_buildFonts', ['copy:fonts']);
 	grunt.registerTask('_buildHTML', ['compile-handlebars']);
 	grunt.registerTask('format', ['jsbeautifier:update']);
 	grunt.registerTask('verify', ['lesslint', 'jshint', 'jsbeautifier:verify']);
