@@ -42,7 +42,15 @@ module.exports = function(grunt) {
 				tasks: ['_buildHTML'],
 				options: {
 					livereload: true
-				}				
+				}
+			},
+			js: {
+				files: [
+					'examples/strapped.js'
+				],
+				options: {
+					livereload: true
+				}
 			},
 			css: {
 				files: [

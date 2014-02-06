@@ -1,7 +1,14 @@
-<h2>Colors</h2>
-{{#each palettes}}
-	<div class='palette {{name}}'>
-		{{name}}
-		<div class='hex'></div>
+<section id="colors">
+	<h2>Colors</h2>
+	<div id="masonry" data-masonry-options='{ "columnWidth": 200, "itemSelector": ".item" }'>
+		{{#each palettes}}
+			<div class='item {{name}}'>
+				<div class='property'>
+					<div class='name'>{{name}}</div>
+					<div class='hex'></div>
+				</div>
+				{{index}}
+			</div>
+		{{/each}}
 	</div>
-{{/each}}
+</section>

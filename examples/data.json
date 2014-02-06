@@ -1,5 +1,6 @@
 {
 	"cssFile": "examples/css/style.min.css",
+	"jsFile": "examples/strapped.js",
 	"bootstrapCssFile": "examples/css/bootstrap.min.css",
 	"colors": {
 		"palettes": [
