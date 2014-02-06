@@ -1250,7 +1250,7 @@ h4 {
   margin-left: 30px;
 }
 #colors .item {
-  width: 7.5%;
+  width: 8%;
   height: 100px;
   color: #ffffff;
   font-size: 12px;
@@ -1267,6 +1267,17 @@ h4 {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
+}
+#colors .item .property .hex {
+  font-family: "NimbusSanNov-SemBol", arial, sans-serif;
+}
+#colors .item .label {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  font-family: "NimbusSanConD-Bol", arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 #colors .mulberryPurple100 {
   background-color: #ba3f90;
@@ -1462,4 +1473,16 @@ h4 {
 }
 #colors .gray4 {
   background-color: #80838a;
+}
+#colors .gray3 {
+  background-color: #b7bbbd;
+}
+#colors .gray2 {
+  background-color: #d7d8d9;
+}
+#colors .gray1 {
+  background-color: #f0f1f2;
+}
+#colors .white {
+  background-color: #ffffff;
 }

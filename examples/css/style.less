@@ -19,7 +19,7 @@ h1, h2, h3, h4 {
 	}
 
 	.item {
-		width: 7.5%;
+		width: 8%;
 		height: 100px;
 		color: @white;
 		font-size: 12px;
@@ -30,6 +30,19 @@ h1, h2, h3, h4 {
 			top: 10%;
 			left: 10%;
 			.hyphenate();
+
+			.hex {
+				font-family: @baseFontFamilySemiBold;
+			}
+		}
+
+		.label {
+			position: absolute;
+			bottom: 10%;
+			left: 10%;
+			font-family: @baseFontFamilyCondensedBold;
+			font-size: 20px;
+			text-transform: uppercase;
 		}
 	}
 
@@ -228,5 +241,16 @@ h1, h2, h3, h4 {
 	.gray4 {
 		background-color: @gray4;
 	}
-
+	.gray3 {
+		background-color: @gray3;
+	}
+	.gray2 {
+		background-color: @gray2;
+	}
+	.gray1 {
+		background-color: @gray1;
+	}
+	.white {
+		background-color: @white;
+	}
 }

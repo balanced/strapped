@@ -16,7 +16,6 @@
 			{ "name": "curryYellow100" },
 			{ "name": "turmericYellow100" },
 			{ "name": "imperialRed100" },
-			{ "name": "black" },
 			{ "name": "mulberryPurple80" },
 			{ "name": "byzantiumPurple80" },
 			{ "name": "lavenderPurple80" },
@@ -29,7 +28,6 @@
 			{ "name": "curryYellow80" },
 			{ "name": "turmericYellow80" },
 			{ "name": "imperialRed80" },
-			{ "name": "gray7" },
 			{ "name": "mulberryPurple60" },
 			{ "name": "byzantiumPurple60" },
 			{ "name": "lavenderPurple60" },
@@ -42,7 +40,6 @@
 			{ "name": "curryYellow60" },
 			{ "name": "turmericYellow60" },
 			{ "name": "imperialRed60" },
-			{ "name": "gray6" },
 			{ "name": "mulberryPurple40" },
 			{ "name": "byzantiumPurple40" },
 			{ "name": "lavenderPurple40" },
@@ -55,7 +52,6 @@
 			{ "name": "curryYellow40" },
 			{ "name": "turmericYellow40" },
 			{ "name": "imperialRed40" },
-			{ "name": "gray5" },
 			{ "name": "mulberryPurple20" },
 			{ "name": "byzantiumPurple20" },
 			{ "name": "lavenderPurple20" },
@@ -68,7 +64,15 @@
 			{ "name": "curryYellow20" },
 			{ "name": "turmericYellow20" },
 			{ "name": "imperialRed20" },
-			{ "name": "gray4" }
+			{ "name": "black" },
+			{ "name": "gray7" },
+			{ "name": "gray6" },
+			{ "name": "gray5" },
+			{ "name": "gray4" },
+			{ "name": "gray3" },
+			{ "name": "gray2" },
+			{ "name": "gray1" },
+			{ "name": "white" }
 		]
 	}
 }
