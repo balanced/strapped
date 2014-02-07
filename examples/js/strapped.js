@@ -1,7 +1,11 @@
 $(document).ready(function() {
-	
-	$('body').scrollspy({ target: '#main-nav' });
 
+	$('.nav li a').click(function() {
+		event.preventDefault();
+		$($(this).attr('href'))[0].scrollIntoView();
+		scrollBy(0, -54);
+	});
+	
 	// colors
 	$('.hex').each(function(index, div) {
 		var rgb = $(div).closest('.item').css('backgroundColor');
@@ -17,17 +21,13 @@ $(document).ready(function() {
 		if (colorName == 'gray6') {
 			$(name).closest('.item').css('boxShadow', 'inset 0 0 0 3px #000');
 			$(name).closest('.item').append('<div class="label">body text</div>')
-		}
-		if (colorName == 'gray1') {
+		} else if (colorName == 'gray1') {
 			$(name).closest('.item').css('boxShadow', 'inset 0 0 0 3px #000');
 			$(name).closest('.item').append('<div class="label">page background</div>')
-		}
-		if (colorName == 'persianBlue100') {
+		} else if (colorName == 'persianBlue100') {
 			$(name).closest('.item').css('boxShadow', 'inset 0 0 0 3px #000');
 			$(name).closest('.item').append('<div class="label">body links</div>')
-		}
-
-		if (colorName == 'white') {
+		} else if (colorName == 'white') {
 			$(name).closest('.item').css('boxShadow', 'inset 0 0 0 1px #D7D8D9');
 		}
 

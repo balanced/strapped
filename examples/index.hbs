@@ -5,11 +5,11 @@
 	<link rel="stylesheet" href="{{bootstrapCssFile}}">
 	<link rel="stylesheet" href="{{ cssFile }}">
 </head>
-<body>
+<body data-spy="scroll" data-target="#main-nav" data-offset="0">
 	<div id="main-nav" class="navbar fixed">
-		<div class="title">Strapped</div>
+		<a class="title" href="/">Strapped</a>
 		<ul class="nav">
-			<li class="active"><a href="#colors">Colors</a></li>
+			<li><a href="#colors">Colors</a></li>
 			<li><a href="#fonts">Fonts</a></li>
 			<li><a href="#buttons">Buttons</a></li>
 		</ul>
@@ -17,7 +17,7 @@
 	<div class="content">
 		{{> colors colors}}
 		{{> fonts fonts}}
-		{{> buttons}}	
+		{{> buttons fonts}}	
 	</div>
 
 	<!-- bower:js -->

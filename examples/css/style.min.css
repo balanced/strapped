@@ -1256,6 +1256,7 @@ body {
 }
 .navbar .title {
   display: inline-block;
+  text-decoration: none;
   color: #ffffff;
   font-family: "NimbusSanConD-Bol", arial, sans-serif;
   font-size: 28px;
@@ -1270,25 +1271,25 @@ body {
   margin: 0;
 }
 .navbar ul li {
-  background: #000000;
   display: inline-block;
-  padding: 10px 30px;
-  font-size: 16px;
-  line-height: 34px;
-  font-family: "NimbusSanNov-SemBol", arial, sans-serif;
-  margin-right: -4px;
 }
 .navbar ul li a {
+  background: #000000;
+  padding: 19px 30px;
+  font-size: 16px;
+  line-height: 54px;
+  font-family: "NimbusSanNov-SemBol", arial, sans-serif;
+  margin-right: -4px;
   text-decoration: none;
   color: #ffffff;
 }
-.navbar ul li.active {
-  background: #353b47;
-}
-.navbar ul li:hover {
+.navbar ul li a:hover {
   background: #1e222a;
   color: #f0f1f2;
   cursor: pointer;
+}
+.navbar ul li.active a {
+  background: #1e222a;
 }
 h1,
 h2,
@@ -1539,14 +1540,17 @@ h4 {
 #colors .white {
   background-color: #ffffff;
 }
-#fonts .item {
+#fonts .item,
+#buttons .item {
   height: 800px;
   background-color: #f0f1f2;
   font-size: 28px;
 }
-#fonts .nimbusSanNovMed {
+#fonts .nimbusSanNovMed,
+#buttons .nimbusSanNovMed {
   font-family: "NimbusSanNov-Med", arial, sans-serif;
 }
-#fonts .nimbusSanNovBol {
+#fonts .nimbusSanNovBol,
+#buttons .nimbusSanNovBol {
   font-family: "NimbusSanNov-Bol", arial, sans-serif;
 }

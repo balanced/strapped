@@ -25,6 +25,7 @@ body {
 
 	.title {
 		display: inline-block;
+		text-decoration: none;
 		color: @white;
 		font-family: @baseFontFamilyCondensedBold;
 		font-size: 28px;
@@ -40,29 +41,31 @@ body {
 		margin: 0;
 
 		li {
-			background: @black;
 			display: inline-block;
-			padding: 10px 30px;
-			font-size: 16px;
-			line-height: 34px;
-			font-family: @baseFontFamilySemiBold;
-			margin-right: -4px;
-
 			a {
+				background: @black;
+				padding: 19px 30px;
+				font-size: 16px;
+				line-height: 54px;
+				font-family: @baseFontFamilySemiBold;
+				margin-right: -4px;
 				text-decoration: none;
 				color: @white;
+
+				&:hover {
+					background: @gray7;
+					color: @gray1;
+					cursor: pointer;
+				}
 
 			}
 
 			&.active {
-				background: @gray6;
+				a {
+					background: @gray7;					
+				}
 			}
 
-			&:hover {
-				background: @gray7;
-				color: @gray1;
-				cursor: pointer;
-			}
 		}
 	}
 }
@@ -318,7 +321,7 @@ h1, h2, h3, h4 {
 	}
 }
 
-#fonts {
+#fonts, #buttons {
 
 	.item {
 		height: 800px;
