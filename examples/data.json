@@ -1,9 +1,10 @@
 {
 	"cssFile": "examples/css/style.min.css",
+	"jsFile": "examples/js/built.js",
 	"bootstrapCssFile": "examples/css/bootstrap.min.css",
 	"colors": {
-		"palettes": [
-			{ "name": "mulburryPurple100" },
+		"colors": [
+			{ "name": "mulberryPurple100" },
 			{ "name": "byzantiumPurple100" },
 			{ "name": "lavenderPurple100" },
 			{ "name": "powderBlue100" },
@@ -15,8 +16,7 @@
 			{ "name": "curryYellow100" },
 			{ "name": "turmericYellow100" },
 			{ "name": "imperialRed100" },
-			{ "name": "black" },
-			{ "name": "mulburryPurple80" },
+			{ "name": "mulberryPurple80" },
 			{ "name": "byzantiumPurple80" },
 			{ "name": "lavenderPurple80" },
 			{ "name": "powderBlue80" },
@@ -28,8 +28,7 @@
 			{ "name": "curryYellow80" },
 			{ "name": "turmericYellow80" },
 			{ "name": "imperialRed80" },
-			{ "name": "gray7" },
-			{ "name": "mulburryPurple60" },
+			{ "name": "mulberryPurple60" },
 			{ "name": "byzantiumPurple60" },
 			{ "name": "lavenderPurple60" },
 			{ "name": "powderBlue60" },
@@ -41,8 +40,7 @@
 			{ "name": "curryYellow60" },
 			{ "name": "turmericYellow60" },
 			{ "name": "imperialRed60" },
-			{ "name": "gray6" },
-			{ "name": "mulburryPurple40" },
+			{ "name": "mulberryPurple40" },
 			{ "name": "byzantiumPurple40" },
 			{ "name": "lavenderPurple40" },
 			{ "name": "powderBlue40" },
@@ -54,8 +52,7 @@
 			{ "name": "curryYellow40" },
 			{ "name": "turmericYellow40" },
 			{ "name": "imperialRed40" },
-			{ "name": "gray5" },
-			{ "name": "mulburryPurple20" },
+			{ "name": "mulberryPurple20" },
 			{ "name": "byzantiumPurple20" },
 			{ "name": "lavenderPurple20" },
 			{ "name": "powderBlue20" },
@@ -67,7 +64,30 @@
 			{ "name": "curryYellow20" },
 			{ "name": "turmericYellow20" },
 			{ "name": "imperialRed20" },
-			{ "name": "gray4" }
+			{ "name": "black" },
+			{ "name": "gray7" },
+			{ "name": "gray6" },
+			{ "name": "gray5" },
+			{ "name": "gray4" },
+			{ "name": "gray3" },
+			{ "name": "gray2" },
+			{ "name": "gray1" },
+			{ "name": "white" }
+		]
+	},
+	"fonts": {
+		"fonts": [
+			{
+				"name": "NimbusSanNov-Med",
+				"className": "nimbusSanNovMed",
+				"usage": "Body text"
+			},
+			{
+				"name": "NimbusSanNov-Bol",
+				"className": "nimbusSanNovBol",
+				"usage": "Link"
+			}
+
 		]
 	}
 }

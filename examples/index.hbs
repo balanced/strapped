@@ -5,20 +5,36 @@
 	<link rel="stylesheet" href="{{bootstrapCssFile}}">
 	<link rel="stylesheet" href="{{ cssFile }}">
 </head>
-<body>
-	<div class="nav">
-			Strapped
+<body data-spy="scroll" data-target="#main-nav" data-offset="0">
+	<div id="main-nav" class="navbar fixed">
+		<a class="title" href="/">Strapped</a>
+		<ul class="nav">
+			<li><a href="#colors">Colors</a></li>
+			<li><a href="#fonts">Fonts</a></li>
+			<li><a href="#buttons">Buttons</a></li>
+		</ul>
 	</div>
 	<div class="content">
 		{{> colors colors}}
-		{{> fonts}}
-		{{> buttons}}	
+		{{> fonts fonts}}
+		{{> buttons fonts}}	
 	</div>
 
 	<!-- bower:js -->
 	<script src="bower_components/jquery/jquery.js"></script>
 	<script src="bower_components/handlebars/handlebars.js"></script>
 	<script src="bower_components/handlebars/handlebars.runtime.js"></script>
+	<script src="bower_components/get-style-property/get-style-property.js"></script>
+	<script src="bower_components/get-size/get-size.js"></script>
+	<script src="bower_components/eventie/eventie.js"></script>
+	<script src="bower_components/doc-ready/doc-ready.js"></script>
+	<script src="bower_components/eventEmitter/EventEmitter.js"></script>
+	<script src="bower_components/jquery-bridget/jquery.bridget.js"></script>
+	<script src="bower_components/matches-selector/matches-selector.js"></script>
+	<script src="bower_components/outlayer/item.js"></script>
+	<script src="bower_components/outlayer/outlayer.js"></script>
+	<script src="bower_components/masonry/masonry.js"></script>
 	<!-- endbower -->
+	<script src="{{jsFile}}"></script>
 </body>
 </html>

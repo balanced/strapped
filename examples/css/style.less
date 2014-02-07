@@ -1,233 +1,328 @@
 @import "../../static/less/strapped.less";
 
-.nav {
-	background-color: @black;
-	color: @white;
-	padding: 10px 30px;
-	font-family: @baseFontFamilyCondensedBold;
-	font-size: 32px;
+body {
+	padding-top: 70px;
 }
 
 .content {
-	padding: 0 30px;
-	width: 1320px;
+	margin-left: 30px;
 }
-
-.palette {
-	color: @white;
-	width: 80px;
-	height: 80px;
-	padding: 10px;
-	font-size: 12px;
-	display: inline-block;
-	margin-right: -3px;
-	margin-bottom: 1px;
-}
-
-.mulburryPurple100 {
-	background-color: @mulburryPurple100;
-}
-.mulburryPurple80 {
-	background-color: @mulburryPurple80;
-}
-.mulburryPurple60 {
-	background-color: @mulburryPurple60;
-}
-.mulburryPurple40 {
-	background-color: @mulburryPurple40;
-}
-.mulburryPurple20 {
-	background-color: @mulburryPurple20;
-}
-
-.byzantiumPurple100 {
-	background-color: @byzantiumPurple100;
-}
-.byzantiumPurple80 {
-	background-color: @byzantiumPurple80;
-}
-.byzantiumPurple60 {
-	background-color: @byzantiumPurple60;
-}
-.byzantiumPurple40 {
-	background-color: @byzantiumPurple40;
-}
-.byzantiumPurple20 {
-	background-color: @byzantiumPurple20;
-}
-
-.lavenderPurple100 {
-	background-color: @lavenderPurple100;
-}
-.lavenderPurple80 {
-	background-color: @lavenderPurple80;
-}
-.lavenderPurple60 {
-	background-color: @lavenderPurple60;
-}
-.lavenderPurple40 {
-	background-color: @lavenderPurple40;
-}
-.lavenderPurple20 {
-	background-color: @lavenderPurple20;
-}
-
-.powderBlue100 {
-	background-color: @powderBlue100;
-}
-.powderBlue80 {
-	background-color: @powderBlue80;
-}
-.powderBlue60 {
-	background-color: @powderBlue60;
-}
-.powderBlue40 {
-	background-color: @powderBlue40;
-}
-.powderBlue20 {
-	background-color: @powderBlue20;
-}
-
-.persianBlue100 {
-	background-color: @persianBlue100;
-}
-.persianBlue80 {
-	background-color: @persianBlue80;
-}
-.persianBlue60 {
-	background-color: @persianBlue60;
-}
-.persianBlue40 {
-	background-color: @persianBlue40;
-}
-.persianBlue20 {
-	background-color: @persianBlue20;
-}
-
-.egyptianBlue100 {
-	background-color: @egyptianBlue100;
-}
-.egyptianBlue80 {
-	background-color: @egyptianBlue80;
-}
-.egyptianBlue60 {
-	background-color: @egyptianBlue60;
-}
-.egyptianBlue40 {
-	background-color: @egyptianBlue40;
-}
-.egyptianBlue20 {
-	background-color: @egyptianBlue20;
-}
-
-.turquoise100 {
-	background-color: @turquoise100;
-}
-.turquoise80 {
-	background-color: @turquoise80;
-}
-.turquoise60 {
-	background-color: @turquoise60;
-}
-.turquoise40 {
-	background-color: @turquoise40;
-}
-.turquoise20 {
-	background-color: @turquoise20;
-}
-
-.forestGreen100 {
-	background-color: @forestGreen100;
-}
-.forestGreen80 {
-	background-color: @forestGreen80;
-}
-.forestGreen60 {
-	background-color: @forestGreen60;
-}
-.forestGreen40 {
-	background-color: @forestGreen40;
-}
-.forestGreen20 {
-	background-color: @forestGreen20;
-}
-
-.pineGreen100 {
-	background-color: @pineGreen100;
-}
-.pineGreen80 {
-	background-color: @pineGreen80;
-}
-.pineGreen60 {
-	background-color: @pineGreen60;
-}
-.pineGreen40 {
-	background-color: @pineGreen40;
-}
-.pineGreen20 {
-	background-color: @pineGreen20;
-}
-
-.curryYellow100 {
-	background-color: @curryYellow100;
-}
-.curryYellow80 {
-	background-color: @curryYellow80;
-}
-.curryYellow60 {
-	background-color: @curryYellow60;
-}
-.curryYellow40 {
-	background-color: @curryYellow40;
-}
-.curryYellow20 {
-	background-color: @curryYellow20;
-}
-
-.turmericYellow100 {
-	background-color: @turmericYellow100;
-}
-.turmericYellow80 {
-	background-color: @turmericYellow80;
-}
-.turmericYellow60 {
-	background-color: @turmericYellow60;
-}
-.turmericYellow40 {
-	background-color: @turmericYellow40;
-}
-.turmericYellow20 {
-	background-color: @turmericYellow20;
-}
-
-.imperialRed100 {
-	background-color: @imperialRed100;
-}
-.imperialRed80 {
-	background-color: @imperialRed80;
-}
-.imperialRed60 {
-	background-color: @imperialRed60;
-}
-.imperialRed40 {
-	background-color: @imperialRed40;
-}
-.imperialRed20 {
-	background-color: @imperialRed20;
-}
-
-.black {
+.navbar {
+	width: 100%;
+	height: 54px;
+	padding: 0;
+	background-image: url('../images/balanced_logo_3dots.png');
 	background-color: @black;
+	background-repeat: no-repeat;
+	background-position: 10px 6px;
+	background-size: 40px 40px;
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+		margin-bottom: 0;
+	}
+
+	.title {
+		display: inline-block;
+		text-decoration: none;
+		color: @white;
+		font-family: @baseFontFamilyCondensedBold;
+		font-size: 28px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		margin-left: 55px;
+		vertical-align: sub;
+	}
+
+	ul {
+		display: inline-block;
+		list-style-type: none;
+		margin: 0;
+
+		li {
+			display: inline-block;
+			a {
+				background: @black;
+				padding: 19px 30px;
+				font-size: 16px;
+				line-height: 54px;
+				font-family: @baseFontFamilySemiBold;
+				margin-right: -4px;
+				text-decoration: none;
+				color: @white;
+
+				&:hover {
+					background: @gray7;
+					color: @gray1;
+					cursor: pointer;
+				}
+
+			}
+
+			&.active {
+				a {
+					background: @gray7;					
+				}
+			}
+
+		}
+	}
 }
-.gray7 {
-	background-color: @gray7;
+
+#colors {
+	.item {
+		width: 8%;
+		height: 100px;
+		color: @white;
+		font-size: 12px;
+
+		.property {
+			width: 80%;
+			position: absolute;
+			top: 10%;
+			left: 10%;
+			.hyphenate();
+
+			.hex {
+				font-family: @baseFontFamilySemiBold;
+			}
+		}
+
+		.label {
+			position: absolute;
+			bottom: 10%;
+			left: 10%;
+			font-family: @baseFontFamilyCondensedBold;
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+
+	.mulberryPurple100 {
+		background-color: @mulberryPurple100;
+	}
+	.mulberryPurple80 {
+		background-color: @mulberryPurple80;
+	}
+	.mulberryPurple60 {
+		background-color: @mulberryPurple60;
+	}
+	.mulberryPurple40 {
+		background-color: @mulberryPurple40;
+	}
+	.mulberryPurple20 {
+		background-color: @mulberryPurple20;
+	}
+	.byzantiumPurple100 {
+		background-color: @byzantiumPurple100;
+	}
+	.byzantiumPurple80 {
+		background-color: @byzantiumPurple80;
+	}
+	.byzantiumPurple60 {
+		background-color: @byzantiumPurple60;
+	}
+	.byzantiumPurple40 {
+		background-color: @byzantiumPurple40;
+	}
+	.byzantiumPurple20 {
+		background-color: @byzantiumPurple20;
+	}
+	.lavenderPurple100 {
+		background-color: @lavenderPurple100;
+	}
+	.lavenderPurple80 {
+		background-color: @lavenderPurple80;
+	}
+	.lavenderPurple60 {
+		background-color: @lavenderPurple60;
+	}
+	.lavenderPurple40 {
+		background-color: @lavenderPurple40;
+	}
+	.lavenderPurple20 {
+		background-color: @lavenderPurple20;
+	}
+	.powderBlue100 {
+		background-color: @powderBlue100;
+	}
+	.powderBlue80 {
+		background-color: @powderBlue80;
+	}
+	.powderBlue60 {
+		background-color: @powderBlue60;
+	}
+	.powderBlue40 {
+		background-color: @powderBlue40;
+	}
+	.powderBlue20 {
+		background-color: @powderBlue20;
+	}
+	.persianBlue100 {
+		background-color: @persianBlue100;
+	}
+	.persianBlue80 {
+		background-color: @persianBlue80;
+	}
+	.persianBlue60 {
+		background-color: @persianBlue60;
+	}
+	.persianBlue40 {
+		background-color: @persianBlue40;
+	}
+	.persianBlue20 {
+		background-color: @persianBlue20;
+	}
+	.egyptianBlue100 {
+		background-color: @egyptianBlue100;
+	}
+	.egyptianBlue80 {
+		background-color: @egyptianBlue80;
+	}
+	.egyptianBlue60 {
+		background-color: @egyptianBlue60;
+	}
+	.egyptianBlue40 {
+		background-color: @egyptianBlue40;
+	}
+	.egyptianBlue20 {
+		background-color: @egyptianBlue20;
+	}
+	.turquoise100 {
+		background-color: @turquoise100;
+	}
+	.turquoise80 {
+		background-color: @turquoise80;
+	}
+	.turquoise60 {
+		background-color: @turquoise60;
+	}
+	.turquoise40 {
+		background-color: @turquoise40;
+	}
+	.turquoise20 {
+		background-color: @turquoise20;
+	}
+	.forestGreen100 {
+		background-color: @forestGreen100;
+	}
+	.forestGreen80 {
+		background-color: @forestGreen80;
+	}
+	.forestGreen60 {
+		background-color: @forestGreen60;
+	}
+	.forestGreen40 {
+		background-color: @forestGreen40;
+	}
+	.forestGreen20 {
+		background-color: @forestGreen20;
+	}
+	.pineGreen100 {
+		background-color: @pineGreen100;
+	}
+	.pineGreen80 {
+		background-color: @pineGreen80;
+	}
+	.pineGreen60 {
+		background-color: @pineGreen60;
+	}
+	.pineGreen40 {
+		background-color: @pineGreen40;
+	}
+	.pineGreen20 {
+		background-color: @pineGreen20;
+	}
+	.curryYellow100 {
+		background-color: @curryYellow100;
+	}
+	.curryYellow80 {
+		background-color: @curryYellow80;
+	}
+	.curryYellow60 {
+		background-color: @curryYellow60;
+	}
+	.curryYellow40 {
+		background-color: @curryYellow40;
+	}
+	.curryYellow20 {
+		background-color: @curryYellow20;
+	}
+	.turmericYellow100 {
+		background-color: @turmericYellow100;
+	}
+	.turmericYellow80 {
+		background-color: @turmericYellow80;
+	}
+	.turmericYellow60 {
+		background-color: @turmericYellow60;
+	}
+	.turmericYellow40 {
+		background-color: @turmericYellow40;
+	}
+	.turmericYellow20 {
+		background-color: @turmericYellow20;
+	}
+	.imperialRed100 {
+		background-color: @imperialRed100;
+	}
+	.imperialRed80 {
+		background-color: @imperialRed80;
+	}
+	.imperialRed60 {
+		background-color: @imperialRed60;
+	}
+	.imperialRed40 {
+		background-color: @imperialRed40;
+	}
+	.imperialRed20 {
+		background-color: @imperialRed20;
+	}
+	.black {
+		background-color: @black;
+	}
+	.gray7 {
+		background-color: @gray7;
+	}
+	.gray6 {
+		background-color: @gray6;
+	}
+	.gray5 {
+		background-color: @gray5;
+	}
+	.gray4 {
+		background-color: @gray4;
+	}
+	.gray3 {
+		background-color: @gray3;
+	}
+	.gray2 {
+		background-color: @gray2;
+	}
+	.gray1 {
+		background-color: @gray1;
+	}
+	.white {
+		background-color: @white;
+	}
 }
-.gray6 {
-	background-color: @gray6;
-}
-.gray5 {
-	background-color: @gray5;
-}
-.gray4 {
-	background-color: @gray4;
+
+#fonts, #buttons {
+	.item {
+		font-size: 28px;
+	}
+	.nimbusSanNovMed {
+		font-family: @baseFontFamily;
+	}
+	.nimbusSanNovBol {
+		font-family: @baseFontFamilyBold;
+	}
 }

@@ -1233,219 +1233,316 @@ body,
 p {
   font-family: "NimbusSanNov-Med", arial, sans-serif;
 }
-.nav {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 10px 30px;
-  font-family: "NimbusSanConD-Bol", arial, sans-serif;
-  font-size: 32px;
+body {
+  padding-top: 70px;
 }
 .content {
-  padding: 0 30px;
-  width: 1320px;
+  margin-left: 30px;
 }
-.palette {
-  color: #ffffff;
-  width: 80px;
-  height: 80px;
-  padding: 10px;
-  font-size: 12px;
+.navbar {
+  width: 100%;
+  height: 54px;
+  padding: 0;
+  background-image: url('../images/balanced_logo_3dots.png');
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: 10px 6px;
+  background-size: 40px 40px;
+}
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  margin-bottom: 0;
+}
+.navbar .title {
   display: inline-block;
-  margin-right: -3px;
-  margin-bottom: 1px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "NimbusSanConD-Bol", arial, sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-left: 55px;
+  vertical-align: sub;
 }
-.mulburryPurple100 {
+.navbar ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+}
+.navbar ul li {
+  display: inline-block;
+}
+.navbar ul li a {
+  background: #000000;
+  padding: 19px 30px;
+  font-size: 16px;
+  line-height: 54px;
+  font-family: "NimbusSanNov-SemBol", arial, sans-serif;
+  margin-right: -4px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.navbar ul li a:hover {
+  background: #1e222a;
+  color: #f0f1f2;
+  cursor: pointer;
+}
+.navbar ul li.active a {
+  background: #1e222a;
+}
+#colors .item {
+  width: 8%;
+  height: 100px;
+  color: #ffffff;
+  font-size: 12px;
+}
+#colors .item .property {
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+#colors .item .property .hex {
+  font-family: "NimbusSanNov-SemBol", arial, sans-serif;
+}
+#colors .item .label {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  font-family: "NimbusSanConD-Bol", arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#colors .item:hover {
+  opacity: 0.9;
+}
+#colors .mulberryPurple100 {
   background-color: #ba3f90;
 }
-.mulburryPurple80 {
+#colors .mulberryPurple80 {
   background-color: #c461a2;
 }
-.mulburryPurple60 {
+#colors .mulberryPurple60 {
   background-color: #cf82b6;
 }
-.mulburryPurple40 {
+#colors .mulberryPurple40 {
   background-color: #dca7cd;
 }
-.mulburryPurple20 {
+#colors .mulberryPurple20 {
   background-color: #eacfe4;
 }
-.byzantiumPurple100 {
+#colors .byzantiumPurple100 {
   background-color: #814a98;
 }
-.byzantiumPurple80 {
+#colors .byzantiumPurple80 {
   background-color: #9364a8;
 }
-.byzantiumPurple60 {
+#colors .byzantiumPurple60 {
   background-color: #a781ba;
 }
-.byzantiumPurple40 {
+#colors .byzantiumPurple40 {
   background-color: #bfa5cf;
 }
-.byzantiumPurple20 {
+#colors .byzantiumPurple20 {
   background-color: #dbcde5;
 }
-.lavenderPurple100 {
+#colors .lavenderPurple100 {
   background-color: #6d61a9;
 }
-.lavenderPurple80 {
+#colors .lavenderPurple80 {
   background-color: #8276b6;
 }
-.lavenderPurple60 {
+#colors .lavenderPurple60 {
   background-color: #9a91c6;
 }
-.lavenderPurple40 {
+#colors .lavenderPurple40 {
   background-color: #b6b0d8;
 }
-.lavenderPurple20 {
+#colors .lavenderPurple20 {
   background-color: #d6d2ea;
 }
-.powderBlue100 {
+#colors .powderBlue100 {
   background-color: #3f6fb8;
 }
-.powderBlue80 {
+#colors .powderBlue80 {
   background-color: #5e83c3;
 }
-.powderBlue60 {
+#colors .powderBlue60 {
   background-color: #7e9ad0;
 }
-.powderBlue40 {
+#colors .powderBlue40 {
   background-color: #a3b5de;
 }
-.powderBlue20 {
+#colors .powderBlue20 {
   background-color: #ccd5ed;
 }
-.persianBlue100 {
+#colors .persianBlue100 {
   background-color: #0063b4;
 }
-.persianBlue80 {
+#colors .persianBlue80 {
   background-color: #1675bf;
 }
-.persianBlue60 {
+#colors .persianBlue60 {
   background-color: #528dcc;
 }
-.persianBlue40 {
+#colors .persianBlue40 {
   background-color: #83aadb;
 }
-.persianBlue20 {
+#colors .persianBlue20 {
   background-color: #bbceeb;
 }
-.egyptianBlue100 {
+#colors .egyptianBlue100 {
   background-color: #4789b0;
 }
-.egyptianBlue80 {
+#colors .egyptianBlue80 {
   background-color: #639abd;
 }
-.egyptianBlue60 {
+#colors .egyptianBlue60 {
   background-color: #82aecb;
 }
-.egyptianBlue40 {
+#colors .egyptianBlue40 {
   background-color: #a5c4da;
 }
-.egyptianBlue20 {
+#colors .egyptianBlue20 {
   background-color: #cbdcea;
 }
-.turquoise100 {
+#colors .turquoise100 {
   background-color: #2e8289;
 }
-.turquoise80 {
+#colors .turquoise80 {
   background-color: #4f949b;
 }
-.turquoise60 {
+#colors .turquoise60 {
   background-color: #72a9af;
 }
-.turquoise40 {
+#colors .turquoise40 {
   background-color: #99c1c5;
 }
-.turquoise20 {
+#colors .turquoise20 {
   background-color: #c4dbdd;
 }
-.forestGreen100 {
+#colors .forestGreen100 {
   background-color: #00927b;
 }
-.forestGreen80 {
+#colors .forestGreen80 {
   background-color: #00a08e;
 }
-.forestGreen60 {
+#colors .forestGreen60 {
   background-color: #4bb2a4;
 }
-.forestGreen40 {
+#colors .forestGreen40 {
   background-color: #82c7bd;
 }
-.forestGreen20 {
+#colors .forestGreen20 {
   background-color: #bbe0d9;
 }
-.pineGreen100 {
+#colors .pineGreen100 {
   background-color: #00944d;
 }
-.pineGreen80 {
+#colors .pineGreen80 {
   background-color: #00a268;
 }
-.pineGreen60 {
+#colors .pineGreen60 {
   background-color: #53b384;
 }
-.pineGreen40 {
+#colors .pineGreen40 {
   background-color: #87c7a6;
 }
-.pineGreen20 {
+#colors .pineGreen20 {
   background-color: #bee0cd;
 }
-.curryYellow100 {
+#colors .curryYellow100 {
   background-color: #b89b08;
 }
-.curryYellow80 {
+#colors .curryYellow80 {
   background-color: #c6ab34;
 }
-.curryYellow60 {
+#colors .curryYellow60 {
   background-color: #d4bc5e;
 }
-.curryYellow40 {
+#colors .curryYellow40 {
   background-color: #e2cf89;
 }
-.curryYellow20 {
+#colors .curryYellow20 {
   background-color: #efe3bb;
 }
-.turmericYellow100 {
+#colors .turmericYellow100 {
   background-color: #ac7b0d;
 }
-.turmericYellow80 {
+#colors .turmericYellow80 {
   background-color: #bc8f30;
 }
-.turmericYellow60 {
+#colors .turmericYellow60 {
   background-color: #cda657;
 }
-.turmericYellow40 {
+#colors .turmericYellow40 {
   background-color: #dcbe82;
 }
-.turmericYellow20 {
+#colors .turmericYellow20 {
   background-color: #ecd9b7;
 }
-.imperialRed100 {
+#colors .imperialRed100 {
   background-color: #e71d1c;
 }
-.imperialRed80 {
+#colors .imperialRed80 {
   background-color: #ec4e33;
 }
-.imperialRed60 {
+#colors .imperialRed60 {
   background-color: #f17555;
 }
-.imperialRed40 {
+#colors .imperialRed40 {
   background-color: #f69d7f;
 }
-.imperialRed20 {
+#colors .imperialRed20 {
   background-color: #fbcbb5;
 }
-.black {
+#colors .black {
   background-color: #000000;
 }
-.gray7 {
+#colors .gray7 {
   background-color: #1e222a;
 }
-.gray6 {
+#colors .gray6 {
   background-color: #353b47;
 }
-.gray5 {
+#colors .gray5 {
   background-color: #51545d;
 }
-.gray4 {
+#colors .gray4 {
   background-color: #80838a;
+}
+#colors .gray3 {
+  background-color: #b7bbbd;
+}
+#colors .gray2 {
+  background-color: #d7d8d9;
+}
+#colors .gray1 {
+  background-color: #f0f1f2;
+}
+#colors .white {
+  background-color: #ffffff;
+}
+#fonts .item,
+#buttons .item {
+  font-size: 28px;
+}
+#fonts .nimbusSanNovMed,
+#buttons .nimbusSanNovMed {
+  font-family: "NimbusSanNov-Med", arial, sans-serif;
+}
+#fonts .nimbusSanNovBol,
+#buttons .nimbusSanNovBol {
+  font-family: "NimbusSanNov-Bol", arial, sans-serif;
 }

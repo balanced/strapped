@@ -1,1 +1,9 @@
-<h2>Buttons</h2>
+<div id="buttons" class="clearfix">
+	<h2>Buttons</h2>
+	{{#each fonts}}
+		<div class='item {{className}}'>
+			{{name}}
+		</div>
+		({{usage}})
+	{{/each}}
+</div>
