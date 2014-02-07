@@ -1,2 +1,10 @@
-<h2>Fonts</h2>
-<p>This is fonts section.</p>
+<div id="fonts">
+	<h2>Fonts</h2>
+	{{#each fonts}}
+		<div class='item {{className}}'>
+			{{name}}
+		</div>
+		({{usage}})
+	{{/each}}
+
+</div>

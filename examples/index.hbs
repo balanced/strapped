@@ -6,12 +6,17 @@
 	<link rel="stylesheet" href="{{ cssFile }}">
 </head>
 <body>
-	<div class="nav">
-		Strapped
+	<div id="main-nav" class="navbar fixed">
+		<div class="title">Strapped</div>
+		<ul class="nav">
+			<li class="active"><a href="#colors">Colors</a></li>
+			<li><a href="#fonts">Fonts</a></li>
+			<li><a href="#buttons">Buttons</a></li>
+		</ul>
 	</div>
 	<div class="content">
 		{{> colors colors}}
-		{{> fonts}}
+		{{> fonts fonts}}
 		{{> buttons}}	
 	</div>
 

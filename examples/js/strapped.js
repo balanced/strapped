@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	
+	$('body').scrollspy({ target: '#main-nav' });
+
+	// colors
 	$('.hex').each(function(index, div) {
 		var rgb = $(div).closest('.item').css('backgroundColor');
 		$(div).text(rgb2hex(rgb).toUpperCase());

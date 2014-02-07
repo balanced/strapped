@@ -6,8 +6,13 @@
 	<link rel="stylesheet" href="examples/css/style.min.css">
 </head>
 <body>
-	<div class="nav">
-		Strapped
+	<div id="main-nav" class="navbar fixed">
+		<div class="title">Strapped</div>
+		<ul class="nav">
+			<li class="active"><a href="#colors">Colors</a></li>
+			<li><a href="#fonts">Fonts</a></li>
+			<li><a href="#buttons">Buttons</a></li>
+		</ul>
 	</div>
 	<div class="content">
 		<section id="colors">
@@ -568,9 +573,26 @@
 		
 	</div>
 </section>
-		<h2>Fonts</h2>
-<p>This is fonts section.</p>
-		<h2>Buttons</h2>	
+		<div id="fonts">
+	<h2>Fonts</h2>
+	
+		<div class='item nimbusSanNovMed'>
+			NimbusSanNov-Med
+		</div>
+		(Body text)
+	
+		<div class='item nimbusSanNovBol'>
+			NimbusSanNov-Bol
+		</div>
+		(Link)
+	
+
+</div>
+
+		<div id="buttons">
+	<h2>Buttons</h2>	
+</div>
+	
 	</div>
 
 	<!-- bower:js -->
@@ -588,6 +610,6 @@
 	<script src="bower_components/outlayer/outlayer.js"></script>
 	<script src="bower_components/masonry/masonry.js"></script>
 	<!-- endbower -->
-	<script src="examples/strapped.js"></script>
+	<script src="examples/js/built.js"></script>
 </body>
 </html>

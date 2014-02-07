@@ -6,6 +6,9 @@ module.exports = function(grunt) {
 
 		bootstrap: {
 			dest: 'examples',
+			js: [
+				'bootstrap-scrollspy.js'
+			],
 			css: [
 				'reset.less',
 				'grid.less'
@@ -33,6 +36,22 @@ module.exports = function(grunt) {
 			}
 		},
 
+		clean: {
+			files: {
+				src: ['examples/js/built.js']
+			}
+		},
+
+		concat: {
+			options: {
+				separator: '\n'
+			},
+			dist: {
+				src: ['examples/js/*.js'],
+				dest: 'examples/js/built.js'
+			}
+		},
+
 		watch: {
 			hbs: {
 				files: [
@@ -46,8 +65,9 @@ module.exports = function(grunt) {
 			},
 			js: {
 				files: [
-					'examples/strapped.js'
+					'examples/js/strapped.js'
 				],
+				tasks: ['_buildJS'],
 				options: {
 					livereload: true
 				}
@@ -128,16 +148,19 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-bower-install');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-open');
+	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-compile-handlebars');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-jsbeautifier');
 	grunt.loadNpmTasks('grunt-lesslint');
 
-	grunt.registerTask('default', ['_devBuild', 'connect', 'open', 'watch']);
-	grunt.registerTask('_devBuild', ['bower-install', '_buildCSS', '_buildHTML']);
+	grunt.registerTask('default', ['bower-install', '_devBuild', 'connect', 'open', 'watch']);
+	grunt.registerTask('_devBuild', ['_buildJS', '_buildCSS', '_buildHTML']);
+	grunt.registerTask('_buildJS', ['clean', 'concat']);
 	grunt.registerTask('_buildCSS', ['less']);
 	grunt.registerTask('_buildHTML', ['compile-handlebars']);
 	grunt.registerTask('format', ['jsbeautifier:update']);

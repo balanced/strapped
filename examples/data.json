@@ -1,9 +1,9 @@
 {
 	"cssFile": "examples/css/style.min.css",
-	"jsFile": "examples/strapped.js",
+	"jsFile": "examples/js/built.js",
 	"bootstrapCssFile": "examples/css/bootstrap.min.css",
 	"colors": {
-		"palettes": [
+		"colors": [
 			{ "name": "mulberryPurple100" },
 			{ "name": "byzantiumPurple100" },
 			{ "name": "lavenderPurple100" },
@@ -73,6 +73,21 @@
 			{ "name": "gray2" },
 			{ "name": "gray1" },
 			{ "name": "white" }
+		]
+	},
+	"fonts": {
+		"fonts": [
+			{
+				"name": "NimbusSanNov-Med",
+				"className": "nimbusSanNovMed",
+				"usage": "Body text"
+			},
+			{
+				"name": "NimbusSanNov-Bol",
+				"className": "nimbusSanNovBol",
+				"usage": "Link"
+			}
+
 		]
 	}
 }

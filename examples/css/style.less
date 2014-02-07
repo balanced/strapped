@@ -1,11 +1,70 @@
 @import "../../static/less/strapped.less";
 
-.nav {
+body {
+	padding-top: 70px;
+}
+
+.navbar {
+	width: 100%;
+	height: 54px;
+	padding: 0;
+	background-image: url('../images/balanced_logo_3dots.png');
 	background-color: @black;
-	color: @white;
-	padding: 10px 30px;
-	font-family: @baseFontFamilyCondensedBold;
-	font-size: 32px;
+	background-repeat: no-repeat;
+	background-position: 10px 6px;
+	background-size: 40px 40px;
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+		margin-bottom: 0;
+	}
+
+	.title {
+		display: inline-block;
+		color: @white;
+		font-family: @baseFontFamilyCondensedBold;
+		font-size: 28px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		margin-left: 55px;
+		vertical-align: sub;
+	}
+
+	ul {
+		display: inline-block;
+		list-style-type: none;
+		margin: 0;
+
+		li {
+			background: @black;
+			display: inline-block;
+			padding: 10px 30px;
+			font-size: 16px;
+			line-height: 34px;
+			font-family: @baseFontFamilySemiBold;
+			margin-right: -4px;
+
+			a {
+				text-decoration: none;
+				color: @white;
+
+			}
+
+			&.active {
+				background: @gray6;
+			}
+
+			&:hover {
+				background: @gray7;
+				color: @gray1;
+				cursor: pointer;
+			}
+		}
+	}
 }
 
 h1, h2, h3, h4 {
@@ -43,6 +102,10 @@ h1, h2, h3, h4 {
 			font-family: @baseFontFamilyCondensedBold;
 			font-size: 20px;
 			text-transform: uppercase;
+		}
+
+		&:hover {
+			opacity: 0.9;
 		}
 	}
 
@@ -252,5 +315,20 @@ h1, h2, h3, h4 {
 	}
 	.white {
 		background-color: @white;
+	}
+}
+
+#fonts {
+
+	.item {
+		height: 800px;
+		background-color: @gray1;
+		font-size: 28px;
+	}
+	.nimbusSanNovMed {
+		font-family: @baseFontFamily;
+	}
+	.nimbusSanNovBol {
+		font-family: @baseFontFamilyBold;
 	}
 }
