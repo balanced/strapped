@@ -6,10 +6,9 @@
 	],
 	"ignore": [
 		"**/.*",
-		"./bower_components",
-		"./node_modules",
-		"./examples",
-		"./static",
+		"bower_components",
+		"node_modules",
+		"examples",
 		"Gruntfile.js",
 		"*.json",
 		"index.html"
