@@ -1,3 +1,7 @@
+/*
+ * Color
+ */
+
 @mulberryPurple100: #BA3F90;
 @mulberryPurple80: #C461A2;
 @mulberryPurple60: #CF82B6;
@@ -68,11 +72,16 @@
 @gray2: #D7D8D9;
 @gray1: #F0F1F2;
 @white: #fff;
-
 @balancedGreen: #78A22F;
 @balancedGreenHover: #a8c179;
 @balancedRed: #EF4135;
 @balancedWarningPink: #FDF7EB;
+@goLiveBackground: #999;
+
+
+/*
+ * Width
+ */
 
 @pageWidth: 960px;
 @contentWidth: 940px;
@@ -83,8 +92,6 @@
 
 @bgColor: #E7E7E7;
 @bgColorMain: #fff;
-//@navWidth:          15.416666666666667%;
-//@contentWidth:      81.58333333333333%;
 @textColor: #8c8c8c;
 @highlightColor: #FEF8EE;
 @altRowColor: #f7f7f7;
@@ -117,8 +124,6 @@
   .box-shadow(0 0 6px 2px rgba(0, 0, 0, 0.4));
 }
 
-@goLiveBackground: #999;
-@bitter: 'Bitter', serif;
 
 .roundedButton() {
   font-family: @boldFontFamily;
@@ -206,6 +211,98 @@
 @iconsFileWidth: 250px;
 @iconsFileHeight: 1000px;
 
+@balancedBlack: @black;
+@balancedGray: @gray5;
+@balancedLightGray: #bcbcbc;
+@balancedRed: @imperialRed100;
+@balancedWhite: @white;
+@balancedYellow: #c88a12;
+@balancedGreen: #4e917a;
+
+@code1a: @balancedYellow;
+@code1b: #e31837;
+@code1c: #4e917a;
+@code1d: #006973;
+@code1e: #872175;
+@code1f: #627351;
+@code1g: #aa710A;
+
+@codeBorders: #dddddd;
+@linkBlue: @persianBlue80;
+@skyBlue: @linkBlue;
+
+@navLineRuleBackground: #c2c0b8;
+@layoutLineRuleBackground: @gray3;
+
+@pageBackground: @gray1;
+
+@baseFontSize: 13px;
+@baseLineHeight: @baseFontSize * 1.4;
+@textColor: @gray6;
+@bodyBackground: #4d4b49;
+
+// our grid is 26 columns - total 1155px
+@gridColumns: 26;
+@gridColumnWidth: 30px;
+@gridGutterWidth: 15px;
+
+@linkColor: #0096af;
+@linkColorHover: #000;
+
+// header content
+@searchBarBackground: #000;
+@searchBarHeight: 60px;
+@searchBoxBackground: #4d4b49;
+@searchBoxMargin: 5px;
+@searchBoxHeight: @searchBarHeight - @searchBoxMargin * 2;
+
+// main is our main content area underneath the header
+@mainWidth: 1155px;
+@mainMinHeight: 581px;
+@mainVerticalPadding: 60px;
+
+// marketplaceNav runs down the left hand side of the main content box
+@marketplaceNavBackground: #d9d8d5;
+@marketplaceNavColor: @gray4;
+@marketplaceNavTriangleSize: 10px;
+
+// content is our main content area where most data for the current page is
+// displayed
+@pageTitleWidth: @gridGutterWidth * 65;
+@contentBackground: @gray1;
+
+@buttonColor: #000;
+@buttonBackgroundColor: #fff;
+@buttonDangerColor: #b5121b;
+
+@modalBackgroundColor: #d9d8d5;
+@modalBodyBackgroundColor: rgba(255, 255, 255, 0.9);
+@modalBorderColor: #000;
+@modalBorderWidth: 0;
+@modalOverlayColor: #000;
+@modalWidth: 430px;
+@wideModalWidth: 600px;
+@modalInformationalDarkBackground: #a5c9d0;
+@modalInformationalLightBackground: #e0ecef;
+
+@inputBorderColor: @gray3;
+@inputFullWidth: 350px;
+@inputPadding: 8px;
+@inputHeight: auto;
+@inputFontSize: 18px;
+
+@menuActiveBackground: #a5cbcf;
+@menuBorder: #a5cbcf;
+
+@iconsFile: url('../images/icons.png');
+@iconsFileWidth: 250px;
+@iconsFileHeight: 1000px;
+
+@loadingSpinnerDotSize: 2;
+@loadingSpinnerDotSizeSmall: 8;
+
+@headerHeight: 75px;
+
 .socialIcon(@num) {
   background-position: -(@socialBgOffsetX + (@num * @socialWidth)) -@socialBgOffsetY;
   &:hover {
@@ -289,19 +386,3 @@
     .buttonBackground(#FCCAB5, #F04D30);
   }
 }
-
-@balancedBlack: @black;
-@balancedGray: @gray5;
-@balancedLightGray: #bcbcbc;
-@balancedRed: @imperialRed100;
-@balancedWhite: @white;
-@balancedYellow: #c88a12;
-@balancedGreen: #4e917a;
-
-@linkBlue: @persianBlue80;
-@skyBlue: @linkBlue;
-
-@navLineRuleBackground: #c2c0b8;
-@layoutLineRuleBackground: @gray3;
-
-@pageBackground: @gray1;
