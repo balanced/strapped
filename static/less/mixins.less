@@ -1,17 +1,11 @@
-.hyphenate() {
-    -ms-word-break: break-all;
-       word-break: break-all;
-       word-break: break-word;
-  -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
-}
 /*
 * mixins.less
 *
-* swanky less tricks to save time and money
 */
+
+@iconsFile: url('../images/icons.png');
+@iconsFileWidth: 250px;
+@iconsFileHeight: 1000px;
 
 .cssicon(@url, @width, @height, @display: inline-block) {
   background: @url;
@@ -51,70 +45,42 @@
 
   .@{prefix}a {
     .x();
-    color: @balancedBlack;
+    color: @black;
     a:not(.linky) {
-      color: @balancedBlack;
+      color: @black;
     }
   }
 
   .@{prefix}b {
     .x();
-    color: @balancedGray;
+    color: @gray5;
     a:not(.linky) {
-      color: @balancedGray;
+      color: @gray5;
     }
   }
 
   .@{prefix}c {
     .x();
-    color: @balancedRed;
+    color: @imperialRed100;
     a:not(.linky) {
-      color: @balancedRed;
+      color: @imperialRed100;
     }
   }
 
   .@{prefix}d {
     .x();
-    color: @balancedWhite;
+    color: @white;
     a:not(.linky) {
-      color: @balancedWhite;
+      color: @white;
     }
   }
 
   .@{prefix}f {
     .x();
-    color: @balancedYellow;
+    color: @turmericYellow80;
     a:not(.linky) {
-      color: @balancedYellow;
+      color: @turmericYellow80;
     }
-  }
-}
-
-.close {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  background-color: #4D4B49;
-  border: 0;
-  font-size: 25px;
-  padding: 3px 0 0;
-  color: #4D4B49;
-  line-height: 21px;
-  &:after {
-    .cssicon(
-      @url: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAAV0lEQVR42p2R4QlAIQiEHcERG6UNGqUR3giNdBUoTy76kR8IcqeRKgB0xWfRhNha8NXFgp9GxU6RCJu3R7ip46TLBZ9nwLBcUw2pL+WHJrMGvfJanw83AfPFCSKK6ozSAAAAAElFTkSuQmCC'),
-      @width: 12px,
-      @height: 10px,
-      @display: block
-    );
-    position: absolute;
-    top: 7px;
-    left: 5px;
-    content: ' ';
-  }
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.2);
   }
 }
 
@@ -133,4 +99,14 @@
   -ms-transform: @string;
   -o-transform: @string;
   transform: @string;
+}
+
+.hyphenate() {
+    -ms-word-break: break-all;
+       word-break: break-all;
+       word-break: break-word;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
