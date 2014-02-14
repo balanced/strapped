@@ -4,7 +4,7 @@
 	"bootstrapCssFile": "examples/css/bootstrap.min.css",
 	"colors": {
 		"colors": [
-			{ "name": "mulberryPurple100" },
+			{ "name": "mulburryPurple100" },
 			{ "name": "byzantiumPurple100" },
 			{ "name": "lavenderPurple100" },
 			{ "name": "powderBlue100" },
@@ -16,7 +16,7 @@
 			{ "name": "curryYellow100" },
 			{ "name": "turmericYellow100" },
 			{ "name": "imperialRed100" },
-			{ "name": "mulberryPurple80" },
+			{ "name": "mulburryPurple80" },
 			{ "name": "byzantiumPurple80" },
 			{ "name": "lavenderPurple80" },
 			{ "name": "powderBlue80" },
@@ -28,7 +28,7 @@
 			{ "name": "curryYellow80" },
 			{ "name": "turmericYellow80" },
 			{ "name": "imperialRed80" },
-			{ "name": "mulberryPurple60" },
+			{ "name": "mulburryPurple60" },
 			{ "name": "byzantiumPurple60" },
 			{ "name": "lavenderPurple60" },
 			{ "name": "powderBlue60" },
@@ -40,7 +40,7 @@
 			{ "name": "curryYellow60" },
 			{ "name": "turmericYellow60" },
 			{ "name": "imperialRed60" },
-			{ "name": "mulberryPurple40" },
+			{ "name": "mulburryPurple40" },
 			{ "name": "byzantiumPurple40" },
 			{ "name": "lavenderPurple40" },
 			{ "name": "powderBlue40" },
@@ -52,7 +52,7 @@
 			{ "name": "curryYellow40" },
 			{ "name": "turmericYellow40" },
 			{ "name": "imperialRed40" },
-			{ "name": "mulberryPurple20" },
+			{ "name": "mulburryPurple20" },
 			{ "name": "byzantiumPurple20" },
 			{ "name": "lavenderPurple20" },
 			{ "name": "powderBlue20" },
@@ -65,6 +65,8 @@
 			{ "name": "turmericYellow20" },
 			{ "name": "imperialRed20" },
 			{ "name": "black" },
+			{ "name": "gray9" },
+			{ "name": "gray8" },
 			{ "name": "gray7" },
 			{ "name": "gray6" },
 			{ "name": "gray5" },
@@ -75,19 +77,16 @@
 			{ "name": "white" }
 		]
 	},
-	"fonts": {
-		"fonts": [
+	"forms": {
+		"buttons": [
 			{
-				"name": "NimbusSanNov-Med",
-				"className": "nimbusSanNovMed",
-				"usage": "Body text"
+				"name": "Primary button",
+				"className": "btn"
 			},
 			{
-				"name": "NimbusSanNov-Bol",
-				"className": "nimbusSanNovBol",
-				"usage": "Link"
+				"name": "Secondary button",
+				"className": "btn danger"
 			}
-
 		]
 	}
 }

@@ -1,0 +1,19 @@
+<div id="buttons" class="clearfix">
+	<h2>Forms</h2>
+	<h3>Buttons</h3>
+	<div>
+		{{#each buttons}}
+			<button class='inline {{className}}'>
+				{{name}}
+			</button>
+		{{/each}}
+		<div class="inline close"></div>
+
+		<div class="control-group">
+            <label class="control-label">Label</label>
+            <div class="controls">
+                <input class="full" type="text">
+            </div>
+        </div>
+	</div>
+</div>

@@ -86,14 +86,14 @@ module.exports = function(grunt) {
 
 		open: {
 			index: {
-				path: 'http://localhost:9876/index.html'
+				path: 'http://localhost:9898/index.html'
 			},
 		},
 
 		connect: {
 			server: {
 				options: {
-					port: 9876,
+					port: 9898,
 					base: '.'
 				}
 			}
