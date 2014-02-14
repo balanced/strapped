@@ -20,37 +20,23 @@
 .input-block-level {
   display: block;
   width: 100%;
-  min-height: auto;
+  min-height: 28.2px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.close {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  background-color: #4D4B49;
-  border: 0;
-  font-size: 25px;
-  padding: 3px 0 0;
-  color: #4D4B49;
-  line-height: 21px;
-}
-.close:after {
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAAV0lEQVR42p2R4QlAIQiEHcERG6UNGqUR3giNdBUoTy76kR8IcqeRKgB0xWfRhNha8NXFgp9GxU6RCJu3R7ip46TLBZ9nwLBcUw2pL+WHJrMGvfJanw83AfPFCSKK6ozSAAAAAElFTkSuQmCC');
-  width: 12px;
-  height: 10px;
-  text-indent: -4000px;
-  display: block;
-  position: absolute;
-  top: 7px;
-  left: 5px;
-  content: ' ';
-}
-.close:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.2);
-}
+/*
+* mixins.less
+*
+*/
+/*
+* colors.less
+*
+*/
+/*
+* fonts.less
+*
+*/
 @font-face {
   font-family: 'NimbusSanNov-Med';
   src: url('https://d3n06lmttbcmxe.cloudfront.net/css/fonts/241122_2_0.eot');
@@ -104,6 +90,15 @@
   font-weight: 700;
   src: local('Bitter-Bold'), url(https://themes.googleusercontent.com/static/fonts/bitter/v4/evC1haE-MsorTl_A7_uSGaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
 }
+/*
+* grids.less
+*
+*/
+/*
+* typography.less
+* 
+* Links, Headers, Paragraphs, Labels
+*/
 .label1 {
   font-family: NimbusSanNov-Reg, Arial, sans-serif;
   font-weight: normal;
@@ -134,10 +129,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #51545d;
+  color: #757c87;
 }
 .label1b a:not(.linky) {
-  color: #51545d;
+  color: #757c87;
 }
 .label1c {
   font-family: NimbusSanNov-Reg, Arial, sans-serif;
@@ -173,10 +168,84 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #c88a12;
+  color: #bc8f30;
 }
 .label1f a:not(.linky) {
-  color: #c88a12;
+  color: #bc8f30;
+}
+.label1 {
+  font-family: NimbusSanNov-Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+}
+.label1a {
+  font-family: NimbusSanNov-Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #000000;
+}
+.label1a a:not(.linky) {
+  color: #000000;
+}
+.label1b {
+  font-family: NimbusSanNov-Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #757c87;
+}
+.label1b a:not(.linky) {
+  color: #757c87;
+}
+.label1c {
+  font-family: NimbusSanNov-Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #e71d1c;
+}
+.label1c a:not(.linky) {
+  color: #e71d1c;
+}
+.label1d {
+  font-family: NimbusSanNov-Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #ffffff;
+}
+.label1d a:not(.linky) {
+  color: #ffffff;
+}
+.label1f {
+  font-family: NimbusSanNov-Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #bc8f30;
+}
+.label1f a:not(.linky) {
+  color: #bc8f30;
 }
 .label2 {
   font-family: NimbusSanNov-Bol, Arial, sans-serif;
@@ -208,10 +277,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #51545d;
+  color: #757c87;
 }
 .label2b a:not(.linky) {
-  color: #51545d;
+  color: #757c87;
 }
 .label2c {
   font-family: NimbusSanNov-Bol, Arial, sans-serif;
@@ -247,10 +316,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #c88a12;
+  color: #bc8f30;
 }
 .label2f a:not(.linky) {
-  color: #c88a12;
+  color: #bc8f30;
 }
 .label3 {
   font-family: NimbusSanNov-Med, Arial, sans-serif;
@@ -282,10 +351,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #51545d;
+  color: #757c87;
 }
 .label3b a:not(.linky) {
-  color: #51545d;
+  color: #757c87;
 }
 .label3c {
   font-family: NimbusSanNov-Med, Arial, sans-serif;
@@ -321,10 +390,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #c88a12;
+  color: #bc8f30;
 }
 .label3f a:not(.linky) {
-  color: #c88a12;
+  color: #bc8f30;
 }
 .label4 {
   font-family: NimbusSanNov-Med, Arial, sans-serif;
@@ -356,10 +425,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #51545d;
+  color: #757c87;
 }
 .label4b a:not(.linky) {
-  color: #51545d;
+  color: #757c87;
 }
 .label4c {
   font-family: NimbusSanNov-Med, Arial, sans-serif;
@@ -395,10 +464,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #c88a12;
+  color: #bc8f30;
 }
 .label4f a:not(.linky) {
-  color: #c88a12;
+  color: #bc8f30;
 }
 .label6 {
   font-family: NimbusSanNov-sembol, Arial, sans-serif;
@@ -430,10 +499,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #51545d;
+  color: #757c87;
 }
 .label6b a:not(.linky) {
-  color: #51545d;
+  color: #757c87;
 }
 .label6c {
   font-family: NimbusSanNov-sembol, Arial, sans-serif;
@@ -469,10 +538,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #c88a12;
+  color: #bc8f30;
 }
 .label6f a:not(.linky) {
-  color: #c88a12;
+  color: #bc8f30;
 }
 .label7 {
   font-family: NimbusSanNov-sembol, Arial, sans-serif;
@@ -504,10 +573,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #51545d;
+  color: #757c87;
 }
 .label7b a:not(.linky) {
-  color: #51545d;
+  color: #757c87;
 }
 .label7c {
   font-family: NimbusSanNov-sembol, Arial, sans-serif;
@@ -543,10 +612,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #c88a12;
+  color: #bc8f30;
 }
 .label7f a:not(.linky) {
-  color: #c88a12;
+  color: #bc8f30;
 }
 .number1 {
   font-family: NimbusSanConD-Bol, Arial, sans-serif;
@@ -578,10 +647,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #51545d;
+  color: #757c87;
 }
 .number1b a:not(.linky) {
-  color: #51545d;
+  color: #757c87;
 }
 .number1c {
   font-family: NimbusSanConD-Bol, Arial, sans-serif;
@@ -617,10 +686,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #c88a12;
+  color: #bc8f30;
 }
 .number1f a:not(.linky) {
-  color: #c88a12;
+  color: #bc8f30;
 }
 .number3 {
   font-family: NimbusSanConD-Bol, Arial, sans-serif;
@@ -652,10 +721,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #51545d;
+  color: #757c87;
 }
 .number3b a:not(.linky) {
-  color: #51545d;
+  color: #757c87;
 }
 .number3c {
   font-family: NimbusSanConD-Bol, Arial, sans-serif;
@@ -691,10 +760,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #c88a12;
+  color: #bc8f30;
 }
 .number3f a:not(.linky) {
-  color: #c88a12;
+  color: #bc8f30;
 }
 .nav1 {
   font-family: nimbussannovcon-Med, Arial, sans-serif;
@@ -726,10 +795,10 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 100%;
-  color: #51545d;
+  color: #757c87;
 }
 .nav1b a:not(.linky) {
-  color: #51545d;
+  color: #757c87;
 }
 .nav1c {
   font-family: nimbussannovcon-Med, Arial, sans-serif;
@@ -765,10 +834,10 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 100%;
-  color: #c88a12;
+  color: #bc8f30;
 }
 .nav1f a:not(.linky) {
-  color: #c88a12;
+  color: #bc8f30;
 }
 .nav2 {
   font-family: NimbusSanNov-Med, Arial, sans-serif;
@@ -800,10 +869,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #51545d;
+  color: #757c87;
 }
 .nav2b a:not(.linky) {
-  color: #51545d;
+  color: #757c87;
 }
 .nav2c {
   font-family: NimbusSanNov-Med, Arial, sans-serif;
@@ -839,10 +908,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #c88a12;
+  color: #bc8f30;
 }
 .nav2f a:not(.linky) {
-  color: #c88a12;
+  color: #bc8f30;
 }
 .nav3 {
   font-family: NimbusSanNov-Med, Arial, sans-serif;
@@ -874,10 +943,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #51545d;
+  color: #757c87;
 }
 .nav3b a:not(.linky) {
-  color: #51545d;
+  color: #757c87;
 }
 .nav3c {
   font-family: NimbusSanNov-Med, Arial, sans-serif;
@@ -913,10 +982,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #c88a12;
+  color: #bc8f30;
 }
 .nav3f a:not(.linky) {
-  color: #c88a12;
+  color: #bc8f30;
 }
 .body1 {
   font-family: NimbusSanNov-Med, Arial, sans-serif;
@@ -948,10 +1017,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #51545d;
+  color: #757c87;
 }
 .body1b a:not(.linky) {
-  color: #51545d;
+  color: #757c87;
 }
 .body1c {
   font-family: NimbusSanNov-Med, Arial, sans-serif;
@@ -987,10 +1056,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #c88a12;
+  color: #bc8f30;
 }
 .body1f a:not(.linky) {
-  color: #c88a12;
+  color: #bc8f30;
 }
 .subhead2 {
   font-family: NimbusSanNov-Med, Arial, sans-serif;
@@ -1022,10 +1091,10 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #51545d;
+  color: #757c87;
 }
 .subhead2b a:not(.linky) {
-  color: #51545d;
+  color: #757c87;
 }
 .subhead2c {
   font-family: NimbusSanNov-Med, Arial, sans-serif;
@@ -1061,181 +1130,129 @@
   text-transform: inherit;
   letter-spacing: normal;
   line-height: 100%;
-  color: #c88a12;
+  color: #bc8f30;
 }
 .subhead2f a:not(.linky) {
-  color: #c88a12;
+  color: #bc8f30;
 }
-.button1 {
-  font-family: NimbusSanNovCon-Med;
+.number1a {
+  line-height: 48px;
+}
+body {
+  font-family: "NimbusSanNov-Med", arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  color: #303540;
+}
+h1 {
+  font-family: "NimbusSanNov-Reg", arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 34px;
+  line-height: 40px;
+  color: #000000;
+}
+h2 {
+  font-family: "NimbusSanNov-Reg", arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+h3 {
+  font-family: "NimbusSanNov-Med", arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: #000000;
+}
+a {
+  color: #0063b4;
+}
+a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover:visited {
+  color: #000000;
+  text-decoration: none;
+}
+a:active {
+  color: #0063b4;
+}
+a:visited {
+  color: #0063b4;
+}
+/*
+* forms.less
+*
+* Inputs, Buttons, Dropdowns
+*/
+.btn,
+button {
+  font-family: "NimbusSanNovCon-Med", arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 0.1em;
-}
-/*
- * Color
- */
-/*
- * Width
- */
-/*   detail table   */
-.btn-bal,
-.btn-danger {
-  font-family: NimbusSanNov-Med;
-  font-size: 14px;
-  color: #fff;
-  height: 22px;
-  border-radius: 20px;
-  padding: 3px 15px;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 6px 13px;
   line-height: 1em;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-  letter-spacing: 1px;
-  border: 1px solid #78A22F;
+  vertical-align: middle;
+  box-sizing: initial;
+}
+.btn:visited,
+button:visited {
+  color: #000000;
+}
+.btn:hover,
+button:hover {
+  background-color: #000000;
   color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #a0b975;
-  background-image: -moz-linear-gradient(top, #bac9a3, #78a22f);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#bac9a3), to(#78a22f));
-  background-image: -webkit-linear-gradient(top, #bac9a3, #78a22f);
-  background-image: -o-linear-gradient(top, #bac9a3, #78a22f);
-  background-image: linear-gradient(to bottom, #bac9a3, #78a22f);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbac9a3', endColorstr='#ff78a22f', GradientType=0);
-  border-color: #78a22f #78a22f #4c671e;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #78a22f;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  text-decoration: none;
 }
-.btn-bal:hover,
-.btn-danger:hover,
-.btn-bal:focus,
-.btn-danger:focus,
-.btn-bal:active,
-.btn-danger:active,
-.btn-bal.active,
-.btn-danger.active,
-.btn-bal.disabled,
-.btn-danger.disabled,
-.btn-bal[disabled],
-.btn-danger[disabled] {
+.btn.danger,
+button.danger {
+  border-color: #e71d1c;
+  color: #e71d1c;
+}
+.btn.danger:hover,
+button.danger:hover {
+  background-color: #e71d1c;
+  border-color: #e71d1c;
   color: #ffffff;
-  background-color: #78a22f;
-  *background-color: #698e29;
 }
-.btn-bal:active,
-.btn-danger:active,
-.btn-bal.active,
-.btn-danger.active {
-  background-color: #5b7a24 \9;
+.close {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: #757c87;
+  border: 0;
+  font-size: 25px;
+  padding: 3px 0 0;
+  color: #757c87;
+  line-height: 21px;
 }
-.btn-bal:hover,
-.btn-danger:hover {
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #b5ca8c;
-  background-image: -moz-linear-gradient(top, #cedcb4, #90b051);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cedcb4), to(#90b051));
-  background-image: -webkit-linear-gradient(top, #cedcb4, #90b051);
-  background-image: -o-linear-gradient(top, #cedcb4, #90b051);
-  background-image: linear-gradient(to bottom, #cedcb4, #90b051);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcedcb4', endColorstr='#ff90b051', GradientType=0);
-  border-color: #90b051 #90b051 #657c38;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #90b051;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+.close:after {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAAV0lEQVR42p2R4QlAIQiEHcERG6UNGqUR3giNdBUoTy76kR8IcqeRKgB0xWfRhNha8NXFgp9GxU6RCJu3R7ip46TLBZ9nwLBcUw2pL+WHJrMGvfJanw83AfPFCSKK6ozSAAAAAElFTkSuQmCC');
+  width: 12px;
+  height: 10px;
+  text-indent: -4000px;
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  content: ' ';
 }
-.btn-bal:hover:hover,
-.btn-danger:hover:hover,
-.btn-bal:hover:focus,
-.btn-danger:hover:focus,
-.btn-bal:hover:active,
-.btn-danger:hover:active,
-.btn-bal:hover.active,
-.btn-danger:hover.active,
-.btn-bal:hover.disabled,
-.btn-danger:hover.disabled,
-.btn-bal:hover[disabled],
-.btn-danger:hover[disabled] {
-  color: #ffffff;
-  background-color: #90b051;
-  *background-color: #829f48;
+.close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.2);
 }
-.btn-bal:hover:active,
-.btn-danger:hover:active,
-.btn-bal:hover.active,
-.btn-danger:hover.active {
-  background-color: #748e40 \9;
-}
-.btn-danger {
-  border: 1px solid #EE3124;
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #f5816d;
-  background-image: -moz-linear-gradient(top, #fab79d, #ee3124);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fab79d), to(#ee3124));
-  background-image: -webkit-linear-gradient(top, #fab79d, #ee3124);
-  background-image: -o-linear-gradient(top, #fab79d, #ee3124);
-  background-image: linear-gradient(to bottom, #fab79d, #ee3124);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffab79d', endColorstr='#ffee3124', GradientType=0);
-  border-color: #ee3124 #ee3124 #b7190e;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #ee3124;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-.btn-danger:hover,
-.btn-danger:focus,
-.btn-danger:active,
-.btn-danger.active,
-.btn-danger.disabled,
-.btn-danger[disabled] {
-  color: #ffffff;
-  background-color: #ee3124;
-  *background-color: #e72012;
-}
-.btn-danger:active,
-.btn-danger.active {
-  background-color: #cf1c10 \9;
-}
-.btn-danger:hover {
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #f79880;
-  background-image: -moz-linear-gradient(top, #fccab5, #f04d30);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fccab5), to(#f04d30));
-  background-image: -webkit-linear-gradient(top, #fccab5, #f04d30);
-  background-image: -o-linear-gradient(top, #fccab5, #f04d30);
-  background-image: linear-gradient(to bottom, #fccab5, #f04d30);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffccab5', endColorstr='#fff04d30', GradientType=0);
-  border-color: #f04d30 #f04d30 #c52a0e;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #f04d30;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-.btn-danger:hover:hover,
-.btn-danger:hover:focus,
-.btn-danger:hover:active,
-.btn-danger:hover.active,
-.btn-danger:hover.disabled,
-.btn-danger:hover[disabled] {
-  color: #ffffff;
-  background-color: #f04d30;
-  *background-color: #ee3918;
-}
-.btn-danger:hover:active,
-.btn-danger:hover.active {
-  background-color: #dd2f10 \9;
-}
-body {
-  margin: 0;
-}
-body,
 p {
   font-family: "NimbusSanNov-Med", arial, sans-serif;
 }
@@ -1293,12 +1310,12 @@ body {
   color: #ffffff;
 }
 .navbar ul li a:hover {
-  background: #1e222a;
+  background: #434854;
   color: #f0f1f2;
   cursor: pointer;
 }
 .navbar ul li.active a {
-  background: #1e222a;
+  background: #434854;
 }
 #colors .item {
   width: 8%;
@@ -1333,19 +1350,19 @@ body {
 #colors .item:hover {
   opacity: 0.9;
 }
-#colors .mulberryPurple100 {
+#colors .mulburryPurple100 {
   background-color: #ba3f90;
 }
-#colors .mulberryPurple80 {
+#colors .mulburryPurple80 {
   background-color: #c461a2;
 }
-#colors .mulberryPurple60 {
+#colors .mulburryPurple60 {
   background-color: #cf82b6;
 }
-#colors .mulberryPurple40 {
+#colors .mulburryPurple40 {
   background-color: #dca7cd;
 }
-#colors .mulberryPurple20 {
+#colors .mulburryPurple20 {
   background-color: #eacfe4;
 }
 #colors .byzantiumPurple100 {
@@ -1516,23 +1533,29 @@ body {
 #colors .black {
   background-color: #000000;
 }
+#colors .gray9 {
+  background-color: #1c1f26;
+}
+#colors .gray8 {
+  background-color: #303540;
+}
 #colors .gray7 {
-  background-color: #1e222a;
+  background-color: #434854;
 }
 #colors .gray6 {
-  background-color: #353b47;
+  background-color: #59606b;
 }
 #colors .gray5 {
-  background-color: #51545d;
+  background-color: #757c87;
 }
 #colors .gray4 {
-  background-color: #80838a;
+  background-color: #b1b9bd;
 }
 #colors .gray3 {
   background-color: #b7bbbd;
 }
 #colors .gray2 {
-  background-color: #d7d8d9;
+  background-color: #d2d6d9;
 }
 #colors .gray1 {
   background-color: #f0f1f2;
@@ -1540,15 +1563,12 @@ body {
 #colors .white {
   background-color: #ffffff;
 }
-#fonts .item,
-#buttons .item {
-  font-size: 28px;
+#fonts .contentBackground {
+  background-color: #f0f1f2;
+  padding: 20px 40px;
+  margin-right: 30px;
 }
-#fonts .nimbusSanNovMed,
-#buttons .nimbusSanNovMed {
-  font-family: "NimbusSanNov-Med", arial, sans-serif;
-}
-#fonts .nimbusSanNovBol,
-#buttons .nimbusSanNovBol {
-  font-family: "NimbusSanNov-Bol", arial, sans-serif;
+#buttons .inline {
+  display: inline-block;
+  margin: 0 10px;
 }

@@ -1,5 +1,5 @@
-@import "../../bootstrap.variables.less";
-@import "../../bootstrap.mixins.less";
+@import "../../static/less/_bootstrap.variables.less";
+@import "../../static/less/_bootstrap.mixins.less";
 @import "../../static/less/strapped.less";
 
 p {
@@ -112,20 +112,20 @@ body {
 		}
 	}
 
-	.mulberryPurple100 {
-		background-color: @mulberryPurple100;
+	.mulburryPurple100 {
+		background-color: @mulburryPurple100;
 	}
-	.mulberryPurple80 {
-		background-color: @mulberryPurple80;
+	.mulburryPurple80 {
+		background-color: @mulburryPurple80;
 	}
-	.mulberryPurple60 {
-		background-color: @mulberryPurple60;
+	.mulburryPurple60 {
+		background-color: @mulburryPurple60;
 	}
-	.mulberryPurple40 {
-		background-color: @mulberryPurple40;
+	.mulburryPurple40 {
+		background-color: @mulburryPurple40;
 	}
-	.mulberryPurple20 {
-		background-color: @mulberryPurple20;
+	.mulburryPurple20 {
+		background-color: @mulburryPurple20;
 	}
 	.byzantiumPurple100 {
 		background-color: @byzantiumPurple100;
@@ -295,6 +295,12 @@ body {
 	.black {
 		background-color: @black;
 	}
+	.gray9 {
+		background-color: @gray9;
+	}
+	.gray8 {
+		background-color: @gray8;
+	}
 	.gray7 {
 		background-color: @gray7;
 	}
@@ -321,14 +327,17 @@ body {
 	}
 }
 
-#fonts, #buttons {
-	.item {
-		font-size: 28px;
+#fonts {
+	.contentBackground {
+		background-color: @contentBackground;
+		padding: 20px 40px;
+		margin-right: 30px;
 	}
-	.nimbusSanNovMed {
-		font-family: @baseFontFamily;
-	}
-	.nimbusSanNovBol {
-		font-family: @baseFontFamilyBold;
+}
+
+#buttons {
+	.inline {
+		display: inline-block;
+		margin: 0 10px;
 	}
 }
