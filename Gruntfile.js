@@ -105,6 +105,15 @@ module.exports = function(grunt) {
 			}
 		},
 
+		bump: {
+			scripts: {
+				files: ['static/*'],
+				updateConfigs: ['pkg'],
+				commitFiles: ['-a'],
+				push: false
+			}
+		},
+
 		jsbeautifier: {
 			options: {
 				config: '.jsbeautifyrc'
@@ -148,6 +157,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-bower-install');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-open');
+	grunt.loadNpmTasks('grunt-bump');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-copy');
