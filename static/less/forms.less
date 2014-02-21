@@ -4,38 +4,34 @@
 * Inputs, Buttons, Dropdowns
 */
 
-@buttonColor: @black;
-@buttonBackgroundColor: @white;
-@buttonDangerColor: @imperialRed100;
-
 .btn, button {
   font-family: @baseFontFamilyCondensed;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 0.1em;
-  border: 3px solid @buttonColor;
-  background-color: @buttonBackgroundColor;
-  color: @buttonColor;
+  border: 3px solid @black;
+  background-color: @white;
+  color: @black;
   text-align: center;
   padding: 6px 13px;
   line-height: 1em;
   vertical-align: middle;
   box-sizing: initial;
   &:visited {
-    color: @buttonColor;
+    color: @black;
   }
   &:hover {
-    background-color: @buttonColor;
-    color: @buttonBackgroundColor;
+    background-color: @black;
+    color: @white;
     text-decoration: none;
   }
   &.danger {
-    border-color: @buttonDangerColor;
-    color: @buttonDangerColor;
+    border-color: @imperialRed100;
+    color: @imperialRed100;
     &:hover {
-      background-color: @buttonDangerColor;
-      border-color: @buttonDangerColor;
-      color: @buttonBackgroundColor;
+      background-color: @imperialRed100;
+      border-color: @imperialRed100;
+      color: @white;
     }
   }
 }
