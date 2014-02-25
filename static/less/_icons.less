@@ -292,3 +292,16 @@
     color: rgba(255, 255, 255, 0.2);
   }
 }
+
+.loader {
+  display: none;
+  background: @iconsFile -164px -484px no-repeat;
+  width: 23px;
+  height: 23px;
+
+  &.loading {
+    display: block;
+    -webkit-animation: rotation 2s infinite linear;
+    -moz-animation: rotate 20s linear 0s infinite;
+  }
+}
