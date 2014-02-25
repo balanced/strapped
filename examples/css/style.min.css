@@ -94,15 +94,16 @@
 * grids.less
 *
 */
+@charset "UTF-8";
 @font-face {
-  font-family: 'Balanced';
-  src: url('../fonts/balanced.eot');
-  src: url('../fonts/balanced.eot?#iefix') format('embedded-opentype'), url('../fonts/balanced.woff') format('woff'), url('../fonts/balanced.svg#Balanced') format('svg'), url('../fonts/balanced.ttf') format('truetype');
+  font-family: 'Balanced-Icon';
+  src: url('../fonts/balanced-icon.eot');
+  src: url('../fonts/balanced-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/balanced-icon.woff') format('woff'), url('../fonts/balanced-icon.svg#Balanced') format('svg'), url('../fonts/balanced-icon.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 [data-icon]:before {
-  font-family: "balanced" !important;
+  font-family: "Balanced-Icon" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -115,7 +116,7 @@
 }
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: "balanced" !important;
+  font-family: "Balanced-Icon" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -188,6 +189,9 @@
 .icon-invoices:before {
   content: "u";
 }
+.icon-github:before {
+  content: "v";
+}
 .icon-testmp:before {
   content: "w";
 }
@@ -227,23 +231,20 @@
 .icon-order:before {
   content: "I";
 }
+.icon-navigation-close:before {
+  content: "J";
+}
 .icon-dashboard:before {
   content: "K";
 }
 .icon-notification:before {
   content: "L";
 }
-.icon-navigation-close:before {
-  content: "J";
-}
 .icon-navigation-arrow-forward:before {
   content: "M";
 }
 .icon-navigation-arrow-back:before {
   content: "N";
-}
-.icon-github:before {
-  content: "v";
 }
 .icon-arrow-backward-dashboard:before {
   content: "O";
@@ -260,14 +261,20 @@
 .icon-arrow-triangle-forward:before {
   content: "S";
 }
-.icon-pl-sign:before {
+.icon-plus-sign:before {
   content: "T";
 }
 .icon-watchers:before {
   content: "U";
 }
-.icon-github-star:before {
+.icon-star:before {
   content: "V";
+}
+.icon-document-upload:before {
+  content: "W";
+}
+.icon-key:before {
+  content: "X";
 }
 /*
 * typography.less
@@ -1380,10 +1387,8 @@ button {
   line-height: 1em;
   vertical-align: middle;
   box-sizing: initial;
-}
-.btn:visited,
-button:visited {
-  color: #000000;
+  border-radius: 0;
+  background: #ffffff;
 }
 .btn:hover,
 button:hover {
@@ -1746,4 +1751,121 @@ body {
 #buttons .inline {
   display: inline-block;
   margin: 0 10px;
+}
+#icons ol,
+#icons ul {
+  list-style: none;
+}
+#icons a img {
+  border: none;
+}
+#icons .small {
+  font-size: 14px;
+  color: #a5adb4;
+}
+#icons .small a {
+  color: #a5adb4;
+}
+#icons .small a:hover {
+  color: #fb565e;
+}
+#icons .glyphs.character-mapping {
+  margin: 0 0 20px 0;
+  padding: 20px 0 20px 30px;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #d8e0e5;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+#icons .glyphs.character-mapping li {
+  margin: 0 30px 20px 0;
+  display: inline-block;
+  width: 90px;
+}
+#icons .glyphs.character-mapping .icon {
+  margin: 10px 0 10px 15px;
+  padding: 15px;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  color: #162a36 !important;
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 32px;
+}
+#icons .glyphs.character-mapping .icon svg {
+  fill: #000000;
+}
+#icons .glyphs.character-mapping input {
+  margin: 0;
+  padding: 5px 0;
+  line-height: 12px;
+  font-size: 12px;
+  display: block;
+  width: 100%;
+  border: 1px solid #d8e0e5;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  outline: 0;
+}
+#icons .glyphs.character-mapping input:focus {
+  border: 1px solid #fbde4a;
+  -webkit-box-shadow: inset 0 0 3px #fbde4a;
+  box-shadow: inset 0 0 3px #fbde4a;
+}
+#icons .glyphs.character-mapping input:hover {
+  -webkit-box-shadow: inset 0 0 3px #fbde4a;
+  box-shadow: inset 0 0 3px #fbde4a;
+}
+#icons .glyphs.css-mapping {
+  margin: 0 0 60px 0;
+  padding: 30px 0 20px 30px;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #d8e0e5;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+#icons .glyphs.css-mapping li {
+  margin: 0 30px 20px 0;
+  padding: 0;
+  display: inline-block;
+  overflow: hidden;
+}
+#icons .glyphs.css-mapping .icon {
+  margin: 0;
+  margin-right: 10px;
+  padding: 13px;
+  height: 50px;
+  width: 50px;
+  color: #162a36 !important;
+  overflow: hidden;
+  float: left;
+  font-size: 24px;
+}
+#icons .glyphs.css-mapping input {
+  margin: 0;
+  margin-top: 5px;
+  padding: 8px;
+  line-height: 16px;
+  font-size: 16px;
+  display: block;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #d8e0e5;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff;
+  outline: 0;
+  float: right;
+}
+#icons .glyphs.css-mapping input:focus {
+  border: 1px solid #fbde4a;
+  -webkit-box-shadow: inset 0 0 3px #fbde4a;
+  box-shadow: inset 0 0 3px #fbde4a;
+}
+#icons .glyphs.css-mapping input:hover {
+  -webkit-box-shadow: inset 0 0 3px #fbde4a;
+  box-shadow: inset 0 0 3px #fbde4a;
 }

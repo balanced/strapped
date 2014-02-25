@@ -67,15 +67,16 @@
 * grids.less
 *
 */
+@charset "UTF-8";
 @font-face {
-  font-family: 'Balanced';
-  src: url('../fonts/balanced.eot');
-  src: url('../fonts/balanced.eot?#iefix') format('embedded-opentype'), url('../fonts/balanced.woff') format('woff'), url('../fonts/balanced.svg#Balanced') format('svg'), url('../fonts/balanced.ttf') format('truetype');
+  font-family: 'Balanced-Icon';
+  src: url('../fonts/balanced-icon.eot');
+  src: url('../fonts/balanced-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/balanced-icon.woff') format('woff'), url('../fonts/balanced-icon.svg#Balanced') format('svg'), url('../fonts/balanced-icon.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 [data-icon]:before {
-  font-family: "balanced" !important;
+  font-family: "Balanced-Icon" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -88,7 +89,7 @@
 }
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: "balanced" !important;
+  font-family: "Balanced-Icon" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -161,6 +162,9 @@
 .icon-invoices:before {
   content: "u";
 }
+.icon-github:before {
+  content: "v";
+}
 .icon-testmp:before {
   content: "w";
 }
@@ -200,23 +204,20 @@
 .icon-order:before {
   content: "I";
 }
+.icon-navigation-close:before {
+  content: "J";
+}
 .icon-dashboard:before {
   content: "K";
 }
 .icon-notification:before {
   content: "L";
 }
-.icon-navigation-close:before {
-  content: "J";
-}
 .icon-navigation-arrow-forward:before {
   content: "M";
 }
 .icon-navigation-arrow-back:before {
   content: "N";
-}
-.icon-github:before {
-  content: "v";
 }
 .icon-arrow-backward-dashboard:before {
   content: "O";
@@ -233,14 +234,20 @@
 .icon-arrow-triangle-forward:before {
   content: "S";
 }
-.icon-pl-sign:before {
+.icon-plus-sign:before {
   content: "T";
 }
 .icon-watchers:before {
   content: "U";
 }
-.icon-github-star:before {
+.icon-star:before {
   content: "V";
+}
+.icon-document-upload:before {
+  content: "W";
+}
+.icon-key:before {
+  content: "X";
 }
 /*
 * typography.less
@@ -1353,10 +1360,8 @@ button {
   line-height: 1em;
   vertical-align: middle;
   box-sizing: initial;
-}
-.btn:visited,
-button:visited {
-  color: #000000;
+  border-radius: 0;
+  background: #ffffff;
 }
 .btn:hover,
 button:hover {

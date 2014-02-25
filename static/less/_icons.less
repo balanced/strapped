@@ -1,17 +1,19 @@
+@charset "UTF-8";
+
 @font-face {
-  font-family: 'Balanced';
-  src: url('fonts/balanced.eot');
-  src: url('fonts/balanced.eot?#iefix') format('embedded-opentype'),
-       url('fonts/balanced.woff') format('woff'),
-       url('fonts/balanced.svg#Balanced') format('svg'),
-       url('fonts/balanced.ttf') format('truetype');
+  font-family: 'Balanced-Icon';
+  src: url('../fonts/balanced-icon.eot');
+  src: url('../fonts/balanced-icon.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/balanced-icon.woff') format('woff'),
+       url('../fonts/balanced-icon.svg#Balanced') format('svg'),
+       url('../fonts/balanced-icon.ttf') format('truetype');
 
   font-weight: normal;
   font-style: normal;
 }
 
 [data-icon]:before {
-  font-family: "balanced" !important;
+  font-family: "Balanced-Icon" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -25,7 +27,7 @@
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: "balanced" !important;
+  font-family: "Balanced-Icon" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -120,6 +122,10 @@
   content: "u";
 }
 
+.icon-github:before {
+  content: "v";
+}
+
 .icon-testmp:before {
   content: "w";
 }
@@ -172,6 +178,10 @@
   content: "I";
 }
 
+.icon-navigation-close:before {
+  content: "J";
+}
+
 .icon-dashboard:before {
   content: "K";
 }
@@ -180,20 +190,12 @@
   content: "L";
 }
 
-.icon-navigation-close:before {
-  content: "J";
-}
-
 .icon-navigation-arrow-forward:before {
   content: "M";
 }
 
 .icon-navigation-arrow-back:before {
   content: "N";
-}
-
-.icon-github:before {
-  content: "v";
 }
 
 .icon-arrow-backward-dashboard:before {
@@ -216,7 +218,7 @@
   content: "S";
 }
 
-.icon-pl-sign:before {
+.icon-plus-sign:before {
   content: "T";
 }
 
@@ -224,6 +226,14 @@
   content: "U";
 }
 
-.icon-github-star:before {
+.icon-star:before {
   content: "V";
+}
+
+.icon-document-upload:before {
+  content: "W";
+}
+
+.icon-key:before {
+  content: "X";
 }
