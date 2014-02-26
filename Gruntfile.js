@@ -52,6 +52,17 @@ module.exports = function(grunt) {
 			}
 		},
 
+		copy: {
+			fonts: {
+				files: [{
+					cwd: 'static/fonts',
+					expand: true,
+					src: ['**'],
+					dest: 'examples/fonts'
+				}]
+			}
+		},
+
 		watch: {
 			hbs: {
 				files: [
@@ -105,6 +116,15 @@ module.exports = function(grunt) {
 			}
 		},
 
+		bump: {
+			scripts: {
+				files: ['static/*'],
+				updateConfigs: ['pkg'],
+				commitFiles: ['-a'],
+				push: false
+			}
+		},
+
 		jsbeautifier: {
 			options: {
 				config: '.jsbeautifyrc'
@@ -148,6 +168,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-bower-install');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-open');
+	grunt.loadNpmTasks('grunt-bump');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-copy');
@@ -159,7 +180,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-lesslint');
 
 	grunt.registerTask('default', ['bower-install', '_devBuild', 'connect', 'open', 'watch']);
-	grunt.registerTask('_devBuild', ['_buildJS', '_buildCSS', '_buildHTML']);
+	grunt.registerTask('_devBuild', ['copy:fonts', '_buildJS', '_buildCSS', '_buildHTML']);
 	grunt.registerTask('_buildJS', ['clean', 'concat']);
 	grunt.registerTask('_buildCSS', ['less']);
 	grunt.registerTask('_buildHTML', ['compile-handlebars']);

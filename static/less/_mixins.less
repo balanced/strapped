@@ -7,6 +7,11 @@
 @iconsFileWidth: 250px;
 @iconsFileHeight: 1000px;
 
+@socialBgOffsetX: 410px;
+@socialBgOffsetY: 4px;
+@socialWidth: 27px;
+@socialHeight: 27px;
+
 .cssicon(@url, @width, @height, @display: inline-block) {
   background: @url;
   width: @width;
@@ -26,6 +31,12 @@
   background-position: @scale*-1*@posX @scale*-1*@posY;
 }
 
+.socialIcon(@num) {
+  background-position: -(@socialBgOffsetX + (@num * @socialWidth)) -@socialBgOffsetY;
+  &:hover {
+    background-position: -(@socialBgOffsetX + (@num * @socialWidth)) -(@socialBgOffsetY + @socialHeight);
+  }
+}
 .fontyFont(@prefix; @fontFamily; @fontSize; @fontWeight: normal;
            @textTransform: inherit; @letterSpacing: normal; @fontStyle: normal) {
 

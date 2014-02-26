@@ -94,6 +94,255 @@
 * grids.less
 *
 */
+@charset "UTF-8";
+@font-face {
+  font-family: 'Balanced-Icon';
+  src: url('../fonts/balanced-icon.eot');
+  src: url('../fonts/balanced-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/balanced-icon.woff') format('woff'), url('../fonts/balanced-icon.svg#Balanced') format('svg'), url('../fonts/balanced-icon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+[data-icon]:before {
+  font-family: "Balanced-Icon" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "Balanced-Icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^="icon"].right {
+  float: right;
+}
+.icon-activity:before {
+  content: "a";
+}
+.icon-addcustomer:before {
+  content: "b";
+}
+.icon-addproductionmp:before {
+  content: "c";
+}
+.icon-addtestmp:before {
+  content: "d";
+}
+.icon-alert:before {
+  content: "e";
+}
+.icon-avatar:before {
+  content: "f";
+}
+.icon-balanced-dots:before {
+  content: "g";
+}
+.icon-balanced-logo-horizontal:before {
+  content: "h";
+}
+.icon-bankaccount:before {
+  content: "i";
+}
+.icon-business:before {
+  content: "j";
+}
+.icon-carat-right:before {
+  content: "k";
+}
+.icon-carat-down:before {
+  content: "l";
+}
+.icon-carat-up:before {
+  content: "m";
+}
+.icon-menu:before {
+  content: "n";
+}
+.icon-logs:before {
+  content: "o";
+}
+.icon-loadmore:before {
+  content: "p";
+}
+.icon-loading:before {
+  content: "q";
+}
+.icon-jsfiddle:before {
+  content: "r";
+}
+.icon-twitter:before {
+  content: "s";
+}
+.icon-tooltip:before {
+  content: "t";
+}
+.icon-invoices:before {
+  content: "u";
+}
+.icon-github:before {
+  content: "v";
+}
+.icon-testmp:before {
+  content: "w";
+}
+.icon-settings:before {
+  content: "x";
+}
+.icon-form:before {
+  content: "y";
+}
+.icon-edit:before {
+  content: "z";
+}
+.icon-search:before {
+  content: "A";
+}
+.icon-quora:before {
+  content: "B";
+}
+.icon-docs:before {
+  content: "C";
+}
+.icon-csvexport:before {
+  content: "D";
+}
+.icon-productionmp:before {
+  content: "E";
+}
+.icon-person:before {
+  content: "F";
+}
+.icon-creditcard:before {
+  content: "G";
+}
+.icon-checkmark:before {
+  content: "H";
+}
+.icon-order:before {
+  content: "I";
+}
+.icon-navigation-close:before {
+  content: "J";
+}
+.icon-dashboard:before {
+  content: "K";
+}
+.icon-notification:before {
+  content: "L";
+}
+.icon-navigation-arrow-forward:before {
+  content: "M";
+}
+.icon-navigation-arrow-back:before {
+  content: "N";
+}
+.icon-arrow-backward-dashboard:before {
+  content: "O";
+}
+.icon-arrow-forward-dashboard:before {
+  content: "P";
+}
+.icon-close-x-dashboard:before {
+  content: "Q";
+}
+.icon-irc-chat:before {
+  content: "R";
+}
+.icon-arrow-triangle-forward:before {
+  content: "S";
+}
+.icon-plus-sign:before {
+  content: "T";
+}
+.icon-watchers:before {
+  content: "U";
+}
+.icon-star:before {
+  content: "V";
+}
+.icon-document-upload:before {
+  content: "W";
+}
+.icon-key:before {
+  content: "X";
+}
+.icon-download {
+  background: url('../images/icons.png');
+  width: 30px;
+  height: 30px;
+  text-indent: -4000px;
+  display: inline-block;
+  background-position: -10px -580px;
+  background-color: #a5a3a3;
+}
+.icon-download:hover {
+  background-color: #000;
+}
+.icon-help {
+  background: url('../images/icons.png');
+  width: 20px;
+  height: 20px;
+  text-indent: -4000px;
+  display: inline-block;
+  background-position: -115px -115px;
+}
+.icon-help:hover {
+  cursor: pointer;
+  background-position: -165px -115px;
+}
+.icon-delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 0;
+  font-size: 25px;
+  padding: 0;
+  text-indent: -4000px;
+}
+.icon-delete:after {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAAV0lEQVR42p2R4QlAIQiEHcERG6UNGqUR3giNdBUoTy76kR8IcqeRKgB0xWfRhNha8NXFgp9GxU6RCJu3R7ip46TLBZ9nwLBcUw2pL+WHJrMGvfJanw83AfPFCSKK6ozSAAAAAElFTkSuQmCC');
+  width: 12px;
+  height: 10px;
+  text-indent: -4000px;
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  background-size: 11px;
+  background-repeat: no-repeat;
+  content: ' ';
+}
+.icon-delete:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.2);
+}
+.loader {
+  display: none;
+  background: url('../images/icons.png') -164px -484px no-repeat;
+  width: 23px;
+  height: 23px;
+}
+.loader.loading {
+  display: block;
+  -webkit-animation: rotation 2s infinite linear;
+  -moz-animation: rotate 20s linear 0s infinite;
+}
 /*
 * typography.less
 * 
@@ -1205,10 +1454,8 @@ button {
   line-height: 1em;
   vertical-align: middle;
   box-sizing: initial;
-}
-.btn:visited,
-button:visited {
-  color: #000000;
+  border-radius: 0;
+  background: #ffffff;
 }
 .btn:hover,
 button:hover {
@@ -1549,7 +1796,7 @@ body {
   background-color: #757c87;
 }
 #colors .gray4 {
-  background-color: #b1b9bd;
+  background-color: #9196a1;
 }
 #colors .gray3 {
   background-color: #b7bbbd;
@@ -1571,4 +1818,124 @@ body {
 #buttons .inline {
   display: inline-block;
   margin: 0 10px;
+}
+#icons ol,
+#icons ul {
+  list-style: none;
+}
+#icons li {
+  position: relative;
+}
+#icons a img {
+  border: none;
+}
+#icons .small {
+  font-size: 14px;
+  color: #a5adb4;
+}
+#icons .small a {
+  color: #a5adb4;
+}
+#icons .small a:hover {
+  color: #fb565e;
+}
+#icons .glyphs.character-mapping {
+  margin: 0 0 20px 0;
+  padding: 20px 0 20px 30px;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #d8e0e5;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+#icons .glyphs.character-mapping li {
+  margin: 0 30px 20px 0;
+  display: inline-block;
+  width: 90px;
+}
+#icons .glyphs.character-mapping .icon {
+  margin: 10px 0 10px 15px;
+  padding: 15px;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  color: #162a36 !important;
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 32px;
+}
+#icons .glyphs.character-mapping .icon svg {
+  fill: #000000;
+}
+#icons .glyphs.character-mapping input {
+  margin: 0;
+  padding: 5px 0;
+  line-height: 12px;
+  font-size: 12px;
+  display: block;
+  width: 100%;
+  border: 1px solid #d8e0e5;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  outline: 0;
+}
+#icons .glyphs.character-mapping input:focus {
+  border: 1px solid #fbde4a;
+  -webkit-box-shadow: inset 0 0 3px #fbde4a;
+  box-shadow: inset 0 0 3px #fbde4a;
+}
+#icons .glyphs.character-mapping input:hover {
+  -webkit-box-shadow: inset 0 0 3px #fbde4a;
+  box-shadow: inset 0 0 3px #fbde4a;
+}
+#icons .glyphs.css-mapping {
+  margin: 0 0 60px 0;
+  padding: 30px 0 20px 30px;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #d8e0e5;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+#icons .glyphs.css-mapping li {
+  margin: 0 30px 20px 0;
+  padding: 0;
+  display: inline-block;
+  overflow: hidden;
+}
+#icons .glyphs.css-mapping .icon {
+  margin: 0;
+  margin-right: 10px;
+  padding: 13px;
+  height: 50px;
+  width: 50px;
+  color: #162a36 !important;
+  overflow: hidden;
+  float: left;
+  font-size: 24px;
+}
+#icons .glyphs.css-mapping input {
+  margin: 0;
+  margin-top: 5px;
+  padding: 8px;
+  line-height: 16px;
+  font-size: 16px;
+  display: block;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #d8e0e5;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff;
+  outline: 0;
+  float: right;
+}
+#icons .glyphs.css-mapping input:focus {
+  border: 1px solid #fbde4a;
+  -webkit-box-shadow: inset 0 0 3px #fbde4a;
+  box-shadow: inset 0 0 3px #fbde4a;
+}
+#icons .glyphs.css-mapping input:hover {
+  -webkit-box-shadow: inset 0 0 3px #fbde4a;
+  box-shadow: inset 0 0 3px #fbde4a;
 }
