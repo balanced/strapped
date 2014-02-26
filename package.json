@@ -27,6 +27,11 @@
     "grunt-bootstrap": "~0.1.0",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-bump": "0.0.13"
+    "grunt-bump": "0.0.13",
+    "grunt-bower-install": "",
+    "grunt-contrib-connect": "",
+    "grunt-contrib-watch": "",
+    "grunt-contrib-copy": "",
+    "grunt-compile-handlebars": ""
   }
 }
