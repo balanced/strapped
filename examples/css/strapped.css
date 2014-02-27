@@ -46,6 +46,24 @@
   src: url('https://d3n06lmttbcmxe.cloudfront.net/css/fonts/27300D_0_0.eot?#iefix') format('embedded-opentype'), url('https://d3n06lmttbcmxe.cloudfront.net/css/fonts/27300D_0_0.woff') format('woff'), url('https://d3n06lmttbcmxe.cloudfront.net/css/fonts/27300D_0_0.ttf') format('truetype');
 }
 @font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inconsolata'), url(https://themes.googleusercontent.com/static/fonts/inconsolata/v6/BjAYBlHtW3CJxDcjzrnZCLrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url(https://themes.googleusercontent.com/static/fonts/inconsolata/v6/AIed271kqQlcIRSOnQH0yRbnBKKEOwRKgsHDreGcocg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Droid Serif Italic';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Droid Serif Italic'), local('DroidSerif-Italic'), url(https://themes.googleusercontent.com/static/fonts/droidserif/v3/cj2hUnSRBhwmSPr9kS5894o3ZslTYfJv0R05CazkwN8.woff) format('woff');
+}
+@font-face {
   font-family: 'Bitter';
   font-style: italic;
   font-weight: 400;
@@ -1430,6 +1448,22 @@ button {
   border-radius: 0;
   background: #ffffff;
 }
+.btn.large,
+button.large {
+  font-family: "NimbusSanConD-Bol", arial, sans-serif;
+  font-size: 24px;
+  border: 5px solid #000;
+  padding: 11px 19px;
+  letter-spacing: .1em;
+}
+.btn:visited,
+button:visited {
+  color: #000000;
+}
+.btn:visited:hover,
+button:visited:hover {
+  color: #ffffff;
+}
 .btn:hover,
 button:hover {
   background-color: #000000;
@@ -1445,7 +1479,6 @@ button.danger {
 button.danger:hover {
   background-color: #e71d1c;
   border-color: #e71d1c;
-  color: #ffffff;
 }
 .close {
   position: absolute;
