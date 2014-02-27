@@ -180,7 +180,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-lesslint');
 
 	grunt.registerTask('default', ['bower-install', '_devBuild', 'connect', 'open', 'watch']);
-	grunt.registerTask('_devBuild', ['copy:fonts', '_buildJS', '_buildCSS', '_buildHTML']);
+	grunt.registerTask('_devBuild', ['copy', '_buildJS', '_buildCSS', '_buildHTML']);
 	grunt.registerTask('_buildJS', ['clean', 'concat']);
 	grunt.registerTask('_buildCSS', ['less']);
 	grunt.registerTask('_buildHTML', ['compile-handlebars']);
