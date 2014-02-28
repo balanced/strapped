@@ -361,6 +361,56 @@
   -webkit-animation: rotation 2s infinite linear;
   -moz-animation: rotate 20s linear 0s infinite;
 }
+.tb,
+.title-block {
+  height: 70px;
+  margin-bottom: 0;
+  background-color: #d2d6d9;
+}
+.tb .tb-icon,
+.title-block .tb-icon {
+  background-color: #434854;
+  background-image: none;
+  color: #ffffff;
+  display: block;
+  float: left;
+  font-size: 36px;
+  height: 70px;
+  line-height: 86px;
+  text-align: center;
+  text-indent: 0;
+  width: 70px;
+}
+.tb .tb,
+.title-block .tb,
+.tb .tb-content,
+.title-block .tb-content {
+  font-family: NimbusSanNov-Med, Arial, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 80px;
+  padding: 0 20px;
+  text-transform: inherit;
+}
+.tb.tb-imperial-red,
+.title-block.tb-imperial-red {
+  background-color: #f17555;
+  color: #ffffff;
+}
+.tb.tb-imperial-red .tb-icon,
+.title-block.tb-imperial-red .tb-icon {
+  background-color: #e71d1c;
+}
+.tb.tb-egyptian-blue,
+.title-block.tb-egyptian-blue {
+  background-color: #82aecb;
+}
+.tb.tb-egyptian-blue .tb-icon,
+.title-block.tb-egyptian-blue .tb-icon {
+  background-color: #4789b0;
+}
 /*
 * typography.less
 * 
