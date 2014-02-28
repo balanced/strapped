@@ -1540,7 +1540,7 @@ body {
   padding-top: 70px;
 }
 .content {
-  margin-left: 30px;
+  margin: 0 30px;
 }
 .navbar {
   width: 100%;
@@ -1843,10 +1843,17 @@ body {
 #colors .white {
   background-color: #ffffff;
 }
-#fonts .contentBackground {
+.strapped-preview {
   background-color: #f0f1f2;
   padding: 20px 40px;
-  margin-right: 30px;
+}
+.strapped-code {
+  border: 1px solid #f0f1f2;
+  padding: 10px;
+}
+pre {
+  overflow: auto;
+  margin: 0;
 }
 #buttons .inline {
   display: inline-block;
