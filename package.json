@@ -23,10 +23,14 @@
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-jsbeautifier": "~0.2.6",
     "grunt-lesslint": "~0.17.0",
-    "grunt-contrib-handlebars": "~0.6.1",
     "grunt-bootstrap": "~0.1.0",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-bump": "0.0.13"
+    "grunt-bump": "0.0.13",
+    "grunt-contrib-connect": "~0.7.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-bower-install": "~0.8.0",
+    "grunt-compile-handlebars": "~0.6.3"
   }
 }
