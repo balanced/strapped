@@ -64,20 +64,62 @@
 @font-face {
   font-family: 'NimbusSanNov-Reg';
   font-weight: 400;
-  src: url('../fonts/241122_0_0.eot.eot');
-  src: url('../fonts/241122_0_0.eot.eot?#iefix') format('embedded-opentype'), url('../fonts/241122_0_0.eot.woff') format('woff'), url('../fonts/241122_0_0.eot.ttf') format('truetype');
+  src: url('../fonts/241122_0_0.eot');
+  src: url('../fonts/241122_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/241122_0_0.woff') format('woff'), url('../fonts/241122_0_0.ttf') format('truetype');
 }
 @font-face {
   font-family: 'NimbusSanNov-SemBol';
   font-weight: 400;
-  src: url('../fonts/26A300_0_0.eot.eot');
-  src: url('../fonts/26A300_0_0.eot.eot?#iefix') format('embedded-opentype'), url('../fonts/26A300_0_0.eot.woff') format('woff'), url('../fonts/26A300_0_0.eot.ttf') format('truetype');
+  src: url('../fonts/26A300_0_0.eot');
+  src: url('../fonts/26A300_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/26A300_0_0.woff') format('woff'), url('../fonts/26A300_0_0.ttf') format('truetype');
 }
 @font-face {
   font-family: 'NimbusSanConD-Bol';
   font-weight: 400;
-  src: url('../fonts/27300D_0_0.eot.eot');
-  src: url('../fonts/27300D_0_0.eot.eot?#iefix') format('embedded-opentype'), url('../fonts/27300D_0_0.eot.woff') format('woff'), url('../fonts/27300D_0_0.eot.ttf') format('truetype');
+  src: url('../fonts/27300D_0_0.eot');
+  src: url('../fonts/27300D_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/27300D_0_0.woff') format('woff'), url('../fonts/27300D_0_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nimbus Sans';
+  font-weight: 300;
+  src: url('../fonts/241122_0_0.eot');
+  src: url('../fonts/241122_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/241122_0_0.woff') format('woff'), url('../fonts/241122_0_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nimbus Sans';
+  font-weight: 400;
+  src: url('../fonts/241122_2_0.eot');
+  src: url('../fonts/241122_2_0.eot?#iefix') format('embedded-opentype'), url('../fonts/241122_2_0.woff') format('woff'), url('../fonts/241122_2_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nimbus Sans';
+  font-weight: 700;
+  src: url('../fonts/241122_3_0.eot');
+  src: url('../fonts/241122_3_0.eot?#iefix') format('embedded-opentype'), url('../fonts/241122_3_0.woff') format('woff'), url('../fonts/241122_3_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nimbus Sans Condensed';
+  font-weight: 400;
+  src: url('../fonts/260109_1_0.eot');
+  src: url('../fonts/260109_1_0.eot?#iefix') format('embedded-opentype'), url('../fonts/260109_1_0.woff') format('woff'), url('../fonts/260109_1_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nimbus Sans Condensed';
+  font-weight: 700;
+  src: url('../fonts/260109_0_0.eot');
+  src: url('../fonts/260109_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/260109_0_0.woff') format('woff'), url('../fonts/260109_0_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nimbus Sans Extra Condensed';
+  font-weight: 400;
+  src: url('../fonts/26A300_0_0.eot');
+  src: url('../fonts/26A300_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/26A300_0_0.woff') format('woff'), url('../fonts/26A300_0_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nimbus Sans Nov D Cond Ultra';
+  font-weight: 400;
+  src: url('../fonts/27300D_0_0.eot');
+  src: url('../fonts/27300D_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/27300D_0_0.woff') format('woff'), url('../fonts/27300D_0_0.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Inconsolata';
