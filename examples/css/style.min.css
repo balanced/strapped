@@ -363,9 +363,9 @@
 }
 .tb,
 .title-block {
+  background-color: #d2d6d9;
   height: 70px;
   margin-bottom: 0;
-  background-color: #d2d6d9;
 }
 .tb .tb-icon,
 .title-block .tb-icon {
@@ -406,6 +406,7 @@
 .tb.tb-egyptian-blue,
 .title-block.tb-egyptian-blue {
   background-color: #82aecb;
+  color: #ffffff;
 }
 .tb.tb-egyptian-blue .tb-icon,
 .title-block.tb-egyptian-blue .tb-icon {

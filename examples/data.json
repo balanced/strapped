@@ -77,6 +77,15 @@
 			{ "name": "white" }
 		]
 	},
+  "components": {
+    "titleBars": [{
+      "className": "tb-default"
+    }, {
+      "className": "tb-egyptian-blue"
+    }, {
+      "className": "tb-imperial-red"
+    }]
+  },
 	"forms": {
 		"buttons": [
 			{
