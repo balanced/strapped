@@ -430,6 +430,30 @@
 .sl-link:hover {
   color: #000000;
 }
+.num1 {
+  color: #000000;
+  font: normal normal normal 56px "NimbusSanConD-Bol", arial, sans-serif;
+}
+.num2 {
+  color: #000000;
+  font: normal normal normal 24px "NimbusSanConD-Bol", arial, sans-serif;
+}
+.num3 {
+  color: #000000;
+  font: normal normal normal 18px "NimbusSanConD-Bol", arial, sans-serif;
+}
+.num-danger {
+  color: #E31837;
+}
+.num-success {
+  color: #4E917A;
+}
+.num-disabled {
+  color: #737373;
+}
+.num-light {
+  color: #B0AFAB;
+}
 /*
 * typography.less
 * 

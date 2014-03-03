@@ -79,6 +79,7 @@
 	},
   "components": {
     "labels": ["", "sl-disabled", "sl-link", "sl-danger", "sl-dark", "sl-warning"],
+    "numbers": ["", "num-danger", "num-success", "num-disabled", "num-light"],
     "titleBars": [{
       "className": "tb-default"
     }, {

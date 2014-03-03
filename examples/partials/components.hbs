@@ -59,4 +59,38 @@
       </tbody>
     </table>
   </div>
+
+  <h3>Numbers</h3>
+  <div class="strapped-preview">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          {{#each numbers}}
+          <th>{{this}}</th>
+          {{/each}}
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>num1</td>
+          {{#each numbers}}
+            <td class="num1 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td>num2</td>
+          {{#each numbers}}
+            <td class="num2 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td>num3</td>
+          {{#each numbers}}
+            <td class="num3 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
