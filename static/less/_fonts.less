@@ -3,61 +3,34 @@
 *
 */
 
-@font-face {
-  font-family: 'NimbusSanNov-Med';
-  src: url('../fonts/241122_2_0.eot');
-  src: url('../fonts/241122_2_0.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/241122_2_0.woff') format('woff'),
-       url('../fonts/241122_2_0.ttf') format('truetype');
+.fontFaceDefinition(@fontName; @fontWeight; @fontFilePath) {
+  @font-face {
+    font-family: @fontName;
+    font-weight: @fontWeight;
+    src: url('@{fontFilePath}.eot');
+    src: url('@{fontFilePath}.eot?#iefix') format('embedded-opentype'),
+         url('@{fontFilePath}.woff') format('woff'),
+         url('@{fontFilePath}.ttf') format('truetype');
+  }
 }
 
-@font-face {
-  font-family: 'NimbusSanNovCon-Med';
-  src: url('../fonts/260109_1_0.eot');
-  src: url('../fonts/260109_1_0.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/260109_1_0.woff') format('woff'),
-       url('../fonts/260109_1_0.ttf') format('truetype');
-}
+.fontFaceDefinition('NimbusSanNov-Med'; 400; '../fonts/241122_2_0');
+.fontFaceDefinition('NimbusSanNovCon-Med'; 400; '../fonts/260109_1_0');
+.fontFaceDefinition('NimbusSanNovCon-Bol'; 400; '../fonts/260109_0_0');
+.fontFaceDefinition('NimbusSanNov-Bol'; 400; '../fonts/241122_3_0');
+.fontFaceDefinition('NimbusSanNov-Reg'; 400; '../fonts/241122_0_0');
+.fontFaceDefinition('NimbusSanNov-SemBol'; 400; '../fonts/26A300_0_0');
+.fontFaceDefinition('NimbusSanConD-Bol'; 400; '../fonts/27300D_0_0');
 
-@font-face {
-  font-family: 'NimbusSanNovCon-Bol';
-  src: url('../fonts/260109_0_0.eot');
-  src: url('../fonts/260109_0_0.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/260109_0_0.woff') format('woff'),
-       url('../fonts/260109_0_0.ttf') format('truetype');
-}
+.fontFaceDefinition('Nimbus Sans'; 300; '../fonts/241122_0_0');
+.fontFaceDefinition('Nimbus Sans'; 400; '../fonts/241122_2_0');
+.fontFaceDefinition('Nimbus Sans'; 700; '../fonts/241122_3_0');
+.fontFaceDefinition('Nimbus Sans Condensed'; 400; '../fonts/260109_1_0');
+.fontFaceDefinition('Nimbus Sans Condensed'; 700; '../fonts/260109_0_0');
 
-@font-face {
-  font-family: 'NimbusSanNov-Bol';
-  src: url('../fonts/241122_3_0.eot');
-  src: url('../fonts/241122_3_0.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/241122_3_0.woff') format('woff'),
-       url('../fonts/241122_3_0.ttf') format('truetype');
-}
+.fontFaceDefinition('Nimbus Sans Extra Condensed'; 400; '../fonts/26A300_0_0');
+.fontFaceDefinition('Nimbus Sans Nov D Cond Ultra'; 400; '../fonts/27300D_0_0');
 
-@font-face {
-  font-family: 'NimbusSanNov-Reg';
-  src: url('../fonts/241122_0_0.eot');
-  src: url('../fonts/241122_0_0.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/241122_0_0.woff') format('woff'),
-       url('../fonts/241122_0_0.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'NimbusSanNov-SemBol';
-  src: url('../fonts/26A300_0_0.eot');
-  src: url('../fonts/26A300_0_0.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/26A300_0_0.woff') format('woff'),
-       url('../fonts/26A300_0_0.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'NimbusSanConD-Bol';
-  src: url('../fonts/27300D_0_0.eot');
-  src: url('../fonts/27300D_0_0.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/27300D_0_0.woff') format('woff'),
-       url('../fonts/27300D_0_0.ttf') format('truetype');
-}
 
 @font-face {
   font-family: 'Inconsolata';

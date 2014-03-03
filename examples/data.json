@@ -88,6 +88,23 @@
       "className": "tb-imperial-red"
     }]
   },
+  "fonts": {
+    "fonts": [{
+      "style": "font-family: 'Nimbus Sans'; font-weight: 300;"
+    }, {
+      "style": "font-family: 'Nimbus Sans'; font-weight: 400;"
+    }, {
+      "style": "font-family: 'Nimbus Sans'; font-weight: 700;"
+    }, {
+      "style": "font-family: 'Nimbus Sans Condensed'; font-weight: 400;"
+    }, {
+      "style": "font-family: 'Nimbus Sans Condensed'; font-weight: 700;"
+    }, {
+      "style": "font-family: 'Nimbus Sans Extra Condensed'; font-weight: 400;"
+    }, {
+      "style": "font-family: 'Nimbus Sans Nov D Cond Ultra'; font-weight: 400;"
+    }]
+  },
 	"forms": {
 		"buttons": [
 			{
