@@ -77,6 +77,17 @@
 			{ "name": "white" }
 		]
 	},
+  "components": {
+    "labels": ["", "sl-disabled", "sl-link", "sl-danger", "sl-dark", "sl-warning"],
+    "numbers": ["", "num-danger", "num-success", "num-disabled", "num-light"],
+    "titleBars": [{
+      "className": "tb-default"
+    }, {
+      "className": "tb-egyptian-blue"
+    }, {
+      "className": "tb-imperial-red"
+    }]
+  },
   "fonts": {
     "fonts": [{
       "style": "font-family: 'Nimbus Sans'; font-weight: 300;"
