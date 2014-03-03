@@ -13,4 +13,50 @@
       </div>
     {{/each}}
   </div>
+
+  <h3>Labels</h3>
+  <div class="strapped-preview">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          {{#each labels}}
+          <th>{{this}}</th>
+          {{/each}}
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>sl1</td>
+          {{#each labels}}
+            <td class="sl1 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td>sl2</td>
+          {{#each labels}}
+            <td class="sl2 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td>sl3</td>
+          {{#each labels}}
+            <td class="sl3 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td>sl4</td>
+          {{#each labels}}
+            <td class="sl4 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td>sl5</td>
+          {{#each labels}}
+            <td class="sl5 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
