@@ -342,28 +342,31 @@
 }
 .tb .tb-icon,
 .title-block .tb-icon {
+  font-size: 36px;
+  line-height: 86px;
+}
+.tb .tb-label,
+.title-block .tb-label {
+  line-height: 77px;
+}
+.tb .tb-label,
+.title-block .tb-label,
+.tb .tb-icon,
+.title-block .tb-icon {
   background-color: #434854;
   background-image: none;
   color: #ffffff;
   display: block;
   float: left;
-  font-size: 36px;
   height: 70px;
-  line-height: 86px;
   text-align: center;
   text-indent: 0;
   width: 70px;
 }
-.tb .tb,
-.title-block .tb,
 .tb .tb-content,
 .title-block .tb-content {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: normal;
+  font: normal normal normal 22px/80px NimbusSanNov-Med, Arial, sans-serif;
   letter-spacing: normal;
-  line-height: 80px;
   padding: 0 20px;
   text-transform: inherit;
 }
@@ -373,7 +376,9 @@
   color: #ffffff;
 }
 .tb.tb-imperial-red .tb-icon,
-.title-block.tb-imperial-red .tb-icon {
+.title-block.tb-imperial-red .tb-icon,
+.tb.tb-imperial-red .tb-label,
+.title-block.tb-imperial-red .tb-label {
   background-color: #e71d1c;
 }
 .tb.tb-egyptian-blue,
@@ -382,7 +387,9 @@
   color: #ffffff;
 }
 .tb.tb-egyptian-blue .tb-icon,
-.title-block.tb-egyptian-blue .tb-icon {
+.title-block.tb-egyptian-blue .tb-icon,
+.tb.tb-egyptian-blue .tb-label,
+.title-block.tb-egyptian-blue .tb-label {
   background-color: #4789b0;
 }
 .sl1,
@@ -408,20 +415,20 @@
   font: normal normal normal 12px "NimbusSanNov-Med", arial, sans-serif;
 }
 .sl-warning {
-  color: #c88a12;
+  color: #ac7b0d;
 }
 .sl-disabled {
-  color: #737373;
+  color: #757c87;
 }
 .sl-danger {
-  color: #E31837;
+  color: #e71d1c;
 }
 .sl-dark {
   background-color: #000000;
   color: #ffffff;
 }
 .sl-link {
-  color: #008FC5;
+  color: #0063b4;
 }
 .sl-link:visited,
 .sl-link:active {
@@ -443,16 +450,16 @@
   font: normal normal normal 18px "NimbusSanConD-Bol", arial, sans-serif;
 }
 .num-danger {
-  color: #E31837;
+  color: #e71d1c;
 }
 .num-success {
-  color: #4E917A;
+  color: #4bb2a4;
 }
 .num-disabled {
-  color: #737373;
+  color: #757c87;
 }
 .num-light {
-  color: #B0AFAB;
+  color: #b1b9bd;
 }
 /*
 * typography.less

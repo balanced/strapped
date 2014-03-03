@@ -4,26 +4,29 @@
   margin-bottom: 0;
 
   .tb-icon {
+    font-size: 36px;
+    line-height: 86px;
+  }
+
+  .tb-label {
+    line-height: 77px;
+  }
+
+  .tb-label, .tb-icon {
     background-color: @gray7;
     background-image: none;
     color: @white;
     display: block;
     float: left;
-    font-size: 36px;
     height: 70px;
-    line-height: 86px;
     text-align: center;
     text-indent: 0;
     width: 70px;
   }
 
-  .tb, .tb-content {
-    font-family: NimbusSanNov-Med,Arial,sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: normal;
+  .tb-content {
+    font: normal normal normal 22px/80px NimbusSanNov-Med, Arial, sans-serif;
     letter-spacing: normal;
-    line-height: 80px;
     padding: 0 20px;
     text-transform: inherit;
   }
@@ -31,8 +34,7 @@
   &.tb-imperial-red {
     background-color: @imperialRed60;
     color: @white;
-
-    .tb-icon {
+    .tb-icon, .tb-label {
       background-color: @imperialRed100;
     }
   }
@@ -40,7 +42,7 @@
   &.tb-egyptian-blue {
     background-color: @egyptianBlue60;
     color: @white;
-    .tb-icon {
+    .tb-icon, .tb-label {
       background-color: @egyptianBlue100;
     }
   }
@@ -69,15 +71,15 @@
 }
 
 .sl-warning {
-  color: #C88A12
+  color: @turmericYellow100;
 }
 
 .sl-disabled {
-  color: #737373;
+  color: @gray5;
 }
 
 .sl-danger {
-  color: #E31837;
+  color: @imperialRed100;
 }
 
 .sl-dark {
@@ -86,12 +88,12 @@
 }
 
 .sl-link {
-  color: #008FC5;
+  color: @linkColor;
   &:visited, &:active {
     color: inherit;
   }
   &:hover {
-    color: @black;
+    color: @linkColorHover;
   }
 }
 
@@ -111,17 +113,17 @@
 }
 
 .num-danger {
-  color: #E31837;
+  color: @imperialRed100;
 }
 
 .num-success {
-  color: #4E917A;
+  color: @forestGreen60;
 }
 
 .num-disabled {
-  color: #737373;
+  color: @gray5;
 }
 
 .num-light {
-  color: #B0AFAB;
+  color: @gray3;
 }
