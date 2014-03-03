@@ -361,133 +361,6 @@
   -webkit-animation: rotation 2s infinite linear;
   -moz-animation: rotate 20s linear 0s infinite;
 }
-.tb,
-.title-block {
-  background-color: #d2d6d9;
-  height: 70px;
-  margin-bottom: 0;
-}
-.tb .tb-icon,
-.title-block .tb-icon {
-  font-size: 36px;
-  line-height: 86px;
-}
-.tb .tb-label,
-.title-block .tb-label {
-  line-height: 77px;
-}
-.tb .tb-label,
-.title-block .tb-label,
-.tb .tb-icon,
-.title-block .tb-icon {
-  background-color: #434854;
-  background-image: none;
-  color: #ffffff;
-  display: block;
-  float: left;
-  height: 70px;
-  text-align: center;
-  text-indent: 0;
-  width: 70px;
-}
-.tb .tb-content,
-.title-block .tb-content {
-  font: normal normal normal 22px/80px NimbusSanNov-Med, Arial, sans-serif;
-  letter-spacing: normal;
-  padding: 0 20px;
-  text-transform: inherit;
-}
-.tb.tb-imperial-red,
-.title-block.tb-imperial-red {
-  background-color: #f17555;
-  color: #ffffff;
-}
-.tb.tb-imperial-red .tb-icon,
-.title-block.tb-imperial-red .tb-icon,
-.tb.tb-imperial-red .tb-label,
-.title-block.tb-imperial-red .tb-label {
-  background-color: #e71d1c;
-}
-.tb.tb-egyptian-blue,
-.title-block.tb-egyptian-blue {
-  background-color: #82aecb;
-  color: #ffffff;
-}
-.tb.tb-egyptian-blue .tb-icon,
-.title-block.tb-egyptian-blue .tb-icon,
-.tb.tb-egyptian-blue .tb-label,
-.title-block.tb-egyptian-blue .tb-label {
-  background-color: #4789b0;
-}
-.sl1,
-.strapped-label1 {
-  font: normal normal normal 18px "NimbusSanNov-Med", arial, sans-serif;
-  color: #000000;
-}
-.sl2,
-.strapped-label2 {
-  font: normal normal normal 15px "NimbusSanNov-Bol", arial, sans-serif;
-  color: #000000;
-}
-.sl3,
-.strapped-label3 {
-  font: normal normal normal 15px "NimbusSanNov-Med", arial, sans-serif;
-}
-.sl4,
-.strapped-label4 {
-  font: normal normal normal 13px "NimbusSanNov-Med", arial, sans-serif;
-}
-.sl5,
-.strapped-label5 {
-  font: normal normal normal 12px "NimbusSanNov-Med", arial, sans-serif;
-}
-.sl-warning {
-  color: #ac7b0d;
-}
-.sl-disabled {
-  color: #757c87;
-}
-.sl-danger {
-  color: #e71d1c;
-}
-.sl-dark {
-  background-color: #000000;
-  color: #ffffff;
-}
-.sl-link {
-  color: #0063b4;
-}
-.sl-link:visited,
-.sl-link:active {
-  color: inherit;
-}
-.sl-link:hover {
-  color: #000000;
-}
-.num1 {
-  color: #000000;
-  font: normal normal normal 56px "NimbusSanConD-Bol", arial, sans-serif;
-}
-.num2 {
-  color: #000000;
-  font: normal normal normal 24px "NimbusSanConD-Bol", arial, sans-serif;
-}
-.num3 {
-  color: #000000;
-  font: normal normal normal 18px "NimbusSanConD-Bol", arial, sans-serif;
-}
-.num-danger {
-  color: #e71d1c;
-}
-.num-success {
-  color: #4bb2a4;
-}
-.num-disabled {
-  color: #757c87;
-}
-.num-light {
-  color: #b1b9bd;
-}
 /*
 * typography.less
 * 
@@ -1659,6 +1532,133 @@ button.danger:hover {
 .close:hover {
   background-color: rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.2);
+}
+.sl1,
+.strapped-label1 {
+  font: normal normal normal 18px "NimbusSanNov-Med", arial, sans-serif;
+  color: #000000;
+}
+.sl2,
+.strapped-label2 {
+  font: normal normal normal 15px "NimbusSanNov-Bol", arial, sans-serif;
+  color: #000000;
+}
+.sl3,
+.strapped-label3 {
+  font: normal normal normal 15px "NimbusSanNov-Med", arial, sans-serif;
+}
+.sl4,
+.strapped-label4 {
+  font: normal normal normal 13px "NimbusSanNov-Med", arial, sans-serif;
+}
+.sl5,
+.strapped-label5 {
+  font: normal normal normal 12px "NimbusSanNov-Med", arial, sans-serif;
+}
+.sl-warning {
+  color: #ac7b0d;
+}
+.sl-disabled {
+  color: #757c87;
+}
+.sl-danger {
+  color: #e71d1c;
+}
+.sl-dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+.sl-link {
+  color: #0063b4;
+}
+.sl-link:visited,
+.sl-link:active {
+  color: inherit;
+}
+.sl-link:hover {
+  color: #000000;
+}
+.tb,
+.title-block {
+  background-color: #d2d6d9;
+  height: 70px;
+  margin-bottom: 0;
+}
+.tb .tb-icon,
+.title-block .tb-icon {
+  font-size: 36px;
+  line-height: 86px;
+}
+.tb .tb-label,
+.title-block .tb-label {
+  line-height: 77px;
+}
+.tb .tb-label,
+.title-block .tb-label,
+.tb .tb-icon,
+.title-block .tb-icon {
+  background-color: #434854;
+  background-image: none;
+  color: #ffffff;
+  display: block;
+  float: left;
+  height: 70px;
+  text-align: center;
+  text-indent: 0;
+  width: 70px;
+}
+.tb .tb-content,
+.title-block .tb-content {
+  font: normal normal normal 22px/80px NimbusSanNov-Med, Arial, sans-serif;
+  letter-spacing: normal;
+  padding: 0 20px;
+  text-transform: inherit;
+}
+.tb.tb-imperial-red,
+.title-block.tb-imperial-red {
+  background-color: #f17555;
+  color: #ffffff;
+}
+.tb.tb-imperial-red .tb-icon,
+.title-block.tb-imperial-red .tb-icon,
+.tb.tb-imperial-red .tb-label,
+.title-block.tb-imperial-red .tb-label {
+  background-color: #e71d1c;
+}
+.tb.tb-egyptian-blue,
+.title-block.tb-egyptian-blue {
+  background-color: #82aecb;
+  color: #ffffff;
+}
+.tb.tb-egyptian-blue .tb-icon,
+.title-block.tb-egyptian-blue .tb-icon,
+.tb.tb-egyptian-blue .tb-label,
+.title-block.tb-egyptian-blue .tb-label {
+  background-color: #4789b0;
+}
+.num1 {
+  color: #000000;
+  font: normal normal normal 56px "NimbusSanConD-Bol", arial, sans-serif;
+}
+.num2 {
+  color: #000000;
+  font: normal normal normal 24px "NimbusSanConD-Bol", arial, sans-serif;
+}
+.num3 {
+  color: #000000;
+  font: normal normal normal 18px "NimbusSanConD-Bol", arial, sans-serif;
+}
+.num-danger {
+  color: #e71d1c;
+}
+.num-success {
+  color: #4bb2a4;
+}
+.num-disabled {
+  color: #757c87;
+}
+.num-light {
+  color: #b1b9bd;
 }
 p {
   font-family: "NimbusSanNov-Med", arial, sans-serif;
