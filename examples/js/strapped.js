@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-	$('.nav li a').click(function() {
-		event.preventDefault();
+	$('.nav li a').click(function(e) {
+		e.preventDefault();
 		$($(this).attr('href'))[0].scrollIntoView();
 		scrollBy(0, -54);
 	});
@@ -20,13 +20,13 @@ $(document).ready(function() {
 		
 		if (colorName == 'gray6') {
 			$(name).closest('.item').css('boxShadow', 'inset 0 0 0 3px #000');
-			$(name).closest('.item').append('<div class="label">body text</div>')
+			$(name).closest('.item').append('<div class="tag">body text</div>')
 		} else if (colorName == 'gray1') {
 			$(name).closest('.item').css('boxShadow', 'inset 0 0 0 3px #000');
-			$(name).closest('.item').append('<div class="label">page background</div>')
+			$(name).closest('.item').append('<div class="tag">page background</div>')
 		} else if (colorName == 'persianBlue100') {
 			$(name).closest('.item').css('boxShadow', 'inset 0 0 0 3px #000');
-			$(name).closest('.item').append('<div class="label">body links</div>')
+			$(name).closest('.item').append('<div class="tag">body links</div>')
 		} else if (colorName == 'white') {
 			$(name).closest('.item').css('boxShadow', 'inset 0 0 0 1px #D7D8D9');
 		}
@@ -36,6 +36,9 @@ $(document).ready(function() {
 		}
 	});
 
+	$("#forms").click(function(e) {
+		e.preventDefault();
+	})
 });
 
 $(window).load(function(){

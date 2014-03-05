@@ -95,7 +95,7 @@
   }
 }
 
-.animation (@name, @duration: 300ms, @ease: ease, @delay: 0) {
+.animation(@name, @duration: 300ms, @ease: ease, @delay: 0) {
   -webkit-animation: @name @duration @ease @delay;
   -moz-animation: @name @duration @ease @delay;
   -ms-animation: @name @duration @ease @delay;
@@ -120,4 +120,10 @@
      -moz-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
+}
+
+.box-shadow(@x: 0px, @y: 0px, @blur: 3px, @color: #999) {
+  -webkit-box-shadow: @x @y @blur @color;
+  -moz-box-shadow: @x @y @blur @color;
+  box-shadow: @x @y @blur @color;
 }

@@ -4,17 +4,6 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
-		bootstrap: {
-			dest: 'examples',
-			js: [
-				'bootstrap-scrollspy.js'
-			],
-			css: [
-				'reset.less',
-				'grid.less'
-			]
-		},
-
 		less: {
 			development: {
 				options: {
@@ -164,7 +153,6 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.loadNpmTasks('grunt-bootstrap');
 	grunt.loadNpmTasks('grunt-bower-install');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-open');
