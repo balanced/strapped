@@ -102,6 +102,10 @@
 		vertical-align: top;
 	}
 
+	&.right {
+		float: right;
+	}
+
 	.dropdown-menu {
 		position: absolute;
 		padding: 5px 0 0;
@@ -113,13 +117,17 @@
 		.box-shadow(0px, 2px, 3px, @gray2);
 
 		> li {
-			border-bottom: 1px solid @gray2;
 			margin: 0;
 			padding: 0;
 			list-style: none;
 
-			&:last-of-type {
-				border-bottom: none;
+			&.group {
+				border-bottom: 1px solid @gray2;
+				padding-bottom: 10px;
+
+				&:last-of-type {
+					border-bottom: none;
+				}
 			}
 
 			h4 {
@@ -134,10 +142,6 @@
 					margin: 0;
 					padding: 0;
 					list-style: none;
-
-					&:last-of-type {
-						margin-bottom: 20px;
-					}
 				}
 
 				a {
