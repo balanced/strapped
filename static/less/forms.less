@@ -85,7 +85,6 @@
 .dropdown {
 	display: block;
 	width: auto;
-	float: left;
 
 	span {
 		display: inline-block;
@@ -159,6 +158,16 @@
 		&.right {
 			right: 0;
 			left: auto;
+			
+			&::before {
+				left: auto !important;
+				right: 9px;
+			}
+
+			&::after {
+				left: auto !important;
+				right: 10px;
+			}
 		}
 
 		a {
@@ -185,7 +194,7 @@
 			background-color: @white;
 			color:@black;
 			
-			.dropdown-menu {
+			.dropdown {
 				background-color: @white;
 			}
 
