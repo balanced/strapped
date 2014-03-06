@@ -1,7 +1,8 @@
 {
 	"cssFile": "examples/css/style.min.css",
 	"jsFile": "examples/js/built.js",
-	"bootstrapCssFile": "examples/css/bootstrap.min.css",
+	"bootstrapCssFile": "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css",
+	"bootstrapJsFile": "//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js",
 	"colors": {
 		"colors": [
 			{ "name": "mulburryPurple100" },
@@ -77,6 +78,34 @@
 			{ "name": "white" }
 		]
 	},
+  "components": {
+    "labels": ["", "sl-disabled", "sl-link", "sl-danger", "sl-dark", "sl-warning"],
+    "numbers": ["", "num-danger", "num-success", "num-disabled", "num-light"],
+    "titleBars": [{
+      "className": "tb-default"
+    }, {
+      "className": "tb-egyptian-blue"
+    }, {
+      "className": "tb-imperial-red"
+    }]
+  },
+  "fonts": {
+    "fonts": [{
+      "style": "font-family: 'Nimbus Sans'; font-weight: 300;"
+    }, {
+      "style": "font-family: 'Nimbus Sans'; font-weight: 400;"
+    }, {
+      "style": "font-family: 'Nimbus Sans'; font-weight: 700;"
+    }, {
+      "style": "font-family: 'Nimbus Sans Condensed'; font-weight: 400;"
+    }, {
+      "style": "font-family: 'Nimbus Sans Condensed'; font-weight: 700;"
+    }, {
+      "style": "font-family: 'Nimbus Sans Extra Condensed'; font-weight: 400;"
+    }, {
+      "style": "font-family: 'Nimbus Sans Nov D Cond Ultra'; font-weight: 400;"
+    }]
+  },
 	"forms": {
 		"buttons": [
 			{

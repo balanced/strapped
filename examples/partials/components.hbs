@@ -1,0 +1,106 @@
+<div id="components" class="strapped-example">
+  <h2>Components</h2>
+  <h3>Title Bars</h3>
+  <div class="strapped-preview">
+    {{#each titleBars}}
+      <div class="title-block {{className}}">
+        <span class="tb-icon">
+          <i class="icon icon-document-upload"></i>
+        </span>
+        <span class="tb-content">
+          Upload your file
+        </span>
+      </div>
+      <hr/>
+      <div class="title-block {{className}}">
+        <span class="tb-label">
+          Escrow
+        </span>
+        <span class="tb-content">
+          1 million dollars
+        </span>
+      </div>
+      <hr/>
+    {{/each}}
+  </div>
+
+  <h3>Labels</h3>
+  <div class="strapped-preview">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          {{#each labels}}
+          <th>{{this}}</th>
+          {{/each}}
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>sl1</td>
+          {{#each labels}}
+            <td class="sl1 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td>sl2</td>
+          {{#each labels}}
+            <td class="sl2 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td>sl3</td>
+          {{#each labels}}
+            <td class="sl3 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td>sl4</td>
+          {{#each labels}}
+            <td class="sl4 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td>sl5</td>
+          {{#each labels}}
+            <td class="sl5 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Numbers</h3>
+  <div class="strapped-preview">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          {{#each numbers}}
+          <th>{{this}}</th>
+          {{/each}}
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>num1</td>
+          {{#each numbers}}
+            <td class="num1 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td>num2</td>
+          {{#each numbers}}
+            <td class="num2 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td>num3</td>
+          {{#each numbers}}
+            <td class="num3 {{this}}">sample</td>
+          {{/each}}
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

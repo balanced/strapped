@@ -1,1 +1,4 @@
-node_modules
+node_modules/
+index.html
+examples/css/strapped.css
+examples/css/style.min.css

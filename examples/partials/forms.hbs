@@ -1,12 +1,74 @@
 <div id="forms" class="clearfix">
 	<h2>Forms</h2>
 	<h3>Buttons</h3>
-	<div>
+	<div class="strapped-preview">
 		{{#each buttons}}
 			<button class='inline {{className}}'>
 				{{name}}
 			</button>
 		{{/each}}
 		<div class="inline close"></div>
+	</div>
+
+	<h3>Dropdowns</h3>
+	<div class="strapped-preview">
+		<div id="header">
+			<div class="dropdown nav">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					<span class="nav2d">Nav Dropdown 1</span>
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li class="group">
+						<h4 class="label7a">Menu Group 1</h4>
+						<ul>
+							<li class="label2a">
+								<a href="#">Menu 1</a>
+								<a href="#">Menu 2</a>
+							</li>
+						</ul>
+					</li>
+					<li class="group">
+						<h4 class="label7a">Menu Group 2</h4>
+						<ul>
+							<li class="label2a">
+								<a href="#">Menu 3</a>
+								<a href="#">Menu 4</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="dropdown nav">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					<span class="nav2d">Nav Dropdown 2</span>
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li class="label2a">
+						<a href="#">Menu 1</a>
+					</li>
+					<li class="label2a">
+						<a href="#">Menu 2</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<header>
+			<div class="dropdown action right">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					<span>Action</span>
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu right">
+					<li class="label2a">
+						<a href="#">Menu 1</a>
+					</li>
+					<li class="label2a">
+						<a href="#">Menu 2</a>
+					</li>
+				</ul>
+			</div>
+		</header>
 	</div>
 </div>

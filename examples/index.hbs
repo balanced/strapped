@@ -12,6 +12,7 @@
 			<li><a href="#colors">Colors</a></li>
 			<li><a href="#fonts">Fonts</a></li>
 			<li><a href="#forms">Forms</a></li>
+			<li><a href="#components">Components</a></li>
 			<li><a href="#logos">Logos</a></li>
 			<li><a href="#icons">Icons</a></li>
 		</ul>
@@ -20,6 +21,7 @@
 		{{> colors colors}}
 		{{> fonts fonts}}
 		{{> forms forms}}
+		{{> components components}}
 		{{> logos}}
 		{{> icons}}
 	</div>
@@ -27,7 +29,6 @@
 	<!-- bower:js -->
 	<script src="bower_components/jquery/jquery.js"></script>
 	<script src="bower_components/handlebars/handlebars.js"></script>
-	<script src="bower_components/handlebars/handlebars.runtime.js"></script>
 	<script src="bower_components/get-style-property/get-style-property.js"></script>
 	<script src="bower_components/get-size/get-size.js"></script>
 	<script src="bower_components/eventie/eventie.js"></script>
@@ -39,6 +40,7 @@
 	<script src="bower_components/outlayer/outlayer.js"></script>
 	<script src="bower_components/masonry/masonry.js"></script>
 	<!-- endbower -->
+	<script src="{{bootstrapJsFile}}"></script>
 	<script src="{{jsFile}}"></script>
 </body>
 </html>

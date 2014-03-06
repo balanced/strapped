@@ -1,6 +1,6 @@
-<div id="fonts" class="clearfix">
+<div id="fonts" class="strapped-example">
 	<h2>Typography</h2>
-	<div class="contentBackground">
+	<div class="strapped-preview">
 		<div>
 		<h1>Page title</h1>
 			<p>Bacon ipsum dolor sit amet spare ribs filet mignon hamburger, ribeye bacon rump pig pork belly tongue. Kevin pork chop ball tip shankle. Shoulder kielbasa pork loin, pork belly andouille brisket beef chicken strip steak tongue ham ball tip tri-tip bacon. Fatback leberkas t-bone, pig porchetta chuck shoulder frankfurter tail bresaola. Leberkas hamburger pancetta strip steak tongue short loin. Bacon ball tip landjaeger chuck brisket corned beef.</p>
@@ -12,4 +12,11 @@
 			<h2>Modal header</h2>
 		</div>
 	</div>
+
+  <hr>
+	<div class="contentBackground">
+    {{#each fonts}}
+      <p style="{{style}}">{{style}}</p>
+    {{/each}}
+  </div>
 </div>
