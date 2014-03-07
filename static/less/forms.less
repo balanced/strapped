@@ -143,19 +143,18 @@
 					padding: 0;
 					list-style: none;
 				}
-
-				a {
-					color:@egyptianBlue100;
-					display: block;
-					padding: 10px 20px;
-
-					&:hover {
-						text-decoration: none;
-						background: @black;
-						color: @white;
-					}
-				}
 			}       
+		}
+
+		a {
+			color:@black;
+			display: block;
+			padding: 10px 20px;
+
+			&:hover {
+				text-decoration: none;
+				background: @persianBlue20;
+			}
 		}
 
 		&.right {
@@ -170,18 +169,6 @@
 			&::after {
 				left: auto !important;
 				right: 10px;
-			}
-		}
-
-		a {
-			color:@persianBlue60;
-			display: block;
-			padding: 10px 20px;
-
-			&:hover {
-				text-decoration: none;
-				background: @black;
-				color: @white;
 			}
 		}
 	}
@@ -224,6 +211,9 @@
 				outline: 0;
 			}
 		}
+		.dropdown-menu {
+			font-size: 15px;
+		}
 	}
 
 	&.action {
@@ -245,6 +235,9 @@
 			&:active {
 				outline: 0;
 			}
+		}
+		.dropdown-menu {
+			font-size: 13px;
 		}
 	}
 }
