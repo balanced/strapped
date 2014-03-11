@@ -1,6 +1,8 @@
 .tb,.title-block {
+  @titleBarHeight: 70px;
+
   background-color: @gray2;
-  height: 70px;
+  height: @titleBarHeight;
   margin-bottom: 0;
 
   .tb-icon {
@@ -29,6 +31,14 @@
     letter-spacing: normal;
     padding: 0 20px;
     text-transform: inherit;
+  }
+
+  .tb-actions {
+    display: block;
+    float: right;
+    height: @titleBarHeight;
+    line-height: @titleBarHeight;
+    margin-right: 20px;
   }
 
   &.tb-imperial-red {
