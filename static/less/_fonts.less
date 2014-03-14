@@ -3,34 +3,39 @@
 *
 */
 
-.fontFaceDefinition(@fontName; @fontWeight; @fontFilePath) {
-  @font-face {
-    font-family: @fontName;
-    font-weight: @fontWeight;
-    src: url('@{fontFilePath}.eot');
-    src: url('@{fontFilePath}.eot?#iefix') format('embedded-opentype'),
-         url('@{fontFilePath}.woff') format('woff'),
-         url('@{fontFilePath}.ttf') format('truetype');
-  }
-}
+@baseFontFamily: "Proxima Nova Reg", arial, sans-serif;
+@baseFontFamilyReg: "Proxima Nova Reg", arial, sans-serif;
+@baseFontFamilyBold: "Proxima Nova Reg Bold", arial, sans-serif;
+@baseFontFamilySemiBold: "Proxima Nova Reg Semi Bold", arial, sans-serif;
+@monoFontFamily: "Inconsolata", Monaco, Menlo, "Courier New", monospace;
 
-.fontFaceDefinition('NimbusSanNov-Med'; 400; '../fonts/241122_2_0');
-.fontFaceDefinition('NimbusSanNovCon-Med'; 400; '../fonts/260109_1_0');
-.fontFaceDefinition('NimbusSanNovCon-Bol'; 400; '../fonts/260109_0_0');
-.fontFaceDefinition('NimbusSanNov-Bol'; 400; '../fonts/241122_3_0');
-.fontFaceDefinition('NimbusSanNov-Reg'; 400; '../fonts/241122_0_0');
-.fontFaceDefinition('NimbusSanNov-SemBol'; 400; '../fonts/26A300_0_0');
-.fontFaceDefinition('NimbusSanConD-Bol'; 400; '../fonts/27300D_0_0');
+@textColor: @gray8;
+@bodyBackground: @gray5;
+@linkColor: @persianBlue100;
+@linkColorHover: @black;
 
-.fontFaceDefinition('Nimbus Sans'; 300; '../fonts/241122_0_0');
-.fontFaceDefinition('Nimbus Sans'; 400; '../fonts/241122_2_0');
-.fontFaceDefinition('Nimbus Sans'; 700; '../fonts/241122_3_0');
-.fontFaceDefinition('Nimbus Sans Condensed'; 400; '../fonts/260109_1_0');
-.fontFaceDefinition('Nimbus Sans Condensed'; 700; '../fonts/260109_0_0');
+@baseFontSize: 14px;
+@baseLineHeight: @baseFontSize * 1.4;
 
-.fontFaceDefinition('Nimbus Sans Extra Condensed'; 400; '../fonts/26A300_0_0');
-.fontFaceDefinition('Nimbus Sans Nov D Cond Ultra'; 400; '../fonts/27300D_0_0');
+.fontyFont(label1; NimbusSanNov-Reg, Arial, sans-serif; 18px);
+.fontyFont(label1; NimbusSanNov-Reg, Arial, sans-serif; 18px);
+.fontyFont(label2; NimbusSanNov-Bol, Arial, sans-serif; 15px);
+.fontyFont(label3; NimbusSanNov-Med, Arial, sans-serif; 15px);
+.fontyFont(label4; NimbusSanNov-Med, Arial, sans-serif; 13px);
+.fontyFont(label6; NimbusSanNov-sembol, Arial, sans-serif; 13px);
+.fontyFont(label7; NimbusSanNov-sembol, Arial, sans-serif; 15px);
+.fontyFont(number1; NimbusSanConD-Bol, Arial, sans-serif; 56px);
+.fontyFont(number3; NimbusSanConD-Bol, Arial, sans-serif; 18px);
+.fontyFont(nav1; nimbussannovcon-Med, Arial, sans-serif; 12px; @textTransform: uppercase; @letterSpacing: 1px);
+.fontyFont(nav2; NimbusSanNov-Med, Arial, sans-serif; 18px);
+.fontyFont(nav3; NimbusSanNov-Med, Arial, sans-serif; 22px);
+.fontyFont(body1; NimbusSanNov-Med, Arial, sans-serif; 13px);
+.fontyFont(subhead2; NimbusSanNov-Med, Arial, sans-serif; 15px);
 
+.fontFaceDefinition('Proxima Nova Reg'; 400; '../fonts/Proxima Nova Reg');
+.fontFaceDefinition('Proxima Nova Reg Italic'; 400; '../fonts/Proxima Nova Reg It');
+.fontFaceDefinition('Proxima Nova Reg Semi Bold'; 400; '../fonts/Proxima Nova Sbold');
+.fontFaceDefinition('Proxima Nova Reg Bold'; 400; '../fonts/Proxima Nova Bold');
 
 @font-face {
   font-family: 'Inconsolata';
@@ -73,3 +78,4 @@
   font-weight: 700;
   src: local('Bitter-Bold'), url(https://themes.googleusercontent.com/static/fonts/bitter/v4/evC1haE-MsorTl_A7_uSGaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
 }
+

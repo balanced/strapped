@@ -1,23 +1,94 @@
-.sl1, .strapped-label1 {
-  font: normal normal normal 18px @baseFontFamily;
+/*
+* labels.less
+*
+* 
+*/
+
+// Body text
+body {
+  font-family: @baseFontFamily;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  color: @gray8;
+}
+
+a {
+  color: @linkColor;
+
+  &:hover {
+    color: @linkColorHover;
+    text-decoration: none;
+
+    &:visited {
+      color: @linkColorHover;
+      text-decoration: none;
+    }
+  }
+  &:active {
+    color: @linkColor;
+  }
+  &:visited {
+    color: @linkColor;
+  }
+}
+
+pre {
+  font-family: @monoFontFamily;
+  font-size: 13px;
+}
+
+// Headers
+h1 {
+  font-family: @baseFontFamilyReg;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 34px;
+  line-height: 40px;
   color: @black;
 }
 
-.sl2, .strapped-label2 {
-  font: normal normal normal 15px @baseFontFamilyBold;
+h2 {
+  font-family: @baseFontFamilyReg;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
   color: @black;
 }
 
-.sl3, .strapped-label3 {
-  font: normal normal normal 15px @baseFontFamily;
+h3 {
+  font-family: @baseFontFamily;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: @black;
 }
 
-.sl4, .strapped-label4 {
-  font: normal normal normal 13px @baseFontFamily;
+// Labels
+.sl-lg, .strapped-label-large {
+  font: normal normal normal 16px @baseFontFamily;
+  line-height: 22px;
+  color: @black;
 }
 
-.sl5, .strapped-label5 {
+.sl-md-b, .strapped-label-medium-bold {
+  font: normal normal normal @baseFontSize @baseFontFamilyBold;
+  line-height: @baseLineHeight;
+  color: @black;
+}
+
+.sl-md, .strapped-label-medium {
+  font: normal normal normal @baseFontSize @baseFontFamily;
+  line-height: @baseLineHeight;
+  color: @black;
+}
+
+.sl-sm, .strapped-label-small {
   font: normal normal normal 12px @baseFontFamily;
+  line-height: 16px;
+  color: @black;
 }
 
 .sl-warning {
@@ -47,3 +118,34 @@
   }
 }
 
+// Numbers
+.num1 {
+  color: @black;
+  font: normal normal normal 56px @baseFontFamilyBold;
+}
+
+.num2 {
+  color: @black;
+  font: normal normal normal 24px @baseFontFamilyBold;
+}
+
+.num3 {
+  color: @black;
+  font: normal normal normal 18px @baseFontFamilyBold;
+}
+
+.num-danger {
+  color: @imperialRed100;
+}
+
+.num-success {
+  color: @forestGreen60;
+}
+
+.num-disabled {
+  color: @gray5;
+}
+
+.num-light {
+  color: @gray3;
+}
