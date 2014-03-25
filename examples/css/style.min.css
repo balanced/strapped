@@ -1,3 +1,7 @@
+/*
+* mixins.less
+*
+*/
 .clearfix {
   *zoom: 1;
 }
@@ -25,10 +29,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/*
-* mixins.less
-*
-*/
 /*
 * colors.less
 *
@@ -1402,6 +1402,14 @@ a {
   font: normal normal normal 14px "Proxima Nova Reg Semi Bold", arial, sans-serif;
   line-height: 19.6px;
   color: #528dcc;
+  -webkit-transition: color;
+  -moz-transition: color;
+  -o-transition: color;
+  transition: color;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
 }
 a:visited {
   color: #528dcc;
@@ -1427,6 +1435,14 @@ button {
   border-radius: 0;
   border: 1px solid #528dcc;
   background-color: #528dcc;
+  -webkit-transition: background-color;
+  -moz-transition: background-color;
+  -o-transition: background-color;
+  transition: background-color;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
 }
 .btn:visited,
 button:visited {
@@ -1516,7 +1532,19 @@ button.disabled {
   display: block;
   width: auto;
 }
-.dropdown span {
+.dropdown .dropdown-toggle {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: background-color;
+  -moz-transition: background-color;
+  -o-transition: background-color;
+  transition: background-color;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+.dropdown .dropdown-toggle span {
   display: inline-block;
   max-width: 215px;
   text-overflow: ellipsis;
@@ -1524,7 +1552,7 @@ button.disabled {
   overflow: hidden;
   line-height: normal;
 }
-.dropdown .caret {
+.dropdown .dropdown-toggle .caret {
   border-width: 5px;
   margin-top: 8px;
   margin-left: 2px;
@@ -1599,9 +1627,7 @@ button.disabled {
 }
 .dropdown.nav .dropdown-toggle {
   height: 50px;
-  display: block;
   padding: 18px 15px;
-  text-decoration: none;
 }
 .dropdown.nav .dropdown-toggle span {
   font: normal normal normal 14px "Proxima Nova Reg Semi Bold", arial, sans-serif;
@@ -1638,10 +1664,8 @@ button.disabled {
 }
 .dropdown.action .dropdown-toggle {
   height: 34px;
-  display: block;
   padding: 5px 5px;
   border: 1px solid #d2d6d9;
-  text-decoration: none;
 }
 .dropdown.action .dropdown-toggle span {
   font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;

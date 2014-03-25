@@ -9,23 +9,24 @@
 }
 
 a {
-  font: normal normal normal @baseFontSize @baseFontFamilySemiBold;
-  line-height: @baseLineHeight;
-  color: @persianBlue60;
+	font: normal normal normal @baseFontSize @baseFontFamilySemiBold;
+	line-height: @baseLineHeight;
+	color: @persianBlue60;
+	.transition(color);
+	.transition-duration(200ms);
 
-  &:visited {
-    color: @persianBlue60;
-  }
+	&:visited {
+		color: @persianBlue60;
+	}
 
-  &:hover {
-    color: @persianBlue100;
-    text-decoration: none;
-  }
+	&:hover {
+		color: @persianBlue100;
+		text-decoration: none;
+	}
 
-  &:active {
-    color: @persianBlue100;
-  }
-
+	&:active {
+		color: @persianBlue100;
+	}
 }
 
 .btn, button {
@@ -41,6 +42,8 @@ a {
 	border-radius: 0;
 	border: 1px solid @persianBlue60;
 	background-color: @persianBlue60;
+	.transition(background-color);
+	.transition-duration(200ms);
 
 	&:visited {
 		color: @white;
@@ -55,8 +58,6 @@ a {
 
 	&:focus {
 		color: @white;
-		// .transition(background-color);
-		// .transition-duration(1s);
 		.box-shadow(none);
 	}
 
@@ -131,20 +132,27 @@ a {
 	display: block;
 	width: auto;
 
-	span {
-		display: inline-block;
-		max-width: 215px;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		overflow: hidden;
-		line-height: normal;
-	}
+	.dropdown-toggle {
+		display: block;
+		text-decoration: none;
+		.transition(background-color);
+		.transition-duration(200ms);
 
-	.caret {
-		border-width: 5px;
-		margin-top: 8px;
-		margin-left: 2px;
-		vertical-align: top;
+		span {
+			display: inline-block;
+			max-width: 215px;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			line-height: normal;
+		}
+
+		.caret {
+			border-width: 5px;
+			margin-top: 8px;
+			margin-left: 2px;
+			vertical-align: top;
+		}
 	}
 
 	&.right {
@@ -227,9 +235,7 @@ a {
 
 		.dropdown-toggle {
 			height: 50px;
-			display: block;
 			padding: 18px 15px;
-			text-decoration: none;
 
 			span {
 				.sl-md-sb;
@@ -271,10 +277,8 @@ a {
 	&.action {
 		.dropdown-toggle {
 			height: 34px;
-			display: block;
 			padding: 5px 5px;
 			border: 1px solid @gray2;
-			text-decoration: none;
 
 			span {
 				.sl-md;
