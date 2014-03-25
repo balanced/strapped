@@ -1,5 +1,5 @@
 <div id="fonts" class="strapped-example">
-	<h2>Typography</h2>
+	<h2>Fonts</h2>
 	<div class="strapped-preview">
 		<div>
 		<h1>Page title</h1>
@@ -11,12 +11,10 @@
 		<div>
 			<h2>Modal header</h2>
 		</div>
+
+	    {{#each fonts}}
+	      <p style="{{style}}">{{style}}</p>
+	    {{/each}}
 	</div>
 
-  <hr>
-	<div class="contentBackground">
-    {{#each fonts}}
-      <p style="{{style}}">{{style}}</p>
-    {{/each}}
-  </div>
 </div>
