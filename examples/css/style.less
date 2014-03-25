@@ -23,6 +23,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: 10px 6px;
 	background-size: 40px 40px;
+	.border-radius(0);
 
 	&.fixed {
 		position: fixed;
@@ -106,13 +107,15 @@ body {
 			bottom: 10%;
 			left: 10%;
 			font-family: @baseFontFamilyBold;
-			font-size: 20px;
+			font-size: 14px;
 			text-transform: uppercase;
 			line-height: 20px;
 		}
 
 		&:hover {
-			opacity: 0.9;
+			.transform(scale(1.2, 1.2));
+			z-index: 1000;
+			border: 1px solid @black;
 		}
 	}
 

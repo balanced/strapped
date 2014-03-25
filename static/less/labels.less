@@ -13,26 +13,6 @@ body {
   color: @gray8;
 }
 
-a {
-  color: @linkColor;
-
-  &:hover {
-    color: @linkColorHover;
-    text-decoration: none;
-
-    &:visited {
-      color: @linkColorHover;
-      text-decoration: none;
-    }
-  }
-  &:active {
-    color: @linkColor;
-  }
-  &:visited {
-    color: @linkColor;
-  }
-}
-
 pre {
   font-family: @monoFontFamily;
   font-size: 13px;
@@ -75,6 +55,12 @@ h3 {
 
 .sl-md-b, .strapped-label-medium-bold {
   font: normal normal normal @baseFontSize @baseFontFamilyBold;
+  line-height: @baseLineHeight;
+  color: @black;
+}
+
+.sl-md-sb, .strapped-label-medium-bold {
+  font: normal normal normal @baseFontSize @baseFontFamilySemiBold;
   line-height: @baseLineHeight;
   color: @black;
 }

@@ -114,7 +114,15 @@
 			},
 			{
 				"name": "Secondary button",
-				"className": "btn danger"
+				"className": "btn secondary"
+			},
+			{
+				"name": "Disabled button",
+				"className": "btn disabled"
+			},
+			{
+				"name": "Special button",
+				"className": "btn special"
 			}
 		]
 	}
