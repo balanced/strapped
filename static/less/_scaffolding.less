@@ -18,10 +18,86 @@
 
 // content is our main content area where most data for the current page is displayed
 @pageTitleWidth: @gridGutterWidth * 65;
-@contentBackground: @gray1;
+@contentBackground: @white;
 @lineRuleBackground: @gray3;
 
 #header {
 	background-color: @gray9;
 	height: 50px;
+}
+
+#main {
+	background-color: @contentBackground;
+	position: relative;
+}
+
+#marketplace-nav {
+	background-color: @gray7;
+	min-height: @mainMinHeight;
+	position: absolute;
+	height: 100%;
+	width: 180px;
+
+	&.noshow {
+		background-color: @contentBackground;
+	}
+
+	ul {
+		padding: 0;
+	}
+
+	li {
+		display: block;
+		border-top: 1px solid @gray6;
+
+		&:last-of-type {
+			border-bottom: 1px solid @gray6;    	
+		}
+
+		i {
+			font-size: 14px;
+			vertical-align: text-top;
+			margin-right: 5px;
+
+			&.icon-addcustomer, &.icon-bankaccount {
+				color: @white;
+				display: inline-block;
+				height: 14px;
+				width: 14px;
+			}
+
+			&.icon-addcustomer {
+				background-color: @byzantiumPurple60;
+			}
+
+			&.icon-bankaccount {
+				background-color: @persianBlue60;
+				font-size: 16px;
+				line-height: 35px;
+				margin-bottom: 9px;
+			}
+		}
+
+		a {
+			.sl;
+			color: @white;
+			display: block;
+			padding: 15px;
+			position: relative;
+			text-decoration: none;
+		  
+			&:hover {
+				background-color: @gray8;
+			}
+
+			&.active {
+				background-color: @gray9;
+			}
+		}
+
+		.nav-label {
+			color: inherit;
+			display: block;
+		}
+	}
 }
