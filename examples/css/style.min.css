@@ -1673,15 +1673,14 @@ button.disabled {
   margin: 0;
 }
 .dropdown.nav .dropdown-toggle {
-  height: 50px;
-  padding: 18px 15px;
+  padding: 15px;
 }
 .dropdown.nav .dropdown-toggle span {
   font: normal normal normal 14px "Proxima Nova Reg Semi Bold", arial, sans-serif;
   line-height: 19.6px;
   color: #000000;
   color: #9196a1;
-  line-height: normal;
+  line-height: 17px;
 }
 .dropdown.nav .dropdown-toggle .caret {
   border-top-color: #757c87;
