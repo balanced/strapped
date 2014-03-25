@@ -3,6 +3,9 @@
 *
 */
 
+@import "../../static/less/_bootstrap.variables.less";
+@import "../../static/less/_bootstrap.mixins.less";
+
 @iconsFile: url('../images/icons.png');
 @iconsFileWidth: 250px;
 @iconsFileHeight: 1000px;
@@ -37,6 +40,18 @@
     background-position: -(@socialBgOffsetX + (@num * @socialWidth)) -(@socialBgOffsetY + @socialHeight);
   }
 }
+
+.fontFaceDefinition(@fontName; @fontWeight; @fontFilePath) {
+  @font-face {
+    font-family: @fontName;
+    font-weight: @fontWeight;
+    src: url('@{fontFilePath}.eot');
+    src: url('@{fontFilePath}.eot?#iefix') format('embedded-opentype'),
+         url('@{fontFilePath}.woff') format('woff'),
+         url('@{fontFilePath}.ttf') format('truetype');
+  }
+}
+
 .fontyFont(@prefix; @fontFamily; @fontSize; @fontWeight: normal;
            @textTransform: inherit; @letterSpacing: normal; @fontStyle: normal) {
 
