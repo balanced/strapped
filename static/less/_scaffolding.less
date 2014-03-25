@@ -13,8 +13,9 @@
 // main is our main content area underneath the header
 @mainWidth: 1155px;
 @mainMinHeight: 581px;
-@mainVerticalPadding: 60px;
+@mainVerticalPadding: 45px;
 @mainMargin: 18px;
+@marketplaceNavWidth: 180px;
 
 // content is our main content area where most data for the current page is displayed
 @pageTitleWidth: @gridGutterWidth * 65;
@@ -22,8 +23,13 @@
 @lineRuleBackground: @gray3;
 
 #header {
+	position: relative;
 	background-color: @gray9;
 	height: 50px;
+	
+	a {
+      color: @white;
+    }
 }
 
 #main {
@@ -33,10 +39,10 @@
 
 #marketplace-nav {
 	background-color: @gray7;
+	width: @marketplaceNavWidth;
 	min-height: @mainMinHeight;
 	position: absolute;
 	height: 100%;
-	width: 180px;
 
 	&.noshow {
 		background-color: @contentBackground;
