@@ -1138,6 +1138,7 @@
 *
 */
 #header {
+  position: relative;
   background-color: #1c1f26;
   height: 50px;
 }
@@ -1147,10 +1148,10 @@
 }
 #marketplace-nav {
   background-color: #434854;
+  width: 180px;
   min-height: 581px;
   position: absolute;
   height: 100%;
-  width: 180px;
 }
 #marketplace-nav.noshow {
   background-color: #ffffff;
@@ -1190,7 +1191,7 @@
   font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
   line-height: 19.6px;
   color: #000000;
-  color: #ffffff;
+  color: #9196a1;
   display: block;
   padding: 15px;
   position: relative;
@@ -1198,9 +1199,11 @@
 }
 #marketplace-nav li a:hover {
   background-color: #303540;
+  color: #ffffff;
 }
 #marketplace-nav li a.active {
   background-color: #1c1f26;
+  color: #ffffff;
 }
 #marketplace-nav li .nav-label {
   color: inherit;
@@ -1671,9 +1674,11 @@ button.disabled {
 .dropdown.nav {
   float: left;
   margin: 0;
+  height: 50px;
 }
 .dropdown.nav .dropdown-toggle {
   padding: 15px;
+  height: 100%;
 }
 .dropdown.nav .dropdown-toggle span {
   font: normal normal normal 14px "Proxima Nova Reg Semi Bold", arial, sans-serif;
@@ -1709,8 +1714,11 @@ button.disabled {
   min-width: 180px;
   font-size: 15px;
 }
-.dropdown.action .dropdown-toggle {
+.dropdown.action {
   height: 34px;
+}
+.dropdown.action .dropdown-toggle {
+  height: 100%;
   padding: 5px 5px;
   border: 1px solid #d2d6d9;
 }
@@ -1795,8 +1803,8 @@ body {
   font-family: "Proxima Nova Reg", arial, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 13px;
-  color: #303540;
+  font-size: 14px;
+  color: #000000;
 }
 pre {
   font-family: "Inconsolata", Monaco, Menlo, "Courier New", monospace;
