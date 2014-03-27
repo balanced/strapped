@@ -1,3 +1,7 @@
+/*
+* mixins.less
+*
+*/
 .clearfix {
   *zoom: 1;
 }
@@ -25,10 +29,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/*
-* mixins.less
-*
-*/
 /*
 * colors.less
 *
@@ -1515,99 +1515,131 @@ pre {
 *
 * Inputs, Buttons, Dropdowns
 */
+*:focus {
+  outline: none !important;
+}
+a {
+  font: normal normal normal 13px "NimbusSanNov-SemBol", arial, sans-serif;
+  line-height: 18.2px;
+  color: #000000;
+  color: #528dcc;
+}
+a:visited {
+  color: #528dcc;
+}
+a:hover {
+  color: #0063b4;
+  text-decoration: none;
+}
+a:active {
+  color: #0063b4;
+}
 .btn,
 button {
-  font-family: "NimbusSanNovCon-Med", arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 0.1em;
-  border: 3px solid #000000;
-  background-color: #ffffff;
+  font: normal normal normal 13px "NimbusSanNov-SemBol", arial, sans-serif;
+  line-height: 18.2px;
   color: #000000;
+  color: #ffffff;
   text-align: center;
-  padding: 6px 13px;
-  line-height: 1em;
   vertical-align: middle;
+  line-height: 1em;
   box-sizing: initial;
+  padding: 9px 31px;
   border-radius: 0;
-  background: #ffffff;
-}
-.btn.large,
-button.large {
-  font-family: "NimbusSanConD-Bol", arial, sans-serif;
-  font-size: 24px;
-  border: 5px solid #000;
-  padding: 11px 19px;
-  letter-spacing: .1em;
+  border: 1px solid #528dcc;
+  background-color: #528dcc;
 }
 .btn:visited,
 button:visited {
-  color: #000000;
-}
-.btn:visited:hover,
-button:visited:hover {
   color: #ffffff;
 }
 .btn:hover,
 button:hover {
-  background-color: #000000;
+  border: 1px solid #0063b4;
+  background-color: #0063b4;
   color: #ffffff;
   text-decoration: none;
 }
-.btn.danger,
-button.danger {
-  border-color: #e71d1c;
-  color: #e71d1c;
-}
-.btn.danger:hover,
-button.danger:hover {
+.btn:focus,
+button:focus {
   color: #ffffff;
-  background-color: #e71d1c;
-  border-color: #e71d1c;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-shadow: none 0px 3px #999999;
+  -moz-box-shadow: none 0px 3px #999999;
+  box-shadow: none 0px 3px #999999;
 }
-.close {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  background-color: #757c87;
-  border: 0;
-  font-size: 25px;
-  padding: 3px 0 0;
-  color: #757c87;
-  line-height: 21px;
+.btn.secondary,
+button.secondary {
+  color: #9196a1;
+  border-color: #d2d6d9;
+  background-color: #ffffff;
 }
-.close:after {
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAAV0lEQVR42p2R4QlAIQiEHcERG6UNGqUR3giNdBUoTy76kR8IcqeRKgB0xWfRhNha8NXFgp9GxU6RCJu3R7ip46TLBZ9nwLBcUw2pL+WHJrMGvfJanw83AfPFCSKK6ozSAAAAAElFTkSuQmCC');
-  width: 12px;
-  height: 10px;
-  text-indent: -4000px;
-  display: block;
-  position: absolute;
-  top: 7px;
-  left: 5px;
-  content: ' ';
+.btn.secondary:visited,
+button.secondary:visited {
+  color: #9196a1;
 }
-.close:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.2);
+.btn.secondary:hover,
+button.secondary:hover {
+  color: #9196a1;
+  background-color: #f0f1f2;
+  border-color: #d2d6d9;
+}
+.btn.special,
+button.special {
+  font: normal normal normal 13px "NimbusSanNov-SemBol", arial, sans-serif;
+  line-height: 18.2px;
+  color: #000000;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 28px;
+  border: 1px solid #9a91c6;
+  background-color: #9a91c6;
+  padding: 10px 39px;
+}
+.btn.special:hover,
+button.special:hover {
+  border-color: #6d61a9;
+  background-color: #6d61a9;
+}
+.btn.disabled,
+button.disabled {
+  color: #ffffff;
+  border-color: #bbceeb;
+  background-color: #bbceeb;
+}
+.btn-link {
+  height: 30px;
+  padding: 0 13px;
 }
 .dropdown {
   display: block;
   width: auto;
 }
-.dropdown span {
+.dropdown .dropdown-toggle {
+  display: block;
+  text-decoration: none;
+}
+.dropdown .dropdown-toggle span {
   display: inline-block;
-  max-width: 215px;
+  max-width: 110px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   line-height: normal;
 }
-.dropdown .caret {
+.dropdown .dropdown-toggle .caret {
   border-width: 5px;
   margin-top: 8px;
   margin-left: 2px;
   vertical-align: top;
+}
+.dropdown .dropdown-toggle .icon {
+  float: left;
+  font-size: 16px;
+  color: #ffffff;
+  margin-right: 8px;
 }
 .dropdown.right {
   float: right;
@@ -1655,7 +1687,7 @@ button.danger:hover {
 }
 .dropdown .dropdown-menu a:hover {
   text-decoration: none;
-  background: #bbceeb;
+  background: #f0f1f2;
   color: #000000;
   cursor: pointer;
 }
@@ -1672,11 +1704,28 @@ button.danger:hover {
   right: 10px;
 }
 .dropdown.nav {
-  text-align: center;
   float: left;
+  margin: 0;
   height: 60px;
   border-right: 1px solid #757c87;
-  margin: 0;
+}
+.dropdown.nav .dropdown-toggle {
+  padding: 20px 12px;
+  height: 100%;
+}
+.dropdown.nav .dropdown-toggle span {
+  font: normal normal normal 16px "NimbusSanNov-SemBol", arial, sans-serif;
+  line-height: 22px;
+  color: #000000;
+  color: #ffffff;
+  line-height: 17px;
+}
+.dropdown.nav .dropdown-toggle .caret {
+  border-top-color: #757c87;
+  margin-top: 5px;
+}
+.dropdown.nav .dropdown-toggle:active {
+  outline: 0;
 }
 .dropdown.nav.open,
 .dropdown.nav .dropdown-toggle:hover {
@@ -1695,19 +1744,8 @@ button.danger:hover {
 .dropdown.nav .dropdown-toggle:hover .caret {
   border-top-color: #000000;
 }
-.dropdown.nav .dropdown-toggle {
-  display: block;
-  height: 100%;
-  padding: 18px 10px;
-  text-decoration: none;
-}
-.dropdown.nav .dropdown-toggle .caret {
-  border-top-color: #757c87;
-}
-.dropdown.nav .dropdown-toggle:active {
-  outline: 0;
-}
 .dropdown.nav .dropdown-menu {
+  min-width: 180px;
   font-size: 15px;
 }
 .dropdown.action .dropdown-toggle {
@@ -1729,27 +1767,113 @@ button.danger:hover {
 .dropdown.action .dropdown-menu {
   font-size: 13px;
 }
-.sl1,
-.strapped-label1 {
-  font: normal normal normal 18px "NimbusSanNov-Med", arial, sans-serif;
+/*
+* labels.less
+*
+* 
+*/
+h1 {
+  font-family: "NimbusSanNov-Reg", arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 34px;
+  line-height: 40px;
   color: #000000;
 }
-.sl2,
-.strapped-label2 {
-  font: normal normal normal 15px "NimbusSanNov-Bol", arial, sans-serif;
+h2 {
+  font-family: "NimbusSanNov-Reg", arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
   color: #000000;
 }
-.sl3,
-.strapped-label3 {
-  font: normal normal normal 15px "NimbusSanNov-Med", arial, sans-serif;
+h3 {
+  font-family: "NimbusSanNov-Med", arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: #000000;
 }
-.sl4,
-.strapped-label4 {
+.sl,
+.strapped-label,
+body {
   font: normal normal normal 13px "NimbusSanNov-Med", arial, sans-serif;
+  line-height: 18.2px;
+  color: #000000;
 }
-.sl5,
-.strapped-label5 {
+.sl-sb,
+.strapped-label-semi-bold {
+  font: normal normal normal 13px "NimbusSanNov-SemBol", arial, sans-serif;
+  line-height: 18.2px;
+  color: #000000;
+}
+.sl-b,
+.strapped-label-bold {
+  font: normal normal normal 13px "NimbusSanNov-Bol", arial, sans-serif;
+  line-height: 18.2px;
+  color: #000000;
+}
+.sl-sm,
+.strapped-label-small {
   font: normal normal normal 12px "NimbusSanNov-Med", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+}
+.sl-sm-sb,
+.strapped-label-small-semi-bold {
+  font: normal normal normal 12px "NimbusSanNov-SemBol", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+}
+.sl-sm-b,
+.strapped-label-small-bold {
+  font: normal normal normal 12px "NimbusSanNov-Bol", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+}
+.sl-md,
+.strapped-label-medium {
+  font: normal normal normal 16px "NimbusSanNov-Med", arial, sans-serif;
+  line-height: 22px;
+  color: #000000;
+}
+.sl-md-sb,
+.strapped-label-medium-semi-bold {
+  font: normal normal normal 16px "NimbusSanNov-SemBol", arial, sans-serif;
+  line-height: 22px;
+  color: #000000;
+}
+.sl-md-b,
+.strapped-label-medium-bold {
+  font: normal normal normal 16px "NimbusSanNov-Bol", arial, sans-serif;
+  line-height: 22px;
+  color: #000000;
+}
+.sl-lg,
+.strapped-label-large {
+  font: normal normal normal 32px "NimbusSanNov-Med", arial, sans-serif;
+  line-height: 45px;
+  color: #000000;
+}
+.sl-lg-sb,
+.strapped-label-large-semi-bold {
+  font: normal normal normal 32px "NimbusSanNov-SemBol", arial, sans-serif;
+  line-height: 45px;
+  color: #000000;
+}
+.sl-lg-b,
+.strapped-label-large-bold {
+  font: normal normal normal 32px "NimbusSanNov-Bol", arial, sans-serif;
+  line-height: 45px;
+  color: #000000;
+}
+.sl-code,
+pre {
+  font: normal normal normal 13px "Inconsolata", Monaco, Menlo, "Courier New", monospace;
+  line-height: 18.2px;
+  color: #000000;
 }
 .sl-warning {
   color: #ac7b0d;
@@ -1773,6 +1897,30 @@ button.danger:hover {
 }
 .sl-link:hover {
   color: #000000;
+}
+.num1 {
+  color: #000000;
+  font: normal normal normal 56px "NimbusSanNov-Bol", arial, sans-serif;
+}
+.num2 {
+  color: #000000;
+  font: normal normal normal 24px "NimbusSanNov-Bol", arial, sans-serif;
+}
+.num3 {
+  color: #000000;
+  font: normal normal normal 18px "NimbusSanNov-Bol", arial, sans-serif;
+}
+.num-danger {
+  color: #e71d1c;
+}
+.num-success {
+  color: #4bb2a4;
+}
+.num-disabled {
+  color: #757c87;
+}
+.num-light {
+  color: #b1b9bd;
 }
 .tb,
 .title-block {
@@ -1831,30 +1979,6 @@ button.danger:hover {
 .tb.tb-egyptian-blue .tb-label,
 .title-block.tb-egyptian-blue .tb-label {
   background-color: #4789b0;
-}
-.num1 {
-  color: #000000;
-  font: normal normal normal 56px "NimbusSanConD-Bol", arial, sans-serif;
-}
-.num2 {
-  color: #000000;
-  font: normal normal normal 24px "NimbusSanConD-Bol", arial, sans-serif;
-}
-.num3 {
-  color: #000000;
-  font: normal normal normal 18px "NimbusSanConD-Bol", arial, sans-serif;
-}
-.num-danger {
-  color: #e71d1c;
-}
-.num-success {
-  color: #4bb2a4;
-}
-.num-disabled {
-  color: #757c87;
-}
-.num-light {
-  color: #b1b9bd;
 }
 p {
   font-family: "NimbusSanNov-Med", arial, sans-serif;

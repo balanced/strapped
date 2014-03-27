@@ -11,8 +11,6 @@
 a {
 	.sl-sb;
 	color: @persianBlue60;
-	.transition(color);
-	.transition-duration(200ms);
 
 	&:visited {
 		color: @persianBlue60;
@@ -39,8 +37,6 @@ a {
 	border-radius: 0;
 	border: 1px solid @persianBlue60;
 	background-color: @persianBlue60;
-	.transition(background-color);
-	.transition-duration(200ms);
 
 	&:visited {
 		color: @white;
@@ -108,8 +104,6 @@ a {
 	.dropdown-toggle {
 		display: block;
 		text-decoration: none;
-		.transition(background-color);
-		.transition-duration(200ms);
 
 		span {
 			display: inline-block;
@@ -211,15 +205,16 @@ a {
 	&.nav {
 		float: left;
 		margin: 0;
-		height: 50px;
+		height: 60px;
+		border-right: 1px solid @gray5;
 
 		.dropdown-toggle {
-			padding: 15px 12px;
+			padding: 20px 12px;
 			height: 100%;
 
 			span {
-				.sl-sb;
-				color: @gray4;
+				.sl-md-sb;
+				color: @white;
 				line-height: 17px;
 			}
 
@@ -234,18 +229,19 @@ a {
 		}
 
 		&.open, .dropdown-toggle:hover {
-			background-color: @black;
+			background-color: @white;
+			color: @black;
 			
 			.dropdown {
 				background-color: @white;
 			}
 
 			span {
-				color: @white;
+				color: @black;
 			}
 
 			.caret {
-				border-top-color: @white;
+				border-top-color: @black;
 			}
 		}
 
@@ -256,84 +252,27 @@ a {
 	}
 
 	&.action {
-		height: 34px;
-
 		.dropdown-toggle {
-			padding: 5px 5px 0px;
-			border: 1px solid @gray2;
+			display: inline-block;
+			padding: 12px 10px;
+			line-height: 100%;
 
 			span {
-				.sl;
-				line-height: 23px;
-				border-right: 1px solid @gray2;
-				padding: 0 10px 0 5px;
+				font-size: 15px;
+				color: @black;
 			}
+
 			.caret {
-				border-width: 4px;
-				margin-left: 1px;
-				border-top-color: @gray4;
+				border-top-color: @black;
+				margin-top: 5px;
 			}
 
 			&:active {
 				outline: 0;
 			}
 		}
-
-		&.open, .dropdown-toggle:hover {
-			background-color: @gray1;
-		}
-
 		.dropdown-menu {
-			.sl;
-		}
-	}
-
-	&.date {
-		.dropdown-toggle {
-			height: 44px;
-			padding: 5px 5px;
-			border: 1px solid @gray2;
-
-			span {
-				padding: 0 5px;
-
-				.date {
-					.sl;
-				}
-
-				.time {
-					.sl-sm;
-					color: @gray4;
-					line-height: normal;
-				}
-
-				&.em-dash {
-					.sl;
-					vertical-align: top;
-					padding: 0;
-				}
-
-				&:last-of-type {
-					padding-right: 10px;
-					border-right: 1px solid @gray2;	
-				}
-			}
-
-			.caret {
-				border-width: 4px;
-				margin-top: 14px;
-				margin-left: 1px;
-				border-top-color: @gray4;
-			}
-		}
-
-		&.open, .dropdown-toggle:hover {
-			background-color: @gray1;
-		}
-
-		.dropdown-menu {
-			.sl;
-			min-width: 230px;
+			font-size: 13px;
 		}
 	}
 }
