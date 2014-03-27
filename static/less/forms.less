@@ -4,19 +4,36 @@
 * Inputs, Buttons, Dropdowns
 */
 
+*:focus {
+	outline: none !important;
+}
+
+a {
+	.sl-sb;
+	color: @persianBlue60;
+
+	&:visited {
+		color: @persianBlue60;
+	}
+
+	&:hover {
+		color: @persianBlue100;
+		text-decoration: none;
+	}
+
+	&:active {
+		color: @persianBlue100;
+	}
+}
+
 .btn, button {
-	font-family: @baseFontFamilyCondensed;
-	text-transform: uppercase;
-	font-size: 14px;
-	letter-spacing: 0.1em;
-	border: 3px solid @black;
-	background-color: @white;
-	color: @black;
+	.sl-sb;
+	color: @white;
 	text-align: center;
-	padding: 6px 13px;
-	line-height: 1em;
 	vertical-align: middle;
+	line-height: 1em;
 	box-sizing: initial;
+	padding: 9px 31px;
 	border-radius: 0;
 	background: @white;
 
@@ -29,26 +46,34 @@
 	}
 
 	&:visited {
-		color: @black;
-		&:hover {
-			color: @white;
-		}
+		color: @white;
 	}
 
 	&:hover {
-		background-color: @black;
+		border: 1px solid @persianBlue100;
+		background-color: @persianBlue100;
 		color: @white;
 		text-decoration: none;
 	}
 
-	&.danger {
-		border-color: @imperialRed100;
-		color: @imperialRed100;
+	&:focus {
+		color: @white;
+		.box-shadow(none);
+	}
+
+	&.secondary {
+		color: @gray4;
+		border-color: @gray2;
+		background-color: @white;
+
+		&:visited {
+			color: @gray4;
+		}
 
 		&:hover {
-			color: @white;
-			background-color: @imperialRed100;
-			border-color: @imperialRed100;
+			color: @gray4;
+			background-color: @gray1;
+			border-color: @gray2;
 		}
 	}
 
@@ -71,53 +96,63 @@
   }
 }
 
-.close {
-	position: absolute;
-	width: 22px;
-	height: 22px;
-	background-color: @gray5;
-	border: 0;
-	font-size: 25px;
-	padding: 3px 0 0;
-	color: @gray5;
-	line-height: 21px;
+	&.special {
+		.sl-sb;
+		color: @white;
+		font-size: 20px;
+		line-height: 28px;
+		border: 1px solid @lavenderPurple60;
+		background-color: @lavenderPurple60;
+		padding: 10px 39px;
 
-	&:after {
-		.cssicon(
-			@url: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAAV0lEQVR42p2R4QlAIQiEHcERG6UNGqUR3giNdBUoTy76kR8IcqeRKgB0xWfRhNha8NXFgp9GxU6RCJu3R7ip46TLBZ9nwLBcUw2pL+WHJrMGvfJanw83AfPFCSKK6ozSAAAAAElFTkSuQmCC'),
-			@width: 12px,
-			@height: 10px,
-			@display: block
-		);
-		position: absolute;
-		top: 7px;
-		left: 5px;
-		content: ' ';
+		&:hover {
+			border-color: @lavenderPurple100;
+			background-color: @lavenderPurple100;
+		}
 	}
-	&:hover {
-		background-color: rgba(255, 255, 255, 0.2);
-		color: rgba(255, 255, 255, 0.2);
+  
+	&.disabled {
+		color: @white;
+		border-color: @persianBlue20;
+		background-color: @persianBlue20;
 	}
+}
+
+.btn-link {
+	height: 30px;
+	padding: 0 13px;
 }
 
 .dropdown {
 	display: block;
 	width: auto;
 
-	span {
-		display: inline-block;
-		max-width: 215px;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		overflow: hidden;
-		line-height: normal;
-	}
+	.dropdown-toggle {
+		display: block;
+		text-decoration: none;
 
-	.caret {
-		border-width: 5px;
-		margin-top: 8px;
-		margin-left: 2px;
-		vertical-align: top;
+		span {
+			display: inline-block;
+			max-width: 110px;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			line-height: normal;
+		}
+
+		.caret {
+			border-width: 5px;
+			margin-top: 8px;
+			margin-left: 2px;
+			vertical-align: top;
+		}
+
+		.icon {
+			float: left;
+			font-size: 16px;
+			color: @white;
+			margin-right: 8px;
+		}
 	}
 
 	&.right {
@@ -165,13 +200,13 @@
 		}
 
 		a {
-			color:@black;
+			color: @black;
 			display: block;
 			padding: 10px 20px;
 
 			&:hover {
 				text-decoration: none;
-				background: @persianBlue20;
+				background: @gray1;
 				color: @black;
 				cursor: pointer;
 			}
@@ -194,16 +229,35 @@
 	}
 
 	&.nav {
-		text-align: center;
 		float: left;
+		margin: 0;
 		height: 60px;
 		border-right: 1px solid @gray5;
-		margin: 0;
+
+		.dropdown-toggle {
+			padding: 20px 12px;
+			height: 100%;
+
+			span {
+				.sl-md-sb;
+				color: @white;
+				line-height: 17px;
+			}
+
+			.caret {
+				border-top-color: @gray5;
+				margin-top: 5px;
+			}
+
+			&:active {
+				outline: 0;
+			}
+		}
 
 		&.open, .dropdown-toggle:hover {
 			background-color: @white;
-			color:@black;
-
+			color: @black;
+			
 			.dropdown {
 				background-color: @white;
 			}
@@ -217,21 +271,8 @@
 			}
 		}
 
-		.dropdown-toggle {
-			display: block;
-			height: 100%;
-			padding: 18px 10px;
-			text-decoration: none;
-
-			.caret {
-				border-top-color: @gray5;
-			}
-
-			&:active {
-				outline: 0;
-			}
-		}
 		.dropdown-menu {
+			min-width: 180px;
 			font-size: 15px;
 		}
 	}
