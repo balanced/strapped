@@ -1,23 +1,114 @@
-.sl1, .strapped-label1 {
-  font: normal normal normal 18px @baseFontFamily;
+/*
+* labels.less
+*
+* 
+*/
+
+// Headers
+h1 {
+  font-family: @baseFontFamilyReg;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 34px;
+  line-height: 40px;
   color: @black;
 }
 
-.sl2, .strapped-label2 {
-  font: normal normal normal 15px @baseFontFamilyBold;
+h2 {
+  font-family: @baseFontFamilyReg;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
   color: @black;
 }
 
-.sl3, .strapped-label3 {
-  font: normal normal normal 15px @baseFontFamily;
+h3 {
+  font-family: @baseFontFamily;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: @black;
 }
 
-.sl4, .strapped-label4 {
-  font: normal normal normal 13px @baseFontFamily;
+// Labels
+.sl, .strapped-label, body {
+  font: normal normal normal @baseFontSize @baseFontFamily;
+  line-height: @baseLineHeight;
+  color: @black;
 }
 
-.sl5, .strapped-label5 {
+.sl-sb, .strapped-label-semi-bold {
+  font: normal normal normal @baseFontSize @baseFontFamilySemiBold;
+  line-height: @baseLineHeight;
+  color: @black;
+}
+
+.sl-b, .strapped-label-bold {
+  font: normal normal normal @baseFontSize @baseFontFamilyBold;
+  line-height: @baseLineHeight;
+  color: @black;
+}
+
+.sl-sm, .strapped-label-small {
   font: normal normal normal 12px @baseFontFamily;
+  line-height: 16px;
+  color: @black;
+}
+
+.sl-sm-sb, .strapped-label-small-semi-bold {
+  font: normal normal normal 12px @baseFontFamilySemiBold;
+  line-height: 16px;
+  color: @black;
+}
+
+.sl-sm-b, .strapped-label-small-bold {
+  font: normal normal normal 12px @baseFontFamilyBold;
+  line-height: 16px;
+  color: @black;
+}
+
+.sl-md, .strapped-label-medium {
+  font: normal normal normal 16px @baseFontFamily;
+  line-height: 22px;
+  color: @black;
+}
+
+.sl-md-sb, .strapped-label-medium-semi-bold {
+  font: normal normal normal 16px @baseFontFamilySemiBold;
+  line-height: 22px;
+  color: @black;
+}
+
+.sl-md-b, .strapped-label-medium-bold {
+  font: normal normal normal 16px @baseFontFamilyBold;
+  line-height: 22px;
+  color: @black;
+}
+
+.sl-lg, .strapped-label-large {
+  font: normal normal normal 32px @baseFontFamily;
+  line-height: 45px;
+  color: @black;
+}
+
+.sl-lg-sb, .strapped-label-large-semi-bold {
+  font: normal normal normal 32px @baseFontFamilySemiBold;
+  line-height: 45px;
+  color: @black;
+}
+
+.sl-lg-b, .strapped-label-large-bold {
+  font: normal normal normal 32px @baseFontFamilyBold;
+  line-height: 45px;
+  color: @black;
+}
+
+.sl-code, pre {
+  font: normal normal normal @baseFontSize @monoFontFamily;
+  line-height: @baseLineHeight;
+  color: @black;
 }
 
 .sl-warning {
@@ -47,3 +138,34 @@
   }
 }
 
+// Numbers
+.num1 {
+  color: @black;
+  font: normal normal normal 56px @baseFontFamilyBold;
+}
+
+.num2 {
+  color: @black;
+  font: normal normal normal 24px @baseFontFamilyBold;
+}
+
+.num3 {
+  color: @black;
+  font: normal normal normal 18px @baseFontFamilyBold;
+}
+
+.num-danger {
+  color: @imperialRed100;
+}
+
+.num-success {
+  color: @forestGreen60;
+}
+
+.num-disabled {
+  color: @gray5;
+}
+
+.num-light {
+  color: @gray3;
+}
