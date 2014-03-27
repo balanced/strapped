@@ -2,6 +2,18 @@
   <h2>Components</h2>
   <h3>Title Bars</h3>
   <div class="strapped-preview">
+    <div class="title-block {{className}}">
+      <span class="tb-icon">
+        <i class="icon icon-document-upload"></i>
+      </span>
+      <span class="tb-content">
+        Important stuff
+        <span class="tb-actions">
+          <button class="btn">Add Stuff</button>
+          <a class="btn btn-link">Cancel stuff</a>
+        </span>
+      </span>
+    </div>
     {{#each titleBars}}
       <div class="title-block {{className}}">
         <span class="tb-icon">

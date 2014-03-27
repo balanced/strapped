@@ -115,7 +115,11 @@
 			{
 				"name": "Secondary button",
 				"className": "btn danger"
-			}
+			},
+      {
+        "name": "Link button",
+        "className": "btn btn-link"
+      }
 		]
 	}
 }
