@@ -29,13 +29,18 @@ a {
 }
 
 .btn, button {
-	.sl-sb;
-	color: @white;
+	font-family: @baseFontFamilyCondensed;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+	border: 3px solid @black;
+	background-color: @white;
+	color: @black;
 	text-align: center;
-	vertical-align: middle;
+	padding: 6px 13px;
 	line-height: 1em;
+	vertical-align: middle;
 	box-sizing: initial;
-	padding: 9px 31px;
 	border-radius: 0;
 	border: 1px solid @persianBlue60;
 	background-color: @persianBlue60;
@@ -43,34 +48,26 @@ a {
 	.transition-duration(200ms);
 
 	&:visited {
-		color: @white;
+		color: @black;
+		&:hover {
+			color: @white;
+		}
 	}
 
 	&:hover {
-		border: 1px solid @persianBlue100;
-		background-color: @persianBlue100;
+		background-color: @black;
 		color: @white;
 		text-decoration: none;
 	}
 
-	&:focus {
-		color: @white;
-		.box-shadow(none);
-	}
-
-	&.secondary {
-		color: @gray4;
-		border-color: @gray2;
-		background-color: @white;
-
-		&:visited {
-			color: @gray4;
-		}
+	&.danger {
+		border-color: @imperialRed100;
+		color: @imperialRed100;
 
 		&:hover {
-			color: @gray4;
-			background-color: @gray1;
-			border-color: @gray2;
+			color: @white;
+			background-color: @imperialRed100;
+			border-color: @imperialRed100;
 		}
 	}
 	&.btn-link {
@@ -91,31 +88,33 @@ a {
 		}
 	}
 
-	&.special {
-		.sl-sb;
-		color: @white;
-		font-size: 20px;
-		line-height: 28px;
-		border: 1px solid @lavenderPurple60;
-		background-color: @lavenderPurple60;
-		padding: 10px 39px;
+.close {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	background-color: @gray5;
+	border: 0;
+	font-size: 25px;
+	padding: 3px 0 0;
+	color: @gray5;
+	line-height: 21px;
 
-		&:hover {
-			border-color: @lavenderPurple100;
-			background-color: @lavenderPurple100;
-		}
+	&:after {
+		.cssicon(
+			@url: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAAV0lEQVR42p2R4QlAIQiEHcERG6UNGqUR3giNdBUoTy76kR8IcqeRKgB0xWfRhNha8NXFgp9GxU6RCJu3R7ip46TLBZ9nwLBcUw2pL+WHJrMGvfJanw83AfPFCSKK6ozSAAAAAElFTkSuQmCC'),
+			@width: 12px,
+			@height: 10px,
+			@display: block
+		);
+		position: absolute;
+		top: 7px;
+		left: 5px;
+		content: ' ';
 	}
-  
-	&.disabled {
-		color: @white;
-		border-color: @persianBlue20;
-		background-color: @persianBlue20;
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.2);
+		color: rgba(255, 255, 255, 0.2);
 	}
-}
-
-.btn-link {
-	height: 30px;
-	padding: 0 13px;
 }
 
 .dropdown {
@@ -144,12 +143,11 @@ a {
 			vertical-align: top;
 		}
 
-		.icon {
-			float: left;
-			font-size: 16px;
-			color: @white;
-			margin-right: 8px;
-		}
+	.caret {
+		border-width: 5px;
+		margin-top: 8px;
+		margin-left: 2px;
+		vertical-align: top;
 	}
 
 	&.right {
@@ -197,13 +195,13 @@ a {
 		}
 
 		a {
-			color: @black;
+			color:@black;
 			display: block;
 			padding: 10px 20px;
 
 			&:hover {
 				text-decoration: none;
-				background: @gray1;
+				background: @persianBlue20;
 				color: @black;
 				cursor: pointer;
 			}
@@ -271,6 +269,7 @@ a {
 			font-size: 15px;
 		}
 	}
+
 
 	&.action {
 		height: 34px;
