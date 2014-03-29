@@ -115,6 +115,10 @@
 			{
 				"name": "Special button",
 				"className": "btn special"
+			},
+			{
+				"name": "Link button",
+				"className": "btn btn-link"
 			}
 		]
 	}
