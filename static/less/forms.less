@@ -39,7 +39,7 @@ a {
 	border-radius: 0;
 	border: 1px solid @persianBlue60;
 	background-color: @persianBlue60;
-	.transition(background-color);
+	.transition(background-color, border-color);
 	.transition-duration(200ms);
 
 	&:visited {
@@ -214,18 +214,18 @@ a {
 		height: 50px;
 
 		.dropdown-toggle {
-			padding: 15px 12px;
 			height: 100%;
 
 			span {
 				.sl-sb;
 				color: @gray4;
 				line-height: 17px;
+				padding: 15px 0px 15px 10px;
 			}
 
 			.caret {
 				border-top-color: @gray5;
-				margin-top: 5px;
+				margin: 22px 5px;
 			}
 
 			&:active {

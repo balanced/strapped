@@ -1156,6 +1156,12 @@
 #marketplace-nav.noshow {
   background-color: #ffffff;
 }
+#marketplace-nav a.btn {
+  display: inline-block;
+  width: 135px;
+  padding: 9px 10px;
+  margin: 11px 10px 0 10px;
+}
 #marketplace-nav ul {
   padding: 0;
 }
@@ -1789,6 +1795,10 @@ button.disabled {
   border-color: #bbceeb;
   background-color: #bbceeb;
 }
+.btn-link {
+  height: 30px;
+  padding: 0 13px;
+}
 .dropdown {
   display: block;
   width: auto;
@@ -1893,7 +1903,6 @@ button.disabled {
   height: 50px;
 }
 .dropdown.nav .dropdown-toggle {
-  padding: 15px 12px;
   height: 100%;
 }
 .dropdown.nav .dropdown-toggle span {
@@ -1902,10 +1911,11 @@ button.disabled {
   color: #000000;
   color: #9196a1;
   line-height: 17px;
+  padding: 15px 0px 15px 10px;
 }
 .dropdown.nav .dropdown-toggle .caret {
   border-top-color: #757c87;
-  margin-top: 5px;
+  margin: 22px 5px;
 }
 .dropdown.nav .dropdown-toggle:active {
   outline: 0;
@@ -1934,7 +1944,6 @@ button.disabled {
   height: 34px;
 }
 .dropdown.action .dropdown-toggle {
-  margin: 5px;
   padding: 5px 5px 0px;
   border: 1px solid #d2d6d9;
 }
