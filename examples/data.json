@@ -91,19 +91,11 @@
   },
   "fonts": {
     "fonts": [{
-      "style": "font-family: 'Nimbus Sans'; font-weight: 300;"
+      "style": "font-family: 'Proxima Nova'; font-weight: 300;"
     }, {
-      "style": "font-family: 'Nimbus Sans'; font-weight: 400;"
+      "style": "font-family: 'Proxima Nova'; font-weight: 600;"
     }, {
-      "style": "font-family: 'Nimbus Sans'; font-weight: 700;"
-    }, {
-      "style": "font-family: 'Nimbus Sans Condensed'; font-weight: 400;"
-    }, {
-      "style": "font-family: 'Nimbus Sans Condensed'; font-weight: 700;"
-    }, {
-      "style": "font-family: 'Nimbus Sans Extra Condensed'; font-weight: 400;"
-    }, {
-      "style": "font-family: 'Nimbus Sans Nov D Cond Ultra'; font-weight: 400;"
+      "style": "font-family: 'Proxima Nova'; font-weight: 700;"
     }]
   },
 	"forms": {
@@ -114,12 +106,20 @@
 			},
 			{
 				"name": "Secondary button",
-				"className": "btn danger"
+				"className": "btn secondary"
 			},
-      {
-        "name": "Link button",
-        "className": "btn btn-link"
-      }
+			{
+				"name": "Disabled button",
+				"className": "btn disabled"
+			},
+			{
+				"name": "Special button",
+				"className": "btn special"
+			},
+			{
+				"name": "Link button",
+				"className": "btn btn-link"
+			}
 		]
 	}
 }

@@ -1,5 +1,10 @@
 <div id="forms" class="clearfix">
 	<h2>Forms</h2>
+	<h3>Text links</h3>
+	<div class="strapped-preview">
+		<a href="#">Text link</a>
+	</div>
+
 	<h3>Buttons</h3>
 	<div class="strapped-preview">
 		{{#each buttons}}
@@ -15,7 +20,8 @@
 		<div id="header">
 			<div class="dropdown nav">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-					<span class="nav2d">Nav Dropdown 1</span>
+					<div class="icon icon-balanced-dots"></div>
+					<span>Main Navigation Dropdown</span>
 					<b class="caret"></b>
 				</a>
 				<ul class="dropdown-menu">
@@ -41,7 +47,7 @@
 			</div>
 			<div class="dropdown nav">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-					<span class="nav2d">Nav Dropdown 2</span>
+					<span>Nav Dropdown 2</span>
 					<b class="caret"></b>
 				</a>
 				<ul class="dropdown-menu">
@@ -54,10 +60,65 @@
 				</ul>
 			</div>
 		</div>
+
+		<nav id="marketplace-nav">
+			<ul>
+				<li>
+					<a href="#" class="active">
+						<i class="icon-activity"></i>
+						<span>Activity</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-logs"></i>
+						<span>Logs</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-invoices"></i>
+						<span>Invoices</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-settings"></i>
+						<span>Settings</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
 		<header>
-			<div class="dropdown action right">
+			<div class="inline dropdown action right">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 					<span>Action</span>
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu right">
+					<li>
+						<a href="#">Menu 1</a>
+					</li>
+					<li>
+						<a href="#">Menu 2</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="inline dropdown date right">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					<span>
+						<div class="date">Nov 19, 2013</div>
+						<div class="time">5:00pm</div>
+					</span>
+					<span class="em-dash">—</span>
+					<span>
+						<div class="date">Dec 18, 2013</div>
+						<div class="time">5:00pm</div>
+					</span>
+					
+
 					<b class="caret"></b>
 				</a>
 				<ul class="dropdown-menu right">

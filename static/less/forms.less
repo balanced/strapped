@@ -11,6 +11,8 @@
 a {
 	.sl-sb;
 	color: @persianBlue60;
+	.transition(color);
+	.transition-duration(200ms);
 
 	&:visited {
 		color: @persianBlue60;
@@ -27,100 +29,92 @@ a {
 }
 
 .btn, button {
-	.sl-sb;
-	color: @white;
+	font-family: @baseFontFamilyCondensed;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+	border: 3px solid @black;
+	background-color: @white;
+	color: @black;
 	text-align: center;
-	vertical-align: middle;
+	padding: 6px 13px;
 	line-height: 1em;
+	vertical-align: middle;
 	box-sizing: initial;
-	padding: 9px 31px;
 	border-radius: 0;
-	background: @white;
-
-	&.large {
-		font-family: @baseFontFamilyCondensedBold;
-		font-size: 24px;
-		border: 5px solid #000;
-		padding: 11px 19px;
-		letter-spacing: .1em;
-	}
+	border: 1px solid @persianBlue60;
+	background-color: @persianBlue60;
+	.transition(background-color border-color);
+	.transition-duration(200ms);
 
 	&:visited {
-		color: @white;
+		color: @black;
+		&:hover {
+			color: @white;
+		}
 	}
 
 	&:hover {
-		border: 1px solid @persianBlue100;
-		background-color: @persianBlue100;
+		background-color: @black;
 		color: @white;
 		text-decoration: none;
 	}
 
-	&:focus {
-		color: @white;
-		.box-shadow(none);
-	}
-
-	&.secondary {
-		color: @gray4;
-		border-color: @gray2;
-		background-color: @white;
-
-		&:visited {
-			color: @gray4;
-		}
+	&.danger {
+		border-color: @imperialRed100;
+		color: @imperialRed100;
 
 		&:hover {
-			color: @gray4;
-			background-color: @gray1;
-			border-color: @gray2;
+			color: @white;
+			background-color: @imperialRed100;
+			border-color: @imperialRed100;
+		}
+	}
+	&.btn-link {
+		background-color: transparent;
+		border: 3px solid transparent;
+		color: @persianBlue100;
+		display: inline-block;
+		font: normal normal normal 13px/30px "Nimbus Sans", arial, sans-serif;
+		letter-spacing: 0;
+		height: 30px;
+		padding: 0 13px;
+		text-align: center;
+		text-transform: none;
+
+	    &:hover {
+			background-color: inherit;
+			color: @black !important;
 		}
 	}
 
-  &.btn-link {
-    background-color: transparent;
-    border: 3px solid transparent;
-    color: @persianBlue100;
-    display: inline-block;
-    font: normal normal normal 13px/30px "Nimbus Sans", arial, sans-serif;
-    letter-spacing: 0;
-    height: 30px;
-    padding: 0 13px;
-    text-align: center;
-    text-transform: none;
+.close {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	background-color: @gray5;
+	border: 0;
+	font-size: 25px;
+	padding: 3px 0 0;
+	color: @gray5;
+	line-height: 21px;
 
-    &:hover {
-      background-color: inherit;
-      color: @black !important;
-    }
-  }
-}
-
-	&.special {
-		.sl-sb;
-		color: @white;
-		font-size: 20px;
-		line-height: 28px;
-		border: 1px solid @lavenderPurple60;
-		background-color: @lavenderPurple60;
-		padding: 10px 39px;
-
-		&:hover {
-			border-color: @lavenderPurple100;
-			background-color: @lavenderPurple100;
-		}
+	&:after {
+		.cssicon(
+			@url: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAAV0lEQVR42p2R4QlAIQiEHcERG6UNGqUR3giNdBUoTy76kR8IcqeRKgB0xWfRhNha8NXFgp9GxU6RCJu3R7ip46TLBZ9nwLBcUw2pL+WHJrMGvfJanw83AfPFCSKK6ozSAAAAAElFTkSuQmCC'),
+			@width: 12px,
+			@height: 10px,
+			@display: block
+		);
+		position: absolute;
+		top: 7px;
+		left: 5px;
+		content: ' ';
 	}
-  
-	&.disabled {
-		color: @white;
-		border-color: @persianBlue20;
-		background-color: @persianBlue20;
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.2);
+		color: rgba(255, 255, 255, 0.2);
 	}
-}
-
-.btn-link {
-	height: 30px;
-	padding: 0 13px;
 }
 
 .dropdown {
@@ -130,6 +124,8 @@ a {
 	.dropdown-toggle {
 		display: block;
 		text-decoration: none;
+		.transition(background-color);
+		.transition-duration(200ms);
 
 		span {
 			display: inline-block;
@@ -147,12 +143,11 @@ a {
 			vertical-align: top;
 		}
 
-		.icon {
-			float: left;
-			font-size: 16px;
-			color: @white;
-			margin-right: 8px;
-		}
+	.caret {
+		border-width: 5px;
+		margin-top: 8px;
+		margin-left: 2px;
+		vertical-align: top;
 	}
 
 	&.right {
@@ -200,13 +195,13 @@ a {
 		}
 
 		a {
-			color: @black;
+			color:@black;
 			display: block;
 			padding: 10px 20px;
 
 			&:hover {
 				text-decoration: none;
-				background: @gray1;
+				background: @persianBlue20;
 				color: @black;
 				cursor: pointer;
 			}
@@ -231,22 +226,21 @@ a {
 	&.nav {
 		float: left;
 		margin: 0;
-		height: 60px;
-		border-right: 1px solid @gray5;
+		height: 50px;
 
 		.dropdown-toggle {
-			padding: 20px 12px;
 			height: 100%;
 
 			span {
-				.sl-md-sb;
-				color: @white;
+				.sl-sb;
+				color: @gray4;
 				line-height: 17px;
+				padding: 15px 0px 15px 10px;
 			}
 
 			.caret {
 				border-top-color: @gray5;
-				margin-top: 5px;
+				margin: 22px 5px;
 			}
 
 			&:active {
@@ -255,19 +249,18 @@ a {
 		}
 
 		&.open, .dropdown-toggle:hover {
-			background-color: @white;
-			color: @black;
+			background-color: @black;
 			
 			.dropdown {
 				background-color: @white;
 			}
 
 			span {
-				color: @black;
+				color: @white;
 			}
 
 			.caret {
-				border-top-color: @black;
+				border-top-color: @white;
 			}
 		}
 
@@ -277,28 +270,86 @@ a {
 		}
 	}
 
+
 	&.action {
+		height: 34px;
+
 		.dropdown-toggle {
-			display: inline-block;
-			padding: 12px 10px;
-			line-height: 100%;
+			padding: 5px 5px 0px;
+			border: 1px solid @gray2;
 
 			span {
-				font-size: 15px;
-				color: @black;
+				.sl;
+				line-height: 23px;
+				border-right: 1px solid @gray2;
+				padding: 0 10px 0 5px;
 			}
-
 			.caret {
-				border-top-color: @black;
-				margin-top: 5px;
+				border-width: 4px;
+				margin-left: 1px;
+				border-top-color: @gray4;
 			}
 
 			&:active {
 				outline: 0;
 			}
 		}
+
+		&.open, .dropdown-toggle:hover {
+			background-color: @gray1;
+		}
+
 		.dropdown-menu {
-			font-size: 13px;
+			.sl;
+		}
+	}
+
+	&.date {
+		.dropdown-toggle {
+			height: 44px;
+			padding: 5px 5px;
+			border: 1px solid @gray2;
+
+			span {
+				padding: 0 5px;
+
+				.date {
+					.sl;
+				}
+
+				.time {
+					.sl-sm;
+					color: @gray4;
+					line-height: normal;
+				}
+
+				&.em-dash {
+					.sl;
+					vertical-align: top;
+					padding: 0;
+				}
+
+				&:last-of-type {
+					padding-right: 10px;
+					border-right: 1px solid @gray2;	
+				}
+			}
+
+			.caret {
+				border-width: 4px;
+				margin-top: 14px;
+				margin-left: 1px;
+				border-top-color: @gray4;
+			}
+		}
+
+		&.open, .dropdown-toggle:hover {
+			background-color: @gray1;
+		}
+
+		.dropdown-menu {
+			.sl;
+			min-width: 230px;
 		}
 	}
 }

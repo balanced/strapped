@@ -24,7 +24,7 @@
 .input-block-level {
   display: block;
   width: 100%;
-  min-height: 28.2px;
+  min-height: 29.6px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -37,89 +37,1065 @@
 * fonts.less
 *
 */
+.label1 {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+}
+.label1a {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #000000;
+}
+.label1a a:not(.linky) {
+  color: #000000;
+}
+.label1b {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #757c87;
+}
+.label1b a:not(.linky) {
+  color: #757c87;
+}
+.label1c {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #e71d1c;
+}
+.label1c a:not(.linky) {
+  color: #e71d1c;
+}
+.label1d {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #ffffff;
+}
+.label1d a:not(.linky) {
+  color: #ffffff;
+}
+.label1f {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #bc8f30;
+}
+.label1f a:not(.linky) {
+  color: #bc8f30;
+}
+.label1 {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+}
+.label1a {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #000000;
+}
+.label1a a:not(.linky) {
+  color: #000000;
+}
+.label1b {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #757c87;
+}
+.label1b a:not(.linky) {
+  color: #757c87;
+}
+.label1c {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #e71d1c;
+}
+.label1c a:not(.linky) {
+  color: #e71d1c;
+}
+.label1d {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #ffffff;
+}
+.label1d a:not(.linky) {
+  color: #ffffff;
+}
+.label1f {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #bc8f30;
+}
+.label1f a:not(.linky) {
+  color: #bc8f30;
+}
+.label2 {
+  font-family: Proxima Nova Reg Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+}
+.label2a {
+  font-family: Proxima Nova Reg Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #000000;
+}
+.label2a a:not(.linky) {
+  color: #000000;
+}
+.label2b {
+  font-family: Proxima Nova Reg Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #757c87;
+}
+.label2b a:not(.linky) {
+  color: #757c87;
+}
+.label2c {
+  font-family: Proxima Nova Reg Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #e71d1c;
+}
+.label2c a:not(.linky) {
+  color: #e71d1c;
+}
+.label2d {
+  font-family: Proxima Nova Reg Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #ffffff;
+}
+.label2d a:not(.linky) {
+  color: #ffffff;
+}
+.label2f {
+  font-family: Proxima Nova Reg Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #bc8f30;
+}
+.label2f a:not(.linky) {
+  color: #bc8f30;
+}
+.label3 {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+}
+.label3a {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #000000;
+}
+.label3a a:not(.linky) {
+  color: #000000;
+}
+.label3b {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #757c87;
+}
+.label3b a:not(.linky) {
+  color: #757c87;
+}
+.label3c {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #e71d1c;
+}
+.label3c a:not(.linky) {
+  color: #e71d1c;
+}
+.label3d {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #ffffff;
+}
+.label3d a:not(.linky) {
+  color: #ffffff;
+}
+.label3f {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #bc8f30;
+}
+.label3f a:not(.linky) {
+  color: #bc8f30;
+}
+.label4 {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+}
+.label4a {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #000000;
+}
+.label4a a:not(.linky) {
+  color: #000000;
+}
+.label4b {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #757c87;
+}
+.label4b a:not(.linky) {
+  color: #757c87;
+}
+.label4c {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #e71d1c;
+}
+.label4c a:not(.linky) {
+  color: #e71d1c;
+}
+.label4d {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #ffffff;
+}
+.label4d a:not(.linky) {
+  color: #ffffff;
+}
+.label4f {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #bc8f30;
+}
+.label4f a:not(.linky) {
+  color: #bc8f30;
+}
+.label6 {
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+}
+.label6a {
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #000000;
+}
+.label6a a:not(.linky) {
+  color: #000000;
+}
+.label6b {
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #757c87;
+}
+.label6b a:not(.linky) {
+  color: #757c87;
+}
+.label6c {
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #e71d1c;
+}
+.label6c a:not(.linky) {
+  color: #e71d1c;
+}
+.label6d {
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #ffffff;
+}
+.label6d a:not(.linky) {
+  color: #ffffff;
+}
+.label6f {
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #bc8f30;
+}
+.label6f a:not(.linky) {
+  color: #bc8f30;
+}
+.label7 {
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+}
+.label7a {
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #000000;
+}
+.label7a a:not(.linky) {
+  color: #000000;
+}
+.label7b {
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #757c87;
+}
+.label7b a:not(.linky) {
+  color: #757c87;
+}
+.label7c {
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #e71d1c;
+}
+.label7c a:not(.linky) {
+  color: #e71d1c;
+}
+.label7d {
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #ffffff;
+}
+.label7d a:not(.linky) {
+  color: #ffffff;
+}
+.label7f {
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #bc8f30;
+}
+.label7f a:not(.linky) {
+  color: #bc8f30;
+}
+.number1 {
+  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 56px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+}
+.number1a {
+  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 56px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #000000;
+}
+.number1a a:not(.linky) {
+  color: #000000;
+}
+.number1b {
+  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 56px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #757c87;
+}
+.number1b a:not(.linky) {
+  color: #757c87;
+}
+.number1c {
+  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 56px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #e71d1c;
+}
+.number1c a:not(.linky) {
+  color: #e71d1c;
+}
+.number1d {
+  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 56px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #ffffff;
+}
+.number1d a:not(.linky) {
+  color: #ffffff;
+}
+.number1f {
+  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 56px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #bc8f30;
+}
+.number1f a:not(.linky) {
+  color: #bc8f30;
+}
+.number3 {
+  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+}
+.number3a {
+  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #000000;
+}
+.number3a a:not(.linky) {
+  color: #000000;
+}
+.number3b {
+  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #757c87;
+}
+.number3b a:not(.linky) {
+  color: #757c87;
+}
+.number3c {
+  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #e71d1c;
+}
+.number3c a:not(.linky) {
+  color: #e71d1c;
+}
+.number3d {
+  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #ffffff;
+}
+.number3d a:not(.linky) {
+  color: #ffffff;
+}
+.number3f {
+  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #bc8f30;
+}
+.number3f a:not(.linky) {
+  color: #bc8f30;
+}
+.nav1 {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 100%;
+}
+.nav1a {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 100%;
+  color: #000000;
+}
+.nav1a a:not(.linky) {
+  color: #000000;
+}
+.nav1b {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 100%;
+  color: #757c87;
+}
+.nav1b a:not(.linky) {
+  color: #757c87;
+}
+.nav1c {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 100%;
+  color: #e71d1c;
+}
+.nav1c a:not(.linky) {
+  color: #e71d1c;
+}
+.nav1d {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 100%;
+  color: #ffffff;
+}
+.nav1d a:not(.linky) {
+  color: #ffffff;
+}
+.nav1f {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 100%;
+  color: #bc8f30;
+}
+.nav1f a:not(.linky) {
+  color: #bc8f30;
+}
+.nav2 {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+}
+.nav2a {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #000000;
+}
+.nav2a a:not(.linky) {
+  color: #000000;
+}
+.nav2b {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #757c87;
+}
+.nav2b a:not(.linky) {
+  color: #757c87;
+}
+.nav2c {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #e71d1c;
+}
+.nav2c a:not(.linky) {
+  color: #e71d1c;
+}
+.nav2d {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #ffffff;
+}
+.nav2d a:not(.linky) {
+  color: #ffffff;
+}
+.nav2f {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #bc8f30;
+}
+.nav2f a:not(.linky) {
+  color: #bc8f30;
+}
+.nav3 {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+}
+.nav3a {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #000000;
+}
+.nav3a a:not(.linky) {
+  color: #000000;
+}
+.nav3b {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #757c87;
+}
+.nav3b a:not(.linky) {
+  color: #757c87;
+}
+.nav3c {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #e71d1c;
+}
+.nav3c a:not(.linky) {
+  color: #e71d1c;
+}
+.nav3d {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #ffffff;
+}
+.nav3d a:not(.linky) {
+  color: #ffffff;
+}
+.nav3f {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #bc8f30;
+}
+.nav3f a:not(.linky) {
+  color: #bc8f30;
+}
+.body1 {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+}
+.body1a {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #000000;
+}
+.body1a a:not(.linky) {
+  color: #000000;
+}
+.body1b {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #757c87;
+}
+.body1b a:not(.linky) {
+  color: #757c87;
+}
+.body1c {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #e71d1c;
+}
+.body1c a:not(.linky) {
+  color: #e71d1c;
+}
+.body1d {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #ffffff;
+}
+.body1d a:not(.linky) {
+  color: #ffffff;
+}
+.body1f {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #bc8f30;
+}
+.body1f a:not(.linky) {
+  color: #bc8f30;
+}
+.subhead2 {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+}
+.subhead2a {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #000000;
+}
+.subhead2a a:not(.linky) {
+  color: #000000;
+}
+.subhead2b {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #757c87;
+}
+.subhead2b a:not(.linky) {
+  color: #757c87;
+}
+.subhead2c {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #e71d1c;
+}
+.subhead2c a:not(.linky) {
+  color: #e71d1c;
+}
+.subhead2d {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #ffffff;
+}
+.subhead2d a:not(.linky) {
+  color: #ffffff;
+}
+.subhead2f {
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: inherit;
+  letter-spacing: normal;
+  line-height: 100%;
+  color: #bc8f30;
+}
+.subhead2f a:not(.linky) {
+  color: #bc8f30;
+}
 @font-face {
-  font-family: 'NimbusSanNov-Med';
+  font-family: 'Proxima Nova Reg';
   font-weight: 400;
-  src: url('../fonts/241122_2_0.eot');
-  src: url('../fonts/241122_2_0.eot?#iefix') format('embedded-opentype'), url('../fonts/241122_2_0.woff') format('woff'), url('../fonts/241122_2_0.ttf') format('truetype');
+  src: url('../fonts/Proxima Nova Reg.eot');
+  src: url('../fonts/Proxima Nova Reg.eot?#iefix') format('embedded-opentype'), url('../fonts/Proxima Nova Reg.woff') format('woff'), url('../fonts/Proxima Nova Reg.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'NimbusSanNovCon-Med';
+  font-family: 'Proxima Nova Reg Italic';
   font-weight: 400;
-  src: url('../fonts/260109_1_0.eot');
-  src: url('../fonts/260109_1_0.eot?#iefix') format('embedded-opentype'), url('../fonts/260109_1_0.woff') format('woff'), url('../fonts/260109_1_0.ttf') format('truetype');
+  src: url('../fonts/Proxima Nova Reg It.eot');
+  src: url('../fonts/Proxima Nova Reg It.eot?#iefix') format('embedded-opentype'), url('../fonts/Proxima Nova Reg It.woff') format('woff'), url('../fonts/Proxima Nova Reg It.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'NimbusSanNovCon-Bol';
+  font-family: 'Proxima Nova Reg Semi Bold';
   font-weight: 400;
-  src: url('../fonts/260109_0_0.eot');
-  src: url('../fonts/260109_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/260109_0_0.woff') format('woff'), url('../fonts/260109_0_0.ttf') format('truetype');
+  src: url('../fonts/Proxima Nova Sbold.eot');
+  src: url('../fonts/Proxima Nova Sbold.eot?#iefix') format('embedded-opentype'), url('../fonts/Proxima Nova Sbold.woff') format('woff'), url('../fonts/Proxima Nova Sbold.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'NimbusSanNov-Bol';
+  font-family: 'Proxima Nova Reg Bold';
   font-weight: 400;
-  src: url('../fonts/241122_3_0.eot');
-  src: url('../fonts/241122_3_0.eot?#iefix') format('embedded-opentype'), url('../fonts/241122_3_0.woff') format('woff'), url('../fonts/241122_3_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'NimbusSanNov-Reg';
-  font-weight: 400;
-  src: url('../fonts/241122_0_0.eot');
-  src: url('../fonts/241122_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/241122_0_0.woff') format('woff'), url('../fonts/241122_0_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'NimbusSanNov-SemBol';
-  font-weight: 400;
-  src: url('../fonts/26A300_0_0.eot');
-  src: url('../fonts/26A300_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/26A300_0_0.woff') format('woff'), url('../fonts/26A300_0_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'NimbusSanConD-Bol';
-  font-weight: 400;
-  src: url('../fonts/27300D_0_0.eot');
-  src: url('../fonts/27300D_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/27300D_0_0.woff') format('woff'), url('../fonts/27300D_0_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Nimbus Sans';
-  font-weight: 300;
-  src: url('../fonts/241122_0_0.eot');
-  src: url('../fonts/241122_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/241122_0_0.woff') format('woff'), url('../fonts/241122_0_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Nimbus Sans';
-  font-weight: 400;
-  src: url('../fonts/241122_2_0.eot');
-  src: url('../fonts/241122_2_0.eot?#iefix') format('embedded-opentype'), url('../fonts/241122_2_0.woff') format('woff'), url('../fonts/241122_2_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Nimbus Sans';
-  font-weight: 700;
-  src: url('../fonts/241122_3_0.eot');
-  src: url('../fonts/241122_3_0.eot?#iefix') format('embedded-opentype'), url('../fonts/241122_3_0.woff') format('woff'), url('../fonts/241122_3_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Nimbus Sans Condensed';
-  font-weight: 400;
-  src: url('../fonts/260109_1_0.eot');
-  src: url('../fonts/260109_1_0.eot?#iefix') format('embedded-opentype'), url('../fonts/260109_1_0.woff') format('woff'), url('../fonts/260109_1_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Nimbus Sans Condensed';
-  font-weight: 700;
-  src: url('../fonts/260109_0_0.eot');
-  src: url('../fonts/260109_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/260109_0_0.woff') format('woff'), url('../fonts/260109_0_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Nimbus Sans Extra Condensed';
-  font-weight: 400;
-  src: url('../fonts/26A300_0_0.eot');
-  src: url('../fonts/26A300_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/26A300_0_0.woff') format('woff'), url('../fonts/26A300_0_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Nimbus Sans Nov D Cond Ultra';
-  font-weight: 400;
-  src: url('../fonts/27300D_0_0.eot');
-  src: url('../fonts/27300D_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/27300D_0_0.woff') format('woff'), url('../fonts/27300D_0_0.ttf') format('truetype');
+  src: url('../fonts/Proxima Nova Bold.eot');
+  src: url('../fonts/Proxima Nova Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Proxima Nova Bold.woff') format('woff'), url('../fonts/Proxima Nova Bold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Inconsolata';
@@ -162,8 +1138,82 @@
 *
 */
 #header {
-  background-color: #000000;
-  height: 60px;
+  position: relative;
+  background-color: #1c1f26;
+  height: 50px;
+}
+#main {
+  background-color: #ffffff;
+  position: relative;
+}
+#marketplace-nav {
+  background-color: #434854;
+  width: 180px;
+  min-height: 581px;
+  position: absolute;
+  height: 100%;
+}
+#marketplace-nav.noshow {
+  background-color: #ffffff;
+}
+#marketplace-nav a.btn {
+  display: inline-block;
+  width: 135px;
+  padding: 9px 10px;
+  margin: 11px 10px 0 10px;
+}
+#marketplace-nav ul {
+  padding: 0;
+}
+#marketplace-nav li {
+  display: block;
+  border-top: 1px solid #59606b;
+}
+#marketplace-nav li:last-of-type {
+  border-bottom: 1px solid #59606b;
+}
+#marketplace-nav li i {
+  font-size: 14px;
+  vertical-align: text-top;
+  margin-right: 5px;
+}
+#marketplace-nav li i.icon-addcustomer,
+#marketplace-nav li i.icon-bankaccount {
+  color: #ffffff;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+}
+#marketplace-nav li i.icon-addcustomer {
+  background-color: #a781ba;
+}
+#marketplace-nav li i.icon-bankaccount {
+  background-color: #528dcc;
+  font-size: 16px;
+  line-height: 35px;
+  margin-bottom: 9px;
+}
+#marketplace-nav li a {
+  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 19.6px;
+  color: #000000;
+  color: #9196a1;
+  display: block;
+  padding: 15px;
+  position: relative;
+  text-decoration: none;
+}
+#marketplace-nav li a:hover {
+  background-color: #303540;
+  color: #ffffff;
+}
+#marketplace-nav li a.active {
+  background-color: #1c1f26;
+  color: #ffffff;
+}
+#marketplace-nav li .nav-label {
+  color: inherit;
+  display: block;
 }
 @charset "UTF-8";
 @font-face {
@@ -196,9 +1246,6 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-[class^="icon"].right {
-  float: right;
 }
 .icon-activity:before {
   content: "a";
@@ -257,14 +1304,8 @@
 .icon-twitter:before {
   content: "s";
 }
-.icon-tooltip:before {
-  content: "t";
-}
 .icon-invoices:before {
   content: "u";
-}
-.icon-github:before {
-  content: "v";
 }
 .icon-testmp:before {
   content: "w";
@@ -305,14 +1346,14 @@
 .icon-order:before {
   content: "I";
 }
-.icon-navigation-close:before {
-  content: "J";
-}
 .icon-dashboard:before {
   content: "K";
 }
 .icon-notification:before {
   content: "L";
+}
+.icon-navigation-close:before {
+  content: "J";
 }
 .icon-navigation-arrow-forward:before {
   content: "M";
@@ -320,11 +1361,11 @@
 .icon-navigation-arrow-back:before {
   content: "N";
 }
+.icon-github:before {
+  content: "v";
+}
 .icon-arrow-backward-dashboard:before {
   content: "O";
-}
-.icon-arrow-forward-dashboard:before {
-  content: "P";
 }
 .icon-close-x-dashboard:before {
   content: "Q";
@@ -344,11 +1385,236 @@
 .icon-star:before {
   content: "V";
 }
+.icon-arrow-forward-dashboard:before {
+  content: "P";
+}
+.icon-tooltip:before {
+  content: "t";
+}
 .icon-document-upload:before {
   content: "W";
 }
 .icon-key:before {
   content: "X";
+}
+.icon-alert-2:before {
+  content: "a";
+}
+.icon-bank-account:before {
+  content: "b";
+}
+.icon-card:before {
+  content: "c";
+}
+.icon-customers:before {
+  content: "d";
+}
+.icon-disputes:before {
+  content: "e";
+}
+.icon-export:before {
+  content: "f";
+}
+.icon-overview:before {
+  content: "g";
+}
+.icon-payment-methods:before {
+  content: "h";
+}
+.icon-payments:before {
+  content: "i";
+}
+.icon-question-mark:before {
+  content: "j";
+}
+.icon-sort:before {
+  content: "k";
+}
+.icon-activity:before {
+  content: "a";
+}
+.icon-addcustomer:before {
+  content: "b";
+}
+.icon-addproductionmp:before {
+  content: "c";
+}
+.icon-addtestmp:before {
+  content: "d";
+}
+.icon-alert:before {
+  content: "e";
+}
+.icon-arrow-backward-dashboard:before {
+  content: "f";
+}
+.icon-arrow-forward-dashboard:before {
+  content: "g";
+}
+.icon-arrow-triangle-forward:before {
+  content: "h";
+}
+.icon-avatar:before {
+  content: "i";
+}
+.icon-balanced-dots:before {
+  content: "j";
+}
+.icon-balanced-logo-horizontal:before {
+  content: "k";
+}
+.icon-bankaccount:before {
+  content: "l";
+}
+.icon-business:before {
+  content: "m";
+}
+.icon-carat-down:before {
+  content: "n";
+}
+.icon-carat-right:before {
+  content: "o";
+}
+.icon-carat-up:before {
+  content: "p";
+}
+.icon-checkmark:before {
+  content: "q";
+}
+.icon-close-x-dashboard:before {
+  content: "r";
+}
+.icon-creditcard:before {
+  content: "s";
+}
+.icon-csvexport:before {
+  content: "t";
+}
+.icon-dashboard:before {
+  content: "u";
+}
+.icon-docs:before {
+  content: "v";
+}
+.icon-document-upload:before {
+  content: "w";
+}
+.icon-edit:before {
+  content: "x";
+}
+.icon-form:before {
+  content: "y";
+}
+.icon-github:before {
+  content: "z";
+}
+.icon-invoices:before {
+  content: "A";
+}
+.icon-irc-chat:before {
+  content: "B";
+}
+.icon-jsfiddle:before {
+  content: "C";
+}
+.icon-key:before {
+  content: "D";
+}
+.icon-loading:before {
+  content: "E";
+}
+.icon-loadmore:before {
+  content: "F";
+}
+.icon-logs:before {
+  content: "G";
+}
+.icon-menu:before {
+  content: "H";
+}
+.icon-navigation-arrow-back:before {
+  content: "I";
+}
+.icon-navigation-arrow-forward:before {
+  content: "J";
+}
+.icon-navigation-close:before {
+  content: "K";
+}
+.icon-notification:before {
+  content: "L";
+}
+.icon-order:before {
+  content: "M";
+}
+.icon-person:before {
+  content: "N";
+}
+.icon-plus-sign:before {
+  content: "O";
+}
+.icon-productionmp:before {
+  content: "P";
+}
+.icon-quora:before {
+  content: "Q";
+}
+.icon-search:before {
+  content: "R";
+}
+.icon-settings:before {
+  content: "S";
+}
+.icon-star:before {
+  content: "T";
+}
+.icon-testmp:before {
+  content: "U";
+}
+.icon-tooltip:before {
+  content: "V";
+}
+.icon-twitter:before {
+  content: "W";
+}
+.icon-watchers:before {
+  content: "X";
+}
+.icon-alert-2:before {
+  content: "Y";
+}
+.icon-bank-account:before {
+  content: "Z";
+}
+.icon-disputes:before {
+  content: "0";
+}
+.icon-customers:before {
+  content: "1";
+}
+.icon-card:before {
+  content: "2";
+}
+.icon-export:before {
+  content: "3";
+}
+.icon-overview:before {
+  content: "4";
+}
+.icon-payment-methods:before {
+  content: "5";
+}
+.icon-payments:before {
+  content: "6";
+}
+.icon-question-mark:before {
+  content: "7";
+}
+.icon-sort:before {
+  content: "8";
+}
+.icon-x:before {
+  content: "9";
 }
 .icon-download {
   background: url('../images/icons.png');
@@ -415,1102 +1681,6 @@
   -moz-animation: rotate 20s linear 0s infinite;
 }
 /*
-* typography.less
-* 
-* Links, Headers, Paragraphs, Labels
-*/
-.label1 {
-  font-family: NimbusSanNov-Reg, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-}
-.label1a {
-  font-family: NimbusSanNov-Reg, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #000000;
-}
-.label1a a:not(.linky) {
-  color: #000000;
-}
-.label1b {
-  font-family: NimbusSanNov-Reg, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #757c87;
-}
-.label1b a:not(.linky) {
-  color: #757c87;
-}
-.label1c {
-  font-family: NimbusSanNov-Reg, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #e71d1c;
-}
-.label1c a:not(.linky) {
-  color: #e71d1c;
-}
-.label1d {
-  font-family: NimbusSanNov-Reg, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #ffffff;
-}
-.label1d a:not(.linky) {
-  color: #ffffff;
-}
-.label1f {
-  font-family: NimbusSanNov-Reg, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #bc8f30;
-}
-.label1f a:not(.linky) {
-  color: #bc8f30;
-}
-.label1 {
-  font-family: NimbusSanNov-Reg, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-}
-.label1a {
-  font-family: NimbusSanNov-Reg, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #000000;
-}
-.label1a a:not(.linky) {
-  color: #000000;
-}
-.label1b {
-  font-family: NimbusSanNov-Reg, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #757c87;
-}
-.label1b a:not(.linky) {
-  color: #757c87;
-}
-.label1c {
-  font-family: NimbusSanNov-Reg, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #e71d1c;
-}
-.label1c a:not(.linky) {
-  color: #e71d1c;
-}
-.label1d {
-  font-family: NimbusSanNov-Reg, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #ffffff;
-}
-.label1d a:not(.linky) {
-  color: #ffffff;
-}
-.label1f {
-  font-family: NimbusSanNov-Reg, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #bc8f30;
-}
-.label1f a:not(.linky) {
-  color: #bc8f30;
-}
-.label2 {
-  font-family: NimbusSanNov-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-}
-.label2a {
-  font-family: NimbusSanNov-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #000000;
-}
-.label2a a:not(.linky) {
-  color: #000000;
-}
-.label2b {
-  font-family: NimbusSanNov-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #757c87;
-}
-.label2b a:not(.linky) {
-  color: #757c87;
-}
-.label2c {
-  font-family: NimbusSanNov-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #e71d1c;
-}
-.label2c a:not(.linky) {
-  color: #e71d1c;
-}
-.label2d {
-  font-family: NimbusSanNov-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #ffffff;
-}
-.label2d a:not(.linky) {
-  color: #ffffff;
-}
-.label2f {
-  font-family: NimbusSanNov-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #bc8f30;
-}
-.label2f a:not(.linky) {
-  color: #bc8f30;
-}
-.label3 {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-}
-.label3a {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #000000;
-}
-.label3a a:not(.linky) {
-  color: #000000;
-}
-.label3b {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #757c87;
-}
-.label3b a:not(.linky) {
-  color: #757c87;
-}
-.label3c {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #e71d1c;
-}
-.label3c a:not(.linky) {
-  color: #e71d1c;
-}
-.label3d {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #ffffff;
-}
-.label3d a:not(.linky) {
-  color: #ffffff;
-}
-.label3f {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #bc8f30;
-}
-.label3f a:not(.linky) {
-  color: #bc8f30;
-}
-.label4 {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-}
-.label4a {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #000000;
-}
-.label4a a:not(.linky) {
-  color: #000000;
-}
-.label4b {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #757c87;
-}
-.label4b a:not(.linky) {
-  color: #757c87;
-}
-.label4c {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #e71d1c;
-}
-.label4c a:not(.linky) {
-  color: #e71d1c;
-}
-.label4d {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #ffffff;
-}
-.label4d a:not(.linky) {
-  color: #ffffff;
-}
-.label4f {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #bc8f30;
-}
-.label4f a:not(.linky) {
-  color: #bc8f30;
-}
-.label6 {
-  font-family: NimbusSanNov-sembol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-}
-.label6a {
-  font-family: NimbusSanNov-sembol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #000000;
-}
-.label6a a:not(.linky) {
-  color: #000000;
-}
-.label6b {
-  font-family: NimbusSanNov-sembol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #757c87;
-}
-.label6b a:not(.linky) {
-  color: #757c87;
-}
-.label6c {
-  font-family: NimbusSanNov-sembol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #e71d1c;
-}
-.label6c a:not(.linky) {
-  color: #e71d1c;
-}
-.label6d {
-  font-family: NimbusSanNov-sembol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #ffffff;
-}
-.label6d a:not(.linky) {
-  color: #ffffff;
-}
-.label6f {
-  font-family: NimbusSanNov-sembol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #bc8f30;
-}
-.label6f a:not(.linky) {
-  color: #bc8f30;
-}
-.label7 {
-  font-family: NimbusSanNov-sembol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-}
-.label7a {
-  font-family: NimbusSanNov-sembol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #000000;
-}
-.label7a a:not(.linky) {
-  color: #000000;
-}
-.label7b {
-  font-family: NimbusSanNov-sembol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #757c87;
-}
-.label7b a:not(.linky) {
-  color: #757c87;
-}
-.label7c {
-  font-family: NimbusSanNov-sembol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #e71d1c;
-}
-.label7c a:not(.linky) {
-  color: #e71d1c;
-}
-.label7d {
-  font-family: NimbusSanNov-sembol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #ffffff;
-}
-.label7d a:not(.linky) {
-  color: #ffffff;
-}
-.label7f {
-  font-family: NimbusSanNov-sembol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #bc8f30;
-}
-.label7f a:not(.linky) {
-  color: #bc8f30;
-}
-.number1 {
-  font-family: NimbusSanConD-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 56px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-}
-.number1a {
-  font-family: NimbusSanConD-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 56px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #000000;
-}
-.number1a a:not(.linky) {
-  color: #000000;
-}
-.number1b {
-  font-family: NimbusSanConD-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 56px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #757c87;
-}
-.number1b a:not(.linky) {
-  color: #757c87;
-}
-.number1c {
-  font-family: NimbusSanConD-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 56px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #e71d1c;
-}
-.number1c a:not(.linky) {
-  color: #e71d1c;
-}
-.number1d {
-  font-family: NimbusSanConD-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 56px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #ffffff;
-}
-.number1d a:not(.linky) {
-  color: #ffffff;
-}
-.number1f {
-  font-family: NimbusSanConD-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 56px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #bc8f30;
-}
-.number1f a:not(.linky) {
-  color: #bc8f30;
-}
-.number3 {
-  font-family: NimbusSanConD-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-}
-.number3a {
-  font-family: NimbusSanConD-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #000000;
-}
-.number3a a:not(.linky) {
-  color: #000000;
-}
-.number3b {
-  font-family: NimbusSanConD-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #757c87;
-}
-.number3b a:not(.linky) {
-  color: #757c87;
-}
-.number3c {
-  font-family: NimbusSanConD-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #e71d1c;
-}
-.number3c a:not(.linky) {
-  color: #e71d1c;
-}
-.number3d {
-  font-family: NimbusSanConD-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #ffffff;
-}
-.number3d a:not(.linky) {
-  color: #ffffff;
-}
-.number3f {
-  font-family: NimbusSanConD-Bol, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #bc8f30;
-}
-.number3f a:not(.linky) {
-  color: #bc8f30;
-}
-.nav1 {
-  font-family: nimbussannovcon-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 100%;
-}
-.nav1a {
-  font-family: nimbussannovcon-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 100%;
-  color: #000000;
-}
-.nav1a a:not(.linky) {
-  color: #000000;
-}
-.nav1b {
-  font-family: nimbussannovcon-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 100%;
-  color: #757c87;
-}
-.nav1b a:not(.linky) {
-  color: #757c87;
-}
-.nav1c {
-  font-family: nimbussannovcon-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 100%;
-  color: #e71d1c;
-}
-.nav1c a:not(.linky) {
-  color: #e71d1c;
-}
-.nav1d {
-  font-family: nimbussannovcon-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 100%;
-  color: #ffffff;
-}
-.nav1d a:not(.linky) {
-  color: #ffffff;
-}
-.nav1f {
-  font-family: nimbussannovcon-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 100%;
-  color: #bc8f30;
-}
-.nav1f a:not(.linky) {
-  color: #bc8f30;
-}
-.nav2 {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-}
-.nav2a {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #000000;
-}
-.nav2a a:not(.linky) {
-  color: #000000;
-}
-.nav2b {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #757c87;
-}
-.nav2b a:not(.linky) {
-  color: #757c87;
-}
-.nav2c {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #e71d1c;
-}
-.nav2c a:not(.linky) {
-  color: #e71d1c;
-}
-.nav2d {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #ffffff;
-}
-.nav2d a:not(.linky) {
-  color: #ffffff;
-}
-.nav2f {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #bc8f30;
-}
-.nav2f a:not(.linky) {
-  color: #bc8f30;
-}
-.nav3 {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 22px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-}
-.nav3a {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 22px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #000000;
-}
-.nav3a a:not(.linky) {
-  color: #000000;
-}
-.nav3b {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 22px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #757c87;
-}
-.nav3b a:not(.linky) {
-  color: #757c87;
-}
-.nav3c {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 22px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #e71d1c;
-}
-.nav3c a:not(.linky) {
-  color: #e71d1c;
-}
-.nav3d {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 22px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #ffffff;
-}
-.nav3d a:not(.linky) {
-  color: #ffffff;
-}
-.nav3f {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 22px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #bc8f30;
-}
-.nav3f a:not(.linky) {
-  color: #bc8f30;
-}
-.body1 {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-}
-.body1a {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #000000;
-}
-.body1a a:not(.linky) {
-  color: #000000;
-}
-.body1b {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #757c87;
-}
-.body1b a:not(.linky) {
-  color: #757c87;
-}
-.body1c {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #e71d1c;
-}
-.body1c a:not(.linky) {
-  color: #e71d1c;
-}
-.body1d {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #ffffff;
-}
-.body1d a:not(.linky) {
-  color: #ffffff;
-}
-.body1f {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #bc8f30;
-}
-.body1f a:not(.linky) {
-  color: #bc8f30;
-}
-.subhead2 {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-}
-.subhead2a {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #000000;
-}
-.subhead2a a:not(.linky) {
-  color: #000000;
-}
-.subhead2b {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #757c87;
-}
-.subhead2b a:not(.linky) {
-  color: #757c87;
-}
-.subhead2c {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #e71d1c;
-}
-.subhead2c a:not(.linky) {
-  color: #e71d1c;
-}
-.subhead2d {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #ffffff;
-}
-.subhead2d a:not(.linky) {
-  color: #ffffff;
-}
-.subhead2f {
-  font-family: NimbusSanNov-Med, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  font-style: normal;
-  text-transform: inherit;
-  letter-spacing: normal;
-  line-height: 100%;
-  color: #bc8f30;
-}
-.subhead2f a:not(.linky) {
-  color: #bc8f30;
-}
-.number1a {
-  line-height: 48px;
-}
-body {
-  font-family: "NimbusSanNov-Med", arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 13px;
-  color: #303540;
-}
-h1 {
-  font-family: "NimbusSanNov-Reg", arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 34px;
-  line-height: 40px;
-  color: #000000;
-}
-h2 {
-  font-family: "NimbusSanNov-Reg", arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-}
-h3 {
-  font-family: "NimbusSanNov-Med", arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 21px;
-  color: #000000;
-}
-a {
-  color: #0063b4;
-}
-a:hover {
-  color: #000000;
-  text-decoration: none;
-}
-a:hover:visited {
-  color: #000000;
-  text-decoration: none;
-}
-a:active {
-  color: #0063b4;
-}
-a:visited {
-  color: #0063b4;
-}
-pre {
-  font-family: "Inconsolata", Monaco, Menlo, "Courier New", monospace;
-  font-size: 13px;
-}
-/*
 * forms.less
 *
 * Inputs, Buttons, Dropdowns
@@ -1519,10 +1689,18 @@ pre {
   outline: none !important;
 }
 a {
-  font: normal normal normal 13px "NimbusSanNov-SemBol", arial, sans-serif;
-  line-height: 18.2px;
+  font: normal normal normal 14px "Proxima Nova Reg Semi Bold", arial, sans-serif;
+  line-height: 19.6px;
   color: #000000;
   color: #528dcc;
+  -webkit-transition: color;
+  -moz-transition: color;
+  -o-transition: color;
+  transition: color;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
 }
 a:visited {
   color: #528dcc;
@@ -1536,8 +1714,8 @@ a:active {
 }
 .btn,
 button {
-  font: normal normal normal 13px "NimbusSanNov-SemBol", arial, sans-serif;
-  line-height: 18.2px;
+  font: normal normal normal 14px "Proxima Nova Reg Semi Bold", arial, sans-serif;
+  line-height: 19.6px;
   color: #000000;
   color: #ffffff;
   text-align: center;
@@ -1548,6 +1726,14 @@ button {
   border-radius: 0;
   border: 1px solid #528dcc;
   background-color: #528dcc;
+  -webkit-transition: background-color border-color;
+  -moz-transition: background-color border-color;
+  -o-transition: background-color border-color;
+  transition: background-color border-color;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
 }
 .btn:visited,
 button:visited {
@@ -1586,10 +1772,28 @@ button.secondary:hover {
   background-color: #f0f1f2;
   border-color: #d2d6d9;
 }
+.btn.btn-link,
+button.btn-link {
+  background-color: transparent;
+  border: 3px solid transparent;
+  color: #0063b4;
+  display: inline-block;
+  font: normal normal normal 13px/30px "Nimbus Sans", arial, sans-serif;
+  letter-spacing: 0;
+  height: 30px;
+  padding: 0 13px;
+  text-align: center;
+  text-transform: none;
+}
+.btn.btn-link:hover,
+button.btn-link:hover {
+  background-color: inherit;
+  color: #000000 !important;
+}
 .btn.special,
 button.special {
-  font: normal normal normal 13px "NimbusSanNov-SemBol", arial, sans-serif;
-  line-height: 18.2px;
+  font: normal normal normal 14px "Proxima Nova Reg Semi Bold", arial, sans-serif;
+  line-height: 19.6px;
   color: #000000;
   color: #ffffff;
   font-size: 20px;
@@ -1620,6 +1824,14 @@ button.disabled {
 .dropdown .dropdown-toggle {
   display: block;
   text-decoration: none;
+  -webkit-transition: background-color;
+  -moz-transition: background-color;
+  -o-transition: background-color;
+  transition: background-color;
+  -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
 }
 .dropdown .dropdown-toggle span {
   display: inline-block;
@@ -1706,31 +1918,29 @@ button.disabled {
 .dropdown.nav {
   float: left;
   margin: 0;
-  height: 60px;
-  border-right: 1px solid #757c87;
+  height: 50px;
 }
 .dropdown.nav .dropdown-toggle {
-  padding: 20px 12px;
   height: 100%;
 }
 .dropdown.nav .dropdown-toggle span {
-  font: normal normal normal 16px "NimbusSanNov-SemBol", arial, sans-serif;
-  line-height: 22px;
+  font: normal normal normal 14px "Proxima Nova Reg Semi Bold", arial, sans-serif;
+  line-height: 19.6px;
   color: #000000;
-  color: #ffffff;
+  color: #9196a1;
   line-height: 17px;
+  padding: 15px 0px 15px 10px;
 }
 .dropdown.nav .dropdown-toggle .caret {
   border-top-color: #757c87;
-  margin-top: 5px;
+  margin: 22px 5px;
 }
 .dropdown.nav .dropdown-toggle:active {
   outline: 0;
 }
 .dropdown.nav.open,
 .dropdown.nav .dropdown-toggle:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000000;
 }
 .dropdown.nav.open .dropdown,
 .dropdown.nav .dropdown-toggle:hover .dropdown {
@@ -1738,34 +1948,94 @@ button.disabled {
 }
 .dropdown.nav.open span,
 .dropdown.nav .dropdown-toggle:hover span {
-  color: #000000;
+  color: #ffffff;
 }
 .dropdown.nav.open .caret,
 .dropdown.nav .dropdown-toggle:hover .caret {
-  border-top-color: #000000;
+  border-top-color: #ffffff;
 }
 .dropdown.nav .dropdown-menu {
   min-width: 180px;
   font-size: 15px;
 }
+.dropdown.action {
+  height: 34px;
+}
 .dropdown.action .dropdown-toggle {
-  display: inline-block;
-  padding: 12px 10px;
-  line-height: 100%;
+  padding: 5px 5px 0px;
+  border: 1px solid #d2d6d9;
 }
 .dropdown.action .dropdown-toggle span {
-  font-size: 15px;
+  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 19.6px;
   color: #000000;
+  line-height: 23px;
+  border-right: 1px solid #d2d6d9;
+  padding: 0 10px 0 5px;
 }
 .dropdown.action .dropdown-toggle .caret {
-  border-top-color: #000000;
-  margin-top: 5px;
+  border-width: 4px;
+  margin-left: 1px;
+  border-top-color: #9196a1;
 }
 .dropdown.action .dropdown-toggle:active {
   outline: 0;
 }
+.dropdown.action.open,
+.dropdown.action .dropdown-toggle:hover {
+  background-color: #f0f1f2;
+}
 .dropdown.action .dropdown-menu {
-  font-size: 13px;
+  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 19.6px;
+  color: #000000;
+}
+.dropdown.date .dropdown-toggle {
+  height: 44px;
+  padding: 5px 5px;
+  border: 1px solid #d2d6d9;
+}
+.dropdown.date .dropdown-toggle span {
+  padding: 0 5px;
+}
+.dropdown.date .dropdown-toggle span .date {
+  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 19.6px;
+  color: #000000;
+}
+.dropdown.date .dropdown-toggle span .time {
+  font: normal normal normal 12px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+  color: #9196a1;
+  line-height: normal;
+}
+.dropdown.date .dropdown-toggle span.em-dash {
+  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 19.6px;
+  color: #000000;
+  vertical-align: top;
+  padding: 0;
+}
+.dropdown.date .dropdown-toggle span:last-of-type {
+  padding-right: 10px;
+  border-right: 1px solid #d2d6d9;
+}
+.dropdown.date .dropdown-toggle .caret {
+  border-width: 4px;
+  margin-top: 14px;
+  margin-left: 1px;
+  border-top-color: #9196a1;
+}
+.dropdown.date.open,
+.dropdown.date .dropdown-toggle:hover {
+  background-color: #f0f1f2;
+}
+.dropdown.date .dropdown-menu {
+  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 19.6px;
+  color: #000000;
+  min-width: 230px;
 }
 /*
 * labels.less
@@ -1773,7 +2043,7 @@ button.disabled {
 * 
 */
 h1 {
-  font-family: "NimbusSanNov-Reg", arial, sans-serif;
+  font-family: "Proxima Nova Reg", arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 34px;
@@ -1781,7 +2051,7 @@ h1 {
   color: #000000;
 }
 h2 {
-  font-family: "NimbusSanNov-Reg", arial, sans-serif;
+  font-family: "Proxima Nova Reg", arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -1789,7 +2059,7 @@ h2 {
   color: #000000;
 }
 h3 {
-  font-family: "NimbusSanNov-Med", arial, sans-serif;
+  font-family: "Proxima Nova Reg", arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 15px;
@@ -1799,80 +2069,80 @@ h3 {
 .sl,
 .strapped-label,
 body {
-  font: normal normal normal 13px "NimbusSanNov-Med", arial, sans-serif;
-  line-height: 18.2px;
+  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 19.6px;
   color: #000000;
 }
 .sl-sb,
 .strapped-label-semi-bold {
-  font: normal normal normal 13px "NimbusSanNov-SemBol", arial, sans-serif;
-  line-height: 18.2px;
+  font: normal normal normal 14px "Proxima Nova Reg Semi Bold", arial, sans-serif;
+  line-height: 19.6px;
   color: #000000;
 }
 .sl-b,
 .strapped-label-bold {
-  font: normal normal normal 13px "NimbusSanNov-Bol", arial, sans-serif;
-  line-height: 18.2px;
+  font: normal normal normal 14px "Proxima Nova Reg Bold", arial, sans-serif;
+  line-height: 19.6px;
   color: #000000;
 }
 .sl-sm,
 .strapped-label-small {
-  font: normal normal normal 12px "NimbusSanNov-Med", arial, sans-serif;
+  font: normal normal normal 12px "Proxima Nova Reg", arial, sans-serif;
   line-height: 16px;
   color: #000000;
 }
 .sl-sm-sb,
 .strapped-label-small-semi-bold {
-  font: normal normal normal 12px "NimbusSanNov-SemBol", arial, sans-serif;
+  font: normal normal normal 12px "Proxima Nova Reg Semi Bold", arial, sans-serif;
   line-height: 16px;
   color: #000000;
 }
 .sl-sm-b,
 .strapped-label-small-bold {
-  font: normal normal normal 12px "NimbusSanNov-Bol", arial, sans-serif;
+  font: normal normal normal 12px "Proxima Nova Reg Bold", arial, sans-serif;
   line-height: 16px;
   color: #000000;
 }
 .sl-md,
 .strapped-label-medium {
-  font: normal normal normal 16px "NimbusSanNov-Med", arial, sans-serif;
+  font: normal normal normal 16px "Proxima Nova Reg", arial, sans-serif;
   line-height: 22px;
   color: #000000;
 }
 .sl-md-sb,
 .strapped-label-medium-semi-bold {
-  font: normal normal normal 16px "NimbusSanNov-SemBol", arial, sans-serif;
+  font: normal normal normal 16px "Proxima Nova Reg Semi Bold", arial, sans-serif;
   line-height: 22px;
   color: #000000;
 }
 .sl-md-b,
 .strapped-label-medium-bold {
-  font: normal normal normal 16px "NimbusSanNov-Bol", arial, sans-serif;
+  font: normal normal normal 16px "Proxima Nova Reg Bold", arial, sans-serif;
   line-height: 22px;
   color: #000000;
 }
 .sl-lg,
 .strapped-label-large {
-  font: normal normal normal 32px "NimbusSanNov-Med", arial, sans-serif;
+  font: normal normal normal 32px "Proxima Nova Reg", arial, sans-serif;
   line-height: 45px;
   color: #000000;
 }
 .sl-lg-sb,
 .strapped-label-large-semi-bold {
-  font: normal normal normal 32px "NimbusSanNov-SemBol", arial, sans-serif;
+  font: normal normal normal 32px "Proxima Nova Reg Semi Bold", arial, sans-serif;
   line-height: 45px;
   color: #000000;
 }
 .sl-lg-b,
 .strapped-label-large-bold {
-  font: normal normal normal 32px "NimbusSanNov-Bol", arial, sans-serif;
+  font: normal normal normal 32px "Proxima Nova Reg Bold", arial, sans-serif;
   line-height: 45px;
   color: #000000;
 }
 .sl-code,
 pre {
-  font: normal normal normal 13px "Inconsolata", Monaco, Menlo, "Courier New", monospace;
-  line-height: 18.2px;
+  font: normal normal normal 14px "Inconsolata", Monaco, Menlo, "Courier New", monospace;
+  line-height: 19.6px;
   color: #000000;
 }
 .sl-warning {
@@ -1889,26 +2159,26 @@ pre {
   color: #ffffff;
 }
 .sl-link {
-  color: #0063b4;
+  color: #528dcc;
 }
 .sl-link:visited,
 .sl-link:active {
   color: inherit;
 }
 .sl-link:hover {
-  color: #000000;
+  color: #0063b4;
 }
 .num1 {
   color: #000000;
-  font: normal normal normal 56px "NimbusSanNov-Bol", arial, sans-serif;
+  font: normal normal normal 56px "Proxima Nova Reg Bold", arial, sans-serif;
 }
 .num2 {
   color: #000000;
-  font: normal normal normal 24px "NimbusSanNov-Bol", arial, sans-serif;
+  font: normal normal normal 24px "Proxima Nova Reg Bold", arial, sans-serif;
 }
 .num3 {
   color: #000000;
-  font: normal normal normal 18px "NimbusSanNov-Bol", arial, sans-serif;
+  font: normal normal normal 18px "Proxima Nova Reg Bold", arial, sans-serif;
 }
 .num-danger {
   color: #e71d1c;
@@ -1935,7 +2205,7 @@ pre {
 }
 .tb .tb-label,
 .title-block .tb-label {
-  line-height: 77px;
+  line-height: 70px;
 }
 .tb .tb-label,
 .title-block .tb-label,
@@ -1953,10 +2223,22 @@ pre {
 }
 .tb .tb-content,
 .title-block .tb-content {
-  font: normal normal normal 22px/80px NimbusSanNov-Med, Arial, sans-serif;
+  font: normal normal normal 16px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 22px;
+  color: #000000;
+  color: #ffffff;
+  line-height: 70px;
   letter-spacing: normal;
   padding: 0 20px;
   text-transform: inherit;
+}
+.tb .tb-actions,
+.title-block .tb-actions {
+  display: block;
+  float: right;
+  height: 70px;
+  line-height: 70px;
+  margin-right: 20px;
 }
 .tb.tb-imperial-red,
 .title-block.tb-imperial-red {
@@ -1980,24 +2262,124 @@ pre {
 .title-block.tb-egyptian-blue .tb-label {
   background-color: #4789b0;
 }
+.table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+.table th,
+.table td {
+  padding: 8px;
+  line-height: 19.6px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #b1b9bd;
+}
+.table th {
+  font: normal normal normal 13px/100% "Nimbus Sans Extra Condensed", Arial, sans-serif;
+}
+.table thead th {
+  vertical-align: bottom;
+}
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+.table tbody + tbody {
+  border-top: 2px solid #b1b9bd;
+}
+.table .table {
+  background-color: #ffffff;
+}
+.table-condensed th,
+.table-condensed td {
+  padding: 4px 5px;
+}
+.table-bordered {
+  border: 1px solid #b1b9bd;
+  border-left: 0;
+}
+.table-bordered th,
+.table-bordered td {
+  border-left: 1px solid #b1b9bd;
+}
+.table-bordered caption + thead tr:first-child th,
+.table-bordered caption + tbody tr:first-child th,
+.table-bordered caption + tbody tr:first-child td,
+.table-bordered colgroup + thead tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child td,
+.table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #ffffff;
+}
+.table-hover tbody tr:hover > td,
+.table-hover tbody tr:hover > th {
+  background-color: #ffffff;
+}
+table td[class*="span"],
+table th[class*="span"],
+.row-fluid table td[class*="span"],
+.row-fluid table th[class*="span"] {
+  display: table-cell;
+  float: none;
+  margin-left: 0;
+}
+.table tbody tr.success > td {
+  background-color: #82c7bd;
+}
+.table tbody tr.error > td {
+  background-color: #f69d7f;
+}
+.table tbody tr.warning > td {
+  background-color: #e2cf89;
+}
+.table tbody tr.info > td {
+  background-color: #83aadb;
+}
+.table-hover tbody tr.success:hover > td {
+  background-color: #4bb2a4;
+}
+.table-hover tbody tr.error:hover > td {
+  background-color: #f17555;
+}
+.table-hover tbody tr.warning:hover > td {
+  background-color: #d4bc5e;
+}
+.table-hover tbody tr.info:hover > td {
+  background-color: #528dcc;
+}
 p {
-  font-family: "NimbusSanNov-Med", arial, sans-serif;
+  font-family: "Proxima Nova Reg", arial, sans-serif;
 }
 body {
   padding-top: 70px;
+  background-color: #f0f1f2;
 }
 .content {
   margin: 0 30px;
 }
 .navbar {
   width: 100%;
-  height: 54px;
+  height: 50px;
   padding: 0;
   background-image: url('../images/balanced_logo_3dots.png');
   background-color: #000000;
   background-repeat: no-repeat;
   background-position: 10px 6px;
   background-size: 40px 40px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .navbar.fixed {
   position: fixed;
@@ -2008,16 +2390,17 @@ body {
   margin-bottom: 0;
 }
 .navbar .title {
+  font: normal normal normal 16px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 22px;
+  color: #000000;
   display: inline-block;
   text-decoration: none;
   color: #ffffff;
-  font-family: "NimbusSanConD-Bol", arial, sans-serif;
-  font-size: 28px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
   margin-left: 55px;
   margin-right: 30px;
-  vertical-align: sub;
+  vertical-align: middle;
+  line-height: 50px;
+  margin-top: -1px;
 }
 .navbar ul {
   display: inline-block;
@@ -2028,11 +2411,12 @@ body {
   display: inline-block;
 }
 .navbar ul li a {
+  font: normal normal normal 16px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 22px;
+  color: #000000;
   background: #000000;
   padding: 0px 30px;
-  font-size: 16px;
-  line-height: 54px;
-  font-family: "NimbusSanNov-SemBol", arial, sans-serif;
+  line-height: 50px;
   margin-right: -4px;
   margin-top: -1px;
   text-decoration: none;
@@ -2066,19 +2450,27 @@ body {
   hyphens: auto;
 }
 #colors .item .property .hex {
-  font-family: "NimbusSanNov-SemBol", arial, sans-serif;
+  font-family: "Proxima Nova Reg Semi Bold", arial, sans-serif;
 }
 #colors .item .tag {
   position: absolute;
   bottom: 10%;
   left: 10%;
-  font-family: "NimbusSanConD-Bol", arial, sans-serif;
-  font-size: 20px;
+  font-family: "Proxima Nova Reg Bold", arial, sans-serif;
+  font-size: 14px;
   text-transform: uppercase;
   line-height: 20px;
 }
 #colors .item:hover {
-  opacity: 0.9;
+  -webkit-transform: translatez(0);
+  -moz-transform: translateZ(0);
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+  z-index: 1000;
+  border: 1px solid #000000;
 }
 #colors .mulburryPurple100 {
   background-color: #ba3f90;
@@ -2294,7 +2686,7 @@ body {
   background-color: #ffffff;
 }
 .strapped-preview {
-  background-color: #f0f1f2;
+  background-color: #ffffff;
   padding: 20px 40px;
   *zoom: 1;
 }
@@ -2307,9 +2699,6 @@ body {
 .strapped-preview:after {
   clear: both;
 }
-.strapped-preview > div {
-  margin-bottom: 20px;
-}
 .strapped-code {
   border: 1px solid #f0f1f2;
   padding: 10px;
@@ -2318,16 +2707,21 @@ pre {
   overflow: auto;
   margin: 0;
 }
+#forms .strapped-preview:last-of-type {
+  min-height: 920px;
+}
 #forms .inline {
   display: inline-block;
   margin: 0 10px;
 }
 #forms header {
-  border-top: 1px solid #b1b9bd;
-  border-bottom: 1px solid #b1b9bd;
+  padding: 10px;
   background-color: #ffffff;
   width: 100%;
   float: left;
+}
+#forms #marketplace-nav {
+  min-height: 100px;
 }
 #icons ol,
 #icons ul {
@@ -2400,7 +2794,6 @@ pre {
   margin: 0 0 60px 0;
   padding: 30px 0 20px 30px;
   color: rgba(0, 0, 0, 0.5);
-  border: 1px solid #d8e0e5;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
