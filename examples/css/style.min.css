@@ -1156,11 +1156,13 @@
 #marketplace-nav.noshow {
   background-color: #ffffff;
 }
-#marketplace-nav a.btn {
+#marketplace-nav .button-groups {
+  text-align: center;
+}
+#marketplace-nav .button-groups a.btn {
   display: inline-block;
-  width: 160px;
   padding: 9px 10px;
-  margin: 11px 10px 0 10px;
+  margin: 10px auto;
 }
 #marketplace-nav ul {
   padding: 0;
@@ -1207,7 +1209,8 @@
   background-color: #303540;
   color: #ffffff;
 }
-#marketplace-nav li a.active {
+#marketplace-nav li a.active,
+#marketplace-nav li a:active {
   background-color: #1c1f26;
   color: #ffffff;
 }
@@ -1702,6 +1705,12 @@ a {
   -o-transition-duration: 200ms;
   transition-duration: 200ms;
 }
+a.sm {
+  font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+  color: #528dcc;
+}
 a:visited {
   color: #528dcc;
 }
@@ -1711,12 +1720,6 @@ a:hover {
 }
 a:active {
   color: #0063b4;
-}
-a.sm {
-  font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 16px;
-  color: #000000;
-  color: #528dcc;
 }
 .btn,
 button {
@@ -1732,17 +1735,17 @@ button {
   border-radius: 0;
   border: 1px solid #528dcc;
   background-color: #528dcc;
-  -webkit-transition: background-color border-color;
-  -moz-transition: background-color border-color;
-  -o-transition: background-color border-color;
-  transition: background-color border-color;
+  -webkit-transition: "background-color, border-color";
+  -moz-transition: "background-color, border-color";
+  -o-transition: "background-color, border-color";
+  transition: "background-color, border-color";
   -webkit-transition-duration: 200ms;
   -moz-transition-duration: 200ms;
   -o-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-.btn:not(.close):not(.go),
-button:not(.close):not(.go) {
+.btn:not(.btn-sm):not(.close),
+button:not(.btn-sm):not(.close) {
   min-width: 135px;
 }
 .btn:visited,
