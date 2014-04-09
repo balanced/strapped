@@ -106,10 +106,14 @@ module.exports = function(grunt) {
 		},
 
 		bump: {
-			scripts: {
-				files: ['static/*'],
-				updateConfigs: ['pkg'],
+			options: {
+				files: ['package.json', 'bower.json'],
+				createTag: true,
+			    tagName: 'v%VERSION%',
+			    tagMessage: 'Version v%VERSION%',
+				commit: true,
 				commitFiles: ['-a'],
+				commitMessage: 'Release v%VERSION%',
 				push: false
 			}
 		},
