@@ -1168,7 +1168,7 @@
 #marketplace-nav .button-groups a.btn {
   display: inline-block;
   padding: 9px 10px;
-  margin: 10px auto;
+  margin: 10px auto 0;
 }
 #marketplace-nav ul {
   padding: 0;
@@ -1215,7 +1215,8 @@
   background-color: #303540;
   color: #ffffff;
 }
-#marketplace-nav li a.active {
+#marketplace-nav li a.active,
+#marketplace-nav li a:active {
   background-color: #1c1f26;
   color: #ffffff;
 }
@@ -2218,10 +2219,10 @@ button {
   border-radius: 0;
   border: 1px solid #528dcc;
   background-color: #528dcc;
-  -webkit-transition: background-color border-color;
-  -moz-transition: background-color border-color;
-  -o-transition: background-color border-color;
-  transition: background-color border-color;
+  -webkit-transition: "background-color, border-color";
+  -moz-transition: "background-color, border-color";
+  -o-transition: "background-color, border-color";
+  transition: "background-color, border-color";
   -webkit-transition-duration: 200ms;
   -moz-transition-duration: 200ms;
   -o-transition-duration: 200ms;
