@@ -556,7 +556,7 @@
   color: #bc8f30;
 }
 .number1 {
-  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
   font-weight: normal;
   font-size: 56px;
   font-style: normal;
@@ -565,7 +565,7 @@
   line-height: 100%;
 }
 .number1a {
-  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
   font-weight: normal;
   font-size: 56px;
   font-style: normal;
@@ -578,7 +578,7 @@
   color: #000000;
 }
 .number1b {
-  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
   font-weight: normal;
   font-size: 56px;
   font-style: normal;
@@ -591,7 +591,7 @@
   color: #757c87;
 }
 .number1c {
-  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
   font-weight: normal;
   font-size: 56px;
   font-style: normal;
@@ -604,7 +604,7 @@
   color: #e71d1c;
 }
 .number1d {
-  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
   font-weight: normal;
   font-size: 56px;
   font-style: normal;
@@ -617,7 +617,7 @@
   color: #ffffff;
 }
 .number1f {
-  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
   font-weight: normal;
   font-size: 56px;
   font-style: normal;
@@ -630,7 +630,7 @@
   color: #bc8f30;
 }
 .number3 {
-  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   font-style: normal;
@@ -639,7 +639,7 @@
   line-height: 100%;
 }
 .number3a {
-  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   font-style: normal;
@@ -652,7 +652,7 @@
   color: #000000;
 }
 .number3b {
-  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   font-style: normal;
@@ -665,7 +665,7 @@
   color: #757c87;
 }
 .number3c {
-  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   font-style: normal;
@@ -678,7 +678,7 @@
   color: #e71d1c;
 }
 .number3d {
-  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   font-style: normal;
@@ -691,7 +691,7 @@
   color: #ffffff;
 }
 .number3f {
-  font-family: Proxima Nova Bold, Arial, sans-serif;
+  font-family: Proxima Nova Semi Bold, Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   font-style: normal;
@@ -1086,13 +1086,19 @@
   src: url('../fonts/Proxima Nova Reg It.eot?#iefix') format('embedded-opentype'), url('../fonts/Proxima Nova Reg It.woff') format('woff'), url('../fonts/Proxima Nova Reg It.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Proxima Nova Reg Semi Bold';
+  font-family: 'Proxima Nova Light';
+  font-weight: 400;
+  src: url('../fonts/Proxima Nova Light.eot');
+  src: url('../fonts/Proxima Nova Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Proxima Nova Light.woff') format('woff'), url('../fonts/Proxima Nova Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Proxima Nova Semi Bold';
   font-weight: 400;
   src: url('../fonts/Proxima Nova Sbold.eot');
   src: url('../fonts/Proxima Nova Sbold.eot?#iefix') format('embedded-opentype'), url('../fonts/Proxima Nova Sbold.woff') format('woff'), url('../fonts/Proxima Nova Sbold.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Proxima Nova Reg Bold';
+  font-family: 'Proxima Nova Bold';
   font-weight: 400;
   src: url('../fonts/Proxima Nova Bold.eot');
   src: url('../fonts/Proxima Nova Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Proxima Nova Bold.woff') format('woff'), url('../fonts/Proxima Nova Bold.ttf') format('truetype');
@@ -1156,11 +1162,13 @@
 #marketplace-nav.noshow {
   background-color: #ffffff;
 }
-#marketplace-nav a.btn {
+#marketplace-nav .button-groups {
+  text-align: center;
+}
+#marketplace-nav .button-groups a.btn {
   display: inline-block;
-  width: 135px;
   padding: 9px 10px;
-  margin: 11px 10px 0 10px;
+  margin: 10px auto;
 }
 #marketplace-nav ul {
   padding: 0;
@@ -1175,7 +1183,7 @@
 #marketplace-nav li i {
   font-size: 14px;
   vertical-align: text-top;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 #marketplace-nav li i.icon-addcustomer,
 #marketplace-nav li i.icon-bankaccount {
@@ -1197,7 +1205,7 @@
   font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
   line-height: 19.6px;
   color: #000000;
-  color: #9196a1;
+  color: #b1b9bd;
   display: block;
   padding: 15px;
   position: relative;
@@ -1214,6 +1222,125 @@
 #marketplace-nav li .nav-label {
   color: inherit;
   display: block;
+}
+#notfound {
+  padding-top: 150px;
+}
+#notfound h1 {
+  color: #000000;
+  font: normal normal normal 150px "Proxima Nova Bold", arial, sans-serif;
+}
+#notfound h3 {
+  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 19.6px;
+  color: #000000;
+  border-bottom: 1px solid #b1b9bd;
+}
+#notfound p {
+  font: normal normal normal 32px "Proxima Nova Light", arial, sans-serif;
+  line-height: 45px;
+  color: #000000;
+  width: 350px;
+  z-index: 10;
+}
+#notfound .next-steps > div:first-of-type {
+  padding-left: 0;
+}
+#notfound .next-steps a {
+  display: block;
+  padding-bottom: 5px;
+}
+#notfound .balloon {
+  width: 110px;
+  height: 160px;
+  position: absolute;
+  background-size: cover;
+}
+#notfound .balloon.red {
+  top: 100px;
+  right: 40%;
+  background-image: url('../images/404/red_balloon.png');
+  -webkit-animation: float-up-left 2s ease infinite;
+  -moz-animation: float-up-left 2s ease infinite;
+  -ms-animation: float-up-left 2s ease infinite;
+  animation: float-up-left 2s ease infinite;
+}
+#notfound .balloon.green {
+  top: 100px;
+  right: 10%;
+  background-image: url('../images/404/green_balloon.png');
+  -webkit-animation: float-up-right 4s ease infinite;
+  -moz-animation: float-up-right 4s ease infinite;
+  -ms-animation: float-up-right 4s ease infinite;
+  animation: float-up-right 4s ease infinite;
+}
+#notfound .balloon.yellow {
+  top: 400px;
+  right: 25%;
+  background-image: url('../images/404/yellow_balloon.png');
+  -webkit-animation: float-down-left 3s ease infinite;
+  -moz-animation: float-down-left 3s ease infinite;
+  -ms-animation: float-down-left 3s ease infinite;
+  animation: float-down-left 3s ease infinite;
+}
+#notfound .cloud {
+  position: absolute;
+  top: 300px;
+  background-image: url('../images/404/clouds.png');
+  background-size: cover;
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 180px;
+  opacity: 0.8;
+  -webkit-animation: slide-left 22s linear infinite;
+  -moz-animation: slide-left 22s linear infinite;
+  -ms-animation: slide-left 22s linear infinite;
+  animation: slide-left 22s linear infinite;
+}
+#notfound .cloud-rest {
+  position: absolute;
+  top: 480px;
+  bottom: 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+  width: 100%;
+}
+.container-fluid {
+  padding-left: 0;
+}
+.site-header .logo img {
+  margin: 18px 0 0 0;
+  width: 130px;
+}
+.site-header .site-nav .nav-menu-wrapper {
+  float: right;
+}
+.site-header .site-nav [id$="menu"] {
+  float: left;
+  font-family: Proxima Nova Reg, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  font-style: normal;
+  letter-spacing: 1px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #000000;
+  border-right: 1px solid #b1b9bd;
+}
+.site-header .site-nav [id$="menu"]:last-child {
+  border-right: 0;
+}
+.site-header .site-nav [id$="menu"] a {
+  color: white;
+  padding: 20px 25px;
+  display: block;
+  border: none;
+}
+.site-header .site-nav [id$="menu"] a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
 }
 @charset "UTF-8";
 @font-face {
@@ -1681,6 +1808,365 @@
   -moz-animation: rotate 20s linear 0s infinite;
 }
 /*
+* animations.less
+*
+*/
+@-webkit-keyframes float-up-right {
+  0%,
+  100% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(0) rotate(6deg);
+    -moz-transform: translateY(0) rotate(6deg);
+    -ms-transform: translateY(0) rotate(6deg);
+    -o-transform: translateY(0) rotate(6deg);
+    transform: translateY(0) rotate(6deg);
+  }
+  50% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(-10px) rotate(8deg);
+    -moz-transform: translateY(-10px) rotate(8deg);
+    -ms-transform: translateY(-10px) rotate(8deg);
+    -o-transform: translateY(-10px) rotate(8deg);
+    transform: translateY(-10px) rotate(8deg);
+  }
+}
+@-moz-keyframes float-up-right {
+  0%,
+  100% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(0) rotate(6deg);
+    -moz-transform: translateY(0) rotate(6deg);
+    -ms-transform: translateY(0) rotate(6deg);
+    -o-transform: translateY(0) rotate(6deg);
+    transform: translateY(0) rotate(6deg);
+  }
+  50% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(-10px) rotate(8deg);
+    -moz-transform: translateY(-10px) rotate(8deg);
+    -ms-transform: translateY(-10px) rotate(8deg);
+    -o-transform: translateY(-10px) rotate(8deg);
+    transform: translateY(-10px) rotate(8deg);
+  }
+}
+@-ms-keyframes float-up-right {
+  0%,
+  100% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(0) rotate(6deg);
+    -moz-transform: translateY(0) rotate(6deg);
+    -ms-transform: translateY(0) rotate(6deg);
+    -o-transform: translateY(0) rotate(6deg);
+    transform: translateY(0) rotate(6deg);
+  }
+  50% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(-10px) rotate(8deg);
+    -moz-transform: translateY(-10px) rotate(8deg);
+    -ms-transform: translateY(-10px) rotate(8deg);
+    -o-transform: translateY(-10px) rotate(8deg);
+    transform: translateY(-10px) rotate(8deg);
+  }
+}
+@-o-keyframes float-up-right {
+  0%,
+  100% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(0) rotate(6deg);
+    -moz-transform: translateY(0) rotate(6deg);
+    -ms-transform: translateY(0) rotate(6deg);
+    -o-transform: translateY(0) rotate(6deg);
+    transform: translateY(0) rotate(6deg);
+  }
+  50% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(-10px) rotate(8deg);
+    -moz-transform: translateY(-10px) rotate(8deg);
+    -ms-transform: translateY(-10px) rotate(8deg);
+    -o-transform: translateY(-10px) rotate(8deg);
+    transform: translateY(-10px) rotate(8deg);
+  }
+}
+@keyframes float-up-right {
+  0%,
+  100% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(0) rotate(6deg);
+    -moz-transform: translateY(0) rotate(6deg);
+    -ms-transform: translateY(0) rotate(6deg);
+    -o-transform: translateY(0) rotate(6deg);
+    transform: translateY(0) rotate(6deg);
+  }
+  50% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(-10px) rotate(8deg);
+    -moz-transform: translateY(-10px) rotate(8deg);
+    -ms-transform: translateY(-10px) rotate(8deg);
+    -o-transform: translateY(-10px) rotate(8deg);
+    transform: translateY(-10px) rotate(8deg);
+  }
+}
+@-webkit-keyframes float-up-left {
+  0%,
+  100% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(0) rotate(-6deg);
+    -moz-transform: translateY(0) rotate(-6deg);
+    -ms-transform: translateY(0) rotate(-6deg);
+    -o-transform: translateY(0) rotate(-6deg);
+    transform: translateY(0) rotate(-6deg);
+  }
+  50% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(-10px) rotate(-8deg);
+    -moz-transform: translateY(-10px) rotate(-8deg);
+    -ms-transform: translateY(-10px) rotate(-8deg);
+    -o-transform: translateY(-10px) rotate(-8deg);
+    transform: translateY(-10px) rotate(-8deg);
+  }
+}
+@-moz-keyframes float-up-left {
+  0%,
+  100% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(0) rotate(-6deg);
+    -moz-transform: translateY(0) rotate(-6deg);
+    -ms-transform: translateY(0) rotate(-6deg);
+    -o-transform: translateY(0) rotate(-6deg);
+    transform: translateY(0) rotate(-6deg);
+  }
+  50% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(-10px) rotate(-8deg);
+    -moz-transform: translateY(-10px) rotate(-8deg);
+    -ms-transform: translateY(-10px) rotate(-8deg);
+    -o-transform: translateY(-10px) rotate(-8deg);
+    transform: translateY(-10px) rotate(-8deg);
+  }
+}
+@-ms-keyframes float-up-left {
+  0%,
+  100% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(0) rotate(-6deg);
+    -moz-transform: translateY(0) rotate(-6deg);
+    -ms-transform: translateY(0) rotate(-6deg);
+    -o-transform: translateY(0) rotate(-6deg);
+    transform: translateY(0) rotate(-6deg);
+  }
+  50% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(-10px) rotate(-8deg);
+    -moz-transform: translateY(-10px) rotate(-8deg);
+    -ms-transform: translateY(-10px) rotate(-8deg);
+    -o-transform: translateY(-10px) rotate(-8deg);
+    transform: translateY(-10px) rotate(-8deg);
+  }
+}
+@-o-keyframes float-up-left {
+  0%,
+  100% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(0) rotate(-6deg);
+    -moz-transform: translateY(0) rotate(-6deg);
+    -ms-transform: translateY(0) rotate(-6deg);
+    -o-transform: translateY(0) rotate(-6deg);
+    transform: translateY(0) rotate(-6deg);
+  }
+  50% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(-10px) rotate(-8deg);
+    -moz-transform: translateY(-10px) rotate(-8deg);
+    -ms-transform: translateY(-10px) rotate(-8deg);
+    -o-transform: translateY(-10px) rotate(-8deg);
+    transform: translateY(-10px) rotate(-8deg);
+  }
+}
+@keyframes float-up-left {
+  0%,
+  100% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(0) rotate(-6deg);
+    -moz-transform: translateY(0) rotate(-6deg);
+    -ms-transform: translateY(0) rotate(-6deg);
+    -o-transform: translateY(0) rotate(-6deg);
+    transform: translateY(0) rotate(-6deg);
+  }
+  50% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(-10px) rotate(-8deg);
+    -moz-transform: translateY(-10px) rotate(-8deg);
+    -ms-transform: translateY(-10px) rotate(-8deg);
+    -o-transform: translateY(-10px) rotate(-8deg);
+    transform: translateY(-10px) rotate(-8deg);
+  }
+}
+@-webkit-keyframes float-down-left {
+  0%,
+  100% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(8px) rotate(-5deg);
+    -moz-transform: translateY(8px) rotate(-5deg);
+    -ms-transform: translateY(8px) rotate(-5deg);
+    -o-transform: translateY(8px) rotate(-5deg);
+    transform: translateY(8px) rotate(-5deg);
+  }
+}
+@-moz-keyframes float-down-left {
+  0%,
+  100% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(8px) rotate(-5deg);
+    -moz-transform: translateY(8px) rotate(-5deg);
+    -ms-transform: translateY(8px) rotate(-5deg);
+    -o-transform: translateY(8px) rotate(-5deg);
+    transform: translateY(8px) rotate(-5deg);
+  }
+}
+@-ms-keyframes float-down-left {
+  0%,
+  100% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(8px) rotate(-5deg);
+    -moz-transform: translateY(8px) rotate(-5deg);
+    -ms-transform: translateY(8px) rotate(-5deg);
+    -o-transform: translateY(8px) rotate(-5deg);
+    transform: translateY(8px) rotate(-5deg);
+  }
+}
+@-o-keyframes float-down-left {
+  0%,
+  100% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(8px) rotate(-5deg);
+    -moz-transform: translateY(8px) rotate(-5deg);
+    -ms-transform: translateY(8px) rotate(-5deg);
+    -o-transform: translateY(8px) rotate(-5deg);
+    transform: translateY(8px) rotate(-5deg);
+  }
+}
+@keyframes float-down-left {
+  0%,
+  100% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translatez(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateY(8px) rotate(-5deg);
+    -moz-transform: translateY(8px) rotate(-5deg);
+    -ms-transform: translateY(8px) rotate(-5deg);
+    -o-transform: translateY(8px) rotate(-5deg);
+    transform: translateY(8px) rotate(-5deg);
+  }
+}
+@-webkit-keyframes slide-left {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
+@-moz-keyframes slide-left {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
+@-ms-keyframes slide-left {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
+@-o-keyframes slide-left {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
+@keyframes slide-left {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
+/*
 * forms.less
 *
 * Inputs, Buttons, Dropdowns
@@ -1689,7 +2175,7 @@
   outline: none !important;
 }
 a {
-  font: normal normal normal 14px "Proxima Nova Reg Semi Bold", arial, sans-serif;
+  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 19.6px;
   color: #000000;
   color: #528dcc;
@@ -1701,6 +2187,12 @@ a {
   -moz-transition-duration: 200ms;
   -o-transition-duration: 200ms;
   transition-duration: 200ms;
+}
+a.sm {
+  font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+  color: #528dcc;
 }
 a:visited {
   color: #528dcc;
@@ -1714,14 +2206,14 @@ a:active {
 }
 .btn,
 button {
-  font: normal normal normal 14px "Proxima Nova Reg Semi Bold", arial, sans-serif;
+  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 19.6px;
   color: #000000;
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
   line-height: 1em;
-  box-sizing: initial;
+  box-sizing: border-box;
   padding: 9px 31px;
   border-radius: 0;
   border: 1px solid #528dcc;
@@ -1734,6 +2226,10 @@ button {
   -moz-transition-duration: 200ms;
   -o-transition-duration: 200ms;
   transition-duration: 200ms;
+}
+.btn:not(.btn-sm):not(.close),
+button:not(.btn-sm):not(.close) {
+  min-width: 135px;
 }
 .btn:visited,
 button:visited {
@@ -1774,11 +2270,13 @@ button.secondary:hover {
 }
 .btn.btn-link,
 button.btn-link {
+  font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
   background-color: transparent;
   border: 3px solid transparent;
   color: #0063b4;
   display: inline-block;
-  font: normal normal normal 13px/30px "Nimbus Sans", arial, sans-serif;
   letter-spacing: 0;
   height: 30px;
   padding: 0 13px;
@@ -1792,7 +2290,7 @@ button.btn-link:hover {
 }
 .btn.special,
 button.special {
-  font: normal normal normal 14px "Proxima Nova Reg Semi Bold", arial, sans-serif;
+  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 19.6px;
   color: #000000;
   color: #ffffff;
@@ -1808,7 +2306,9 @@ button.special:hover {
   background-color: #6d61a9;
 }
 .btn.disabled,
-button.disabled {
+button.disabled,
+.btn button[disabled],
+button button[disabled] {
   color: #ffffff;
   border-color: #bbceeb;
   background-color: #bbceeb;
@@ -1924,10 +2424,10 @@ button.disabled {
   height: 100%;
 }
 .dropdown.nav .dropdown-toggle span {
-  font: normal normal normal 14px "Proxima Nova Reg Semi Bold", arial, sans-serif;
+  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 19.6px;
   color: #000000;
-  color: #9196a1;
+  color: #b1b9bd;
   line-height: 17px;
   padding: 15px 0px 15px 10px;
 }
@@ -1988,6 +2488,34 @@ button.disabled {
 .dropdown.action .dropdown-menu {
   font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
   line-height: 19.6px;
+  color: #000000;
+}
+.dropdown.filter {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  box-sizing: border-box;
+}
+.dropdown.filter .dropdown-toggle {
+  color: #000000;
+  padding: 8px 10px 4px;
+}
+.dropdown.filter .dropdown-toggle span {
+  font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.dropdown.filter .dropdown-toggle .caret {
+  border-top-color: #000000;
+  margin-top: 6px;
+}
+.dropdown.filter.open,
+.dropdown.filter:hover {
+  background-color: #d2d6d9;
+}
+.dropdown.filter .dropdown-menu a {
   color: #000000;
 }
 .dropdown.date .dropdown-toggle {
@@ -2073,15 +2601,21 @@ body {
   line-height: 19.6px;
   color: #000000;
 }
+.sl-lt,
+.strapped-label-light {
+  font: normal normal normal 14px "Proxima Nova Light", arial, sans-serif;
+  line-height: 19.6px;
+  color: #000000;
+}
 .sl-sb,
 .strapped-label-semi-bold {
-  font: normal normal normal 14px "Proxima Nova Reg Semi Bold", arial, sans-serif;
+  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 19.6px;
   color: #000000;
 }
 .sl-b,
 .strapped-label-bold {
-  font: normal normal normal 14px "Proxima Nova Reg Bold", arial, sans-serif;
+  font: normal normal normal 14px "Proxima Nova Bold", arial, sans-serif;
   line-height: 19.6px;
   color: #000000;
 }
@@ -2091,15 +2625,21 @@ body {
   line-height: 16px;
   color: #000000;
 }
+.sl-sm-lt,
+.strapped-label-small-light {
+  font: normal normal normal 12px "Proxima Nova Light", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+}
 .sl-sm-sb,
 .strapped-label-small-semi-bold {
-  font: normal normal normal 12px "Proxima Nova Reg Semi Bold", arial, sans-serif;
+  font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 16px;
   color: #000000;
 }
 .sl-sm-b,
 .strapped-label-small-bold {
-  font: normal normal normal 12px "Proxima Nova Reg Bold", arial, sans-serif;
+  font: normal normal normal 12px "Proxima Nova Bold", arial, sans-serif;
   line-height: 16px;
   color: #000000;
 }
@@ -2109,15 +2649,21 @@ body {
   line-height: 22px;
   color: #000000;
 }
+.sl-md-lt,
+.strapped-label-medium-light {
+  font: normal normal normal 16px "Proxima Nova Light", arial, sans-serif;
+  line-height: 22px;
+  color: #000000;
+}
 .sl-md-sb,
 .strapped-label-medium-semi-bold {
-  font: normal normal normal 16px "Proxima Nova Reg Semi Bold", arial, sans-serif;
+  font: normal normal normal 16px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 22px;
   color: #000000;
 }
 .sl-md-b,
 .strapped-label-medium-bold {
-  font: normal normal normal 16px "Proxima Nova Reg Bold", arial, sans-serif;
+  font: normal normal normal 16px "Proxima Nova Bold", arial, sans-serif;
   line-height: 22px;
   color: #000000;
 }
@@ -2127,15 +2673,21 @@ body {
   line-height: 45px;
   color: #000000;
 }
+.sl-lg-lt,
+.strapped-label-large-light {
+  font: normal normal normal 32px "Proxima Nova Light", arial, sans-serif;
+  line-height: 45px;
+  color: #000000;
+}
 .sl-lg-sb,
 .strapped-label-large-semi-bold {
-  font: normal normal normal 32px "Proxima Nova Reg Semi Bold", arial, sans-serif;
+  font: normal normal normal 32px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 45px;
   color: #000000;
 }
 .sl-lg-b,
 .strapped-label-large-bold {
-  font: normal normal normal 32px "Proxima Nova Reg Bold", arial, sans-serif;
+  font: normal normal normal 32px "Proxima Nova Bold", arial, sans-serif;
   line-height: 45px;
   color: #000000;
 }
@@ -2168,17 +2720,21 @@ pre {
 .sl-link:hover {
   color: #0063b4;
 }
-.num1 {
+.num-sm {
   color: #000000;
-  font: normal normal normal 56px "Proxima Nova Reg Bold", arial, sans-serif;
+  font: normal normal normal 18px "Proxima Nova Bold", arial, sans-serif;
 }
-.num2 {
+.num-md {
   color: #000000;
-  font: normal normal normal 24px "Proxima Nova Reg Bold", arial, sans-serif;
+  font: normal normal normal 24px "Proxima Nova Bold", arial, sans-serif;
 }
-.num3 {
+.num-lg {
   color: #000000;
-  font: normal normal normal 18px "Proxima Nova Reg Bold", arial, sans-serif;
+  font: normal normal normal 56px "Proxima Nova Bold", arial, sans-serif;
+}
+.num-xlg {
+  color: #000000;
+  font: normal normal normal 150px "Proxima Nova Bold", arial, sans-serif;
 }
 .num-danger {
   color: #e71d1c;
@@ -2226,7 +2782,7 @@ pre {
   font: normal normal normal 16px "Proxima Nova Reg", arial, sans-serif;
   line-height: 22px;
   color: #000000;
-  color: #ffffff;
+  color: #1c1f26;
   line-height: 70px;
   letter-spacing: normal;
   padding: 0 20px;
@@ -2358,14 +2914,11 @@ table th[class*="span"],
 .table-hover tbody tr.info:hover > td {
   background-color: #528dcc;
 }
-p {
-  font-family: "Proxima Nova Reg", arial, sans-serif;
-}
 body {
-  padding-top: 70px;
   background-color: #f0f1f2;
 }
 .content {
+  padding-top: 70px;
   margin: 0 30px;
 }
 .navbar {
@@ -2450,13 +3003,13 @@ body {
   hyphens: auto;
 }
 #colors .item .property .hex {
-  font-family: "Proxima Nova Reg Semi Bold", arial, sans-serif;
+  font-family: "Proxima Nova Semi Bold", arial, sans-serif;
 }
 #colors .item .tag {
   position: absolute;
   bottom: 10%;
   left: 10%;
-  font-family: "Proxima Nova Reg Bold", arial, sans-serif;
+  font-family: "Proxima Nova Bold", arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 20px;

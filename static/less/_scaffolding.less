@@ -44,11 +44,14 @@
 		background-color: @contentBackground;
 	}
 
-	a.btn {
-		display: inline-block;
-		width: 135px;
-		padding: 9px 10px;
-		margin: 11px 10px 0 10px;
+	.button-groups {
+		text-align: center;
+
+		a.btn {
+			display: inline-block;
+			padding: 9px 10px;
+			margin: 10px auto;
+		}
 	}
 
 	ul {
@@ -89,7 +92,7 @@
 
 		a {
 			.sl;
-			color: @gray4;
+			color: @gray3;
 			display: block;
 			padding: 15px;
 			position: relative;
@@ -110,5 +113,129 @@
 			color: inherit;
 			display: block;
 		}
+	}
+}
+
+#notfound {
+	padding-top: 150px;
+
+	h1 {
+		.num-xlg;
+	}
+
+	h3 {
+		.sl-sb;
+		border-bottom: 1px solid @gray3;
+	}
+
+	p {
+		.sl-lg-lt;
+		width: 350px;
+		z-index: 10;
+	}
+
+	.next-steps {
+		> div:first-of-type {
+			padding-left: 0;
+		}
+		a {
+			display: block;
+			padding-bottom: 5px;
+		}
+	}
+
+	.balloon {
+		width: 110px;
+		height: 160px;
+		position: absolute;
+		background-size: cover;	
+
+		&.red {
+			top: 100px;
+			right: 40%;
+			background-image: url('../images/404/red_balloon.png');
+			.animation(float-up-left, 2s, ease, infinite);
+		}
+
+		&.green {
+			top: 100px;
+			right: 10%;
+			background-image: url('../images/404/green_balloon.png');
+			.animation(float-up-right, 4s, ease, infinite);
+		}
+
+		&.yellow {
+			top: 400px;
+			right: 25%;
+			background-image: url('../images/404/yellow_balloon.png');
+			.animation(float-down-left, 3s, ease, infinite);
+		}
+	}
+
+	.cloud {
+		position: absolute;
+		top: 300px;
+		background-image: url('../images/404/clouds.png');
+		background-size: cover;
+		background-repeat: repeat-x;
+		width: 100%;
+		height: 180px;
+		opacity: 0.8;
+		.animation(slide-left, 22s, linear, infinite);
+	}
+
+	.cloud-rest {
+		position: absolute;
+		top: 480px;
+		bottom: 0;
+		background-color: @white;
+		opacity: 0.8;
+		width: 100%;
+	}
+}
+
+.container-fluid {
+	padding-left: 0;
+}
+
+.site-header {
+	.logo {
+		img {
+			margin: 18px 0 0 0;
+			width: 130px;
+		}
+	}
+
+	.site-nav {
+	  .nav-menu-wrapper {
+	    float: right;
+	  }
+
+	  [id$="menu"] {
+	    float: left;
+
+	    .nav1;
+	    text-transform: uppercase;
+	    text-align: center;
+
+	    background-color: @black;
+	    border-right: 1px solid @gray3;
+	    &:last-child {
+	      border-right: 0;
+	    }
+
+	    a {
+	      color: white;
+	      padding: 20px 25px;
+	      display: block;
+	      border: none;
+
+	      &:hover {
+	        background-color: @white;
+	        color: @black;
+	        text-decoration: none;
+	      }
+	    }
+	  }
 	}
 }

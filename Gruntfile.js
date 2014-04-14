@@ -22,6 +22,11 @@ module.exports = function(grunt) {
 				templateData: 'examples/data.json',
 				partials: 'examples/partials/*.hbs',
 				output: 'index.html'
+			},
+			notfound: {
+				template: 'examples/notfound.hbs',
+				templateData: 'examples/data.json',
+				output: 'notfound.html'
 			}
 		},
 
@@ -48,6 +53,14 @@ module.exports = function(grunt) {
 					expand: true,
 					src: ['**'],
 					dest: 'examples/fonts'
+				}]
+			},
+			images: {
+				files: [{
+					cwd: 'static/images',
+					expand: true,
+					src: ['**'],
+					dest: 'examples/images'
 				}]
 			}
 		},
@@ -78,6 +91,15 @@ module.exports = function(grunt) {
 					'examples/css/style.less'
 				],
 				tasks: ['_buildCSS'],
+				options: {
+					livereload: true
+				}
+			},
+			images: {
+				files: [
+					'static/images/*'
+				],
+				tasks: ['copy:images'],
 				options: {
 					livereload: true
 				}

@@ -14,6 +14,11 @@ a {
 	.transition(color);
 	.transition-duration(200ms);
 
+	&.sm {
+		.sl-sm-sb;
+		color: @persianBlue60;
+	}
+
 	&:visited {
 		color: @persianBlue60;
 	}
@@ -42,7 +47,7 @@ a {
 	.transition(background-color border-color);
 	.transition-duration(200ms);
 
-	&:not(.close):not(.go) {
+	&:not(.btn-sm):not(.close) {
 		min-width: 135px;
 	}
 
@@ -77,6 +82,7 @@ a {
 			border-color: @gray2;
 		}
 	}
+
 	&.btn-link {
 		.sl-sm-sb;
 		background-color: transparent;
@@ -306,6 +312,38 @@ a {
 
 		.dropdown-menu {
 			.sl;
+		}
+	}
+
+	&.filter {
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+		box-sizing: border-box;
+
+		.dropdown-toggle {
+			color: @black;
+			padding: 8px 10px 4px;
+
+			span {
+				.sl-sm-sb;
+				color: @black;
+				text-transform: uppercase;
+				vertical-align: middle;
+			}
+
+			.caret {
+				border-top-color: @black;
+				margin-top: 6px;
+			}
+		}
+
+		&.open, &:hover {
+		  background-color: @gray2;
+		}
+
+		.dropdown-menu a {
+		  color: @black;
 		}
 	}
 

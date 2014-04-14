@@ -1,0 +1,68 @@
+/*
+* animations.less
+*
+*/
+
+// Float
+@-webkit-keyframes float-up-right { .float-up-right }
+@-moz-keyframes float-up-right { .float-up-right }
+@-ms-keyframes float-up-right { .float-up-right }
+@-o-keyframes float-up-right { .float-up-right }
+@keyframes float-up-right { .float-up-right }
+
+.float-up-right() {
+  0%, 100% {
+    .transform(translateY(0) rotate(6deg));
+  }
+  50%{
+    .transform(translateY(-10px) rotate(8deg));
+  }
+}
+
+@-webkit-keyframes float-up-left { .float-up-left }
+@-moz-keyframes float-up-left { .float-up-left }
+@-ms-keyframes float-up-left { .float-up-left }
+@-o-keyframes float-up-left { .float-up-left }
+@keyframes float-up-left { .float-up-left }
+
+.float-up-left() {
+  0%, 100% {
+    .transform(translateY(0) rotate(-6deg));
+  }
+  50%{
+    .transform(translateY(-10px) rotate(-8deg));
+  }
+}
+
+@-webkit-keyframes float-down-left { .float-down-left }
+@-moz-keyframes float-down-left { .float-down-left }
+@-ms-keyframes float-down-left { .float-down-left }
+@-o-keyframes float-down-left { .float-down-left }
+@keyframes float-down-left { .float-down-left }
+
+.float-down-left() {
+  0%, 100% {
+    .transform(translateY(0));
+  }
+  50%{
+    .transform(translateY(8px) rotate(-5deg));
+  }
+}
+
+// Slide
+@-webkit-keyframes slide-left { .slide-left }
+@-moz-keyframes slide-left { .slide-left }
+@-ms-keyframes slide-left { .slide-left }
+@-o-keyframes slide-left { .slide-left }
+@keyframes slide-left { .slide-left }
+
+.slide-left() {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -100%;
+  }
+}
+
