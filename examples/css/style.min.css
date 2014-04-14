@@ -1162,7 +1162,7 @@
 #marketplace-nav .button-groups a.btn {
   display: inline-block;
   padding: 9px 10px;
-  margin: 10px auto;
+  margin: 10px auto 0;
 }
 #marketplace-nav ul {
   padding: 0;
