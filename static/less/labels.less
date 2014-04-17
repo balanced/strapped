@@ -39,6 +39,12 @@ h3 {
   color: @black;
 }
 
+.sl-lt, .strapped-label-light {
+  font: normal normal normal @baseFontSize @baseFontFamilyLight;
+  line-height: @baseLineHeight;
+  color: @black;
+}
+
 .sl-sb, .strapped-label-semi-bold {
   font: normal normal normal @baseFontSize @baseFontFamilySemiBold;
   line-height: @baseLineHeight;
@@ -53,6 +59,12 @@ h3 {
 
 .sl-sm, .strapped-label-small {
   font: normal normal normal 12px @baseFontFamily;
+  line-height: 16px;
+  color: @black;
+}
+
+.sl-sm-lt, .strapped-label-small-light {
+  font: normal normal normal 12px @baseFontFamilyLight;
   line-height: 16px;
   color: @black;
 }
@@ -75,6 +87,12 @@ h3 {
   color: @black;
 }
 
+.sl-md-lt, .strapped-label-medium-light {
+  font: normal normal normal 16px @baseFontFamilyLight;
+  line-height: 22px;
+  color: @black;
+}
+
 .sl-md-sb, .strapped-label-medium-semi-bold {
   font: normal normal normal 16px @baseFontFamilySemiBold;
   line-height: 22px;
@@ -89,6 +107,12 @@ h3 {
 
 .sl-lg, .strapped-label-large {
   font: normal normal normal 32px @baseFontFamily;
+  line-height: 45px;
+  color: @black;
+}
+
+.sl-lg-lt, .strapped-label-large-light {
+  font: normal normal normal 32px @baseFontFamilyLight;
   line-height: 45px;
   color: @black;
 }
@@ -139,19 +163,24 @@ h3 {
 }
 
 // Numbers
-.num1 {
+.num-sm {
   color: @black;
-  font: normal normal normal 56px @baseFontFamilyBold;
+  font: normal normal normal 18px @baseFontFamilyBold;
 }
 
-.num2 {
+.num-md {
   color: @black;
   font: normal normal normal 24px @baseFontFamilyBold;
 }
 
-.num3 {
+.num-lg {
   color: @black;
-  font: normal normal normal 18px @baseFontFamilyBold;
+  font: normal normal normal 56px @baseFontFamilyBold;
+}
+
+.num-xlg {
+  color: @black;
+  font: normal normal normal 150px @baseFontFamilyBold;
 }
 
 .num-danger {
