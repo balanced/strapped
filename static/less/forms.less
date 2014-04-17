@@ -114,7 +114,21 @@ a {
 			background-color: @lavenderPurple100;
 		}
 	}
-  
+
+	&.call-to-action {
+		.sl-20-b;
+		border: 3px solid @black;
+		background: @white;
+		vertical-align: middle;
+		padding: 8px 16px;
+
+	    &:hover {
+	      color: @white;
+	      background-color: @black;
+	      border-color: @black;
+	    }
+	}
+
 	&.disabled, button[disabled] {
 		color: @white;
 		border-color: @persianBlue20;
