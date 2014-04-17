@@ -24,7 +24,7 @@
 .input-block-level {
   display: block;
   width: 100%;
-  min-height: 29.6px;
+  min-height: 30px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1121,34 +1121,17 @@
   font-weight: 700;
   src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url(https://themes.googleusercontent.com/static/fonts/inconsolata/v6/AIed271kqQlcIRSOnQH0yRbnBKKEOwRKgsHDreGcocg.woff) format('woff');
 }
-@font-face {
-  font-family: 'Droid Serif Italic';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Droid Serif Italic'), local('DroidSerif-Italic'), url(https://themes.googleusercontent.com/static/fonts/droidserif/v3/cj2hUnSRBhwmSPr9kS5894o3ZslTYfJv0R05CazkwN8.woff) format('woff');
-}
-@font-face {
-  font-family: 'Bitter';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Bitter-Italic'), url(https://themes.googleusercontent.com/static/fonts/bitter/v4/E44LYN4bXPiBT-TMwacNsvesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Bitter';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Bitter-Regular'), url(https://themes.googleusercontent.com/static/fonts/bitter/v4/2hig-tnMw8lXZsjwuh-9ow.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Bitter';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Bitter-Bold'), url(https://themes.googleusercontent.com/static/fonts/bitter/v4/evC1haE-MsorTl_A7_uSGaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
-}
 /*
 * grids.less
 *
 */
+*,
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -1213,7 +1196,7 @@ body {
 }
 #marketplace-nav li a {
   font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 19.6px;
+  line-height: 20px;
   color: #000000;
   color: #b1b9bd;
   display: block;
@@ -1243,13 +1226,13 @@ body {
 }
 #notfound h3 {
   font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 19.6px;
+  line-height: 20px;
   color: #000000;
   border-bottom: 1px solid #b1b9bd;
 }
 #notfound p {
   font: normal normal normal 32px "Proxima Nova Light", arial, sans-serif;
-  line-height: 45px;
+  line-height: 40px;
   color: #000000;
   width: 350px;
   z-index: 10;
@@ -1315,43 +1298,6 @@ body {
   background-color: #ffffff;
   opacity: 0.8;
   width: 100%;
-}
-.container-fluid {
-  padding-left: 0;
-}
-.site-header .logo img {
-  margin: 18px 0 0 0;
-  width: 130px;
-}
-.site-header .site-nav .nav-menu-wrapper {
-  float: right;
-}
-.site-header .site-nav [id$="menu"] {
-  float: left;
-  font-family: Proxima Nova Reg, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  font-style: normal;
-  letter-spacing: 1px;
-  line-height: 100%;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #000000;
-  border-right: 1px solid #b1b9bd;
-}
-.site-header .site-nav [id$="menu"]:last-child {
-  border-right: 0;
-}
-.site-header .site-nav [id$="menu"] a {
-  color: white;
-  padding: 20px 25px;
-  display: block;
-  border: none;
-}
-.site-header .site-nav [id$="menu"] a:hover {
-  background-color: #ffffff;
-  color: #000000;
-  text-decoration: none;
 }
 @charset "UTF-8";
 @font-face {
@@ -2187,7 +2133,7 @@ body {
 }
 a {
   font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 19.6px;
+  line-height: 20px;
   color: #000000;
   color: #528dcc;
   -webkit-transition: color;
@@ -2218,13 +2164,12 @@ a:active {
 .btn,
 button {
   font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 19.6px;
+  line-height: 20px;
   color: #000000;
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
   line-height: 1em;
-  box-sizing: border-box;
   padding: 9px 31px;
   border-radius: 0;
   border: 1px solid #528dcc;
@@ -2302,7 +2247,7 @@ button.btn-link:hover {
 .btn.special,
 button.special {
   font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 19.6px;
+  line-height: 20px;
   color: #000000;
   color: #ffffff;
   font-size: 20px;
@@ -2315,6 +2260,23 @@ button.special {
 button.special:hover {
   border-color: #6d61a9;
   background-color: #6d61a9;
+}
+.btn.call-to-action,
+button.call-to-action {
+  font: normal normal normal 20px "Proxima Nova Bold", arial, sans-serif;
+  line-height: 28px;
+  color: #000000;
+  letter-spacing: 0.1em;
+  border: 3px solid #000000;
+  background: #ffffff;
+  vertical-align: middle;
+  padding: 8px 16px;
+}
+.btn.call-to-action:hover,
+button.call-to-action:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
 }
 .btn.disabled,
 button.disabled,
@@ -2436,7 +2398,7 @@ button button[disabled] {
 }
 .dropdown.nav .dropdown-toggle span {
   font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 19.6px;
+  line-height: 20px;
   color: #000000;
   color: #b1b9bd;
   line-height: 17px;
@@ -2478,7 +2440,7 @@ button button[disabled] {
 }
 .dropdown.action .dropdown-toggle span {
   font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 19.6px;
+  line-height: 20px;
   color: #000000;
   line-height: 23px;
   border-right: 1px solid #d2d6d9;
@@ -2498,14 +2460,13 @@ button button[disabled] {
 }
 .dropdown.action .dropdown-menu {
   font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 19.6px;
+  line-height: 20px;
   color: #000000;
 }
 .dropdown.filter {
   display: inline-block;
   vertical-align: middle;
   height: 100%;
-  box-sizing: border-box;
 }
 .dropdown.filter .dropdown-toggle {
   color: #000000;
@@ -2539,7 +2500,7 @@ button button[disabled] {
 }
 .dropdown.date .dropdown-toggle span .date {
   font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 19.6px;
+  line-height: 20px;
   color: #000000;
 }
 .dropdown.date .dropdown-toggle span .time {
@@ -2551,7 +2512,7 @@ button button[disabled] {
 }
 .dropdown.date .dropdown-toggle span.em-dash {
   font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 19.6px;
+  line-height: 20px;
   color: #000000;
   vertical-align: top;
   padding: 0;
@@ -2572,7 +2533,7 @@ button button[disabled] {
 }
 .dropdown.date .dropdown-menu {
   font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 19.6px;
+  line-height: 20px;
   color: #000000;
   min-width: 230px;
 }
@@ -2605,33 +2566,6 @@ h3 {
   line-height: 21px;
   color: #000000;
 }
-.sl,
-.sl-14 .strapped-label,
-body {
-  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 19.6px;
-  color: #000000;
-}
-.sl-lt,
-.sl-14-lt,
-.strapped-label-light {
-  font: normal normal normal 14px "Proxima Nova Light", arial, sans-serif;
-  line-height: 19.6px;
-  color: #000000;
-}
-.sl-sb,
-.sl-14-sb .strapped-label-semi-bold {
-  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 19.6px;
-  color: #000000;
-}
-.sl-b,
-.sl-14-b,
-.strapped-label-bold {
-  font: normal normal normal 14px "Proxima Nova Bold", arial, sans-serif;
-  line-height: 19.6px;
-  color: #000000;
-}
 .sl-sm,
 .sl-12,
 .strapped-label-small {
@@ -2660,83 +2594,151 @@ body {
   line-height: 16px;
   color: #000000;
 }
+.sl,
+.sl-14 .strapped-label,
+body {
+  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 20px;
+  color: #000000;
+}
+.sl-lt,
+.sl-14-lt,
+.strapped-label-light {
+  font: normal normal normal 14px "Proxima Nova Light", arial, sans-serif;
+  line-height: 20px;
+  color: #000000;
+}
+.sl-sb,
+.sl-14-sb .strapped-label-semi-bold {
+  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 20px;
+  color: #000000;
+}
+.sl-b,
+.sl-14-b,
+.strapped-label-bold {
+  font: normal normal normal 14px "Proxima Nova Bold", arial, sans-serif;
+  line-height: 20px;
+  color: #000000;
+}
 .sl-md,
 .sl-16,
 .strapped-label-medium {
   font: normal normal normal 16px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 22px;
+  line-height: 24px;
+  color: #000000;
+}
+.sl-md-i,
+.sl-16-i,
+.strapped-label-medium-italic {
+  font: normal normal normal 16px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 24px;
   color: #000000;
 }
 .sl-md-lt,
 .sl-16-lt,
 .strapped-label-medium-light {
   font: normal normal normal 16px "Proxima Nova Light", arial, sans-serif;
-  line-height: 22px;
+  line-height: 24px;
   color: #000000;
 }
 .sl-md-sb,
 .sl-16-sb,
 .strapped-label-medium-semi-bold {
   font: normal normal normal 16px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 22px;
+  line-height: 24px;
   color: #000000;
 }
 .sl-md-b,
 .sl-16-b,
 .strapped-label-medium-bold {
   font: normal normal normal 16px "Proxima Nova Bold", arial, sans-serif;
-  line-height: 22px;
+  line-height: 24px;
   color: #000000;
 }
 .sl-20 {
   font: normal normal normal 20px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 30px;
+  line-height: 28px;
   color: #000000;
 }
 .sl-20-i {
   font: normal normal normal 20px "Plantin Italic", arial, sans-serif;
-  line-height: 30px;
+  line-height: 28px;
   color: #000000;
 }
 .sl-20-lt {
   font: normal normal normal 20px "Proxima Nova Light", arial, sans-serif;
-  line-height: 30px;
+  line-height: 28px;
   color: #000000;
 }
 .sl-20-sb {
   font: normal normal normal 20px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 30px;
+  line-height: 28px;
   color: #000000;
 }
 .sl-20-b {
   font: normal normal normal 20px "Proxima Nova Bold", arial, sans-serif;
-  line-height: 30px;
+  line-height: 28px;
+  color: #000000;
+}
+.sl-24 {
+  font: normal normal normal 24px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 32px;
+  color: #000000;
+}
+.sl-24-i {
+  font: normal normal normal 24px "Plantin Italic", arial, sans-serif;
+  line-height: 32px;
+  color: #000000;
+}
+.sl-24-lt {
+  font: normal normal normal 24px "Proxima Nova Light", arial, sans-serif;
+  line-height: 32px;
+  color: #000000;
+}
+.sl-24-sb {
+  font: normal normal normal 24px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 32px;
+  color: #000000;
+}
+.sl-24-b {
+  font: normal normal normal 24px "Proxima Nova Bold", arial, sans-serif;
+  line-height: 32px;
   color: #000000;
 }
 .sl-lg,
 .sl-32,
 .strapped-label-large {
   font: normal normal normal 32px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 45px;
+  line-height: 40px;
+  color: #000000;
+}
+.sl-lg-i,
+.sl-32-i,
+.strapped-label-large-italic {
+  font: normal normal normal 32px "Plantin Italic", arial, sans-serif;
+  line-height: 40px;
   color: #000000;
 }
 .sl-lg-lt,
 .sl-32-lt,
 .strapped-label-large-light {
   font: normal normal normal 32px "Proxima Nova Light", arial, sans-serif;
-  line-height: 45px;
+  line-height: 40px;
   color: #000000;
 }
 .sl-lg-sb,
+.sl-32-sb,
 .strapped-label-large-semi-bold {
   font: normal normal normal 32px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 45px;
+  line-height: 40px;
   color: #000000;
 }
 .sl-lg-b,
+.sl-32-b,
 .strapped-label-large-bold {
   font: normal normal normal 32px "Proxima Nova Bold", arial, sans-serif;
-  line-height: 45px;
+  line-height: 40px;
   color: #000000;
 }
 .sl-44 {
@@ -2744,10 +2746,30 @@ body {
   line-height: 52px;
   color: #000000;
 }
+.sl-44-i {
+  font: normal normal normal 44px "Plantin Italic", arial, sans-serif;
+  line-height: 52px;
+  color: #000000;
+}
+.sl-44-lt {
+  font: normal normal normal 44px "Proxima Nova Light", arial, sans-serif;
+  line-height: 52px;
+  color: #000000;
+}
+.sl-44-sb {
+  font: normal normal normal 44px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 52px;
+  color: #000000;
+}
+.sl-44-b {
+  font: normal normal normal 44px "Proxima Nova Bold", arial, sans-serif;
+  line-height: 52px;
+  color: #000000;
+}
 .sl-code,
 pre {
   font: normal normal normal 14px "Inconsolata", Monaco, Menlo, "Courier New", monospace;
-  line-height: 19.6px;
+  line-height: 20px;
   color: #000000;
 }
 .sl-warning {
@@ -2833,7 +2855,7 @@ pre {
 .tb .tb-content,
 .title-block .tb-content {
   font: normal normal normal 16px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 22px;
+  line-height: 24px;
   color: #000000;
   color: #1c1f26;
   line-height: 70px;
@@ -2879,7 +2901,7 @@ pre {
 .table th,
 .table td {
   padding: 8px;
-  line-height: 19.6px;
+  line-height: 20px;
   text-align: left;
   vertical-align: top;
   border-top: 1px solid #b1b9bd;
@@ -2997,7 +3019,7 @@ body {
 }
 .navbar .title {
   font: normal normal normal 16px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 22px;
+  line-height: 24px;
   color: #000000;
   display: inline-block;
   text-decoration: none;
@@ -3018,7 +3040,7 @@ body {
 }
 .navbar ul li a {
   font: normal normal normal 16px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 22px;
+  line-height: 24px;
   color: #000000;
   background: #000000;
   padding: 0px 30px;
