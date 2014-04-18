@@ -8,6 +8,9 @@
 	outline: none !important;
 }
 
+
+// Links
+
 a {
 	.sl-sb;
 	color: @persianBlue60;
@@ -17,6 +20,14 @@ a {
 	&.sm {
 		.sl-sm-sb;
 		color: @persianBlue60;
+	}
+
+	&.light {
+		color: @persianBlue40;
+
+		&:hover {
+			color: @persianBlue20;
+		}
 	}
 
 	&:visited {
@@ -119,6 +130,9 @@ a {
 	height: 30px;
 	padding: 0 13px;
 }
+
+
+// Dropdowns
 
 .dropdown {
 	display: block;
@@ -386,4 +400,94 @@ a {
 			min-width: 230px;
 		}
 	}
+}
+
+
+// Inputs
+
+@inputFullWidth: 350px;
+@inputPadding: 8px;
+@inputHeight: auto;
+
+form {
+  margin: 0;
+
+  legend {
+    margin-bottom: 0;
+  }
+
+  label {
+    .sl-sb;
+    margin-bottom: 0;
+
+    &:after {
+      content: ':';
+      padding-right: 3px;
+    }
+
+    &.inline {
+      display: inline;
+    }
+  }
+
+  select,
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="color"] {
+  	.sl-md;
+    border: 1px solid @gray3;
+    border-radius: 0;
+    width: @inputFullWidth / 2;
+    padding: @inputPadding;
+    height: @inputHeight;
+    line-height: 22px;
+    margin-bottom: 0;
+    &.full {
+      width: @inputFullWidth - @inputPadding * 2;
+    }
+  }
+
+  input[type="radio"] {
+    margin: 0;
+  }
+
+  .radio-label {
+  	.sl;
+    display: inline;
+    padding: 0px 15px 0px 5px;
+    &:after {
+      content: '';
+      padding-right: 0px;
+    }
+  }
+
+  .input-append,
+  .input-prepend {
+    .add-on {
+    	.sl-md;
+    	color: @white;
+		height: 30px;
+		min-width: @inputFontSize;
+		line-height: 1.7;
+		border-radius: 0;
+		background-color: @black;
+		border-color: @black;
+
+      &:first-child {
+        .border-radius(0);
+      }
+    }
+  }
 }
