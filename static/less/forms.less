@@ -14,7 +14,7 @@
 a {
 	.sl-sb;
 	color: @persianBlue60;
-	.transition(color);
+	.transition("color");
 	.transition-duration(200ms);
 
 	&.sm {
@@ -141,7 +141,7 @@ a {
 	.dropdown-toggle {
 		display: block;
 		text-decoration: none;
-		.transition(background-color);
+		.transition("background-color");
 		.transition-duration(200ms);
 
 		span {
@@ -454,7 +454,7 @@ form {
     height: @inputHeight;
     line-height: 22px;
     margin-bottom: 0;
-    
+
     &.full {
       width: @inputFullWidth - @inputPadding * 2;
     }
