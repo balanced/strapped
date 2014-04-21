@@ -4,13 +4,13 @@
 */
 
 // Float
-@-webkit-keyframes float-up-right { .float-up-right }
-@-moz-keyframes float-up-right { .float-up-right }
-@-ms-keyframes float-up-right { .float-up-right }
-@-o-keyframes float-up-right { .float-up-right }
-@keyframes float-up-right { .float-up-right }
+@-webkit-keyframes floatUpRight { .floatUpRight }
+@-moz-keyframes floatUpRight { .floatUpRight }
+@-ms-keyframes floatUpRight { .floatUpRight }
+@-o-keyframes floatUpRight { .floatUpRight }
+@keyframes floatUpRight { .floatUpRight }
 
-.float-up-right() {
+.floatUpRight() {
   0%, 100% {
     .transform(translateY(0) rotate(6deg));
   }
@@ -19,13 +19,13 @@
   }
 }
 
-@-webkit-keyframes float-up-left { .float-up-left }
-@-moz-keyframes float-up-left { .float-up-left }
-@-ms-keyframes float-up-left { .float-up-left }
-@-o-keyframes float-up-left { .float-up-left }
-@keyframes float-up-left { .float-up-left }
+@-webkit-keyframes floatUpLeft { .floatUpLeft }
+@-moz-keyframes floatUpLeft { .floatUpLeft }
+@-ms-keyframes floatUpLeft { .floatUpLeft }
+@-o-keyframes floatUpLeft { .floatUpLeft }
+@keyframes floatUpLeft { .floatUpLeft }
 
-.float-up-left() {
+.floatUpLeft() {
   0%, 100% {
     .transform(translateY(0) rotate(-6deg));
   }
@@ -34,13 +34,13 @@
   }
 }
 
-@-webkit-keyframes float-down-left { .float-down-left }
-@-moz-keyframes float-down-left { .float-down-left }
-@-ms-keyframes float-down-left { .float-down-left }
-@-o-keyframes float-down-left { .float-down-left }
-@keyframes float-down-left { .float-down-left }
+@-webkit-keyframes floatDownLeft { .floatDownLeft }
+@-moz-keyframes floatDownLeft { .floatDownLeft }
+@-ms-keyframes floatDownLeft { .floatDownLeft }
+@-o-keyframes floatDownLeft { .floatDownLeft }
+@keyframes floatDownLeft { .floatDownLeft }
 
-.float-down-left() {
+.floatDownLeft() {
   0%, 100% {
     .transform(translateY(0));
   }
@@ -50,13 +50,13 @@
 }
 
 // Slide
-@-webkit-keyframes slide-left { .slide-left }
-@-moz-keyframes slide-left { .slide-left }
-@-ms-keyframes slide-left { .slide-left }
-@-o-keyframes slide-left { .slide-left }
-@keyframes slide-left { .slide-left }
+@-webkit-keyframes slideLeft { .slideLeft }
+@-moz-keyframes slideLeft { .slideLeft }
+@-ms-keyframes slideLeft { .slideLeft }
+@-o-keyframes slideLeft { .slideLeft }
+@keyframes slideLeft { .slideLeft }
 
-.slide-left() {
+.slideLeft() {
   0% {
     background-position-x: 0;
   }
@@ -66,3 +66,63 @@
   }
 }
 
+@-webkit-keyframes slideUp { .slideUp }
+@-moz-keyframes slideUp { .slideUp }
+@-ms-keyframes slideUp { .slideUp }
+@-o-keyframes slideUp { .slideUp }
+@keyframes slideUp { .slideUp }
+
+.slideUp() {
+  0% {
+    .transform(translateY(0));
+  }
+
+  1% {
+    .transform(translateY(20px));
+  }
+
+  100% {
+    opacity: 1;
+    .transform(translateY(0));
+  }
+}
+
+.slide-up {
+  .animation(slideUp, 500ms, ease-in, 200ms);
+}
+
+// Bounce
+@-webkit-keyframes bounceDown { .bounceDown }
+@-moz-keyframes bounceDown { .bounceDown }
+@-ms-keyframes bounceDown { .bounceDown }
+@-o-keyframes bounceDown { .bounceDown }
+@keyframes bounceDown { .bounceDown }
+
+.bounceDown() {
+  0% {
+    .transform(translateY(0));
+  }
+
+  1% {
+    .transform(translateY(-500px));
+  }
+
+  20%, 50%, 80%, 100% {
+    opacity: 1;
+    .transform(translateY(0px));
+  }
+
+  40% {
+    opacity: 1;
+    .transform(translateY(-30px));
+  }
+
+  60% {
+    opacity: 1;
+    .transform(translateY(-15px));
+  }
+}
+
+.bounce-down {
+  .animation(bounceDown, 1s, ease-in-out, 200ms);
+}
