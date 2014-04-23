@@ -44,7 +44,7 @@ a {
 	border-radius: 0;
 	border: 1px solid @persianBlue60;
 	background-color: @persianBlue60;
-	.transition(background-color border-color);
+	.transition("background-color, border-color");
 	.transition-duration(200ms);
 
 	&:not(.btn-sm):not(.close) {
@@ -339,7 +339,7 @@ a {
 		}
 
 		&.open, &:hover {
-		  background-color: @gray2;
+		  background-color: @gray1;
 		}
 
 		.dropdown-menu a {
