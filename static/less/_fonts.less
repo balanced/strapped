@@ -5,6 +5,7 @@
 
 @baseFontFamily: "Proxima Nova Reg", arial, sans-serif;
 @baseFontFamilyReg: "Proxima Nova Reg", arial, sans-serif;
+@baseFontFamilyItalic: "Plantin Italic", arial, sans-serif;
 @baseFontFamilyLight: "Proxima Nova Light", arial, sans-serif;
 @baseFontFamilySemiBold: "Proxima Nova Semi Bold", arial, sans-serif;
 @baseFontFamilyBold: "Proxima Nova Bold", arial, sans-serif;
@@ -16,7 +17,7 @@
 @linkColorHover: @persianBlue100;
 
 @baseFontSize: 14px;
-@baseLineHeight: @baseFontSize * 1.4;
+@baseLineHeight: 20px;
 
 .fontyFont(label1; Proxima Nova Reg, Arial, sans-serif; 18px);
 .fontyFont(label1; Proxima Nova Reg, Arial, sans-serif; 18px);
@@ -35,6 +36,7 @@
 
 .fontFaceDefinition('Proxima Nova Reg'; 400; '../fonts/Proxima Nova Reg');
 .fontFaceDefinition('Proxima Nova Reg Italic'; 400; '../fonts/Proxima Nova Reg It');
+.fontFaceDefinition('Plantin Italic'; 400; '../fonts/PlantinStd-Italic');
 .fontFaceDefinition('Proxima Nova Light'; 400; '../fonts/Proxima Nova Light');
 .fontFaceDefinition('Proxima Nova Semi Bold'; 400; '../fonts/Proxima Nova Sbold');
 .fontFaceDefinition('Proxima Nova Bold'; 400; '../fonts/Proxima Nova Bold');
@@ -52,32 +54,3 @@
   font-weight: 700;
   src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url(https://themes.googleusercontent.com/static/fonts/inconsolata/v6/AIed271kqQlcIRSOnQH0yRbnBKKEOwRKgsHDreGcocg.woff) format('woff');
 }
-
-@font-face {
-  font-family: 'Droid Serif Italic';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Droid Serif Italic'), local('DroidSerif-Italic'), url(https://themes.googleusercontent.com/static/fonts/droidserif/v3/cj2hUnSRBhwmSPr9kS5894o3ZslTYfJv0R05CazkwN8.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Bitter';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Bitter-Italic'), url(https://themes.googleusercontent.com/static/fonts/bitter/v4/E44LYN4bXPiBT-TMwacNsvesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Bitter';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Bitter-Regular'), url(https://themes.googleusercontent.com/static/fonts/bitter/v4/2hig-tnMw8lXZsjwuh-9ow.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Bitter';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Bitter-Bold'), url(https://themes.googleusercontent.com/static/fonts/bitter/v4/evC1haE-MsorTl_A7_uSGaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
-}
-
