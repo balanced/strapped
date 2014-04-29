@@ -1168,10 +1168,9 @@ body {
 }
 #marketplace-nav li {
   display: block;
-  border-top: 1px solid #59606b;
 }
-#marketplace-nav li:last-of-type {
-  border-bottom: 1px solid #59606b;
+#marketplace-nav li:first-of-type {
+  border-top: 1px solid #59606b;
 }
 #marketplace-nav li i {
   font-size: 14px;
@@ -1199,8 +1198,8 @@ body {
   line-height: 20px;
   color: #000000;
   color: #b1b9bd;
+  padding: 12px 15px;
   display: block;
-  padding: 15px;
   position: relative;
   text-decoration: none;
 }
@@ -1217,10 +1216,12 @@ body {
   color: inherit;
   display: block;
 }
-#notfound {
-  padding-top: 150px;
+#notfound .logo > img {
+  padding-top: 50px;
+  width: 145px;
 }
 #notfound h1 {
+  padding-top: 150px;
   color: #000000;
   font: normal normal normal 150px "Proxima Nova Bold", arial, sans-serif;
 }
@@ -3086,7 +3087,10 @@ button button[disabled] {
   list-style: none;
 }
 .dropdown .dropdown-menu a {
+  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 20px;
   color: #000000;
+  color: #59606b;
   display: block;
   padding: 10px 20px;
 }
