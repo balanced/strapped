@@ -1217,6 +1217,48 @@ body {
   color: inherit;
   display: block;
 }
+.site-footer {
+  background-color: #ffffff;
+}
+.site-footer .section-title {
+  font: normal normal normal 12px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+  color: #757c87;
+  display: inline-block;
+  padding: 20px 0 10px 0;
+}
+.site-footer .footer-link {
+  display: inline-block;
+  padding: 18px 8px;
+}
+.site-footer .footer-link:first-of-type {
+  padding-left: 0px;
+}
+.site-footer .footer-link a {
+  font: normal normal normal 12px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+  color: #757c87;
+}
+.site-footer .footer-link a:hover {
+  color: #000000;
+}
+.site-footer .copyright-notice {
+  font: normal normal normal 12px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+  padding: 20px 5px;
+}
+.site-footer a.icon {
+  float: right;
+  margin: 17px 10px;
+  font-size: 20px;
+  color: #b1b9bd;
+}
+.site-footer a.icon:hover {
+  color: #000000;
+}
 #notfound {
   padding-top: 150px;
 }
