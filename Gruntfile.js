@@ -26,7 +26,7 @@ module.exports = function(grunt) {
 			notfound: {
 				template: 'examples/notfound.hbs',
 				templateData: 'examples/data.json',
-				output: 'notfound.html'
+				output: 'notfound/notfound.html'
 			}
 		},
 
@@ -61,6 +61,24 @@ module.exports = function(grunt) {
 					expand: true,
 					src: ['**'],
 					dest: 'examples/images'
+				}]
+			},
+			notfound: {
+				files: [{
+					cwd: 'static/images/404',
+					expand: true,
+					src: ['**'],
+					dest: 'notfound/images'
+				},{
+					cwd: 'examples/css',
+					expand: true,
+					src: ['**.min.css'],
+					dest: 'notfound/css'
+				},{
+					cwd: 'static/fonts',
+					expand: true,
+					src: ['**'],
+					dest: 'notfound/fonts'
 				}]
 			}
 		},
@@ -194,7 +212,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-lesslint');
 
 	grunt.registerTask('default', ['bower-install', '_devBuild', 'connect', 'open', 'watch']);
-	grunt.registerTask('_devBuild', ['copy', '_buildJS', '_buildCSS', '_buildHTML']);
+	grunt.registerTask('_devBuild', ['copy:fonts', 'copy:images', '_buildJS', '_buildCSS', 'copy:notfound', '_buildHTML']);
 	grunt.registerTask('_buildJS', ['clean', 'concat']);
 	grunt.registerTask('_buildCSS', ['less']);
 	grunt.registerTask('_buildHTML', ['compile-handlebars']);
