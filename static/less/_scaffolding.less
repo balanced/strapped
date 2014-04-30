@@ -69,10 +69,9 @@ body {
 
 	li {
 		display: block;
-		border-top: 1px solid @gray6;
 
-		&:last-of-type {
-			border-bottom: 1px solid @gray6;    	
+		&:first-of-type {
+			border-top: 1px solid @gray6;    	
 		}
 
 		i {
@@ -102,8 +101,8 @@ body {
 		a {
 			.sl;
 			color: @gray3;
+			padding: 12px 15px;
 			display: block;
-			padding: 15px;
 			position: relative;
 			text-decoration: none;
 		  
@@ -170,9 +169,13 @@ body {
 }
 
 #notfound {
-	padding-top: 150px;
+	.logo > img {
+		padding-top: 50px;
+		width: 145px;
+	}
 
 	h1 {
+		padding-top: 150px;
 		.num-xlg;
 	}
 
