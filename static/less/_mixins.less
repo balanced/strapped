@@ -110,11 +110,15 @@
   }
 }
 
-.animation(@name, @duration: 300ms, @ease: ease, @delay: 0) {
+.animation(@name, @duration: 300ms, @ease: ease, @delay: 0, @count: 1) {
   -webkit-animation: @name @duration @ease @delay;
   -moz-animation: @name @duration @ease @delay;
   -ms-animation: @name @duration @ease @delay;
-  animation: @name @duration @ease @delay;
+  animation-iteration-count: @count;
+  -webkit-animation-iteration-count: @count;
+  -moz-animation-iteration-count: @count;
+  -ms-animation-iteration-count: @count;
+  animation-iteration-count: @count;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
@@ -129,6 +133,16 @@
   -ms-transform: @string;
   -o-transform: @string;
   transform: @string;
+}
+
+.transform-origin(@x, @y){
+  -webkit-transform-origin: @x @y;
+  -moz-transform-origin: @x @y;
+  -webkit-transform-origin: @x @y;
+  -moz-transform-origin: @x @y;
+  -ms-transform-origin: @x @y;
+  -o-transform-origin: @x @y;
+  transform-origin: @x @y;
 }
 
 .hyphenate() {
