@@ -190,7 +190,8 @@ table.items {
     padding: 0 10px;
     border-top: 2px solid @black;
     border-bottom: 1px solid @gray2;
-
+    text-align: left;
+    
     &:first-child {
       padding-left: 25px;
     }
@@ -212,6 +213,10 @@ table.items {
 
     &.type, &.status {
       padding: 0;
+    }
+
+    &.num, &.align-right {
+      text-align: right;
     }
   }
 
