@@ -1300,7 +1300,10 @@ body {
   -webkit-animation: floatUpLeft 2s ease infinite;
   -moz-animation: floatUpLeft 2s ease infinite;
   -ms-animation: floatUpLeft 2s ease infinite;
-  animation: floatUpLeft 2s ease infinite;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  animation-iteration-count: 1;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
@@ -1313,7 +1316,10 @@ body {
   -webkit-animation: floatUpRight 4s ease infinite;
   -moz-animation: floatUpRight 4s ease infinite;
   -ms-animation: floatUpRight 4s ease infinite;
-  animation: floatUpRight 4s ease infinite;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  animation-iteration-count: 1;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
@@ -1326,7 +1332,10 @@ body {
   -webkit-animation: floatDownLeft 3s ease infinite;
   -moz-animation: floatDownLeft 3s ease infinite;
   -ms-animation: floatDownLeft 3s ease infinite;
-  animation: floatDownLeft 3s ease infinite;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  animation-iteration-count: 1;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
@@ -1344,7 +1353,10 @@ body {
   -webkit-animation: slideLeft 22s linear infinite;
   -moz-animation: slideLeft 22s linear infinite;
   -ms-animation: slideLeft 22s linear infinite;
-  animation: slideLeft 22s linear infinite;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  animation-iteration-count: 1;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
@@ -2135,7 +2147,10 @@ body {
   -webkit-animation: slideUp 500ms ease-in 200ms;
   -moz-animation: slideUp 500ms ease-in 200ms;
   -ms-animation: slideUp 500ms ease-in 200ms;
-  animation: slideUp 500ms ease-in 200ms;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  animation-iteration-count: 1;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
@@ -2410,7 +2425,10 @@ body {
   -webkit-animation: bounceDown 1s ease-in-out 200ms;
   -moz-animation: bounceDown 1s ease-in-out 200ms;
   -ms-animation: bounceDown 1s ease-in-out 200ms;
-  animation: bounceDown 1s ease-in-out 200ms;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  animation-iteration-count: 1;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
@@ -3635,6 +3653,119 @@ table th[class*="span"],
 }
 .table-hover tbody tr.info:hover > td {
   background-color: #528dcc;
+}
+table.items {
+  table-layout: fixed;
+  width: 100%;
+}
+table.items tfoot td.load-more-results {
+  padding: 12px 25px;
+  text-align: center;
+}
+table.items tfoot td.load-more-results a {
+  cursor: pointer;
+  display: inline-block;
+}
+table.items th {
+  float: none;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border-top: 2px solid #000000;
+  border-bottom: 1px solid #d2d6d9;
+}
+table.items th:first-child {
+  padding-left: 25px;
+}
+table.items th:last-child {
+  padding-right: 25px;
+}
+table.items th:last-child.sortable {
+  padding-right: 5px;
+}
+table.items th > span {
+  font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+table.items th.type,
+table.items th.status {
+  padding: 0;
+}
+table.items tbody tr {
+  border-bottom: 1px solid #d2d6d9;
+  background-color: #ffffff;
+}
+table.items tbody tr:hover {
+  cursor: pointer;
+  background-color: #f0f1f2;
+}
+table.items tbody tr:hover .no-results {
+  background-color: #ffffff;
+}
+table.items tbody tr td {
+  padding: 0 10px;
+  line-height: 46px;
+}
+table.items tbody tr td:first-child {
+  padding-left: 25px;
+}
+table.items tbody tr td:last-child {
+  padding-right: 25px;
+}
+table.items tbody tr td.no-results {
+  padding: 12px 15px 12px 25px;
+  font-style: italic;
+  cursor: default;
+}
+table.items tbody tr td a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+table.items tbody tr td a span {
+  padding: 0;
+  display: block;
+  line-height: 46px;
+}
+table.items tbody tr td a:link,
+table.items tbody tr td a:visited,
+table.items tbody tr td a:hover,
+table.items tbody tr td a:active {
+  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 20px;
+  color: #000000;
+}
+table.items tbody tr td.date > a > span,
+table.items tbody tr td.funding-instrument > a > span {
+  padding-top: 4px !important;
+  padding-bottom: 2px !important;
+}
+table.items tbody tr td.date .secondary {
+  text-transform: lowercase;
+}
+table.items tbody tr td .primary {
+  line-height: 16px;
+  padding: 4px 0 1px !important;
+}
+table.items tbody tr td .secondary {
+  font: normal normal normal 12px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+  line-height: 14px;
+  color: #9196a1;
+  padding: 1px 0 4px !important;
+}
+table.items tbody tr td.label4a a:link,
+table.items tbody tr td.label4a a:visited,
+table.items tbody tr td.label4a a:hover,
+table.items tbody tr td.label4a a:active {
+  color: #000000;
+}
+table.items tbody tr td.label4a.black {
+  color: #000000;
 }
 body {
   background-color: #f0f1f2;
