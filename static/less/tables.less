@@ -172,18 +172,6 @@ table.items {
   table-layout:fixed;
   width: 100%;
 
-  tfoot {
-    td.load-more-results {
-      padding: 12px 25px;
-      text-align: center;
-
-      a {
-        cursor: pointer;
-        display: inline-block;
-      }
-    }
-  }
-
   th {
     float: none;
     box-sizing: border-box;
@@ -191,7 +179,7 @@ table.items {
     border-top: 2px solid @black;
     border-bottom: 1px solid @gray2;
     text-align: left;
-    
+
     &:first-child {
       padding-left: 25px;
     }
@@ -213,10 +201,6 @@ table.items {
 
     &.type, &.status {
       padding: 0;
-    }
-
-    &.num, &.align-right {
-      text-align: right;
     }
   }
 
@@ -305,5 +289,21 @@ table.items {
         }
       }
     }
+  }
+  
+  tfoot {
+    td.load-more-results {
+      padding: 12px 25px;
+      text-align: center;
+
+      a {
+        cursor: pointer;
+        display: inline-block;
+      }
+    }
+  }
+
+  .num, .align-right {
+    text-align: right;
   }
 }
