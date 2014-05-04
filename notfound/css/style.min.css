@@ -1457,14 +1457,12 @@ body {
 }
 .loader {
   display: none;
-  background: url('../images/icons.png') -164px -484px no-repeat;
-  width: 23px;
-  height: 23px;
+  background: url('../images/loading.gif');
+  width: 24px;
+  height: 24px;
 }
 .loader.loading {
   display: block;
-  -webkit-animation: rotation 2s infinite linear;
-  -moz-animation: rotate 20s linear 0s infinite;
 }
 .icon-activity:before {
   content: "a";
@@ -3658,23 +3656,13 @@ table.items {
   table-layout: fixed;
   width: 100%;
 }
-table.items.logs {
-  margin-top: 50px;
-}
-table.items tfoot td.load-more-results {
-  padding: 12px 25px;
-  text-align: center;
-}
-table.items tfoot td.load-more-results a {
-  cursor: pointer;
-  display: inline-block;
-}
 table.items th {
   float: none;
   box-sizing: border-box;
   padding: 0 10px;
   border-top: 2px solid #000000;
   border-bottom: 1px solid #d2d6d9;
+  text-align: left;
 }
 table.items th:first-child {
   padding-left: 25px;
@@ -3709,6 +3697,7 @@ table.items tbody tr:hover .no-results {
 }
 table.items tbody tr td {
   padding: 0 10px;
+  line-height: 46px;
 }
 table.items tbody tr td:first-child {
   padding-left: 25px;
@@ -3769,8 +3758,17 @@ table.items tbody tr td.label4a a:active {
 table.items tbody tr td.label4a.black {
   color: #000000;
 }
-table.items .highlight {
-  background-color: #b3d1d5;
+table.items tfoot td.load-more-results {
+  padding: 12px 25px;
+  text-align: center;
+}
+table.items tfoot td.load-more-results a {
+  cursor: pointer;
+  display: inline-block;
+}
+table.items .num,
+table.items .align-right {
+  text-align: right;
 }
 body {
   background-color: #f0f1f2;

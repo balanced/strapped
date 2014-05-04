@@ -3,8 +3,8 @@
 *
 */
 
-@import "_bootstrap.variables.less";
-@import "_bootstrap.mixins.less";
+@import "../../static/less/_bootstrap.variables.less";
+@import "../../static/less/_bootstrap.mixins.less";
 
 @iconsFile: url('../images/icons.png');
 @iconsFileWidth: 250px;
@@ -110,19 +110,11 @@
   }
 }
 
-.animation(@name, @duration: 300ms, @ease: ease, @delay: 0, @count: 1) {
+.animation(@name, @duration: 300ms, @ease: ease, @delay: 0) {
   -webkit-animation: @name @duration @ease @delay;
   -moz-animation: @name @duration @ease @delay;
   -ms-animation: @name @duration @ease @delay;
-  animation-iteration-count: @count;
-  -webkit-animation-iteration-count: @count;
-  -moz-animation-iteration-count: @count;
-  -ms-animation-iteration-count: @count;
-  animation-iteration-count: @count;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
+  animation: @name @duration @ease @delay;
 }
 
 .transform(@string){
@@ -133,16 +125,6 @@
   -ms-transform: @string;
   -o-transform: @string;
   transform: @string;
-}
-
-.transform-origin(@x, @y){
-  -webkit-transform-origin: @x @y;
-  -moz-transform-origin: @x @y;
-  -webkit-transform-origin: @x @y;
-  -moz-transform-origin: @x @y;
-  -ms-transform-origin: @x @y;
-  -o-transform-origin: @x @y;
-  transform-origin: @x @y;
 }
 
 .hyphenate() {
