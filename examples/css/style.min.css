@@ -1301,6 +1301,10 @@ body {
   -moz-animation: floatUpLeft 2s ease infinite;
   -ms-animation: floatUpLeft 2s ease infinite;
   animation: floatUpLeft 2s ease infinite;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 #notfound .balloon.green {
   top: 100px;
@@ -1310,6 +1314,10 @@ body {
   -moz-animation: floatUpRight 4s ease infinite;
   -ms-animation: floatUpRight 4s ease infinite;
   animation: floatUpRight 4s ease infinite;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 #notfound .balloon.yellow {
   top: 400px;
@@ -1319,6 +1327,10 @@ body {
   -moz-animation: floatDownLeft 3s ease infinite;
   -ms-animation: floatDownLeft 3s ease infinite;
   animation: floatDownLeft 3s ease infinite;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 #notfound .cloud {
   position: absolute;
@@ -1333,6 +1345,10 @@ body {
   -moz-animation: slideLeft 22s linear infinite;
   -ms-animation: slideLeft 22s linear infinite;
   animation: slideLeft 22s linear infinite;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 #notfound .cloud-rest {
   position: absolute;
@@ -1373,6 +1389,13 @@ body {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-edit {
+  color: #9196a1;
+}
+.icon-edit:hover {
+  color: #000000;
+  cursor: pointer;
 }
 .icon-download {
   background: url('../images/icons.png');
@@ -1603,6 +1626,30 @@ body {
 }
 .icon-checkmark:before {
   content: "3";
+}
+.icon-pushtocard:before {
+  content: "4";
+}
+.icon-card-processing:before {
+  content: "5";
+}
+.icon-ach-debit:before {
+  content: "6";
+}
+.icon-ach-credit:before {
+  content: "7";
+}
+.icon-mastercard:before {
+  content: "8";
+}
+.icon-discover:before {
+  content: "9";
+}
+.icon-american-express:before {
+  content: "!";
+}
+.icon-visa:before {
+  content: "\"";
 }
 /*
 * animations.less
@@ -2118,6 +2165,10 @@ body {
   -moz-animation: slideUp 500ms ease-in 200ms;
   -ms-animation: slideUp 500ms ease-in 200ms;
   animation: slideUp 500ms ease-in 200ms;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 @-webkit-keyframes bounceDown {
   0% {
@@ -2389,6 +2440,10 @@ body {
   -moz-animation: bounceDown 1s ease-in-out 200ms;
   -ms-animation: bounceDown 1s ease-in-out 200ms;
   animation: bounceDown 1s ease-in-out 200ms;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 #loadingSpinner {
   height: 2em;
@@ -2403,6 +2458,10 @@ body {
   -moz-animation: spin 2s ease infinite;
   -ms-animation: spin 2s ease infinite;
   animation: spin 2s ease infinite;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 #loadingSpinner.inline {
   display: inline-block;
@@ -2414,6 +2473,10 @@ body {
   -moz-animation: spinSmall 2s ease infinite;
   -ms-animation: spinSmall 2s ease infinite;
   animation: spinSmall 2s ease infinite;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 #loadingSpinner.inline:before,
 #loadingSpinner.inline:after {
@@ -2421,6 +2484,10 @@ body {
   -moz-animation: spinUpSmall 2s ease infinite;
   -ms-animation: spinUpSmall 2s ease infinite;
   animation: spinUpSmall 2s ease infinite;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 #loadingSpinner.inline:before {
   left: -6.5px;
@@ -2441,6 +2508,10 @@ body {
   -moz-animation: spinUp 2s ease infinite;
   -ms-animation: spinUp 2s ease infinite;
   animation: spinUp 2s ease infinite;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 #loadingSpinner:before {
   left: -2.3em;
@@ -3569,6 +3640,12 @@ body {
 */
 *:focus {
   outline: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none 0px 3px #999999 !important;
+  -moz-box-shadow: none 0px 3px #999999 !important;
+  box-shadow: none 0px 3px #999999 !important;
 }
 a {
   font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
@@ -4004,7 +4081,6 @@ form input[type="color"] {
   width: 175px;
   padding: 5px;
   height: auto;
-  line-height: 22px;
   margin-bottom: 0;
 }
 form select.full,
@@ -4045,7 +4121,7 @@ form .input-prepend .add-on {
   line-height: 24px;
   color: #000000;
   color: #ffffff;
-  height: 30px;
+  height: 36px;
   min-width: 16px;
   line-height: 1.7;
   border-radius: 0;
