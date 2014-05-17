@@ -1651,6 +1651,15 @@ body {
 .icon-visa:before {
   content: "\"";
 }
+.icon-cent:before {
+  content: "#";
+}
+.icon-percent:before {
+  content: "$";
+}
+.icon-dollar:before {
+  content: "%";
+}
 /*
 * animations.less
 *
