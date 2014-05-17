@@ -310,6 +310,37 @@ table.items {
 // Panels
 .panel {
   .panel-heading {
+    background-color: @gray1;
+    padding: 55px 15px 10px 15px;
+    border-bottom: 1px solid @gray2;
 
+    span {
+      color: @pineGreen80;
+    }
+  }
+
+  .list-group {
+    margin: 0;
+
+    .list-group-item {
+      display: block;
+      padding: 10px 15px;
+      border-bottom: 1px solid @gray2;
+    }
+
+    .horizontal-list-group-item {
+      display: inline-block;
+      padding: 10px 110px 10px 10px;
+      border-right: 1px solid @gray2;
+      text-align: left;
+
+      h3 {
+        .sl;
+      }
+
+      &:last-of-type {
+        border-right: none;
+      }
+    }
   }
 }
