@@ -74,30 +74,6 @@ body {
 			border-top: 1px solid @gray6;
 		}
 
-		i {
-			font-size: 14px;
-			vertical-align: text-top;
-			margin-right: 10px;
-
-			&.icon-addcustomer, &.icon-bankaccount {
-				color: @white;
-				display: inline-block;
-				height: 14px;
-				width: 14px;
-			}
-
-			&.icon-addcustomer {
-				background-color: @byzantiumPurple60;
-			}
-
-			&.icon-bankaccount {
-				background-color: @persianBlue60;
-				font-size: 16px;
-				line-height: 35px;
-				margin-bottom: 9px;
-			}
-		}
-
 		a {
 			.sl;
 			color: @gray3;
@@ -111,8 +87,7 @@ body {
 				color: @white;
 			}
 
-			&.active, &:active {
-				background-color: @gray9;
+			&.active:not(#marketplaces a), &:active {
 				color: @white;
 			}
 		}
