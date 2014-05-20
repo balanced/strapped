@@ -234,6 +234,13 @@ a {
       }
     }
 
+    .none {
+      .sl;
+      color: @gray4;
+      padding: 10px 20px;
+      font-style: italic;
+    }
+
     &.right {
       right: 0;
       left: auto;
@@ -251,9 +258,9 @@ a {
   }
 
   &.nav {
-    float: left;
     margin: 0;
     height: 50px;
+    width: 180px;
 
     .dropdown-toggle {
       height: 100%;
@@ -276,7 +283,7 @@ a {
     }
 
     &.open, .dropdown-toggle:hover {
-      background-color: @black;
+      background-color: @gray9;
 
       .dropdown {
         background-color: @white;
