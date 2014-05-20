@@ -108,6 +108,10 @@
 				"name": "Secondary button",
 				"className": "btn secondary"
 			},
+      {
+        "name": "Small button",
+        "className": "btn sm"
+      },
 			{
 				"name": "Disabled button",
 				"className": "btn disabled"

@@ -3755,6 +3755,14 @@ button.secondary:hover {
   background-color: #f0f1f2;
   border-color: #d2d6d9;
 }
+.btn.sm,
+button.sm {
+  font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+  color: #ffffff;
+  padding: 8px 18px;
+}
 .btn.btn-link,
 button.btn-link {
   font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
@@ -3804,10 +3812,10 @@ button button[disabled] {
 .dropdown .dropdown-toggle {
   display: block;
   text-decoration: none;
-  -webkit-transition: "background-color";
-  -moz-transition: "background-color";
-  -o-transition: "background-color";
-  transition: "background-color";
+  -webkit-transition: "background-color, color";
+  -moz-transition: "background-color, color";
+  -o-transition: "background-color, color";
+  transition: "background-color, color";
   -webkit-transition-duration: 200ms;
   -moz-transition-duration: 200ms;
   -o-transition-duration: 200ms;
@@ -3837,6 +3845,9 @@ button button[disabled] {
   float: right;
 }
 .dropdown .dropdown-menu {
+  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 20px;
+  color: #000000;
   position: absolute;
   padding: 5px 0 0;
   margin: 0;
@@ -3968,10 +3979,36 @@ button button[disabled] {
 .dropdown.action .dropdown-toggle:hover {
   background-color: #f0f1f2;
 }
-.dropdown.action .dropdown-menu {
-  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+.dropdown.borderless {
+  height: 34px;
+}
+.dropdown.borderless .dropdown-toggle {
+  padding: 5px 5px 0px;
+}
+.dropdown.borderless .dropdown-toggle span {
+  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 20px;
   color: #000000;
+  color: #9196a1;
+  line-height: 23px;
+  padding: 0 10px 0 5px;
+  max-width: none;
+}
+.dropdown.borderless .dropdown-toggle .caret {
+  border-width: 4px;
+  margin-left: 1px;
+  border-top-color: #9196a1;
+}
+.dropdown.borderless .dropdown-toggle:active {
+  outline: 0;
+}
+.dropdown.borderless.open span,
+.dropdown.borderless .dropdown-toggle:hover span {
+  color: #000000;
+}
+.dropdown.borderless.open .caret,
+.dropdown.borderless .dropdown-toggle:hover .caret {
+  border-top-color: #000000;
 }
 .dropdown.filter {
   display: inline-block;
@@ -3996,9 +4033,6 @@ button button[disabled] {
 .dropdown.filter.open,
 .dropdown.filter:hover {
   background-color: #f0f1f2;
-}
-.dropdown.filter .dropdown-menu a {
-  color: #000000;
 }
 .dropdown.date .dropdown-toggle {
   height: 44px;
@@ -4042,9 +4076,6 @@ button button[disabled] {
   background-color: #f0f1f2;
 }
 .dropdown.date .dropdown-menu {
-  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 20px;
-  color: #000000;
   min-width: 230px;
 }
 form {
@@ -4713,6 +4744,36 @@ table.items .num,
 table.items .align-right {
   text-align: right;
 }
+.panel .panel-heading {
+  background-color: #f0f1f2;
+  padding: 55px 15px 10px 15px;
+  border-bottom: 1px solid #d2d6d9;
+}
+.panel .panel-heading span {
+  color: #00a268;
+}
+.panel .list-group {
+  margin: 0;
+}
+.panel .list-group .list-group-item {
+  display: block;
+  padding: 10px 15px;
+  border-bottom: 1px solid #d2d6d9;
+}
+.panel .list-group .horizontal-list-group-item {
+  display: inline-block;
+  padding: 10px 110px 10px 10px;
+  border-right: 1px solid #d2d6d9;
+  text-align: left;
+}
+.panel .list-group .horizontal-list-group-item h3 {
+  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 20px;
+  color: #000000;
+}
+.panel .list-group .horizontal-list-group-item:last-of-type {
+  border-right: none;
+}
 body {
   background-color: #f0f1f2;
 }
@@ -5060,7 +5121,7 @@ pre {
   margin: 0;
 }
 #forms .strapped-preview:last-of-type {
-  min-height: 920px;
+  min-height: 300px;
 }
 #forms .inline {
   display: inline-block;
@@ -5074,6 +5135,7 @@ pre {
 }
 #forms #marketplace-nav {
   min-height: 100px;
+  height: 200px;
 }
 #icons ol,
 #icons ul {

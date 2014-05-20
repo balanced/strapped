@@ -3755,6 +3755,14 @@ button.secondary:hover {
   background-color: #f0f1f2;
   border-color: #d2d6d9;
 }
+.btn.sm,
+button.sm {
+  font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+  color: #ffffff;
+  padding-top: 8px 18px;
+}
 .btn.btn-link,
 button.btn-link {
   font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
@@ -4712,6 +4720,36 @@ table.items tfoot td.load-more-results a {
 table.items .num,
 table.items .align-right {
   text-align: right;
+}
+.panel .panel-heading {
+  background-color: #f0f1f2;
+  padding: 55px 15px 10px 15px;
+  border-bottom: 1px solid #d2d6d9;
+}
+.panel .panel-heading span {
+  color: #00a268;
+}
+.panel .list-group {
+  margin: 0;
+}
+.panel .list-group .list-group-item {
+  display: block;
+  padding: 10px 15px;
+  border-bottom: 1px solid #d2d6d9;
+}
+.panel .list-group .horizontal-list-group-item {
+  display: inline-block;
+  padding: 10px 110px 10px 10px;
+  border-right: 1px solid #d2d6d9;
+  text-align: left;
+}
+.panel .list-group .horizontal-list-group-item h3 {
+  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 20px;
+  color: #000000;
+}
+.panel .list-group .horizontal-list-group-item:last-of-type {
+  border-right: none;
 }
 body {
   background-color: #f0f1f2;
