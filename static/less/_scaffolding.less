@@ -49,54 +49,46 @@ body {
 	position: absolute;
 	height: 100%;
 
-	&.noshow {
-		background-color: @contentBackground;
-	}
+  #marketplaces {
+    .active {
+      .sl-sb;
+    }
+  }
 
-	.button-groups {
-		text-align: center;
-
-		a.btn {
-			display: inline-block;
-			padding: 9px 10px;
-			margin: 10px auto 0;
-		}
-	}
-
-	ul {
+	.sidebar {
 		padding: 0;
-	}
 
-	li {
-		display: block;
+  	li {
+  		display: block;
 
-		&:first-of-type {
-			border-top: 1px solid @gray6;
-		}
+  		&:first-of-type {
+  			border-top: 1px solid @gray6;
+  		}
 
-		a {
-			.sl;
-			color: @gray3;
-			padding: 12px 15px;
-			display: block;
-			position: relative;
-			text-decoration: none;
+  		a {
+  			.sl;
+  			color: @gray3;
+  			padding: 12px 15px;
+  			display: block;
+  			position: relative;
+  			text-decoration: none;
 
-			&:hover {
-				background-color: @gray8;
-				color: @white;
-			}
+  			&:hover {
+  				background-color: @gray8;
+  				color: @white;
+  			}
 
-			&.active:not(#marketplaces a), &:active {
-				color: @white;
-			}
-		}
+  			&.active, &:active {
+  				color: @white;
+  			}
+  		}
 
-		.nav-label {
-			color: inherit;
-			display: block;
-		}
-	}
+  		.nav-label {
+  			color: inherit;
+  			display: block;
+  		}
+  	}
+  }
 }
 
 .site-footer {
