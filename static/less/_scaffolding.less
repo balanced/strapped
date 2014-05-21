@@ -69,12 +69,8 @@ body {
       display: block;
       border-left: 4px solid transparent;
 
-      &.menu-active {
-        border-left: 4px solid @persianBlue80;
-      }
-
       [class^="icon-"] {
-        margin: 0 3px;
+        margin: 0 5px;
       }
 
       a {
@@ -86,14 +82,16 @@ body {
         text-decoration: none;
 
         &:hover {
-          background-color: @gray8;
-          border-color: @gray8;
           color: @white;
         }
 
         &.active, &:active {
           color: @white;
         }
+      }
+
+      &.menu-active {
+        border-left: 4px solid @persianBlue80;
       }
 
       .submenu {
