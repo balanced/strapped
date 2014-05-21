@@ -48,22 +48,29 @@ body {
   min-height: @mainMinHeight;
   position: absolute;
   height: 100%;
+  position: fixed;
 
   #marketplaces {
     .active {
       .sl-sb;
     }
   }
-
   .sidebar {
     padding: 0;
+
+    .expanded {
+      &:not(&.active):hover {
+        background-color: @gray9;
+        color: @gray3;
+      }
+    }
 
     li {
       display: block;
 
       a {
         .sl;
-        color: @gray3;
+        color: @gray4;
         padding: 12px 15px;
         display: block;
         position: relative;
@@ -79,9 +86,31 @@ body {
         }
       }
 
-      .nav-label {
-        color: inherit;
-        display: block;
+      &.menu-active {
+        border-left: 4px solid @persianBlue80;
+
+        a {
+          padding-left: 11px;
+        }
+      }
+
+      .submenu {
+        display: none;
+
+        &.expanded {
+          display: block;
+          padding: 10px 0;
+
+          a {
+            .sl-sm;
+            color: @gray3;
+            padding: 5px 10px 5px 42px;
+
+            &.active, &:active {
+              color: @white;
+            }
+          }
+        }
       }
     }
   }
