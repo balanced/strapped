@@ -69,6 +69,10 @@ body {
       display: block;
       border-left: 4px solid transparent;
 
+      &.menu-active {
+        border-left: 4px solid @persianBlue80;
+      }
+
       [class^="icon-"] {
         margin: 0 3px;
       }
@@ -88,14 +92,6 @@ body {
 
         &.active, &:active {
           color: @white;
-        }
-      }
-
-      &.menu-active {
-        border-left: 4px solid @persianBlue80;
-
-        a {
-          padding-left: 11px;
         }
       }
 
