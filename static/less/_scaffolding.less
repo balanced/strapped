@@ -23,31 +23,31 @@
 @lineRuleBackground: @gray3;
 
 *, :before, :after {
-	.box-sizing(border-box);
+  .box-sizing(border-box);
 }
 
 body {
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 #header {
-	position: relative;
-	background-color: @white;
-	height: 70px;
+  position: relative;
+  background-color: @white;
+  height: 70px;
 }
 
 #main {
-	background-color: @contentBackground;
-	position: relative;
+  background-color: @contentBackground;
+  position: relative;
 }
 
 #marketplace-nav {
-	background-color: @gray7;
-	width: @marketplaceNavWidth;
-	min-height: @mainMinHeight;
-	position: absolute;
-	height: 100%;
+  background-color: @gray7;
+  width: @marketplaceNavWidth;
+  min-height: @mainMinHeight;
+  position: absolute;
+  height: 100%;
 
   #marketplaces {
     .active {
@@ -55,39 +55,35 @@ body {
     }
   }
 
-	.sidebar {
-		padding: 0;
+  .sidebar {
+    padding: 0;
 
-  	li {
-  		display: block;
+    li {
+      display: block;
 
-  		&:first-of-type {
-  			border-top: 1px solid @gray6;
-  		}
+      a {
+        .sl;
+        color: @gray3;
+        padding: 12px 15px;
+        display: block;
+        position: relative;
+        text-decoration: none;
 
-  		a {
-  			.sl;
-  			color: @gray3;
-  			padding: 12px 15px;
-  			display: block;
-  			position: relative;
-  			text-decoration: none;
+        &:hover {
+          background-color: @gray8;
+          color: @white;
+        }
 
-  			&:hover {
-  				background-color: @gray8;
-  				color: @white;
-  			}
+        &.active, &:active {
+          color: @white;
+        }
+      }
 
-  			&.active, &:active {
-  				color: @white;
-  			}
-  		}
-
-  		.nav-label {
-  			color: inherit;
-  			display: block;
-  		}
-  	}
+      .nav-label {
+        color: inherit;
+        display: block;
+      }
+    }
   }
 }
 
@@ -136,83 +132,83 @@ body {
 }
 
 #notfound {
-	.logo > img {
-		padding-top: 50px;
-		width: 145px;
-	}
+  .logo > img {
+    padding-top: 50px;
+    width: 145px;
+  }
 
-	h1 {
-		padding-top: 150px;
-		.num-xlg;
-	}
+  h1 {
+    padding-top: 150px;
+    .num-xlg;
+  }
 
-	h3 {
-		.sl-sb;
-		border-bottom: 1px solid @gray3;
-	}
+  h3 {
+    .sl-sb;
+    border-bottom: 1px solid @gray3;
+  }
 
-	p {
-		.sl-lg-lt;
-		width: 350px;
-		z-index: 10;
-	}
+  p {
+    .sl-lg-lt;
+    width: 350px;
+    z-index: 10;
+  }
 
-	.next-steps {
-		> div:first-of-type {
-			padding-left: 0;
-		}
-		a {
-			display: block;
-			padding-bottom: 5px;
-		}
-	}
+  .next-steps {
+    > div:first-of-type {
+      padding-left: 0;
+    }
+    a {
+      display: block;
+      padding-bottom: 5px;
+    }
+  }
 
-	.balloon {
-		width: 110px;
-		height: 160px;
-		position: absolute;
-		background-size: cover;
+  .balloon {
+    width: 110px;
+    height: 160px;
+    position: absolute;
+    background-size: cover;
 
-		&.red {
-			top: 100px;
-			right: 40%;
-			background-image: url('../images/red_balloon.png');
-			.animation(floatUpLeft, 2s, ease, infinite);
-		}
+    &.red {
+      top: 100px;
+      right: 40%;
+      background-image: url('../images/red_balloon.png');
+      .animation(floatUpLeft, 2s, ease, infinite);
+    }
 
-		&.green {
-			top: 100px;
-			right: 10%;
-			background-image: url('../images/green_balloon.png');
-			.animation(floatUpRight, 4s, ease, infinite);
-		}
+    &.green {
+      top: 100px;
+      right: 10%;
+      background-image: url('../images/green_balloon.png');
+      .animation(floatUpRight, 4s, ease, infinite);
+    }
 
-		&.yellow {
-			top: 400px;
-			right: 25%;
-			background-image: url('../images/yellow_balloon.png');
-			.animation(floatDownLeft, 3s, ease, infinite);
-		}
-	}
+    &.yellow {
+      top: 400px;
+      right: 25%;
+      background-image: url('../images/yellow_balloon.png');
+      .animation(floatDownLeft, 3s, ease, infinite);
+    }
+  }
 
-	.cloud {
-		position: absolute;
-		top: 300px;
-		background-image: url('../images/clouds.png');
-		background-size: cover;
-		background-repeat: repeat-x;
-		width: 100%;
-		height: 180px;
-		opacity: 0.8;
-		.animation(slideLeft, 22s, linear, infinite);
-	}
+  .cloud {
+    position: absolute;
+    top: 300px;
+    background-image: url('../images/clouds.png');
+    background-size: cover;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 180px;
+    opacity: 0.8;
+    .animation(slideLeft, 22s, linear, infinite);
+  }
 
-	.cloud-rest {
-		position: absolute;
-		top: 480px;
-		bottom: 0;
-		background-color: @white;
-		opacity: 0.8;
-		width: 100%;
-	}
+  .cloud-rest {
+    position: absolute;
+    top: 480px;
+    bottom: 0;
+    background-color: @white;
+    opacity: 0.8;
+    width: 100%;
+  }
 }
