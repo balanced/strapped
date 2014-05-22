@@ -49,6 +49,7 @@ body {
   position: absolute;
   height: 100%;
   position: fixed;
+  z-index: 1;
 
   #marketplaces {
     .active {
@@ -58,10 +59,12 @@ body {
   .sidebar {
     padding: 0;
 
-    .expanded {
+    > li > a > span {
       .sl-sb;
       color: @white;
+    }
 
+    .expanded {
       &:not(&.active):hover {
         background-color: @gray9;
         color: @gray3;
@@ -74,6 +77,7 @@ body {
 
       [class^="icon-"] {
         margin: 0 5px;
+        vertical-align: sub;
       }
 
       a {
