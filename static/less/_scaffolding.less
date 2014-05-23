@@ -86,13 +86,13 @@ body {
         &.expanded {
           color: @gray4;
 
-          &:hover {
+          &.active:hover {
             color: @gray4;
           }
         }
 
         [class^="icon-"] {
-          margin: 0 5px;
+          margin-right: 12px;
           vertical-align: sub;
         }
       }
@@ -102,12 +102,20 @@ body {
 
         &.expanded {
           display: block;
-          padding: 10px 0;
+
+          > li {
+            line-height: 50px;
+
+            &:first-of-type {
+              line-height: 16px;
+            }
+          }
 
           a {
             .sl;
             color: @gray4;
-            padding: 5px 10px 5px 38px;
+            line-height: 27px;
+            margin-left: 45px;
 
             &.active, &:active {
               color: @white;
