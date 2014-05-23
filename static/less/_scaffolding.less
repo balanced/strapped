@@ -59,31 +59,16 @@ body {
   .sidebar {
     padding: 0;
 
-    > li > a > span {
-      .sl-sb;
-      color: @gray3;
-    }
-
-    .expanded {
-      color: @white;
-
-      &:not(&.active):hover {
-        background-color: @gray9;
-        color: @gray3;
-      }
-    }
-
     li {
       display: block;
       border-left: 4px solid transparent;
 
-      [class^="icon-"] {
-        margin: 0 5px;
-        vertical-align: sub;
+      &.menu-active {
+        border-left: 4px solid @persianBlue80;
       }
 
-      a {
-        .sl;
+      > a {
+        .sl-sb;
         color: @gray4;
         padding: 12px 15px;
         display: block;
@@ -97,10 +82,19 @@ body {
         &.active, &:active {
           color: @white;
         }
-      }
 
-      &.menu-active {
-        border-left: 4px solid @persianBlue80;
+        &.expanded {
+          color: @gray4;
+
+          &:hover {
+            color: @gray4;
+          }
+        }
+
+        [class^="icon-"] {
+          margin: 0 5px;
+          vertical-align: sub;
+        }
       }
 
       .submenu {
