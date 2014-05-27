@@ -1162,26 +1162,15 @@ body {
 #marketplace-nav .sidebar {
   padding: 0;
 }
-#marketplace-nav .sidebar > li > a > span {
-  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 20px;
-  color: #000000;
-  color: #ffffff;
-}
-#marketplace-nav .sidebar .expanded:not(&.active):hover {
-  background-color: #1c1f26;
-  color: #b1b9bd;
-}
-#marketplace-nav .sidebar li {
+#marketplace-nav .sidebar > li {
   display: block;
   border-left: 4px solid transparent;
 }
-#marketplace-nav .sidebar li [class^="icon-"] {
-  margin: 0 5px;
-  vertical-align: sub;
+#marketplace-nav .sidebar > li.menu-active {
+  border-left: 4px solid #1675bf;
 }
-#marketplace-nav .sidebar li a {
-  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+#marketplace-nav .sidebar > li > a {
+  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 20px;
   color: #000000;
   color: #9196a1;
@@ -1190,29 +1179,44 @@ body {
   position: relative;
   text-decoration: none;
 }
-#marketplace-nav .sidebar li a:hover {
+#marketplace-nav .sidebar > li > a:hover {
   color: #ffffff;
 }
-#marketplace-nav .sidebar li a.active,
-#marketplace-nav .sidebar li a:active {
+#marketplace-nav .sidebar > li > a.active,
+#marketplace-nav .sidebar > li > a:active {
   color: #ffffff;
 }
-#marketplace-nav .sidebar li.menu-active {
-  border-left: 4px solid #1675bf;
+#marketplace-nav .sidebar > li > a.expanded {
+  color: #9196a1;
 }
-#marketplace-nav .sidebar li .submenu {
+#marketplace-nav .sidebar > li > a.expanded.active:hover {
+  color: #9196a1;
+}
+#marketplace-nav .sidebar > li > a [class^="icon-"] {
+  margin-right: 12px;
+  vertical-align: sub;
+}
+#marketplace-nav .sidebar > li .submenu {
   display: none;
 }
-#marketplace-nav .sidebar li .submenu.expanded {
+#marketplace-nav .sidebar > li .submenu.expanded {
   display: block;
-  padding: 10px 0;
 }
-#marketplace-nav .sidebar li .submenu.expanded a {
-  color: #b1b9bd;
-  padding: 5px 10px 5px 38px;
+#marketplace-nav .sidebar > li .submenu.expanded > li {
+  line-height: 50px;
 }
-#marketplace-nav .sidebar li .submenu.expanded a.active,
-#marketplace-nav .sidebar li .submenu.expanded a:active {
+#marketplace-nav .sidebar > li .submenu.expanded > li:first-of-type {
+  line-height: 16px;
+}
+#marketplace-nav .sidebar > li .submenu.expanded a {
+  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 20px;
+  color: #000000;
+  color: #9196a1;
+  margin-left: 45px;
+}
+#marketplace-nav .sidebar > li .submenu.expanded a.active,
+#marketplace-nav .sidebar > li .submenu.expanded a:active {
   color: #ffffff;
 }
 .site-footer {
@@ -1644,20 +1648,26 @@ body {
 .icon-dollar:before {
   content: "9";
 }
-.icon-edit:before {
+.icon-calendar:before {
   content: "!";
 }
-.icon-calendar:before {
+.icon-logs:before {
   content: "\"";
 }
-.icon-logs:before {
+.icon-search:before {
   content: "#";
 }
-.icon-search:before {
+.icon-overview:before {
   content: "$";
 }
-.icon-overview:before {
+.icon-edit:before {
   content: "%";
+}
+.icon-right-arc-arrow:before {
+  content: "&";
+}
+.icon-left-arc-arrow:before {
+  content: "'";
 }
 /*
 * animations.less
@@ -3931,7 +3941,7 @@ button button[disabled] {
   color: #000000;
   color: #ffffff;
   line-height: 17px;
-  padding: 25px 0 0 10px;
+  padding: 25px 0 0 14px;
 }
 .dropdown.nav .dropdown-toggle .caret {
   border-top-color: #ffffff;
@@ -3998,7 +4008,6 @@ button button[disabled] {
   line-height: 20px;
   color: #000000;
   color: #9196a1;
-  line-height: 23px;
   padding: 0 4px;
   max-width: none;
 }
