@@ -95,8 +95,7 @@ a {
   }
 
   &.sm {
-    .sl-sm-sb;
-    color: @white;
+    font-size: 12px;
     padding: 8px 18px;
   }
 
@@ -135,7 +134,11 @@ a {
 
 .btn-link {
   height: 30px;
-  padding: 0 13px;
+  padding-left: 26px;
+
+  i {
+    vertical-align: text-top;
+  }
 }
 
 
@@ -343,7 +346,7 @@ a {
       span {
         .sl-sb;
         color: @gray4;
-        padding: 0 4px;
+        padding: 0 2px;
         max-width: none;
       }
       .caret {
@@ -357,7 +360,7 @@ a {
     }
 
     &.open, .dropdown-toggle:hover {
-      span {
+      i, span {
         color: @black;
       }
       .caret {
@@ -373,22 +376,31 @@ a {
 
     .dropdown-toggle {
       color: @gray6;
-      padding: 8px 10px 4px;
+      padding: 0 10px;
 
       span {
         .sl-sm-sb;
         color: @gray6;
+        line-height: 50px;
         vertical-align: middle;
       }
 
       .caret {
         border-top-color: @gray6;
-        margin-top: 6px;
+        margin-top: 21px;
       }
     }
 
     &.open, &:hover {
       background-color: @gray2;
+
+      span {
+        color: @black;
+      }
+
+      .caret {
+        border-top-color: @black;
+      }
     }
   }
 
