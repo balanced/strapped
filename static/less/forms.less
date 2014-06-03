@@ -341,7 +341,12 @@ a {
     height: 34px;
 
     .dropdown-toggle {
-      padding: 5px 5px 0px;
+      padding: 5px 5px 0 0;
+
+      i {
+        color: @gray4;
+        vertical-align: text-bottom;
+      }
 
       span {
         .sl-sb;
@@ -349,8 +354,9 @@ a {
         padding: 0 2px;
         max-width: none;
       }
+
       .caret {
-        margin-left: 0;
+        margin-left: -1px;
         border-top-color: @gray4;
       }
 
