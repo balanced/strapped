@@ -224,7 +224,6 @@ table.items {
 
       td {
         padding: 0 10px;
-        line-height: 46px;
 
         &:first-child {
           padding-left: 25px;
@@ -246,11 +245,12 @@ table.items {
           width: 100%;
           text-decoration: none;
 
-          span {
+          > span {
             padding: 0;
             display: block;
-            line-height: 46px;
+            line-height: 50px;
           }
+
           &:link, &:visited, &:hover, &:active {
             .sl;
             color: @textColor;
