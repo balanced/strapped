@@ -65,6 +65,14 @@ body {
 
       &.menu-active {
         border-left: 4px solid @persianBlue80;
+
+        & > .active {
+          color: @gray4;
+
+          &:hover {
+            color: @gray4;
+          }
+        }
       }
 
       > a {
@@ -81,14 +89,6 @@ body {
 
         &.active, &:active {
           color: @white;
-        }
-
-        &.expanded {
-          color: @gray4;
-
-          &.active:hover {
-            color: @gray4;
-          }
         }
 
         [class^="icon-"] {
