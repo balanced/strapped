@@ -58,7 +58,7 @@ a {
   .transition("background-color, border-color");
   .transition-duration(200ms);
 
-  &:not(.btn-sm):not(.close) {
+  &:not(.close) {
     min-width: 135px;
   }
 
@@ -96,6 +96,7 @@ a {
 
   &.sm {
     font-size: 12px;
+    line-height: 14px;
     padding: 8px 18px;
     color: @white;
 
@@ -196,7 +197,7 @@ a {
     border-radius: 0;
     background: @white;
     text-align: left;
-    .box-shadow(0px, 2px, 3px, @gray2);
+    .box-shadow(0px, 1px, 4px, @gray2);
 
     > li {
       margin: 0;
