@@ -1139,7 +1139,7 @@ body {
 #header {
   position: relative;
   background-color: #ffffff;
-  height: 70px;
+  margin-left: 180px;
 }
 #main {
   background-color: #ffffff;
@@ -1174,7 +1174,7 @@ body {
   line-height: 20px;
   color: #000000;
   color: #9196a1;
-  padding: 12px 15px;
+  padding: 12px;
   display: block;
   position: relative;
   text-decoration: none;
@@ -1193,7 +1193,7 @@ body {
   color: #9196a1;
 }
 #marketplace-nav .sidebar > li > a [class^="icon-"] {
-  margin-right: 12px;
+  margin-right: 6px;
   vertical-align: sub;
 }
 #marketplace-nav .sidebar > li .submenu {
@@ -1213,10 +1213,13 @@ body {
   line-height: 20px;
   color: #000000;
   color: #9196a1;
-  margin-left: 45px;
+  padding-left: 36px;
+  padding-bottom: 14px;
+  display: block;
 }
 #marketplace-nav .sidebar > li .submenu.expanded a.active,
-#marketplace-nav .sidebar > li .submenu.expanded a:active {
+#marketplace-nav .sidebar > li .submenu.expanded a:active,
+#marketplace-nav .sidebar > li .submenu.expanded a:hover {
   color: #ffffff;
 }
 .site-footer {
@@ -3723,8 +3726,8 @@ button {
   -o-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-.btn:not(.btn-sm):not(.close),
-button:not(.btn-sm):not(.close) {
+.btn:not(.close),
+button:not(.close) {
   min-width: 135px;
 }
 .btn:visited,
@@ -3766,11 +3769,14 @@ button.secondary:hover {
 }
 .btn.sm,
 button.sm {
-  font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 16px;
-  color: #000000;
-  color: #ffffff;
+  font-size: 12px;
+  line-height: 14px;
   padding: 8px 18px;
+  color: #ffffff;
+}
+.btn.sm.secondary,
+button.sm.secondary {
+  color: #9196a1;
 }
 .btn.btn-link,
 button.btn-link {
@@ -3812,7 +3818,10 @@ button button[disabled] {
 }
 .btn-link {
   height: 30px;
-  padding: 0 13px;
+  padding-left: 26px;
+}
+.btn-link i {
+  vertical-align: text-top;
 }
 .dropdown {
   display: block;
@@ -3864,9 +3873,9 @@ button button[disabled] {
   border-radius: 0;
   background: #ffffff;
   text-align: left;
-  -webkit-box-shadow: 0px 2px 3px #d2d6d9;
-  -moz-box-shadow: 0px 2px 3px #d2d6d9;
-  box-shadow: 0px 2px 3px #d2d6d9;
+  -webkit-box-shadow: 0px 1px 4px #d2d6d9;
+  -moz-box-shadow: 0px 1px 4px #d2d6d9;
+  box-shadow: 0px 1px 4px #d2d6d9;
 }
 .dropdown .dropdown-menu > li {
   margin: 0;
@@ -3941,7 +3950,7 @@ button button[disabled] {
   color: #000000;
   color: #ffffff;
   line-height: 17px;
-  padding: 25px 0 0 14px;
+  padding: 25px 0 0 8px;
 }
 .dropdown.nav .dropdown-toggle .caret {
   border-top-color: #ffffff;
@@ -4001,23 +4010,29 @@ button button[disabled] {
   height: 34px;
 }
 .dropdown.borderless .dropdown-toggle {
-  padding: 5px 5px 0px;
+  padding: 5px 5px 0 0;
+}
+.dropdown.borderless .dropdown-toggle i {
+  color: #9196a1;
+  vertical-align: text-bottom;
 }
 .dropdown.borderless .dropdown-toggle span {
   font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 20px;
   color: #000000;
   color: #9196a1;
-  padding: 0 4px;
+  padding: 0 2px;
   max-width: none;
 }
 .dropdown.borderless .dropdown-toggle .caret {
-  margin-left: 0;
+  margin-left: -1px;
   border-top-color: #9196a1;
 }
 .dropdown.borderless .dropdown-toggle:active {
   outline: 0;
 }
+.dropdown.borderless.open i,
+.dropdown.borderless .dropdown-toggle:hover i,
 .dropdown.borderless.open span,
 .dropdown.borderless .dropdown-toggle:hover span {
   color: #000000;
@@ -4032,23 +4047,32 @@ button button[disabled] {
   height: 100%;
 }
 .dropdown.filter .dropdown-toggle {
-  color: #000000;
-  padding: 8px 10px 4px;
+  color: #59606b;
+  padding: 0 10px;
 }
 .dropdown.filter .dropdown-toggle span {
   font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 16px;
   color: #000000;
-  text-transform: uppercase;
+  color: #59606b;
+  line-height: 50px;
   vertical-align: middle;
 }
 .dropdown.filter .dropdown-toggle .caret {
-  border-top-color: #000000;
-  margin-top: 6px;
+  border-top-color: #59606b;
+  margin-top: 21px;
 }
 .dropdown.filter.open,
 .dropdown.filter:hover {
-  background-color: #f0f1f2;
+  background-color: #d2d6d9;
+}
+.dropdown.filter.open span,
+.dropdown.filter:hover span {
+  color: #000000;
+}
+.dropdown.filter.open .caret,
+.dropdown.filter:hover .caret {
+  border-top-color: #000000;
 }
 .dropdown.date .dropdown-toggle {
   height: 44px;
@@ -4193,7 +4217,7 @@ form .input-prepend .add-on:first-child {
 /*
 * labels.less
 *
-* 
+*
 */
 h1 {
   font-family: "Proxima Nova Reg", arial, sans-serif;
@@ -4448,6 +4472,12 @@ pre {
 .sl-link:hover {
   color: #0063b4;
 }
+.sl-none {
+  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 20px;
+  color: #000000;
+  color: #9196a1;
+}
 .num-sm {
   color: #000000;
   font: normal normal normal 18px "Proxima Nova Bold", arial, sans-serif;
@@ -4649,8 +4679,9 @@ table.items {
 table.items th,
 table.items thead {
   float: none;
-  padding: 0 10px;
-  border-top: 2px solid #000000;
+  padding: 7px 10px;
+  border-top: 1px solid #d2d6d9;
+  background-color: #f0f1f2;
   border-bottom: 1px solid #d2d6d9;
   text-align: left;
 }
@@ -4671,13 +4702,11 @@ table.items thead > span {
   font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 16px;
   color: #000000;
-  text-transform: uppercase;
+  color: #59606b;
   line-height: 35px;
 }
-table.items th.type,
-table.items thead.type,
-table.items th.status,
-table.items thead.status {
+table.items th.has-filter,
+table.items thead.has-filter {
   padding: 0;
 }
 table.items tbody tr {
@@ -4699,7 +4728,6 @@ table.items tbody tr span {
 }
 table.items tbody tr td {
   padding: 0 10px;
-  line-height: 46px;
 }
 table.items tbody tr td:first-child {
   padding-left: 25px;
@@ -4721,7 +4749,7 @@ table.items tbody tr td a {
 table.items tbody tr td a span {
   padding: 0;
   display: block;
-  line-height: 46px;
+  line-height: 50px;
 }
 table.items tbody tr td a:link,
 table.items tbody tr td a:visited,
