@@ -74,8 +74,13 @@ body {
           color: @white;
         }
 
-        &.active, &:active {
+        &:active {
           color: @white;
+        }
+
+        &.active {
+          color: @white;
+          border-left: 4px solid @persianBlue80;
         }
 
         &.expanded {
@@ -118,7 +123,7 @@ body {
           }
 
           a {
-            .sl-sb;
+            .sl;
             color: @gray4;
             padding-left: 36px;
             padding-top: 5px;
