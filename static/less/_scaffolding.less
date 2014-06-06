@@ -90,8 +90,12 @@ body {
             color: @white;
           }
 
-          &.active:hover {
-            color: @gray4;
+          &.active {
+            border-top: 1px solid @gray6;
+
+            &:hover {
+              color: @gray4;
+            }
           }
         }
 
@@ -109,14 +113,14 @@ body {
 
           > li {
             line-height: 50px;
-            background-color: @gray9;
+            background-color: @gray8;
 
             &:first-of-type {
-              padding-top: 10px;
+              padding-top: 15px;
             }
 
             &:last-of-type {
-              padding-bottom: 10px;
+              padding-bottom: 15px;
             }
 
           }
@@ -125,9 +129,9 @@ body {
             .sl-sb;
             color: @gray4;
             padding-left: 36px;
-            padding-top: 3px;
-            padding-bottom: 3px;
-            background-color: @gray9;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: @gray8;
             display: block;
 
             &.active, &:active, &:hover {
