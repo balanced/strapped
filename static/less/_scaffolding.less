@@ -109,17 +109,25 @@ body {
 
           > li {
             line-height: 50px;
+            background-color: @gray9;
 
             &:first-of-type {
-              line-height: 16px;
+              padding-top: 10px;
             }
+
+            &:last-of-type {
+              padding-bottom: 10px;
+            }
+
           }
 
           a {
             .sl-sb;
             color: @gray4;
             padding-left: 36px;
-            padding-bottom: 14px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            background-color: @gray9;
             display: block;
 
             &.active, &:active, &:hover {
