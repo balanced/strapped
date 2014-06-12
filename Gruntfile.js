@@ -98,7 +98,7 @@ module.exports = function(grunt) {
 				files: [
 					'examples/js/strapped.js'
 				],
-				tasks: ['_buildJS'],
+				tasks: ['format', '_buildJS'],
 				options: {
 					livereload: true
 				}
