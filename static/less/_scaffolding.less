@@ -189,16 +189,7 @@ body {
 .body-panel {
   margin-left: -45px;
   margin-right: -45px;
-  border-bottom: 1px solid @gray2;
-
-  &:first-of-type {
-    border-top: 1px solid @gray2;
-  }
-
-  &:last-of-type {
-    border-bottom: none;
-    margin-bottom: -45px;
-  }
+  border-top: 1px solid @gray2;
 
   .panel {
     padding: 45px;
@@ -208,6 +199,11 @@ body {
     &.side-panel {
       background-color: @gray1;
       min-height: 490px;
+      border-right: 1px solid @gray2;
+    }
+
+    &.main-panel {
+      padding-right: 0;
     }
 
     h3 {
