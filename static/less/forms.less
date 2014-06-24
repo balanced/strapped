@@ -515,12 +515,13 @@ form {
   input[type="tel"],
   input[type="color"] {
     .sl-md;
-    border: 1px solid @gray3;
+    border: 1px solid @gray2;
     border-radius: 0;
     width: @inputFullWidth / 2;
     padding: @inputPadding;
     height: @inputHeight;
     margin-bottom: 0;
+    .box-shadow(none);
 
     &.full {
       width: @inputFullWidth - @inputPadding * 2;
