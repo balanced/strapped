@@ -395,6 +395,12 @@ a {
       color: @gray5;
       padding: 0 15px;
 
+      &.active {
+        span {
+          color: @black;
+        }
+      }
+
       span {
         &:extend(table.items th > span);
         line-height: 50px !important;
