@@ -234,9 +234,9 @@ a {
 
     a {
       .sl;
-      color: @gray6;
+      color: @gray4;
       display: block;
-      padding: 10px 20px;
+      padding: 10px 15px;
 
       &:hover {
         text-decoration: none;
@@ -393,7 +393,7 @@ a {
 
     .dropdown-toggle {
       color: @gray5;
-      padding: 0 10px;
+      padding: 0 15px;
 
       span {
         &:extend(table.items th > span);
@@ -411,12 +411,20 @@ a {
     &.open, &:hover {
       background-color: @gray2;
 
-      span {
-        color: @black;
+      .dropdown-toggle {
+        span {
+          color: @black;
+        }
+
+        .caret {
+          border-top-color: @black;
+        }
       }
 
-      .caret {
-        border-top-color: @black;
+      .dropdown-menu {
+        .active {
+          color: @black;
+        }
       }
     }
   }
