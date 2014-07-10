@@ -194,7 +194,7 @@ table.items {
     > span {
       .sl-sm-sb;
       color: @gray5;
-      line-height: 35px;
+      line-height: 22px;
     }
 
     &.has-filter {
@@ -243,16 +243,20 @@ table.items {
           cursor: default;
         }
 
-        a {
+        > span {
+          padding: 0;
+          display: block;
+          line-height: 50px;
+        }
+
+        > a {
           display: block;
           height: 100%;
           width: 100%;
           text-decoration: none;
 
           span {
-            padding: 0;
-            display: block;
-            line-height: 50px;
+            &:extend(table.items tbody td > span);
           }
 
           &:link, &:visited, &:hover, &:active {
