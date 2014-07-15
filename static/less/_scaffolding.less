@@ -195,7 +195,6 @@ body {
   margin-right: -45px;
   margin-bottom: -45px;
   border-top: 1px solid @gray2;
-  background-color: @gray1;
 
   .panel {
     padding: 45px;
@@ -203,12 +202,13 @@ body {
     margin: 0;
 
     &.side-panel {
+      background-color: @gray1;
       min-height: 490px;
+      border-right: 1px solid @gray2;
     }
 
     &.main-panel {
-      background-color: @white;
-      border-left: 1px solid @gray2;
+      padding-right: 0;
     }
 
     h3 {
