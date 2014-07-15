@@ -196,29 +196,28 @@ body {
   margin-bottom: -45px;
   border-top: 1px solid @gray2;
   background-color: @gray1;
-  height: 100%;
-  position: relative;
 
-  .panel {
+  [class$="-panel"] {
     padding: 45px;
-    height: 100%;
     margin: 0;
-
-    &.side-panel {
-      background-color: @gray1;
-      min-height: 490px;
-      border-right: 1px solid @gray2;
-    }
-
-    &.main-panel {
-      background-color: @white;
-      float: right;
-    }
-
-    h3 {
-      .sl-sb;
-    }
   }
+
+  .side-panel {
+    position: absolute;
+    background-color: @gray1;
+    min-height: 490px;
+    border-right: 1px solid @gray2;
+  }
+
+  .main-panel {
+    background-color: @white;
+    margin-left: 345px;
+  }
+
+  h3 {
+    .sl-sb;
+  }
+
 }
 
 .nav-tabs {
