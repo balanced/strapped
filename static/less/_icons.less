@@ -38,13 +38,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+// Default icon style
+
 [class^="icon-"] {
   color: @gray4;
+  vertical-align: sub;
 
   &:not(.non-interactive):hover {
     color: @black;
     cursor: pointer;
   }
+}
+
+// Special cases
+
+.icon-edit {
+  font-size: 12px;
 }
 
 .icon-table-x {
@@ -102,6 +111,8 @@
     display: block;
   }
 }
+
+// Fontastic css
 
 .icon-activity:before {
   content: "a";
