@@ -1186,6 +1186,9 @@ body {
   color: #ffffff;
   border-left: 4px solid #1675bf;
 }
+#marketplace-nav .sidebar > li > a.active [class^="icon-"] {
+  color: #ffffff;
+}
 #marketplace-nav .sidebar > li > a.expanded {
   color: #9196a1;
 }
@@ -1280,22 +1283,25 @@ body {
 .body-panel {
   margin-left: -45px;
   margin-right: -45px;
+  margin-bottom: -45px;
   border-top: 1px solid #d2d6d9;
+  background-color: #f0f1f2;
 }
-.body-panel .panel {
+.body-panel [class*="-panel"] {
   padding: 45px;
-  height: 100%;
   margin: 0;
 }
-.body-panel .panel.side-panel {
+.body-panel .side-panel {
+  position: absolute;
   background-color: #f0f1f2;
   min-height: 490px;
   border-right: 1px solid #d2d6d9;
 }
-.body-panel .panel.main-panel {
-  padding-right: 0;
+.body-panel .main-panel {
+  background-color: #ffffff;
+  margin-left: 345px;
 }
-.body-panel .panel h3 {
+.body-panel h3 {
   font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 20px;
   color: #000000;
@@ -1350,10 +1356,18 @@ body {
 }
 [class^="icon-"] {
   color: #9196a1;
+  vertical-align: sub;
 }
-[class^="icon-"]:hover {
+[class^="icon-"]:not(.non-interactive):hover {
   color: #000000;
   cursor: pointer;
+}
+.icon-edit {
+  font-size: 12px;
+}
+.icon-table-x {
+  color: #b1b9bd;
+  vertical-align: -6px;
 }
 .icon-download {
   background: url('../images/icons.png');
@@ -1611,6 +1625,9 @@ body {
 }
 .icon-table-x:before {
   content: "'";
+}
+.icon-single-transaction:before {
+  content: "(";
 }
 /*
 * animations.less
@@ -3915,7 +3932,7 @@ button button[disabled] {
   line-height: 20px;
   color: #000000;
   position: absolute;
-  padding: 5px 0 0;
+  padding: 5px 0;
   margin: 0;
   border: 0;
   border-radius: 0;
@@ -4790,7 +4807,7 @@ table.items tfoot tr {
 table.items tbody tr:hover,
 table.items tfoot tr:hover {
   cursor: pointer;
-  background-color: #f0f1f2;
+  background-color: #e0e9f6;
 }
 table.items tbody tr:hover .no-results,
 table.items tfoot tr:hover .no-results {
@@ -4843,6 +4860,12 @@ table.items tfoot tr td > a span {
   line-height: 50px;
 }
 table.items tbody tr td > a:link,
+table.items tfoot tr td > a:link {
+  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 20px;
+  color: #000000;
+}
+table.items tbody tr td > a:link,
 table.items tfoot tr td > a:link,
 table.items tbody tr td > a:visited,
 table.items tfoot tr td > a:visited,
@@ -4850,8 +4873,6 @@ table.items tbody tr td > a:hover,
 table.items tfoot tr td > a:hover,
 table.items tbody tr td > a:active,
 table.items tfoot tr td > a:active {
-  font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 20px;
   color: #000000;
 }
 table.items tbody tr td.date > a > span,
@@ -4867,13 +4888,13 @@ table.items tbody tr td.date .secondary,
 table.items tfoot tr td.date .secondary {
   text-transform: lowercase;
 }
-table.items tbody tr td .primary,
-table.items tfoot tr td .primary {
+table.items tbody tr td span.primary,
+table.items tfoot tr td span.primary {
   line-height: 16px;
   padding: 4px 0 1px !important;
 }
-table.items tbody tr td .secondary,
-table.items tfoot tr td .secondary {
+table.items tbody tr td span.secondary,
+table.items tfoot tr td span.secondary {
   font: normal normal normal 12px "Proxima Nova Reg", arial, sans-serif;
   line-height: 16px;
   color: #000000;
@@ -4895,13 +4916,16 @@ table.items tbody tr td.label4a.black,
 table.items tfoot tr td.label4a.black {
   color: #000000;
 }
+table.items tfoot tr:hover {
+  background-color: #ffffff;
+  cursor: default;
+}
 table.items tfoot td.load-more-results {
   padding: 12px 25px;
   text-align: center;
 }
 table.items tfoot td.load-more-results a {
-  cursor: pointer;
-  display: inline-block;
+  display: inline;
 }
 table.items .num,
 table.items .align-right {
