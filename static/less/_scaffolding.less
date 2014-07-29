@@ -202,12 +202,15 @@ body {
   margin-left: -45px;
   margin-right: -45px;
   margin-bottom: -45px;
-  border-top: 1px solid @gray2;
   background-color: @gray1;
 
   [class*="-panel"] {
     padding: 45px;
     margin: 0;
+  }
+
+  h3 {
+    .sl-sb;
   }
 
   .side-panel {
@@ -220,10 +223,11 @@ body {
   .main-panel {
     background-color: @white;
     margin-left: 345px;
-  }
 
-  h3 {
-    .sl-sb;
+    h3 {
+      float: left;
+      margin: 0 0 10px 0;
+    }
   }
 
 }
