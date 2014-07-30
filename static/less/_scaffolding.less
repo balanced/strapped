@@ -204,6 +204,16 @@ body {
   margin-bottom: -45px;
   background-color: @gray1;
 
+  &:before {
+    display: block;
+    width: 1px;
+    height: 100%;
+    content: " ";
+    border-left: 1px solid @gray2;
+    position: absolute;
+    left: 345px;
+  }
+
   [class*="-panel"] {
     padding: 45px;
     margin: 0;
@@ -217,7 +227,6 @@ body {
     position: absolute;
     background-color: @gray1;
     min-height: 490px;
-    border-right: 1px solid @gray2;
   }
 
   .main-panel {

@@ -1195,6 +1195,9 @@ body {
 #marketplace-nav .sidebar > li > a.expanded:hover {
   color: #ffffff;
 }
+#marketplace-nav .sidebar > li > a.expanded:hover [class^="icon-"] {
+  color: #ffffff;
+}
 #marketplace-nav .sidebar > li > a.expanded.active {
   color: #ffffff;
   border-left: 4px solid #1675bf;
@@ -1284,27 +1287,39 @@ body {
   margin-left: -45px;
   margin-right: -45px;
   margin-bottom: -45px;
-  border-top: 1px solid #d2d6d9;
   background-color: #f0f1f2;
+}
+.body-panel:before {
+  display: block;
+  width: 1px;
+  height: 100%;
+  content: " ";
+  border-left: 1px solid #d2d6d9;
+  position: absolute;
+  left: 345px;
 }
 .body-panel [class*="-panel"] {
   padding: 45px;
   margin: 0;
 }
+.body-panel h3 {
+  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 20px;
+  color: #000000;
+}
 .body-panel .side-panel {
   position: absolute;
   background-color: #f0f1f2;
   min-height: 490px;
-  border-right: 1px solid #d2d6d9;
 }
 .body-panel .main-panel {
   background-color: #ffffff;
   margin-left: 345px;
 }
-.body-panel h3 {
-  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 20px;
-  color: #000000;
+.body-panel .main-panel > h3,
+.body-panel .main-panel section > h3 {
+  float: left;
+  margin: 0 10px 10px 0;
 }
 .nav-tabs {
   border-bottom: 4px solid #59606b;
@@ -1364,6 +1379,7 @@ body {
 }
 .icon-edit {
   font-size: 12px;
+  vertical-align: middle;
 }
 .icon-table-x {
   color: #b1b9bd;
@@ -3777,7 +3793,7 @@ button {
   text-align: center;
   vertical-align: middle;
   line-height: 1em;
-  padding: 9px 31px;
+  padding: 8px 18px;
   border-radius: 0;
   border: 1px solid #528dcc;
   background-color: #528dcc;
@@ -3836,7 +3852,7 @@ button.secondary:hover {
 button.sm {
   font-size: 12px;
   line-height: 14px;
-  padding: 8px 18px;
+  padding: 5px 15px;
   color: #ffffff;
   min-width: 100px;
 }
@@ -3864,6 +3880,14 @@ button.btn-link:hover {
   background-color: inherit;
   color: #000000 !important;
 }
+.btn.btn-link [class^="icon-"],
+button.btn-link [class^="icon-"] {
+  color: #528dcc;
+}
+.btn.btn-link [class^="icon-"]:hover,
+button.btn-link [class^="icon-"]:hover {
+  color: #0063b4;
+}
 .btn.special,
 button.special {
   font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
@@ -3884,7 +3908,7 @@ button button[disabled] {
 }
 .btn-link {
   height: 30px;
-  padding-left: 26px;
+  padding-left: 20px;
 }
 .btn-link i {
   vertical-align: text-top;
@@ -3970,9 +3994,9 @@ button button[disabled] {
   font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
   line-height: 20px;
   color: #000000;
-  color: #9196a1;
+  color: #59606b;
   display: block;
-  padding: 10px;
+  padding: 10px 15px;
 }
 .dropdown .dropdown-menu a:hover {
   text-decoration: none;
@@ -4080,20 +4104,21 @@ button button[disabled] {
   padding: 5px 5px 0 0;
 }
 .dropdown.borderless .dropdown-toggle i {
-  color: #9196a1;
+  color: #59606b;
   vertical-align: text-bottom;
 }
 .dropdown.borderless .dropdown-toggle span {
   font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 20px;
   color: #000000;
-  color: #9196a1;
+  color: #59606b;
   padding: 0 2px;
   max-width: none;
 }
 .dropdown.borderless .dropdown-toggle .caret {
   margin-left: -1px;
-  border-top-color: #9196a1;
+  margin-top: 7px;
+  border-top-color: #59606b;
 }
 .dropdown.borderless .dropdown-toggle:active {
   outline: 0;
@@ -4555,6 +4580,15 @@ pre {
   color: #000000;
   color: #9196a1;
 }
+.sl-none:hover {
+  color: #9196a1;
+}
+.sl-note {
+  font: normal normal normal 12px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+  color: #59606b;
+}
 .num-sm {
   color: #000000;
   font: normal normal normal 18px "Proxima Nova Bold", arial, sans-serif;
@@ -4842,6 +4876,10 @@ table.items tfoot tr td.no-results {
   padding: 12px 15px 12px 25px;
   cursor: default;
 }
+table.items tbody tr td.no-results:hover,
+table.items tfoot tr td.no-results:hover {
+  color: #9196a1;
+}
 table.items tbody tr td > span,
 table.items tfoot tr td > span {
   line-height: 50px;
@@ -4875,14 +4913,14 @@ table.items tbody tr td > a:active,
 table.items tfoot tr td > a:active {
   color: #000000;
 }
-table.items tbody tr td.date > a > span,
-table.items tfoot tr td.date > a > span,
-table.items tbody tr td.funding-instrument > a > span,
-table.items tfoot tr td.funding-instrument > a > span,
 table.items tbody tr td.two-line > a > span,
 table.items tfoot tr td.two-line > a > span {
   padding-top: 4px !important;
   padding-bottom: 2px !important;
+}
+table.items tbody tr td.two-line span,
+table.items tfoot tr td.two-line span {
+  display: block;
 }
 table.items tbody tr td.date .secondary,
 table.items tfoot tr td.date .secondary {
@@ -4920,11 +4958,14 @@ table.items tfoot tr:hover {
   background-color: #ffffff;
   cursor: default;
 }
-table.items tfoot td.load-more-results {
+table.items tfoot tr.load-more-results {
+  border-bottom: none;
+}
+table.items tfoot tr.load-more-results td {
   padding: 12px 25px;
   text-align: center;
 }
-table.items tfoot td.load-more-results a {
+table.items tfoot tr.load-more-results td a {
   display: inline;
 }
 table.items .num,
