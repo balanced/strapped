@@ -1288,12 +1288,13 @@ body {
   margin-right: -45px;
   margin-bottom: -45px;
   background-color: #f0f1f2;
+  position: relative;
 }
 .body-panel:before {
   display: block;
   width: 1px;
   height: 100%;
-  content: " ";
+  content: "";
   border-left: 1px solid #d2d6d9;
   position: absolute;
   left: 345px;
@@ -1443,9 +1444,6 @@ body {
 }
 .icon-addtestmp:before {
   content: "c";
-}
-.icon-alert:before {
-  content: "d";
 }
 .icon-arrow-backward-dashboard:before {
   content: "e";
@@ -1644,6 +1642,15 @@ body {
 }
 .icon-single-transaction:before {
   content: "(";
+}
+.icon-escrow:before {
+  content: ")";
+}
+.icon-printer:before {
+  content: "*";
+}
+.icon-alert:before {
+  content: "+";
 }
 /*
 * animations.less
@@ -3836,7 +3843,7 @@ button:focus {
 button.secondary {
   color: #9196a1;
   border-color: #d2d6d9;
-  background-color: #ffffff;
+  background-color: #f0f1f2;
 }
 .btn.secondary:visited,
 button.secondary:visited {
@@ -3854,7 +3861,7 @@ button.sm {
   line-height: 14px;
   padding: 5px 15px;
   color: #ffffff;
-  min-width: 100px;
+  min-width: 80px;
 }
 .btn.sm.secondary,
 button.sm.secondary {
@@ -4000,7 +4007,7 @@ button button[disabled] {
 }
 .dropdown .dropdown-menu a:hover {
   text-decoration: none;
-  background: #e0e9f6;
+  background: #eef2fa;
   color: #000000;
   cursor: pointer;
 }
@@ -4221,8 +4228,8 @@ form legend {
   margin-bottom: 0;
 }
 form label {
-  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 20px;
+  font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 16px;
   color: #000000;
   margin-bottom: 0;
 }
@@ -4841,7 +4848,7 @@ table.items tfoot tr {
 table.items tbody tr:hover,
 table.items tfoot tr:hover {
   cursor: pointer;
-  background-color: #e0e9f6;
+  background-color: #eef2fa;
 }
 table.items tbody tr:hover .no-results,
 table.items tfoot tr:hover .no-results {
