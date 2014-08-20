@@ -549,6 +549,11 @@ form {
     &.full {
       width: @inputFullWidth - @inputPadding * 2;
     }
+
+    &[disabled] {
+      background-color: @white;
+      color: @gray2;
+    }
   }
 
   input[type="radio"] {
