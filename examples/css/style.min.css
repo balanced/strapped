@@ -1297,7 +1297,7 @@ body {
   content: "";
   border-left: 1px solid #d2d6d9;
   position: absolute;
-  left: 345px;
+  left: 344px;
 }
 .body-panel [class*="-panel"] {
   padding: 45px;
@@ -1312,6 +1312,7 @@ body {
   position: absolute;
   background-color: #f0f1f2;
   min-height: 490px;
+  border-right: 1px solid #d2d6d9;
 }
 .body-panel .main-panel {
   background-color: #ffffff;
@@ -1436,221 +1437,230 @@ body {
 .loader.loading {
   display: block;
 }
-.icon-activity:before {
+.icon-addproductionmp:before {
   content: "a";
 }
-.icon-addproductionmp:before {
+.icon-addtestmp:before {
   content: "b";
 }
-.icon-addtestmp:before {
+.icon-arrow-backward-dashboard:before {
   content: "c";
 }
-.icon-arrow-backward-dashboard:before {
-  content: "e";
-}
 .icon-arrow-forward-dashboard:before {
-  content: "f";
+  content: "d";
 }
 .icon-arrow-triangle-forward:before {
-  content: "g";
+  content: "e";
 }
 .icon-balanced-dots:before {
-  content: "h";
+  content: "f";
 }
 .icon-balanced-logo-horizontal:before {
-  content: "i";
+  content: "g";
 }
 .icon-business:before {
-  content: "j";
+  content: "h";
 }
 .icon-carat-down:before {
-  content: "k";
+  content: "i";
 }
 .icon-carat-right:before {
-  content: "l";
+  content: "j";
 }
 .icon-carat-up:before {
-  content: "m";
+  content: "k";
 }
 .icon-docs:before {
-  content: "n";
+  content: "l";
 }
 .icon-document-upload:before {
-  content: "o";
+  content: "m";
 }
 .icon-github:before {
-  content: "p";
+  content: "n";
 }
 .icon-jsfiddle:before {
-  content: "q";
+  content: "o";
 }
 .icon-key:before {
-  content: "r";
+  content: "p";
 }
 .icon-menu:before {
-  content: "s";
+  content: "q";
 }
 .icon-navigation-arrow-back:before {
-  content: "t";
+  content: "r";
 }
 .icon-navigation-arrow-forward:before {
-  content: "u";
+  content: "s";
 }
 .icon-small-x:before {
-  content: "v";
+  content: "t";
 }
 .icon-notification:before {
-  content: "w";
+  content: "u";
 }
 .icon-order:before {
-  content: "x";
+  content: "v";
 }
 .icon-person:before {
-  content: "y";
+  content: "w";
 }
 .icon-plus-sign:before {
-  content: "z";
+  content: "x";
 }
 .icon-productionmp:before {
-  content: "A";
+  content: "y";
 }
 .icon-quora:before {
-  content: "B";
+  content: "z";
 }
 .icon-settings:before {
-  content: "C";
+  content: "A";
 }
 .icon-star:before {
-  content: "D";
+  content: "B";
 }
 .icon-testmp:before {
-  content: "E";
+  content: "C";
 }
 .icon-tooltip:before {
-  content: "F";
+  content: "D";
 }
 .icon-twitter:before {
-  content: "G";
+  content: "E";
 }
 .icon-watchers:before {
-  content: "H";
+  content: "F";
 }
 .icon-bank-account:before {
-  content: "I";
+  content: "G";
 }
 .icon-card:before {
-  content: "J";
+  content: "H";
 }
 .icon-export:before {
-  content: "K";
+  content: "I";
 }
 .icon-question-mark:before {
-  content: "L";
+  content: "J";
 }
 .icon-x:before {
-  content: "M";
+  content: "K";
 }
 .icon-arrow-thin-backward:before {
-  content: "N";
+  content: "L";
 }
 .icon-arrow-thin-forward:before {
-  content: "O";
+  content: "M";
 }
 .icon-customers:before {
-  content: "P";
+  content: "N";
 }
 .icon-disputes:before {
-  content: "Q";
+  content: "O";
 }
 .icon-my-marketplace:before {
-  content: "R";
+  content: "P";
 }
 .icon-payments:before {
-  content: "S";
+  content: "Q";
 }
 .icon-sort-descending:before {
-  content: "T";
+  content: "R";
 }
 .icon-sort-ascending:before {
-  content: "U";
+  content: "S";
 }
 .icon-sort-none:before {
-  content: "V";
+  content: "T";
 }
 .icon-invoices:before {
-  content: "W";
+  content: "U";
 }
 .icon-checkmark:before {
-  content: "X";
+  content: "V";
 }
 .icon-pushtocard:before {
-  content: "Y";
+  content: "W";
 }
 .icon-card-processing:before {
-  content: "Z";
+  content: "X";
 }
 .icon-ach-debit:before {
-  content: "0";
+  content: "Y";
 }
 .icon-ach-credit:before {
-  content: "1";
+  content: "Z";
 }
 .icon-mastercard:before {
-  content: "2";
+  content: "0";
 }
 .icon-discover:before {
-  content: "3";
+  content: "1";
 }
 .icon-american-express:before {
-  content: "4";
+  content: "2";
 }
 .icon-visa:before {
-  content: "5";
+  content: "3";
 }
 .icon-cent:before {
-  content: "6";
+  content: "4";
 }
 .icon-percent:before {
-  content: "7";
+  content: "5";
 }
 .icon-dollar:before {
-  content: "8";
+  content: "6";
 }
 .icon-calendar:before {
-  content: "9";
+  content: "7";
 }
 .icon-logs:before {
-  content: "!";
+  content: "8";
 }
 .icon-search:before {
-  content: "\"";
+  content: "9";
 }
 .icon-overview:before {
-  content: "#";
+  content: "!";
 }
 .icon-edit:before {
-  content: "$";
+  content: "\"";
 }
 .icon-right-arc-arrow:before {
-  content: "%";
+  content: "#";
 }
 .icon-left-arc-arrow:before {
-  content: "&";
+  content: "$";
 }
 .icon-table-x:before {
-  content: "'";
+  content: "%";
 }
 .icon-single-transaction:before {
-  content: "(";
+  content: "&";
 }
 .icon-escrow:before {
-  content: ")";
+  content: "'";
 }
 .icon-printer:before {
-  content: "*";
+  content: "(";
 }
 .icon-alert:before {
+  content: ")";
+}
+.icon-checkmark2:before {
+  content: "*";
+}
+.icon-test:before {
   content: "+";
+}
+.icon-live:before {
+  content: ",";
+}
+.icon-code:before {
+  content: "-";
 }
 /*
 * animations.less
@@ -3852,7 +3862,7 @@ button.secondary:visited {
 .btn.secondary:hover,
 button.secondary:hover {
   color: #9196a1;
-  background-color: #f0f1f2;
+  background-color: #ffffff;
   border-color: #d2d6d9;
 }
 .btn.sm,
@@ -4262,7 +4272,7 @@ form input[type="color"] {
   border: 1px solid #d2d6d9;
   border-radius: 0;
   width: 175px;
-  padding: 5px;
+  padding: 5px 8px;
   height: auto;
   margin-bottom: 0;
   -webkit-box-shadow: none;
@@ -4289,6 +4299,25 @@ form input[type="search"].full,
 form input[type="tel"].full,
 form input[type="color"].full {
   width: 340px;
+}
+form select[disabled],
+form textarea[disabled],
+form input[type="text"][disabled],
+form input[type="password"][disabled],
+form input[type="datetime"][disabled],
+form input[type="datetime-local"][disabled],
+form input[type="date"][disabled],
+form input[type="month"][disabled],
+form input[type="time"][disabled],
+form input[type="week"][disabled],
+form input[type="number"][disabled],
+form input[type="email"][disabled],
+form input[type="url"][disabled],
+form input[type="search"][disabled],
+form input[type="tel"][disabled],
+form input[type="color"][disabled] {
+  background-color: #ffffff;
+  color: #d2d6d9;
 }
 form input[type="radio"] {
   margin: 0;
