@@ -1662,6 +1662,9 @@ body {
 .icon-code:before {
   content: "-";
 }
+.icon-upload:before {
+  content: ".";
+}
 /*
 * animations.less
 *
@@ -4128,9 +4131,12 @@ button button[disabled] {
   font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 20px;
   color: #000000;
+  line-height: 28px;
   color: #59606b;
   padding: 0 2px;
   max-width: none;
+  display: inline-block;
+  vertical-align: top;
 }
 .dropdown.borderless .dropdown-toggle .caret {
   margin-left: -1px;
