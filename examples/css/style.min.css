@@ -1179,6 +1179,9 @@ body {
 #marketplace-nav .sidebar > li > a:hover {
   color: #ffffff;
 }
+#marketplace-nav .sidebar > li > a:hover [class^="icon-"] {
+  color: #ffffff;
+}
 #marketplace-nav .sidebar > li > a:active {
   color: #ffffff;
 }
@@ -4253,6 +4256,13 @@ form label:after {
   content: ':';
   padding-right: 3px;
 }
+form label.key-value {
+  width: 160px;
+  float: left;
+}
+form label.key-value:after {
+  content: none;
+}
 form label.inline {
   display: inline;
 }
@@ -4305,6 +4315,44 @@ form input[type="search"].full,
 form input[type="tel"].full,
 form input[type="color"].full {
   width: 340px;
+}
+form select.key-value,
+form textarea.key-value,
+form input[type="text"].key-value,
+form input[type="password"].key-value,
+form input[type="datetime"].key-value,
+form input[type="datetime-local"].key-value,
+form input[type="date"].key-value,
+form input[type="month"].key-value,
+form input[type="time"].key-value,
+form input[type="week"].key-value,
+form input[type="number"].key-value,
+form input[type="email"].key-value,
+form input[type="url"].key-value,
+form input[type="search"].key-value,
+form input[type="tel"].key-value,
+form input[type="color"].key-value {
+  width: 160px;
+  float: left;
+  margin-left: -1px;
+}
+form select.key-value:first-of-type,
+form textarea.key-value:first-of-type,
+form input[type="text"].key-value:first-of-type,
+form input[type="password"].key-value:first-of-type,
+form input[type="datetime"].key-value:first-of-type,
+form input[type="datetime-local"].key-value:first-of-type,
+form input[type="date"].key-value:first-of-type,
+form input[type="month"].key-value:first-of-type,
+form input[type="time"].key-value:first-of-type,
+form input[type="week"].key-value:first-of-type,
+form input[type="number"].key-value:first-of-type,
+form input[type="email"].key-value:first-of-type,
+form input[type="url"].key-value:first-of-type,
+form input[type="search"].key-value:first-of-type,
+form input[type="tel"].key-value:first-of-type,
+form input[type="color"].key-value:first-of-type {
+  margin-left: 0;
 }
 form select[disabled],
 form textarea[disabled],

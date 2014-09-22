@@ -519,6 +519,15 @@ form {
       padding-right: 3px;
     }
 
+    &.key-value {
+      width: (@inputFullWidth - @inputPadding * 2) / 2 - 10px; // subtract 10px for the remove icon
+      float: left;
+
+      &:after {
+        content: none;
+      }
+    }
+
     &.inline {
       display: inline;
     }
@@ -553,8 +562,8 @@ form {
       width: @inputFullWidth - @inputPadding * 2;
     }
 
-    &.combined {
-      width: (@inputFullWidth - @inputPadding * 2) / 2;
+    &.key-value {
+      width: (@inputFullWidth - @inputPadding * 2) / 2 - 10px; // subtract 10px for the remove icon
       float: left;
       margin-left: -1px;
 
