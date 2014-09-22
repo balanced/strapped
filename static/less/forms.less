@@ -553,6 +553,16 @@ form {
       width: @inputFullWidth - @inputPadding * 2;
     }
 
+    &.combined {
+      width: (@inputFullWidth - @inputPadding * 2) / 2;
+      float: left;
+      margin-left: -1px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+
     &[disabled] {
       background-color: @white;
       color: @gray2;
