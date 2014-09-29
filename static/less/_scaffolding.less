@@ -266,3 +266,47 @@ body {
     }
   }
 }
+
+.card {
+  margin-bottom: 15px;
+  padding: 15px;
+  height: 180px;
+  float: left;
+  background-color: @white;
+  border: 1px solid @gray2;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+    background-color: @persianBlue10;
+  }
+
+  &:nth-of-type(4n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+
+  h2 {
+    .sl-20;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .amount {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+
+    div {
+      text-align: right;
+
+      &:last-of-type {
+        .sl-20;
+        color: @gray4;
+      }
+    }
+  }
+}
