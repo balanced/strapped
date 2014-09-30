@@ -1076,38 +1076,38 @@
 @font-face {
   font-family: 'Proxima Nova Reg';
   font-weight: 400;
-  src: url('"../fonts" '/Proxima Nova Reg'.eot');
-  src: url('"../fonts" '/Proxima Nova Reg'.eot?#iefix') format('embedded-opentype'), url('"../fonts" '/Proxima Nova Reg'.woff') format('woff'), url('"../fonts" '/Proxima Nova Reg'.ttf') format('truetype');
+  src: url('../fonts/Proxima Nova Reg.eot');
+  src: url('../fonts/Proxima Nova Reg.eot?#iefix') format('embedded-opentype'), url('../fonts/Proxima Nova Reg.woff') format('woff'), url('../fonts/Proxima Nova Reg.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Proxima Nova Reg Italic';
   font-weight: 400;
-  src: url('"../fonts" '/Proxima Nova Reg It'.eot');
-  src: url('"../fonts" '/Proxima Nova Reg It'.eot?#iefix') format('embedded-opentype'), url('"../fonts" '/Proxima Nova Reg It'.woff') format('woff'), url('"../fonts" '/Proxima Nova Reg It'.ttf') format('truetype');
+  src: url('../fonts/Proxima Nova Reg It.eot');
+  src: url('../fonts/Proxima Nova Reg It.eot?#iefix') format('embedded-opentype'), url('../fonts/Proxima Nova Reg It.woff') format('woff'), url('../fonts/Proxima Nova Reg It.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Plantin Italic';
   font-weight: 400;
-  src: url('"../fonts" '/PlantinStd-Italic'.eot');
-  src: url('"../fonts" '/PlantinStd-Italic'.eot?#iefix') format('embedded-opentype'), url('"../fonts" '/PlantinStd-Italic'.woff') format('woff'), url('"../fonts" '/PlantinStd-Italic'.ttf') format('truetype');
+  src: url('../fonts/PlantinStd-Italic.eot');
+  src: url('../fonts/PlantinStd-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/PlantinStd-Italic.woff') format('woff'), url('../fonts/PlantinStd-Italic.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Proxima Nova Light';
   font-weight: 400;
-  src: url('"../fonts" '/Proxima Nova Light'.eot');
-  src: url('"../fonts" '/Proxima Nova Light'.eot?#iefix') format('embedded-opentype'), url('"../fonts" '/Proxima Nova Light'.woff') format('woff'), url('"../fonts" '/Proxima Nova Light'.ttf') format('truetype');
+  src: url('../fonts/Proxima Nova Light.eot');
+  src: url('../fonts/Proxima Nova Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Proxima Nova Light.woff') format('woff'), url('../fonts/Proxima Nova Light.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Proxima Nova Semi Bold';
   font-weight: 400;
-  src: url('"../fonts" '/Proxima Nova Sbold'.eot');
-  src: url('"../fonts" '/Proxima Nova Sbold'.eot?#iefix') format('embedded-opentype'), url('"../fonts" '/Proxima Nova Sbold'.woff') format('woff'), url('"../fonts" '/Proxima Nova Sbold'.ttf') format('truetype');
+  src: url('../fonts/Proxima Nova Sbold.eot');
+  src: url('../fonts/Proxima Nova Sbold.eot?#iefix') format('embedded-opentype'), url('../fonts/Proxima Nova Sbold.woff') format('woff'), url('../fonts/Proxima Nova Sbold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Proxima Nova Bold';
   font-weight: 400;
-  src: url('"../fonts" '/Proxima Nova Bold'.eot');
-  src: url('"../fonts" '/Proxima Nova Bold'.eot?#iefix') format('embedded-opentype'), url('"../fonts" '/Proxima Nova Bold'.woff') format('woff'), url('"../fonts" '/Proxima Nova Bold'.ttf') format('truetype');
+  src: url('../fonts/Proxima Nova Bold.eot');
+  src: url('../fonts/Proxima Nova Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Proxima Nova Bold.woff') format('woff'), url('../fonts/Proxima Nova Bold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Inconsolata';
@@ -1341,6 +1341,47 @@ body {
 .nav-tabs li.active {
   background-color: #59606b;
   color: #ffffff;
+}
+.card {
+  margin-bottom: 15px;
+  padding: 15px;
+  height: 180px;
+  float: left;
+  background-color: #ffffff;
+  border: 1px solid #d2d6d9;
+  position: relative;
+}
+.card:hover {
+  cursor: pointer;
+  background-color: #eef2fa;
+}
+.card:nth-of-type(4n+1) {
+  margin-left: 0;
+  clear: left;
+}
+.card h2 {
+  font: normal normal normal 20px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 28px;
+  color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.card .amount {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.card .amount div {
+  text-align: right;
+}
+.card .amount div:last-of-type {
+  font: normal normal normal 20px "Proxima Nova Reg", arial, sans-serif;
+  line-height: 28px;
+  color: #000000;
+  color: #9196a1;
 }
 @charset "UTF-8";
 @font-face {

@@ -47,6 +47,14 @@ module.exports = function(grunt) {
 		},
 
 		copy: {
+      bootstrap: {
+        files: [{
+          cwd: 'bower_components/bootstrap/less',
+          expand: true,
+          src: ['**'],
+          dest: 'static/less/bootstrap'
+        }]
+      },
 			fonts: {
 				files: [{
 					cwd: 'static/fonts',
@@ -212,7 +220,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-lesslint');
 
 	grunt.registerTask('default', ['bower-install', '_devBuild', 'connect', 'open', 'watch']);
-	grunt.registerTask('_devBuild', ['copy:fonts', 'copy:images', '_buildJS', '_buildCSS', 'copy:notfound', '_buildHTML']);
+	grunt.registerTask('_devBuild', ['copy:fonts', 'copy:images', 'copy:bootstrap', '_buildJS', '_buildCSS', 'copy:notfound', '_buildHTML']);
 	grunt.registerTask('_buildJS', ['clean', 'concat']);
 	grunt.registerTask('_buildCSS', ['less']);
 	grunt.registerTask('_buildHTML', ['compile-handlebars']);
