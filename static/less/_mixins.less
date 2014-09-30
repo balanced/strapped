@@ -3,9 +3,6 @@
 *
 */
 
-@import "_bootstrap.variables.less";
-@import "_bootstrap.mixins.less";
-
 @imagesPath: '../images';
 
 @iconsFile: url('@{imagesPath}/icons.png');
@@ -157,4 +154,10 @@
   -webkit-box-shadow: @x @y @blur @color;
   -moz-box-shadow: @x @y @blur @color;
   box-shadow: @x @y @blur @color;
+}
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
 }
