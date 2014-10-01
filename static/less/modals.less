@@ -82,6 +82,11 @@
 .modal-body {
   overflow-y: auto;
   margin: 0;
+  padding: 0 45px;
+
+  .content {
+    padding: 45px 0;
+  }
 
   .form-section {
     border-top: 1px solid @gray2;
@@ -137,7 +142,8 @@
 }
 
 .modal-footer {
-  padding: 15px 45px 0;
+  padding: 15px 0;
+  margin: 0 45px;
   border-top: 1px solid @gray2;
 
   .before-submit-text {
@@ -171,14 +177,6 @@
 
   .modal-dialog, .modal-content {
     height: 100%;
-  }
-
-  .modal-body {
-    padding: 0 45px;
-
-    .content {
-      padding: 45px 0;
-    }
   }
 }
 
