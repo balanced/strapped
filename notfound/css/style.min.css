@@ -11396,6 +11396,10 @@ table.items .align-right {
 .modal-body {
   overflow-y: auto;
   margin: 0;
+  padding: 0 45px;
+}
+.modal-body .content {
+  padding: 45px 0;
 }
 .modal-body .form-section {
   border-top: 1px solid #d2d6d9;
@@ -11444,7 +11448,8 @@ table.items .align-right {
   margin-right: -2px;
 }
 .modal-footer {
-  padding: 15px 45px 0;
+  padding: 15px 0;
+  margin: 0 45px;
   border-top: 1px solid #d2d6d9;
 }
 .modal-footer .before-submit-text {
@@ -11476,12 +11481,6 @@ table.items .align-right {
 .half-screen-modal .modal-dialog,
 .half-screen-modal .modal-content {
   height: 100%;
-}
-.half-screen-modal .modal-body {
-  padding: 0 45px;
-}
-.half-screen-modal .modal-body .content {
-  padding: 45px 0;
 }
 #next-step .form-section:last-of-type {
   border-bottom: 1px solid #d2d6d9;

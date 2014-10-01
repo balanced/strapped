@@ -11,15 +11,6 @@
   }
 }
 
-@modalWidth: 600px;
-
-.modal {
-  width: @modalWidth;
-  margin-left: -@modalWidth / 2;
-  top: 10%;
-  left: 50%;
-}
-
 .modal-dialog {
   margin: 0;
 }
@@ -155,6 +146,14 @@
   .btn + .btn {
     margin-left: 0;
   }
+}
+
+@modalWidth: 600px;
+.wide-modal {
+  width: @modalWidth;
+  margin-left: -@modalWidth / 2;
+  top: 10%;
+  left: 50%;
 }
 
 .half-screen-modal {
