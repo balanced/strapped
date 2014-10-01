@@ -1,0 +1,299 @@
+/*
+* modals.less
+*
+*/
+
+.modal-backdrop {
+  &.results-backdrop {
+    left: 180px;
+    z-index: 1;
+    display: none;
+  }
+}
+
+@modalWidth: 600px;
+
+.modal {
+  width: @modalWidth;
+  margin-left: -@modalWidth / 2;
+  top: 10%;
+  left: 50%;
+}
+
+.modal-dialog {
+  margin: 0;
+}
+
+.modal-content {
+  border-radius: 0;
+  border: none;
+  .box-shadow(none);
+}
+
+.modal-header {
+  position: relative;
+  padding: 70px 45px 15px;
+  background-color: transparent;
+  border-bottom: none;
+
+  .balanced-logo-24 {
+    background-image: url('/images/logo_3dots.png');
+    background-size: 30px 27px;
+    width: 30px;
+    height: 27px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+
+  .close {
+    font-size: 20px;
+    line-height: 26px;
+    color: @gray2;
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    opacity: 1;
+    padding: 4px 8px 0 8px;
+
+    &:hover {
+      color: @black;
+    }
+  }
+
+  h2 {
+    .sl-lg-sb;
+    padding: 0;
+    margin: 0;
+  }
+
+  p.description {
+    .sl-20;
+    color: @gray6;
+    padding: 30px 0 60px;
+  }
+
+  h3 {
+    .sl-16-sb;
+  }
+}
+
+.modal-body {
+  overflow-y: auto;
+  margin: 0;
+
+  .form-section {
+    border-top: 1px solid @gray2;
+
+    h3 {
+      .sl-sb;
+      margin: 10px 0;
+    }
+
+    .description {
+      color: @gray6;
+      margin: 15px 0 60px;
+
+      ul {
+        .sl-note;
+        color: @gray8;
+        margin-left: 25px;
+
+        li {
+          list-style: disc;
+          padding: 3px 0;
+        }
+      }
+    }
+  }
+
+  .row-full {
+    margin-left: -35px;
+    margin-right: -35px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .modal-content {
+    padding: 45px;
+
+    &.no-top-content {
+      padding-top: 0;
+    }
+    &.no-bottom-content {
+      padding-bottom: 0;
+    }
+    input {
+      &.half {
+        width: 155px;
+
+        &.pull-right {
+          margin-right: -2px;
+        }
+      }
+    }
+  }
+}
+
+.modal-footer {
+  padding: 15px 45px 0;
+  border-top: 1px solid @gray2;
+
+  .before-submit-text {
+    font-size: 12px;
+    float: left;
+    margin: 6px 0;
+  }
+
+  .btn + .btn {
+    margin-left: 0;
+  }
+}
+
+.half-screen-modal {
+  overflow: auto;
+  right: 0;
+  top: 0;
+  left: calc(~"100% - 704px");
+
+  h2 {
+    .sl-lg-sb;
+    padding: 0;
+    margin: 40px 0 0 0;
+  }
+
+  .modal-dialog {
+    background-color: @white;
+    width: 704px;
+    margin: 0;
+  }
+
+  .modal-dialog, .modal-content {
+    height: 100%;
+  }
+
+  .modal-body {
+    padding: 0 45px;
+
+    .content {
+      padding: 45px 0;
+    }
+  }
+}
+
+#next-step {
+  .form-section:last-of-type {
+    border-bottom: 1px solid @gray2;
+  }
+}
+
+#verify-bank-account {
+  .row-borders {
+    border-top: 1px solid @gray4;
+    border-bottom: 1px solid @gray4;
+  }
+
+  .row-pad {
+    padding: 20px;
+
+    p:last-of-type {
+      margin: 0px;
+    }
+
+    p.label1a {
+      margin-bottom: 20px;
+    }
+  }
+
+  .row-full {
+    min-height: 50px;
+  }
+}
+
+#confirm-verification {
+  .row-borders {
+    border-top: 1px solid @gray4;
+    border-bottom: 1px solid @gray4;
+  }
+
+  .row-pad {
+    padding: 20px;
+
+    p:last-of-type {
+      margin: 0px;
+    }
+
+    p.label1a {
+      margin-bottom: 20px;
+    }
+  }
+
+  #verification-attempts {
+    background-color: @gray2;
+
+    .label1a {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+#evidence-portal {
+  textarea {
+    height: 120px;
+  }
+
+  .fileinput-button {
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    input#fileupload {
+      position: absolute;
+      right: 0;
+      top: 0;
+      opacity: 0;
+      width: 135px;
+      height: 32px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  td {
+    position: relative;
+
+    .loader-container {
+      position: absolute;
+      top: 10px;
+    }
+
+    > span {
+      padding: 0;
+      display: block;
+      line-height: 46px;
+    }
+  }
+}
+
+/* Responsive (special case) */
+
+@media (max-width: 979px) {
+  .modal.full-screen-modal,
+  .modal.full-screen-modal.container,
+  .modal.full-screen-modal.modal-overflow   {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .modal.half-screen-modal,
+  .modal.half-screen-modal.container,
+  .modal.half-screen-modal.modal-overflow   {
+    position: fixed;
+    height: 100% !important;
+  }
+}
