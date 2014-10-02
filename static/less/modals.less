@@ -14,145 +14,150 @@
 .modal {
   top: 10%;
   left: 50%;
-}
 
-.modal-dialog {
-  margin: 0;
-}
-
-.modal-content {
-  border-radius: 0;
-  border: none;
-  .box-shadow(none);
-}
-
-.modal-header {
-  position: relative;
-  padding: 70px 45px 15px;
-  background-color: transparent;
-  border-bottom: none;
-
-  .balanced-logo-24 {
-    background-image: url('/images/logo_3dots.png');
-    background-size: 30px 27px;
-    width: 30px;
-    height: 27px;
-    margin-top: 20px;
-    margin-bottom: -10px;
-  }
-
-  .close {
-    font-size: 20px;
-    line-height: 26px;
-    color: @gray2;
-    background-color: transparent;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    border: none;
-    opacity: 1;
-    padding: 4px 8px 0 8px;
-
-    &:hover {
-      color: @black;
-    }
-  }
-
-  h2 {
-    .sl-lg-sb;
-    padding: 0;
+  .modal-dialog {
     margin: 0;
   }
 
-  p.description {
-    .sl-20;
-    color: @gray6;
-    padding: 30px 0 60px;
+  .modal-content {
+    border-radius: 0;
+    border: none;
+    .box-shadow(none);
   }
 
-  h3 {
-    .sl-16-sb;
-  }
-}
-
-.modal-body {
-  overflow-y: auto;
-  margin: 0;
-  padding: 0 45px;
-
-  .content {
-    padding: 45px 0;
+  form {
+    background-color: @white;
   }
 
-  .form-section {
-    border-top: 1px solid @gray2;
+  .modal-header {
+    position: relative;
+    padding: 70px 45px 15px;
+    background-color: transparent;
+    border-bottom: none;
+
+    .balanced-logo-24 {
+      background-image: url('/images/logo_3dots.png');
+      background-size: 30px 27px;
+      width: 30px;
+      height: 27px;
+      margin-top: 20px;
+      margin-bottom: -10px;
+    }
+
+    .close {
+      font-size: 20px;
+      line-height: 26px;
+      color: @gray2;
+      background-color: transparent;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      border: none;
+      opacity: 1;
+      padding: 4px 8px 0 8px;
+
+      &:hover {
+        color: @black;
+      }
+    }
+
+    h2 {
+      .sl-lg-sb;
+      padding: 0;
+      margin: 0;
+    }
+
+    p.description {
+      .sl-20;
+      color: @gray6;
+      padding: 30px 0 60px;
+    }
 
     h3 {
-      .sl-sb;
-      margin: 10px 0;
+      .sl-16-sb;
+    }
+  }
+
+  .modal-body {
+    overflow-y: auto;
+    margin: 0;
+    padding: 0 45px;
+
+    .content {
+      padding: 45px 0;
     }
 
-    .description {
-      color: @gray6;
-      margin: 15px 0 60px;
+    .form-section {
+      border-top: 1px solid @gray2;
 
-      ul {
-        .sl-note;
-        color: @gray8;
-        margin-left: 25px;
+      h3 {
+        .sl-sb;
+        margin: 10px 0;
+      }
 
-        li {
-          list-style: disc;
-          padding: 3px 0;
+      .description {
+        color: @gray6;
+        margin: 15px 0 60px;
+
+        ul {
+          .sl-note;
+          color: @gray8;
+          margin-left: 25px;
+
+          li {
+            list-style: disc;
+            padding: 3px 0;
+          }
+        }
+      }
+    }
+
+    .row-full {
+      margin-left: -35px;
+      margin-right: -35px;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+
+    .modal-content {
+      padding: 45px;
+
+      &.no-top-content {
+        padding-top: 0;
+      }
+      &.no-bottom-content {
+        padding-bottom: 0;
+      }
+      input {
+        &.half {
+          width: 155px;
+
+          &.pull-right {
+            margin-right: -2px;
+          }
         }
       }
     }
   }
 
-  .row-full {
-    margin-left: -35px;
-    margin-right: -35px;
-    padding-left: 35px;
-    padding-right: 35px;
-  }
+  .modal-footer {
+    padding: 15px 0;
+    margin: 0 45px;
+    border-top: 1px solid @gray2;
 
-  .modal-content {
-    padding: 45px;
-
-    &.no-top-content {
-      padding-top: 0;
+    .before-submit-text {
+      font-size: 12px;
+      float: left;
+      margin: 6px 0;
     }
-    &.no-bottom-content {
-      padding-bottom: 0;
-    }
-    input {
-      &.half {
-        width: 155px;
 
-        &.pull-right {
-          margin-right: -2px;
-        }
-      }
+    .btn + .btn {
+      margin-left: 0;
     }
   }
 }
 
-.modal-footer {
-  padding: 15px 0;
-  margin: 0 45px;
-  border-top: 1px solid @gray2;
-
-  .before-submit-text {
-    font-size: 12px;
-    float: left;
-    margin: 6px 0;
-  }
-
-  .btn + .btn {
-    margin-left: 0;
-  }
-}
-
+// custom modal styles
 @modalWidth: 600px;
 .wide-modal {
   width: @modalWidth;
