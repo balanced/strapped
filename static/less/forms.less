@@ -109,33 +109,6 @@ a {
     }
   }
 
-  &.btn-link {
-    .sl-sm-sb;
-    background-color: transparent;
-    border: 3px solid transparent;
-    color: @persianBlue60;
-    display: inline-block;
-    letter-spacing: 0;
-    height: 30px;
-    padding: 0 13px;
-    text-align: center;
-    text-transform: none;
-
-    &:hover {
-      background-color: inherit;
-      color: @black !important;
-    }
-
-    [class^="icon-"] {
-      color: @persianBlue60;
-
-      &:hover {
-        color: @persianBlue100;
-        text-decoration: none;
-      }
-    }
-  }
-
   &.special {
     .sl-sb;
     color: @white;
@@ -152,11 +125,27 @@ a {
 }
 
 .btn-link {
+  .sl-sm-sb;
+  color: @persianBlue60;
+  background-color: transparent;
+  border: none;
   height: 30px;
   padding-left: 20px;
+  padding-right: 0;
 
-  i {
+  &:hover {
+    background-color: inherit;
+    color: @persianBlue100;
+  }
+
+  [class^="icon-"] {
+    color: @persianBlue60;
     vertical-align: text-top;
+
+    &:hover {
+      color: @persianBlue100;
+      text-decoration: none;
+    }
   }
 }
 
