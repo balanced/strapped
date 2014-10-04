@@ -1,6 +1,6 @@
 {
   "name": "strapped",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": [
     "./static/less/strapped.min.css"
   ],
