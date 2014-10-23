@@ -7539,9 +7539,11 @@ body {
   clear: left;
 }
 .card h2 {
-  font: normal normal normal 20px "Proxima Nova Reg", arial, sans-serif;
-  line-height: 28px;
+  font: normal normal normal 16px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 24px;
   color: #000000;
+  line-height: 22px;
+  margin-top: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -7899,11 +7901,23 @@ body {
 .icon-grid:before {
   content: ":";
 }
-.icon-list:before {
-  content: ";";
-}
 .icon-description:before {
   content: "<";
+}
+.icon-transactions:before {
+  content: ";";
+}
+.icon-orders:before {
+  content: "=";
+}
+.icon-status:before {
+  content: ">";
+}
+.icon-overdue:before {
+  content: "?";
+}
+.icon-add:before {
+  content: "@";
 }
 /*
 * animations.less
@@ -10112,34 +10126,6 @@ button.sm {
 button.sm.secondary {
   color: #9196a1;
 }
-.btn.btn-link,
-button.btn-link {
-  font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 16px;
-  color: #000000;
-  background-color: transparent;
-  border: 3px solid transparent;
-  color: #0063b4;
-  display: inline-block;
-  letter-spacing: 0;
-  height: 30px;
-  padding: 0 13px;
-  text-align: center;
-  text-transform: none;
-}
-.btn.btn-link:hover,
-button.btn-link:hover {
-  background-color: inherit;
-  color: #000000 !important;
-}
-.btn.btn-link [class^="icon-"],
-button.btn-link [class^="icon-"] {
-  color: #528dcc;
-}
-.btn.btn-link [class^="icon-"]:hover,
-button.btn-link [class^="icon-"]:hover {
-  color: #0063b4;
-}
 .btn.special,
 button.special {
   font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
@@ -10159,8 +10145,20 @@ button button[disabled] {
   background-color: #bbceeb;
 }
 .btn-link {
+  font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
+  color: #528dcc;
+  background-color: transparent;
+  border: none;
   height: 30px;
   padding-left: 20px;
+  padding-right: 0;
+}
+.btn-link:hover {
+  background-color: inherit;
+  color: #0063b4;
+  text-decoration: none;
 }
 .btn-link i {
   vertical-align: text-top;
@@ -10618,13 +10616,13 @@ form .input-prepend .add-on {
   font: normal normal normal 16px "Proxima Nova Reg", arial, sans-serif;
   line-height: 24px;
   color: #000000;
-  color: #ffffff;
   height: 36px;
-  min-width: 16px;
-  line-height: 1.7;
+  line-height: 34px;
+  display: inline-block;
+  border: 1px solid #d2d6d9;
   border-radius: 0;
-  background-color: #000000;
-  border-color: #000000;
+  padding: 0 10px;
+  margin-right: -5px;
 }
 form .input-append .add-on:first-child,
 form .input-prepend .add-on:first-child {
@@ -10921,16 +10919,16 @@ pre {
   color: #000000;
   font: normal normal normal 150px "Proxima Nova Bold", arial, sans-serif;
 }
-.num-danger {
+.danger {
   color: #e71d1c;
 }
-.num-success {
+.success {
   color: #4bb2a4;
 }
-.num-disabled {
+.disabled {
   color: #757c87;
 }
-.num-light {
+.light {
   color: #b1b9bd;
 }
 .tb,
@@ -11328,15 +11326,13 @@ table.items .align-right {
   display: none;
 }
 .modal {
-  width: 600px;
-  margin-left: -300px;
   top: 10%;
   left: 50%;
 }
-.modal-dialog {
+.modal .modal-dialog {
   margin: 0;
 }
-.modal-content {
+.modal .modal-content {
   border-radius: 0;
   border: none;
   -webkit-box-shadow: none;
@@ -11345,13 +11341,16 @@ table.items .align-right {
   -moz-box-shadow: none 0px 3px #999999;
   box-shadow: none 0px 3px #999999;
 }
-.modal-header {
+.modal form {
+  background-color: #ffffff;
+}
+.modal .modal-header {
   position: relative;
   padding: 70px 45px 15px;
   background-color: transparent;
   border-bottom: none;
 }
-.modal-header .balanced-logo-24 {
+.modal .modal-header .balanced-logo-24 {
   background-image: url('/images/logo_3dots.png');
   background-size: 30px 27px;
   width: 30px;
@@ -11359,7 +11358,7 @@ table.items .align-right {
   margin-top: 20px;
   margin-bottom: -10px;
 }
-.modal-header .close {
+.modal .modal-header .close {
   font-size: 20px;
   line-height: 26px;
   color: #d2d6d9;
@@ -11371,50 +11370,51 @@ table.items .align-right {
   opacity: 1;
   padding: 4px 8px 0 8px;
 }
-.modal-header .close:hover {
+.modal .modal-header .close:hover {
   color: #000000;
 }
-.modal-header h2 {
+.modal .modal-header h2 {
   font: normal normal normal 32px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 40px;
   color: #000000;
   padding: 0;
   margin: 0;
 }
-.modal-header p.description {
+.modal .modal-header p.description {
   font: normal normal normal 20px "Proxima Nova Reg", arial, sans-serif;
   line-height: 28px;
   color: #000000;
   color: #59606b;
   padding: 30px 0 60px;
 }
-.modal-header h3 {
+.modal .modal-header h3 {
   font: normal normal normal 16px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 24px;
   color: #000000;
 }
-.modal-body {
+.modal .modal-body {
   overflow-y: auto;
   margin: 0;
   padding: 0 45px;
 }
-.modal-body .content {
+.modal .modal-body .content {
   padding: 45px 0;
 }
-.modal-body .form-section {
+.modal .modal-body .form-section {
   border-top: 1px solid #d2d6d9;
 }
-.modal-body .form-section h3 {
+.modal .modal-body .form-section h3 {
   font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
   line-height: 20px;
   color: #000000;
   margin: 10px 0;
 }
-.modal-body .form-section .description {
+.modal .modal-body .form-section .description {
   color: #59606b;
   margin: 15px 0 60px;
+  padding: 0;
 }
-.modal-body .form-section .description ul {
+.modal .modal-body .form-section .description ul {
   font: normal normal normal 12px "Proxima Nova Reg", arial, sans-serif;
   line-height: 16px;
   color: #000000;
@@ -11422,43 +11422,47 @@ table.items .align-right {
   color: #303540;
   margin-left: 25px;
 }
-.modal-body .form-section .description ul li {
+.modal .modal-body .form-section .description ul li {
   list-style: disc;
   padding: 3px 0;
 }
-.modal-body .row-full {
+.modal .modal-body .row-full {
   margin-left: -35px;
   margin-right: -35px;
   padding-left: 35px;
   padding-right: 35px;
 }
-.modal-body .modal-content {
+.modal .modal-body .modal-content {
   padding: 45px;
 }
-.modal-body .modal-content.no-top-content {
+.modal .modal-body .modal-content.no-top-content {
   padding-top: 0;
 }
-.modal-body .modal-content.no-bottom-content {
+.modal .modal-body .modal-content.no-bottom-content {
   padding-bottom: 0;
 }
-.modal-body .modal-content input.half {
+.modal .modal-body .modal-content input.half {
   width: 155px;
 }
-.modal-body .modal-content input.half.pull-right {
+.modal .modal-body .modal-content input.half.pull-right {
   margin-right: -2px;
 }
-.modal-footer {
+.modal .modal-footer {
   padding: 15px 0;
   margin: 0 45px;
   border-top: 1px solid #d2d6d9;
 }
-.modal-footer .before-submit-text {
+.modal .modal-footer .before-submit-text {
   font-size: 12px;
   float: left;
   margin: 6px 0;
 }
-.modal-footer .btn + .btn {
+.modal .modal-footer .btn + .btn {
   margin-left: 0;
+}
+.wide-modal {
+  width: 600px;
+  margin-left: -300px;
 }
 .half-screen-modal {
   overflow: auto;
