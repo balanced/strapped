@@ -275,7 +275,7 @@ body {
   height: 180px;
   display: inline-block;
 
-  a {
+  & > a {
     width: 100%;
     height: 100%;
     display: inline-block;
@@ -293,6 +293,27 @@ body {
   &:nth-of-type(4n+1) {
     margin-left: 0;
     clear: left;
+  }
+
+  .overdue {
+    position: absolute;
+    top: 1px;
+    right: 16px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 30px 0;
+    border-color: transparent @imperialRed10 transparent transparent;
+    z-index: 1;
+
+    i.icon-overdue {
+      font-size: 12px;
+      color: @imperialRed80;
+      position: absolute;
+      top: 1px;
+      right: -27px;
+      z-index: 2;
+    }
   }
 
   h2 {
