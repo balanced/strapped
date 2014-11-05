@@ -7520,23 +7520,47 @@ body {
   color: #ffffff;
 }
 .card {
-  margin-right: 15px;
+  padding-left: 0;
+  margin-right: 0;
   margin-bottom: 15px;
-  padding: 15px;
-  width: calc(25% - 15px);
   height: 180px;
-  float: left;
+  display: inline-block;
+}
+.card > a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 15px;
   background-color: #ffffff;
   border: 1px solid #d2d6d9;
   position: relative;
 }
-.card:hover {
+.card > a:hover {
   cursor: pointer;
   background-color: #eef2fa;
 }
 .card:nth-of-type(4n+1) {
   margin-left: 0;
   clear: left;
+}
+.card .overdue {
+  position: absolute;
+  top: 1px;
+  right: 16px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 30px 30px 0;
+  border-color: transparent #fee8dc transparent transparent;
+  z-index: 1;
+}
+.card .overdue i.icon-overdue {
+  font-size: 12px;
+  color: #ec4e33;
+  position: absolute;
+  top: 1px;
+  right: -27px;
+  z-index: 2;
 }
 .card h2 {
   font: normal normal normal 16px "Proxima Nova Semi Bold", arial, sans-serif;
@@ -11145,12 +11169,12 @@ table.items.side {
 table.items.non-interactive tbody tr:hover,
 table.items.non-interactive tfoot tr:hover {
   cursor: auto;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 table.items tbody tr,
 table.items tfoot tr {
   border-bottom: 1px solid #d2d6d9;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 table.items tbody tr:hover,
 table.items tfoot tr:hover {
@@ -11159,7 +11183,7 @@ table.items tfoot tr:hover {
 }
 table.items tbody tr:hover .no-results,
 table.items tfoot tr:hover .no-results {
-  background-color: #ffffff;
+  background-color: transparent;
 }
 table.items tbody tr td,
 table.items tfoot tr td,
@@ -11269,7 +11293,7 @@ table.items tfoot tr td.label4a.black {
   color: #000000;
 }
 table.items tfoot tr:hover {
-  background-color: #ffffff;
+  background-color: transparent;
   cursor: default;
 }
 table.items tfoot tr.load-more-results {
