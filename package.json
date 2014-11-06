@@ -1,6 +1,6 @@
 {
   "name": "strapped",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "**Strapped** is Bootstrapped less / js for Balanced.",
   "main": "Gruntfile.js",
   "scripts": {
