@@ -1,5 +1,5 @@
 /*
-* grids.less
+* _scaffolding.less
 *
 */
 
@@ -248,23 +248,18 @@ body {
 
 }
 
-.nav-tabs {
-  border-bottom: 4px solid @gray6;
-  margin-left: -45px;
-  margin-right: -45px;
+.cards-container {
+  margin: 0 -45px -45px;
+  min-height: 390px;
+  background-color: @white;
 
-  li {
-    display: inline-block;
-    padding: 5px 10px;
+  .results {
+    padding: 45px 45px 35px 45px;
+    margin-bottom: -45px;
+  }
 
-    &:first-of-type {
-      margin-left: 45px;
-    }
-
-    &.active {
-      background-color: @gray6;
-      color: @white;
-    }
+  .cards {
+    margin-right: -15px;
   }
 }
 
@@ -343,3 +338,4 @@ body {
     }
   }
 }
+
