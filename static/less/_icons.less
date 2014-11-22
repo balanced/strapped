@@ -39,10 +39,14 @@
 }
 
 // Default icon style
+img, .img {
+  .crisp-edges();
+}
 
 [class^="icon-"] {
   color: @gray4;
   vertical-align: sub;
+  .crisp-edges();
 
   &:not(.non-interactive):hover {
     color: @black;
