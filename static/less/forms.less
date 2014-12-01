@@ -41,6 +41,10 @@ a {
     text-decoration: none;
   }
 
+  &:focus {
+    text-decoration: none;
+  }
+
   &:active {
     color: @persianBlue100;
   }
@@ -569,16 +573,14 @@ form {
   }
 
   input[type="radio"] {
-    margin: 0;
+    margin: 5px 0 10px;
   }
 
   .radio-label {
     .sl;
-    display: inline;
-    padding: 0px 15px 0px 5px;
-    &:after {
-      content: '';
-      padding-right: 0px;
+
+    input[type="radio"] {
+      margin-right: 5px;
     }
   }
 
