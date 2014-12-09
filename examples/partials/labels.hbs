@@ -1,0 +1,69 @@
+<div id="components" class="strapped-example">
+  <h2>Labels</h2>
+  <h3>Headers and special cases</h3>
+  <div class="strapped-preview">
+    {{#each headers}}
+      <div class="{{this}}">{{this}}</div>
+    {{/each}}
+    {{#each special}}
+      <div class="{{this}}">{{this}}</div>
+    {{/each}}
+  </div>
+  <h3>Font styles</h3>
+  <div class="strapped-preview">
+    <table class="items non-interactive">
+      <thead>
+        <th><span></span></th>
+        <th><span>Default</span></th>
+        <th><span>Semi-bold</span></th>
+        <th><span>Bold</span></th>
+        <th><span>Light</span></th>
+        <th><span>Italic</span></th>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="sl-20-sb light"><span>sl-12 (sl-sm)</span></td>
+          {{#each size-12}}
+            <td class="{{this}}"><span>{{this}}</span></td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td class="sl-20-sb light"><span>sl-14 (sl)</span></td>
+          {{#each size-14}}
+            <td class="{{this}}"><span>{{this}}</span></td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td class="sl-20-sb light"><span>sl-16 (sl-md)</span></td>
+          {{#each size-16}}
+            <td class="{{this}}"><span>{{this}}</span></td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td class="sl-20-sb light"><span>sl-20</span></td>
+          {{#each size-20}}
+            <td class="{{this}}"><span>{{this}}</span></td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td class="sl-20-sb light"><span>sl-24</span></td>
+          {{#each size-24}}
+            <td class="{{this}}"><span>{{this}}</span></td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td class="sl-20-sb light"><span>sl-32 (sl-lg)</span></td>
+          {{#each size-32}}
+            <td class="{{this}}"><span>{{this}}</span></td>
+          {{/each}}
+        </tr>
+        <tr>
+          <td class="sl-20-sb light"><span>sl-44</span></td>
+          {{#each size-44}}
+            <td class="{{this}}"><span>{{this}}</span></td>
+          {{/each}}
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

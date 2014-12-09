@@ -47,19 +47,19 @@ module.exports = function(grunt) {
 		},
 
 		copy: {
-      bootstrap: {
-        files: [{
-          cwd: 'bower_components/bootstrap/less',
-          expand: true,
-          src: ['**'],
-          dest: 'static/less/bootstrap'
-        }, {
-          cwd: 'bower_components/bootstrap/js',
-          expand: true,
-          src: ['**'],
-          dest: 'static/js/bootstrap'
-        }]
-      },
+			bootstrap: {
+				files: [{
+					cwd: 'bower_components/bootstrap/less',
+					expand: true,
+					src: ['**'],
+					dest: 'static/less/bootstrap'
+				}, {
+					cwd: 'bower_components/bootstrap/js',
+					expand: true,
+					src: ['**'],
+					dest: 'static/js/bootstrap'
+				}]
+			},
 			fonts: {
 				files: [{
 					cwd: 'static/fonts',
@@ -82,12 +82,12 @@ module.exports = function(grunt) {
 					expand: true,
 					src: ['**'],
 					dest: 'notfound/images'
-				},{
+				}, {
 					cwd: 'examples/css',
 					expand: true,
 					src: ['**.min.css'],
 					dest: 'notfound/css'
-				},{
+				}, {
 					cwd: 'static/fonts',
 					expand: true,
 					src: ['**'],
@@ -162,8 +162,8 @@ module.exports = function(grunt) {
 			options: {
 				files: ['package.json', 'bower.json'],
 				createTag: true,
-			    tagName: 'v%VERSION%',
-			    tagMessage: 'Version v%VERSION%',
+				tagName: 'v%VERSION%',
+				tagMessage: 'Version v%VERSION%',
 				commit: true,
 				commitFiles: ['-a'],
 				commitMessage: 'Release v%VERSION%',

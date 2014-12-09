@@ -5,19 +5,19 @@ $(document).ready(function() {
 		$($(this).attr('href'))[0].scrollIntoView();
 		scrollBy(0, -54);
 	});
-	
+
 	// colors
 	$('.hex').each(function(index, div) {
 		var rgb = $(div).closest('.item').css('backgroundColor');
 		$(div).text(rgb2hex(rgb).toUpperCase());
 	});
 
-	var lightBg = ['20', '40', 'y3', 'y2', 'y1', 'te'];
+	var lightBg = ['e5', '10', '20', '40', 'y3', 'y2', 'y1', 'te']; // 5, 10, 20, 40, light gray, white
 
 	$('.property > .name').each(function (index, name){
 		var colorName = $(name).text();
 		var colorLevel = colorName.substr(colorName.length - 2);
-		
+
 		if (colorName == 'gray6') {
 			$(name).closest('.item').css('boxShadow', 'inset 0 0 0 3px #000');
 			$(name).closest('.item').append('<div class="tag">body text</div>')

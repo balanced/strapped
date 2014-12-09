@@ -7298,7 +7298,7 @@ button.close {
   src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url(https://themes.googleusercontent.com/static/fonts/inconsolata/v6/AIed271kqQlcIRSOnQH0yRbnBKKEOwRKgsHDreGcocg.woff) format('woff');
 }
 /*
-* grids.less
+* _scaffolding.less
 *
 */
 *,
@@ -7466,7 +7466,7 @@ body {
   margin-left: -45px;
   margin-right: -45px;
   margin-bottom: -45px;
-  background-color: #f0f1f2;
+  background-color: #f7f9f9;
   position: relative;
 }
 .body-panel:before {
@@ -7489,7 +7489,7 @@ body {
 }
 .body-panel .side-panel {
   position: absolute;
-  background-color: #f0f1f2;
+  background-color: #f7f9f9;
   min-height: 490px;
   border-right: 1px solid #d2d6d9;
   width: 345px;
@@ -7503,21 +7503,17 @@ body {
   float: left;
   margin: 0 10px 10px 0;
 }
-.nav-tabs {
-  border-bottom: 4px solid #59606b;
-  margin-left: -45px;
-  margin-right: -45px;
+.cards-container {
+  margin: 0 -45px -45px;
+  min-height: 390px;
+  background-color: #ffffff;
 }
-.nav-tabs li {
-  display: inline-block;
-  padding: 5px 10px;
+.cards-container .results {
+  padding: 45px 45px 35px 45px;
+  margin-bottom: -45px;
 }
-.nav-tabs li:first-of-type {
-  margin-left: 45px;
-}
-.nav-tabs li.active {
-  background-color: #59606b;
-  color: #ffffff;
+.cards-container .cards {
+  margin-right: -15px;
 }
 .card {
   padding-left: 0;
@@ -7537,7 +7533,7 @@ body {
 }
 .card > a:hover {
   cursor: pointer;
-  background-color: #eef2fa;
+  background-color: #e0e9f6;
 }
 .card:nth-of-type(4n+1) {
   margin-left: 0;
@@ -7573,6 +7569,7 @@ body {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  overflow-wrap: break-word;
 }
 .card .amount {
   position: absolute;
@@ -7624,9 +7621,22 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+img,
+.img {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
 [class^="icon-"] {
   color: #9196a1;
   vertical-align: sub;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 [class^="icon-"]:not(.non-interactive):hover {
   color: #000000;
@@ -7712,18 +7722,6 @@ body {
 .icon-balanced-logo-horizontal:before {
   content: "g";
 }
-.icon-business:before {
-  content: "h";
-}
-.icon-carat-down:before {
-  content: "i";
-}
-.icon-carat-right:before {
-  content: "j";
-}
-.icon-carat-up:before {
-  content: "k";
-}
 .icon-docs:before {
   content: "l";
 }
@@ -7748,20 +7746,8 @@ body {
 .icon-navigation-arrow-forward:before {
   content: "s";
 }
-.icon-small-x:before {
-  content: "t";
-}
 .icon-notification:before {
   content: "u";
-}
-.icon-order:before {
-  content: "v";
-}
-.icon-person:before {
-  content: "w";
-}
-.icon-plus-sign:before {
-  content: "x";
 }
 .icon-productionmp:before {
   content: "y";
@@ -7922,9 +7908,6 @@ body {
 .icon-unlinked:before {
   content: "/";
 }
-.icon-grid:before {
-  content: ":";
-}
 .icon-description:before {
   content: "<";
 }
@@ -7942,6 +7925,9 @@ body {
 }
 .icon-add:before {
   content: "@";
+}
+.icon-sad-face:before {
+  content: "[";
 }
 /*
 * animations.less
@@ -10053,6 +10039,8 @@ a {
   transition: color;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
+  margin: 0;
+  padding: 0;
 }
 a.sm {
   font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
@@ -10072,6 +10060,9 @@ a:visited {
 a:hover {
   cursor: pointer;
   color: #0063b4;
+  text-decoration: none;
+}
+a:focus {
   text-decoration: none;
 }
 a:active {
@@ -10126,7 +10117,7 @@ button:focus {
 button.secondary {
   color: #9196a1;
   border-color: #d2d6d9;
-  background-color: #f0f1f2;
+  background-color: #f7f9f9;
 }
 .btn.secondary:visited,
 button.secondary:visited {
@@ -10186,6 +10177,9 @@ button button[disabled] {
 }
 .btn-link i {
   vertical-align: text-top;
+}
+.btn-link i.icon {
+  margin-right: 5px;
 }
 .dropdown {
   display: block;
@@ -10366,7 +10360,7 @@ button button[disabled] {
 }
 .dropdown.action.open,
 .dropdown.action .dropdown-toggle:hover {
-  background-color: #f0f1f2;
+  background-color: #f7f9f9;
 }
 .dropdown.borderless {
   height: 34px;
@@ -10483,7 +10477,7 @@ button button[disabled] {
 }
 .dropdown.date.open,
 .dropdown.date .dropdown-toggle:hover {
-  background-color: #f0f1f2;
+  background-color: #f7f9f9;
 }
 .dropdown.date .dropdown-menu {
   min-width: 230px;
@@ -10622,18 +10616,15 @@ form input[type="color"][disabled] {
   color: #d2d6d9;
 }
 form input[type="radio"] {
-  margin: 0;
+  margin: 5px 0 10px;
 }
 form .radio-label {
   font: normal normal normal 14px "Proxima Nova Reg", arial, sans-serif;
   line-height: 20px;
   color: #000000;
-  display: inline;
-  padding: 0px 15px 0px 5px;
 }
-form .radio-label:after {
-  content: '';
-  padding-right: 0px;
+form .radio-label input[type="radio"] {
+  margin-right: 5px;
 }
 form .input-append .add-on,
 form .input-prepend .add-on {
@@ -10653,6 +10644,109 @@ form .input-prepend .add-on:first-child {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+}
+/*
+* navs.less
+*
+*/
+.nav-tabs {
+  display: block;
+  border-bottom: 1px solid #d2d6d9;
+  margin-left: -45px;
+  margin-right: -45px;
+  margin-top: -45px;
+  margin-bottom: 45px;
+}
+.nav-tabs:before,
+.nav-tabs:after {
+  content: " ";
+  display: table;
+}
+.nav-tabs:after {
+  clear: both;
+}
+.nav-tabs:before,
+.nav-tabs:after {
+  content: " ";
+  display: table;
+}
+.nav-tabs:after {
+  clear: both;
+}
+.nav-tabs li {
+  padding: 0;
+}
+.nav-tabs li:first-of-type {
+  margin-left: 45px;
+}
+.nav-tabs li a {
+  color: #9196a1;
+  padding: 12px 20px;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: none;
+  border: none;
+  margin: 0;
+  border-bottom: 4px solid transparent;
+}
+.nav-tabs li a.balance {
+  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 20px;
+  color: #000000;
+  padding-left: 0;
+}
+.nav-tabs li a.balance:hover {
+  border-bottom: 4px solid transparent;
+}
+.nav-tabs li a.active {
+  border-bottom: 4px solid #000000;
+  color: #000000;
+}
+.nav-tabs li a:hover {
+  color: #000000;
+  border-color: transparent;
+}
+.nav-tabs li a:hover.active {
+  border-color: #000000;
+}
+.nav-pills {
+  float: left;
+}
+.nav-pills > li > a {
+  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 20px;
+  color: #000000;
+  color: #9196a1;
+  background-color: #ffffff;
+  border: 1px solid #d2d6d9;
+  padding: 5px 10px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.nav-pills > li > a [class^="icon-"] {
+  color: #9196a1;
+}
+.nav-pills > li > a span {
+  vertical-align: middle;
+}
+.nav-pills > li > a:hover {
+  background-color: #f7f9f9;
+  color: #000000;
+}
+.nav-pills > li > a:hover [class^="icon-"] {
+  color: #000000;
+}
+.nav-pills > li > a.active {
+  background-color: #434854;
+  border: 1px solid #434854;
+  color: #ffffff;
+}
+.nav-pills > li > a.active [class^="icon-"] {
+  color: #ffffff;
+}
+.nav-pills > li + li {
+  margin-left: -1px;
 }
 /*
 * labels.less
@@ -10748,7 +10842,7 @@ body {
 .sl-md-i,
 .sl-16-i,
 .strapped-label-medium-italic {
-  font: normal normal normal 16px "Proxima Nova Reg", arial, sans-serif;
+  font: normal normal normal 16px "Plantin Italic", arial, sans-serif;
   line-height: 24px;
   color: #000000;
 }
@@ -11130,7 +11224,7 @@ table.items thead {
   float: none;
   padding: 0px 10px;
   border-top: 1px solid #d2d6d9;
-  background-color: #f0f1f2;
+  background-color: #f7f9f9;
   border-bottom: 1px solid #d2d6d9;
   text-align: left;
 }
@@ -11179,7 +11273,7 @@ table.items tfoot tr {
 table.items tbody tr:hover,
 table.items tfoot tr:hover {
   cursor: pointer;
-  background-color: #eef2fa;
+  background-color: #e0e9f6;
 }
 table.items tbody tr:hover .no-results,
 table.items tfoot tr:hover .no-results {
@@ -11204,6 +11298,18 @@ table.items tfoot tr td:first-child {
 table.items tbody tr td:last-child,
 table.items tfoot tr td:last-child {
   padding-right: 25px;
+}
+table.items tbody tr td.wrap-text,
+table.items tfoot tr td.wrap-text {
+  white-space: normal;
+  word-break: break-all;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+table.items tbody tr td.wrap-text > span,
+table.items tfoot tr td.wrap-text > span {
+  white-space: normal;
+  line-height: 22px;
 }
 table.items tbody tr td.no-results,
 table.items tfoot tr td.no-results {
@@ -11310,8 +11416,20 @@ table.items .num,
 table.items .align-right {
   text-align: right;
 }
+.no-results {
+  font: normal normal normal 32px "Proxima Nova Light", arial, sans-serif;
+  line-height: 40px;
+  color: #000000;
+  color: #b1b9bd;
+}
+.no-results i {
+  font-size: 80px;
+  color: #d2d6d9;
+  display: block;
+  margin: 80px 0 20px;
+}
 .panel .panel-heading {
-  background-color: #f0f1f2;
+  background-color: #f7f9f9;
   padding: 55px 15px 10px 15px;
   border-bottom: 1px solid #d2d6d9;
 }
@@ -11380,7 +11498,7 @@ table.items .align-right {
   width: 30px;
   height: 27px;
   margin-top: 20px;
-  margin-bottom: -10px;
+  margin-bottom: 10px;
 }
 .modal .modal-header .close {
   font-size: 20px;
@@ -11508,6 +11626,29 @@ table.items .align-right {
 }
 .half-screen-modal .modal-dialog,
 .half-screen-modal .modal-content {
+  height: 100%;
+}
+.search-screen-modal {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.search-screen-modal .modal-header {
+  padding: 0;
+  margin-left: 180px;
+}
+.search-screen-modal .modal-header .close {
+  right: 15px;
+  top: 15px;
+}
+.search-screen-modal .modal-body {
+  margin-left: 180px;
+  padding: 45px;
   height: 100%;
 }
 #next-step .form-section:last-of-type {
@@ -11737,7 +11878,7 @@ svg.vertical-bar-chart text {
   background-color: #bc8f30;
 }
 .legend-color-guide.series-3 {
-  background-color: #9364a8;
+  background-color: #a57bb7;
 }
 .legend-color-guide.series-4 {
   background-color: #00a08e;
@@ -11812,7 +11953,7 @@ body {
   background: #434854;
 }
 #colors .item {
-  width: 8%;
+  width: 6.5%;
   height: 100px;
   color: #ffffff;
   font-size: 12px;
@@ -11834,11 +11975,12 @@ body {
   font-family: "Proxima Nova Semi Bold", arial, sans-serif;
 }
 #colors .item .tag {
+  font: normal normal normal 12px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 16px;
+  color: #000000;
   position: absolute;
   bottom: 10%;
   left: 10%;
-  font-family: "Proxima Nova Bold", arial, sans-serif;
-  font-size: 14px;
   text-transform: uppercase;
   line-height: 20px;
 }
@@ -11853,35 +11995,59 @@ body {
   z-index: 1000;
   border: 1px solid #000000;
 }
-#colors .mulburryPurple100 {
-  background-color: #ba3f90;
+#colors .plumPurple100 {
+  background-color: #79496a;
 }
-#colors .mulburryPurple80 {
-  background-color: #c461a2;
+#colors .plumPurple80 {
+  background-color: #8d657e;
 }
-#colors .mulburryPurple60 {
-  background-color: #cf82b6;
+#colors .plumPurple60 {
+  background-color: #a48396;
 }
-#colors .mulburryPurple40 {
+#colors .plumPurple40 {
   background-color: #dca7cd;
 }
+#colors .plumPurple20 {
+  background-color: #dacdd4;
+}
+#colors .plumPurple10 {
+  background-color: #eae3e6;
+}
+#colors .mulburryPurple100 {
+  background-color: #a04276;
+}
+#colors .mulburryPurple80 {
+  background-color: #b0628c;
+}
+#colors .mulburryPurple60 {
+  background-color: #c083a4;
+}
+#colors .mulburryPurple40 {
+  background-color: #d2a6bf;
+}
 #colors .mulburryPurple20 {
-  background-color: #eacfe4;
+  background-color: #e5cedc;
+}
+#colors .mulburryPurple10 {
+  background-color: #f0e3eb;
 }
 #colors .byzantiumPurple100 {
-  background-color: #814a98;
+  background-color: #9561a8;
 }
 #colors .byzantiumPurple80 {
-  background-color: #9364a8;
+  background-color: #a57bb7;
 }
 #colors .byzantiumPurple60 {
-  background-color: #a781ba;
+  background-color: #b796c6;
 }
 #colors .byzantiumPurple40 {
-  background-color: #bfa5cf;
+  background-color: #cbb5d8;
 }
 #colors .byzantiumPurple20 {
-  background-color: #dbcde5;
+  background-color: #e2d7ea;
+}
+#colors .byzantiumPurple10 {
+  background-color: #eee8f4;
 }
 #colors .lavenderPurple100 {
   background-color: #6d61a9;
@@ -11898,20 +12064,26 @@ body {
 #colors .lavenderPurple20 {
   background-color: #d6d2ea;
 }
+#colors .lavenderPurple10 {
+  background-color: #ecebf5;
+}
 #colors .powderBlue100 {
-  background-color: #3f6fb8;
+  background-color: #5261ac;
 }
 #colors .powderBlue80 {
-  background-color: #5e83c3;
+  background-color: #7077b9;
 }
 #colors .powderBlue60 {
-  background-color: #7e9ad0;
+  background-color: #8d91c7;
 }
 #colors .powderBlue40 {
-  background-color: #a3b5de;
+  background-color: #aeb0d8;
 }
 #colors .powderBlue20 {
-  background-color: #ccd5ed;
+  background-color: #d2d3ea;
+}
+#colors .powderBlue10 {
+  background-color: #e6e6f4;
 }
 #colors .persianBlue100 {
   background-color: #0063b4;
@@ -11928,6 +12100,12 @@ body {
 #colors .persianBlue20 {
   background-color: #bbceeb;
 }
+#colors .persianBlue10 {
+  background-color: #e0e9f6;
+}
+#colors .persianBlue5 {
+  background-color: #eef2fa;
+}
 #colors .egyptianBlue100 {
   background-color: #4789b0;
 }
@@ -11942,6 +12120,9 @@ body {
 }
 #colors .egyptianBlue20 {
   background-color: #cbdcea;
+}
+#colors .egyptianBlue10 {
+  background-color: #e6eff5;
 }
 #colors .turquoise100 {
   background-color: #2e8289;
@@ -11958,6 +12139,9 @@ body {
 #colors .turquoise20 {
   background-color: #c4dbdd;
 }
+#colors .turquoise10 {
+  background-color: #e3eeee;
+}
 #colors .forestGreen100 {
   background-color: #00927b;
 }
@@ -11972,6 +12156,9 @@ body {
 }
 #colors .forestGreen20 {
   background-color: #bbe0d9;
+}
+#colors .forestGreen10 {
+  background-color: #e0f1ee;
 }
 #colors .pineGreen100 {
   background-color: #00944d;
@@ -11988,6 +12175,27 @@ body {
 #colors .pineGreen20 {
   background-color: #bee0cd;
 }
+#colors .pineGreen10 {
+  background-color: #e2f1e8;
+}
+#colors .mossGreen100 {
+  background-color: #788e1e;
+}
+#colors .mossGreen80 {
+  background-color: #8fa144;
+}
+#colors .mossGreen60 {
+  background-color: #a7b56d;
+}
+#colors .mossGreen40 {
+  background-color: #c1cb97;
+}
+#colors .mossGreen20 {
+  background-color: #dce2c6;
+}
+#colors .mossGreen10 {
+  background-color: #eaeede;
+}
 #colors .curryYellow100 {
   background-color: #b89b08;
 }
@@ -12002,6 +12210,9 @@ body {
 }
 #colors .curryYellow20 {
   background-color: #efe3bb;
+}
+#colors .curryYellow10 {
+  background-color: #f7f1df;
 }
 #colors .turmericYellow100 {
   background-color: #ac7b0d;
@@ -12018,6 +12229,27 @@ body {
 #colors .turmericYellow20 {
   background-color: #ecd9b7;
 }
+#colors .turmericYellow10 {
+  background-color: #f6ecdc;
+}
+#colors .burntOrange100 {
+  background-color: #d06f1a;
+}
+#colors .burntOrange80 {
+  background-color: #d9863f;
+}
+#colors .burntOrange60 {
+  background-color: #e2a068;
+}
+#colors .burntOrange40 {
+  background-color: #ebbc92;
+}
+#colors .burntOrange20 {
+  background-color: #f4d9c1;
+}
+#colors .burntOrange10 {
+  background-color: #f9e9db;
+}
 #colors .imperialRed100 {
   background-color: #e71d1c;
 }
@@ -12032,6 +12264,9 @@ body {
 }
 #colors .imperialRed20 {
   background-color: #fbcbb5;
+}
+#colors .imperialRed10 {
+  background-color: #fee8dc;
 }
 #colors .black {
   background-color: #000000;
@@ -12062,6 +12297,9 @@ body {
 }
 #colors .gray1 {
   background-color: #f0f1f2;
+}
+#colors .gray0 {
+  background-color: #f7f9f9;
 }
 #colors .white {
   background-color: #ffffff;
