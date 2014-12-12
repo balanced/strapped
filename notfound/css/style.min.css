@@ -10689,15 +10689,6 @@ form .input-prepend .add-on:first-child {
   margin: 0;
   border-bottom: 4px solid transparent;
 }
-.nav-tabs li a.balance {
-  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
-  line-height: 20px;
-  color: #000000;
-  padding-left: 0;
-}
-.nav-tabs li a.balance:hover {
-  border-bottom: 4px solid transparent;
-}
 .nav-tabs li a.active {
   border-bottom: 4px solid #000000;
   color: #000000;
@@ -10708,6 +10699,16 @@ form .input-prepend .add-on:first-child {
 }
 .nav-tabs li a:hover.active {
   border-color: #000000;
+}
+.nav-tabs.balance a {
+  font: normal normal normal 14px "Proxima Nova Semi Bold", arial, sans-serif;
+  line-height: 20px;
+  color: #000000;
+  padding-left: 0;
+}
+.nav-tabs.balance a:hover {
+  border-bottom: 4px solid transparent;
+  cursor: initial;
 }
 .nav-pills {
   float: left;
@@ -11357,32 +11358,35 @@ table.items tbody tr td > a:active,
 table.items tfoot tr td > a:active {
   color: #000000;
 }
-table.items tbody tr td.two-line > a > span,
-table.items tfoot tr td.two-line > a > span {
+table.items tbody tr td.two-lines > a > span,
+table.items tfoot tr td.two-lines > a > span {
   padding-top: 4px !important;
   padding-bottom: 2px !important;
 }
-table.items tbody tr td.two-line span,
-table.items tfoot tr td.two-line span {
-  display: block;
-}
-table.items tbody tr td.date .secondary,
-table.items tfoot tr td.date .secondary {
-  text-transform: lowercase;
-}
-table.items tbody tr td span.primary,
-table.items tfoot tr td span.primary {
+table.items tbody tr td.two-lines > a > span span.primary,
+table.items tfoot tr td.two-lines > a > span span.primary {
   line-height: 16px;
   padding: 4px 0 1px !important;
+  display: block;
 }
-table.items tbody tr td span.secondary,
-table.items tfoot tr td span.secondary {
+table.items tbody tr td.two-lines > a > span span.primary > span,
+table.items tfoot tr td.two-lines > a > span span.primary > span {
+  display: inline;
+  line-height: 16px;
+}
+table.items tbody tr td.two-lines > a > span span.secondary,
+table.items tfoot tr td.two-lines > a > span span.secondary {
   font: normal normal normal 12px "Proxima Nova Reg", arial, sans-serif;
   line-height: 16px;
   color: #000000;
   line-height: 14px;
   color: #9196a1;
   padding: 1px 0 4px !important;
+  display: block;
+}
+table.items tbody tr td.date .secondary,
+table.items tfoot tr td.date .secondary {
+  text-transform: lowercase;
 }
 table.items tbody tr td.label4a a:link,
 table.items tfoot tr td.label4a a:link,

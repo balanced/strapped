@@ -105,6 +105,7 @@
 			{ "name": "gray3" },
 			{ "name": "gray2" },
 			{ "name": "gray1" },
+      { "name": "gray0" },
 			{ "name": "white" }
 		]
 	},
