@@ -29,15 +29,6 @@
       margin: 0;
       border-bottom: 4px solid transparent;
 
-      &.balance {
-        .sl-sb;
-        padding-left: 0;
-
-        &:hover {
-          border-bottom: 4px solid transparent;
-        }
-      }
-
       &.active {
         border-bottom: 4px solid @black;
         color: @black;
@@ -50,6 +41,18 @@
         &.active {
           border-color: @black;
         }
+      }
+    }
+  }
+
+  &.balance {
+    a {
+      .sl-sb;
+      padding-left: 0;
+
+      &:hover {
+        border-bottom: 4px solid transparent;
+        cursor: default;
       }
     }
   }
