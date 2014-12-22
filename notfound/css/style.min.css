@@ -7914,9 +7914,6 @@ img,
 .icon-transactions:before {
   content: ";";
 }
-.icon-orders:before {
-  content: "=";
-}
 .icon-status:before {
   content: ">";
 }
@@ -7928,6 +7925,18 @@ img,
 }
 .icon-sad-face:before {
   content: "[";
+}
+.icon-payable-account:before {
+  content: "h";
+}
+.icon-settlements:before {
+  content: "i";
+}
+.icon-orders:before {
+  content: "j";
+}
+.icon-number-of-transactions:before {
+  content: "k";
 }
 /*
 * animations.less

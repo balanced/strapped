@@ -181,7 +181,7 @@ $(document).ready(function() {
 		$(div).text(rgb2hex(rgb).toUpperCase());
 	});
 
-	var lightBg = ['e5', '10', '20', '40', 'y3', 'y2', 'y1', 'te']; // 5, 10, 20, 40, light gray, white
+	var lightBg = ['e5', '10', '20', '40', 'y3', 'y2', 'y1', 'y0', 'te']; // 0, 5, 10, 20, 40, light gray, white
 
 	$('.property > .name').each(function (index, name){
 		var colorName = $(name).text();
